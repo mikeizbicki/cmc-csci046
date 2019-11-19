@@ -1,4 +1,4 @@
-# CSCI040: Computing for the Web
+# CSCI046: Data Structures and Algorithms
 
 ## About the Instructor
 
