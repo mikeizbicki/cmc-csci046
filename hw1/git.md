@@ -339,7 +339,7 @@ From now on, we'll be drawing pictures of our git repos so you can visualize wha
 Currently, our repo looks like:
 
 <p align=center>
-<img src="images/3.png?raw=true">
+<img src="img/3.png?raw=true">
 </p>
 
 The purple boxes represent all the commits we've done, and the blue box represents a branch.
@@ -366,7 +366,7 @@ and if we commit any new changes, they will be added to the master branch.
 Our repo DAG now looks like:
 
 <p align=center>
-<img src="images/4.png?raw=true">
+<img src="img/4.png?raw=true">
 </p>
 
 Switch to our new branch using the command:
@@ -386,7 +386,7 @@ Since the only thing you did was switch branches, the repo DAG looks almost the 
 The only difference is the asterisk has moved.
 
 <p align=center>
-<img src="images/5.png?raw=true">
+<img src="img/5.png?raw=true">
 </p>
 
 Let's modify our `message.py` file so that it asks the user their name before saying hello:
@@ -456,7 +456,7 @@ When you run this command, the `userinput` branch gets updated to point to this 
 Now your DAG looks like:
 
 <p align=center>
-<img src="images/6.png?raw=true">
+<img src="img/6.png?raw=true">
 </p>
 
 Let's verify that our changes affected only the `userinput` branch and not the `master` branch by running the following commands:
@@ -489,7 +489,7 @@ $ git commit -m "updated README"
 Your repo DAG now looks like:
 
 <p align=center>
-<img src="images/7.png?raw=true">
+<img src="img/7.png?raw=true">
 </p>
 
 We say that `userinput` is "two commits ahead" of `master` because we have created two commits on the `userinput` branch.
@@ -534,7 +534,7 @@ Here's the resulting DAG.
 Notice that the `bugfix` branch starts where the `master` branch was because we switched to `master` before creating `bugfix`.
 
 <p align=center>
-<img src="images/8.png?raw=true">
+<img src="img/8.png?raw=true">
 </p>
 
 Now we're ready to edit the code.  
@@ -584,7 +584,7 @@ Since you made the commit on the `bugfix` branch,
 your DAG splits off in another direction and now looks like this:
 
 <p align=center>
-<img src="images/9.png?raw=true">
+<img src="img/9b.png?raw=true">
 </p>
 
 Notice that the DAG is no longer a linear structure, but looks like a tree with branches.
@@ -615,7 +615,7 @@ This automatically updates the modified files.
 Your DAG will now look like this:
 
 <p align=center>
-<img src="images/10.png?raw=true">
+<img src="img/10b.png?raw=true">
 </p>
 
 Using branches like this to patch bugs is an extremely common pattern.
@@ -728,7 +728,7 @@ $ git commit -m "solved merge conflict between userinput and master branches"
 And your DAG looks like:
 
 <p align=center>
-<img src="images/11.png?raw=true"
+<img src="img/11b.png?raw=true"
 </p>
 
 As you can see, resolving merge conflicts is a difficult process.
@@ -739,17 +739,53 @@ This makes it more likely that multiple branches will not edit the same files.
 Of course, in most projects merge conflicts will be inevitable.
 That's just the reality of working on large projects with many team members.
 
-## Exercise
+## Cleaning up
 
-Given the same repo above, draw the DAG that results after running the following commands, and show your drawing to the instructor.
+Programmers often talk about maintaining *clean* git histories.
+We say a repo has a clean history if it is easy to see who is working on what,
+and that there is no extra stuff in the history that we don't need.
+
+Since we're done with the `bigfix` and `userinput` branches, 
+we should delete them with the `git branch -d command`.
+
+Run the following commands to delete these branches.
 
 ```
 $ git branch -d userinput
 $ git branch -d bugfix
+```
+
+The resulting DAG is
+
+<p align=center>
+<img src="img/12b.png?raw=true"
+</p>
+
+## Exercise
+
+Given the same repo above, draw the DAG that results after running the following commands.
+(You do not have to turn in the drawing.)
+
+```
 $ echo "everything is awesome" > README
 $ git add README
 $ git commit -m "changed the README"
+$ git checkout -b new_feature
+$ touch newfile
+$ git add newfile
+$ git commit -m 'added newfile'
+$ git checkout master
+$ touch newfile2
+$ git add newfile2
+$ git commit -m newfile2
+$ cat newfile2
+$ ls
+$ git merge new_feature
 ```
 
-You should check the [git cheatsheet](https://github.com/mikeizbicki/ucr-cs100/blob/2015winter/textbook/cheatsheets/git-cheatsheet.md) to figure out what the `git branch -d` command does.
+**HINT:** 
+Running `git log --graph` will show an ASCII version of the graph.
+
+You should check the [git cheatsheet](https://github.com/mikeizbicki/ucr-cs100/blob/2015winter/textbook/cheatsheets/git-cheatsheet.md) to figure out what the `git checkout -b` command does.
+
 

@@ -15,12 +15,14 @@
 ## About the Course
 
 This is a second semester course in computer science designed for students who have previously taken either CS40 at CMC or CS5 at Mudd.
+
 This course is required for the computer science sequence, 
 and optional for the data science sequence.
-
-**Learning Objectives:**
+It will be required for the data science major (if/when it gets approved).
 
 <!--Data structures is the most important course of any computer science program.-->
+
+**Learning Objectives:**
 
 Primary objectives:
 
@@ -39,7 +41,7 @@ Secondary objectives:
 
 We will NOT cover:
 
-1. Low-level memory management (C/C++/Cython programming languages)
+1. Low-level memory management (C/C++ programming languages)
 1. This course will be less theoretical than CSCI060HM/CSCI070HM
 
 **Textbook:**
@@ -66,11 +68,11 @@ How to make money/get a good job:
 
 Other technical articles:
 
-<!--1. [The fallacy of premature optimization](https://ubiquity.acm.org/article.cfm?id=1513451)-->
 1. [O(n^2) again](https://news.ycombinator.com/item?id=21743424)
 1. [What every programmer should know about floating-point](https://floating-point-gui.de/)
 1. [The lat/lon floating point delusion](https://www.datafix.com.au/BASHing/2019-08-09.html)
-1. [Computer Science from the Bottom Up](https://www.bottomupcs.com/index.xhtml)
+<!--1. [The fallacy of premature optimization](https://ubiquity.acm.org/article.cfm?id=1513451)-->
+<!--1. [Computer Science from the Bottom Up](https://www.bottomupcs.com/index.xhtml)-->
 
 **Late Work Policy:**
 

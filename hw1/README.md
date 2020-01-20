@@ -26,11 +26,11 @@ In particular, Windows is not a UNIX operating system.
 
 1. Use ssh to login to the lambda-server (all subsequent steps must be completed on the lambda-server)
 1. Run the `vimtutor` command and complete all instructions in order to learn vim
-1. Complete the [git tutorial]()
-1. Complete the [github tutorial]()
-1. Complete the [travis tutorial]()
+1. Complete the [git tutorial](https://github.com/mikeizbicki/cmc-csci046/blob/master/hw1/git.md)
+1. Complete the [github tutorial](https://github.com/mikeizbicki/cmc-csci046/blob/master/hw1/github.md)
+1. Complete the [travis tutorial](https://github.com/mikeizbicki/cmc-csci046/blob/master/hw1/travis.md)
 1. Have at least 5 other students from the class star the fraction repository you created in the travis tutorial
 
 ## Submission 
 
-
+Submit the link to the repository you created in the travis tutorial to sakai.
