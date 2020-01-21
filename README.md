@@ -7,10 +7,10 @@
 | Name | Mike Izbicki (you can call me Mike) |
 | Email | mizbicki@cmc.edu |
 | Office | Adams 216 |
-| Office Hours | ??? or by appointment ([see my schedule](https://izbicki.me/schedule.html));<br/> if my door is open, feel free to come in |
+| Office Hours | Monday 9:00-10:00AM, Tuesday/Thursday 2:30-3:30PM, or by appointment ([see my schedule](https://izbicki.me/schedule.html));<br/> if my door is open, feel free to come in |
 | Webpage | [izbicki.me](https://izbicki.me) |
 | Research | Machine Learning (see [izbicki.me/research.html](https://izbicki.me/research.html) for some past projects) |
-| Fun Facts | grew up in San Clemente, 7 years in the navy, phd/postdoc at UC Riverside, taught in DPRK |
+| Fun Facts | grew up in San Clemente, 7 years in the navy, phd/postdoc at UC Riverside, taught in [DPRK](https://pust.co) |
 
 ## About the Course
 
@@ -39,10 +39,11 @@ Secondary objectives:
 1. Introduction to the mathematics of programming (overlap with discrete math)
 1. Introduction to the hacker culture
 
-We will NOT cover:
+Differences between this course and HMC's CSCI060HM/CSCI070HM:
 
-1. Low-level memory management (C/C++ programming languages)
-1. This course will be less theoretical than CSCI060HM/CSCI070HM
+1. This course does not cover low-level memory management (C/C++ programming languages)
+1. This course is more practical
+1. There is no lab section
 
 **Textbook:**
 
@@ -74,13 +75,6 @@ Other technical articles:
 <!--1. [The fallacy of premature optimization](https://ubiquity.acm.org/article.cfm?id=1513451)-->
 <!--1. [Computer Science from the Bottom Up](https://www.bottomupcs.com/index.xhtml)-->
 
-**Late Work Policy:**
-
-You lose 10% on the assignment for each day late.
-If you have extenuating circumstances, contact me in advance of the due date and I may extend the due date for you.
-
-It is usually better to submit a correct assignment late than an incorrect one on time.
-
 ## Schedule
 
 ### Lecture
@@ -89,20 +83,20 @@ It is usually better to submit a correct assignment late than an incorrect one o
 | ---- | ------------ | ----------------------------------------------- | ------------- |
 | 1    | Tues, 21 Jan | Intro to shell / vim / git / travis             |               |
 | 1    | Thur, 23 Jan | Intro to shell / vim / git / travis             |               |
-| 2    | Tues, 28 Jan | Analysis I                                      | MR 3          |
-| 2    | Thur, 30 Jan | Analysis II                                     |               |
-| 3    | Tues, 04 Feb | Basic data structures: stack                    | MR 4.1-4.9    |
-| 3    | Thur, 06 Feb | Basic data structures: queue                    | MR 4.10-4.23  |
-| 4    | Tues, 11 Feb | Recursion I                                     | MR 5.1-5.10   |
-| 4    | Thur, 13 Feb | Recursion II                                    |               |
-| 5    | Tues, 18 Feb | Sorting I                                       | MR 6.6-6.12   |
-| 5    | Thur, 20 Feb | Sorting II                                      | [stackoverflow](https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array) |
-| 6    | Tues, 25 Feb | Sorting: binary search                          | MR 6.3-6.4    |
-| 6    | Thur, 27 Feb | Sorting: hash functions                         | MR 6.5        |
-| 7    | Tues, 03 Mar | Recursion: divide and conquer (karatsuba)       | DPV 1.1, 2.1  |
-| 7    | Thur, 05 Mar | Recursion: divide and conquer (strassen)        | DPV 2.5       |
-| 8    | Tues, 10 Mar | TBD                                             |               |
-| 8    | Thur, 12 Mar | TBD                                             |               |
+| 2    | Tues, 28 Jan | Intro to shell / vim / git / travis             |               |
+| 2    | Thur, 30 Jan | Python features                                 | MR 1-2        |
+| 3    | Tues, 04 Feb | Analysis I                                      | MR 3          |
+| 3    | Thur, 06 Feb | Analysis II                                     | [PythonWiki](https://wiki.python.org/moin/TimeComplexity) |
+| 4    | Tues, 11 Feb | Basic data structures: stack                    | MR 4.1-4.9    |
+| 4    | Thur, 13 Feb | Basic data structures: queue                    | MR 4.10-4.23  |
+| 5    | Tues, 18 Feb | Recursion I                                     | MR 5.1-5.10   |
+| 5    | Thur, 20 Feb | Recursion II                                    |               |
+| 6    | Tues, 25 Feb | Sorting I                                       | MR 6.6-6.12   |
+| 6    | Thur, 27 Feb | Sorting II                                      | [stackoverflow](https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array) |
+| 7    | Tues, 03 Mar | Sorting: binary search                          | MR 6.3-6.4    |
+| 7    | Thur, 05 Mar | Sorting: hash functions                         | MR 6.5        |
+| 8    | Tues, 10 Mar | Recursion: divide and conquer                   |               |
+| 8    | Thur, 12 Mar | Recursion: divide and conquer                   |               |
 | 9    | Tues, 17 Mar | **NO CLASS:** Spring Break                      |               |
 | 9    | Thur, 19 Mar | **NO CLASS:** Spring Break                      |               |
 | 10   | Tues, 24 Mar | Trees I                                         | MR 7.1-7.7    |
@@ -124,27 +118,55 @@ It is usually better to submit a correct assignment late than an incorrect one o
 More reading:
 https://choosealicense.com/
 RSA: DPV 1.4.2    
+(karatsuba) DPV 1.1, 2.1 
+(strassen)  DPV 2.5      
 -->
 
 ### Assignments
 
-| Week | Type    | Weight | Topic                           |
-| ---- | ------- | ------ | ------------------------------- |
-| 1    | project | 10     | Fraction class                  |
-| 2    | math    | 10     | Analysis/Big-O                  |
-| 3    | project | 10     | RPN calculator (stack)          |
-| 4    | math    | 10     | recursion/queue/deque/list      |
-| 5    | project | 10     | implement sorts                 |
-| 6    | math    | 10     | divide and conquer              |
-| 7    | project | 10     | twitter data analysis           |
-| 9    | test    | 20     | midterm                         |
-| 10   | project | 10     | BST tree                        |
-| 11   | project | 10     | BST tree                        |
-| 12   | project | 10     | Heaps                           |
-| 13   | math    | 10     | Graphs                          |
-| 14   | project | 10     | Dijkstra                        |
-| 15   | project | 10     | Knapsack                        |
-| 16   | test    | 20     | Final                           |
+We will have approximately 1 assignment per week in this course according to the following schedule.
+
+| Assignment | Type    | Points | Topic                           |
+| ---------- | ------- | ------ | ------------------------------- |
+| 1          | project | 10     | Unix/Git tutorial               |
+| 2          | math    | 10     | Analysis/Big-O                  |
+| 3          | project | 10     | RPN calculator (stack)          |
+| 4          | math    | 10     | recursion/queue/deque/list      |
+| 5          | project | 10     | implement sorts                 |
+| 6          | math    | 10     | divide and conquer              |
+| 7          | project | 10     | twitter data analysis           |
+| 8          | test    | 20     | midterm                         |
+| 9          | project | 10     | BST                             |
+| 10         | project | 10     | AVL tree                        |
+| 11         | project | 10     | Heaps                           |
+| 12         | math    | 10     | Graphs                          |
+| 13         | project | 10     | Dijkstra                        |
+| 14         | project | 10     | Knapsack                        |
+| 15         | test    | 20     | Final                           |
+
+**Late Work Policy:**
+
+You lose 10% on the assignment for each day late.
+If you have extenuating circumstances, contact me in advance of the due date and I may extend the due date for you.
+
+It is usually better to submit a correct assignment late than an incorrect one on time.
+
+**Collaboration Policy:**
+
+For project/math assignments: 
+you may use any resources you like and discuss with whomever you like.
+Learning the material in this course is your responsibility,
+and I don't want to put any artificial restrictions on any of the assignments that will get in your way.
+
+
+Tests will be take home and open notes.
+The only restriction is you are not allowed to talk to other students in the class about the contents.
+
+**Technology Policy:**
+
+You must use either vim or emacs to complete all programming assignments.
+
+You must not share your lambda-server password with anyone else.
 
 <!--
 Possible other assignments:
@@ -153,10 +175,6 @@ math: NP-hard problems
 programming: learn git
 programming, fibonacci divide and conquer (see Dasupta 0.4)
 -->
-
-## Collaboration Policy
-
-For project/math assignments: You may use any resources you like and discuss with whomever you like.
 
 <!--
 ## Self Grading
