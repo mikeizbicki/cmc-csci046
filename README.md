@@ -16,7 +16,7 @@
 
 This is a second semester course in computer science designed for students who have previously taken either CS40 at CMC or CS5 at Mudd.
 
-This course is required for the computer science sequence, 
+This course is required for the computer science sequence,
 and optional for the data science sequence.
 It will be required for the data science major (if/when it gets approved).
 
@@ -34,6 +34,7 @@ Primary objectives:
 
 Secondary objectives:
 
+1. Learn basic shell programming
 1. More experience with python programming
 1. Solve the questions asked in programming interviews and contests
 1. Introduction to the mathematics of programming (overlap with discrete math)
@@ -117,9 +118,9 @@ Other technical articles:
 <!--
 More reading:
 https://choosealicense.com/
-RSA: DPV 1.4.2    
-(karatsuba) DPV 1.1, 2.1 
-(strassen)  DPV 2.5      
+RSA: DPV 1.4.2
+(karatsuba) DPV 1.1, 2.1
+(strassen)  DPV 2.5
 -->
 
 ### Assignments
@@ -153,7 +154,7 @@ It is usually better to submit a correct assignment late than an incorrect one o
 
 **Collaboration Policy:**
 
-For project/math assignments: 
+For project/math assignments:
 you may use any resources you like and discuss with whomever you like.
 Learning the material in this course is your responsibility,
 and I don't want to put any artificial restrictions on any of the assignments that will get in your way.
