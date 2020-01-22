@@ -169,6 +169,17 @@ You must use either vim or emacs to complete all programming assignments.
 
 You must not share your lambda-server password with anyone else.
 
+**Extra credit:**
+
+If you submit a pull request to this repo that gets accepted (e.g. you fix a typo),
+then you will get extra credit.
+The first time you do this, you will get 1 point of extra credit;
+subsequent times you will get less.
+
+If you make a contribution to an open source project during the course, 
+you will get extra credit depending on the magnitude of your contribution.
+See https://up-for-grabs.net for some projects that are looking for new contributors.
+
 <!--
 Possible other assignments:
 programming: analyze all tweets
