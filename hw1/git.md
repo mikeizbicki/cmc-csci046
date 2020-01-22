@@ -43,19 +43,19 @@ $ touch README
 The `touch` command is a standard unix command.
 If the input file does not already exist, `touch` creates an empty file with that name.
 If the file does already exist, it updates the file's timestamp to the current time.
-The `ls -l --full-time` command displays the full information about each file in the current directory.
+The `ls -lT` command displays the full information about each file in the current directory.
 Run the following commands:
 
 ```
-$ ls -l --full-time
+$ ls -lT
 $ touch README
-$ ls -l --full-time
+$ ls -lT
 ```
 
 Notice how the timestamp in the first `ls` is different than the timestamp in the second `ls`.
 
 **EXERCISE:**
-Run both the commands `ls -l` and `ls -l --full-time` and compare the output.
+Run both the commands `ls -l` and `ls -lT` and compare the output.
 Can you tell what the difference between these two commands is?
 
 We've created our first file, but git doesn't know about it yet.
@@ -398,7 +398,7 @@ def main(message,input_name):
     if input_name:
         print('enter your name')
         name = input()
-    else
+    else:
         name = 'world'
     print(f'{message} {name}!')
 
@@ -426,7 +426,7 @@ hello world!
 But now if you run the command
 
 ```
-$ pytohn3 message.py --message=hello --user_input
+$ python3 message.py --message=hello --input_name
 ```
 
 The program will ask you for your name and greet you by name:
@@ -437,10 +437,10 @@ Mike
 hello Mike!
 ```
 
-Notice that the command line argument `--user_input` does not get assigned a value.
+Notice that the command line argument `input_name` does not get assigned a value.
 Instead, the `args.user_input` variable will default to `False`;
-but when the `--user_input` command line argument is present,
-then `args.user_input` will be set to `True`.
+but when the `--input_name` command line argument is present,
+then `args.input_name` will be set to `True`.
 These `True`/`False` command line arguments are typically called *command line flags*, 
 or just *flags* for short.
 
