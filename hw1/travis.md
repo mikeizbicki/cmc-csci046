@@ -5,6 +5,12 @@ It is a standard tool used by many open source applications in order to maintain
 If you submit code to a project, it will have to pass the travis-ci tests in order for the maintainer to accept your changes.
 
 In this class, we will be using travis as an automatic grading tool for all your programming assignments.
+The workflow is described in the following diagram:
+
+<p align=center>
+<img src=diagram.png?raw=true width=500px>
+</p>
+
 Therefore, it is important that you understand how to properly configure travis for your projects,
 because if travis is not configured correctly,
 you will not get a grade.
