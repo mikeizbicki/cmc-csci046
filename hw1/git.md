@@ -426,7 +426,7 @@ hello world!
 But now if you run the command
 
 ```
-$ pytohn3 message.py --message=hello --user_input
+$ pytohn3 message.py --message=hello --input_name
 ```
 
 The program will ask you for your name and greet you by name:
@@ -437,10 +437,10 @@ Mike
 hello Mike!
 ```
 
-Notice that the command line argument `--user_input` does not get assigned a value.
-Instead, the `args.user_input` variable will default to `False`;
-but when the `--user_input` command line argument is present,
-then `args.user_input` will be set to `True`.
+Notice that the command line argument `--input_name` does not get assigned a value.
+Instead, the `args.input_name` variable will default to `False`;
+but when the `--input_name` command line argument is present,
+then `args.input_name` will be set to `True`.
 These `True`/`False` command line arguments are typically called *command line flags*, 
 or just *flags* for short.
 
