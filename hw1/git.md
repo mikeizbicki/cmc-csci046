@@ -3,6 +3,9 @@
 This tutorial will walk you through how basic unix and git commands work.
 You should complete this tutorial by typing all commands within code blocks into your terminal.
 
+You're strongly encouraged to work with the other students near you during this tutorial.
+In the travis section of this homework assignment, you'll need to collaborate with 5 other students.
+
 ## Creating your first repo 
 
 Create a folder named `firstrepo` and `cd` into it:
@@ -108,7 +111,6 @@ if __name__=='__main__':
     main(args.message)
 ```
 
-<!--
 This python file is using several things that you may not have seen before:
 
 1. The first line in the file above is called the *shebang*.
@@ -124,16 +126,18 @@ This python file is using several things that you may not have seen before:
    `__name__` is set to `__main__` whenever the python script is run from the command line.
    Thus, for example, if we run the command `python3 message.py`, then `__name__==__main__` will evaluate to `True` and the program will enter the body of the if statement;
 
-**NOTE:**
-The code above uses python f-strings,
-which is a new feature added into python 3.6.
-Whenever a string literal begins with `f'`,
-any values within curly braces will be substituted into the string.
-See [this tutorial](https://cito.github.io/blog/f-strings/) if you want to learn more.
+1. The code above uses python f-strings,
+   which is a new feature added into python 3.6.
+   (If you have an older version of python on your computer, you won't be able to use f-strings.)
+   Whenever a string literal begins with `f'`,
+   any values within curly braces will be substituted into the string.
+   See [this tutorial](https://cito.github.io/blog/f-strings/) if you want to learn more.
 
--->
+1. The argparse library is used to pass command line arguments to python programs.
+   We'll see some examples of how the argparse library works in the following sections.
 
-and run the program with the command
+After you've saved your `message.py` file,
+run the program with the command
 
 ```
 $ python3 message.py --message=hello
@@ -145,8 +149,8 @@ You should get an output that looks like
 hello world!
 ```
 
-The string `--message=hello` is called a command line argument.
-The `argparse` library is a standard library that comes with python and is used for parsing these command line arguments.
+The string `--message=hello` is called a *command line argument*.
+The argparse library is a standard library that comes with python and is used for parsing these command line arguments.
 In our `message.py` file, we defined an argument called `--message` and said that it can have two values:
 either `hello` or `goodbye`.
 For example, we could run the command
