@@ -8,7 +8,7 @@ In this class, we will be using travis as an automatic grading tool for all your
 The workflow is described in the following diagram:
 
 <p align=center>
-<img src=diagram.png?raw=true width=500px>
+<img src=img/diagram.png?raw=true width=500px>
 </p>
 
 Therefore, it is important that you understand how to properly configure travis for your projects,
