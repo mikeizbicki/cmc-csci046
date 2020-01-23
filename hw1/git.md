@@ -6,7 +6,7 @@ You should complete this tutorial by typing all commands within code blocks into
 You're strongly encouraged to work with the other students near you during this tutorial.
 In the travis section of this homework assignment, you'll need to collaborate with 5 other students.
 
-## Creating your first repo 
+## Creating your first repo
 
 Create a folder named `firstrepo` and `cd` into it:
 
@@ -203,7 +203,7 @@ $ git add message.py
 $ git commit -m "added the first code"
 ```
 
-**WARNING:** 
+**WARNING:**
 If you run the `ls` command again, you will notice that a file called `__pycache__` has appeared in your directory.
 YOU SHOULD NEVER ADD THE `__pycache__` FILE TO A GIT REPO.
 This file contains something called *bytecode* created by the `python3` command to make running programs faster.
@@ -216,8 +216,13 @@ Run the command:
 $ echo "This program prints \"hello git\"" > README
 ```
 
-Remember that `echo` prints its arguments and the `>` does output redirection.
-So this command changes the contents of the `README` file.
+**NOTE:**
+The `echo` command prints its arguments to a special file called `stdout`.
+By default, `stdout` is the screen.
+Thus, running the command `echo this is a test` will print `this is a test` to the screen.
+The `>` command is called output redirection.
+Output redirection changes `stdout` to point to a file, instead of the screen.
+Therefore, placing `> README` at the end of the `echo` command causes the output to be placed into the `README` file instead of displayed on the screen.
 
 The command `cat` prints the contents of a file.
 Verify that your `README` file has changed using the command:
@@ -445,7 +450,7 @@ Notice that the command line argument `--input_name` does not get assigned a val
 Instead, the `args.input_name` variable will default to `False`;
 but when the `--input_name` command line argument is present,
 then `args.input_name` will be set to `True`.
-These `True`/`False` command line arguments are typically called *command line flags*, 
+These `True`/`False` command line arguments are typically called *command line flags*,
 or just *flags* for short.
 
 Now, commit our changes to the current working branch the same way we committed them before:
@@ -541,7 +546,7 @@ Notice that the `bugfix` branch starts where the `master` branch was because we 
 <img src="img/8.png?raw=true">
 </p>
 
-Now we're ready to edit the code.  
+Now we're ready to edit the code.
 Change the line
 
 ```
@@ -558,7 +563,7 @@ This changes the default value of `message` from `None` to `'hello'`.
 The default value of every command line argument in `argparse` is `None` unless you specify otherwise.
 Bugs like this are extremely common in code.
 Libraries like `argparse` have many options that you can use,
-and it is very easy to forget to specify all the options 
+and it is very easy to forget to specify all the options
 (or to not even know about all the options that you might need to set).
 You will have bugs like this in every program you ever write,
 and that's okay.
@@ -584,7 +589,7 @@ $ git add message.py
 $ git commit -m "fixed the message bug"
 ```
 
-Since you made the commit on the `bugfix` branch, 
+Since you made the commit on the `bugfix` branch,
 your DAG splits off in another direction and now looks like this:
 
 <p align=center>
@@ -596,7 +601,7 @@ This is where the name branch comes from.
 
 ## Merging branches
 
-We want our users to get access to the fixed software, 
+We want our users to get access to the fixed software,
 so we have to add our `bugfix` code into the `master` branch.
 This process is called *merging* the `bugfix` into the `master` branch.
 
@@ -629,7 +634,7 @@ this is the same basic procedure you will follow.
 With real bugs on more complicated software, bug fixes won't be quite this easy.
 They might require editing several different files and many commits.
 It might take us weeks just to find out what's even causing the bug!
-By putting our changes in a separate branch, 
+By putting our changes in a separate branch,
 we make it easy to have someone fixing the bug while someone else is adding new features.
 
 ## Merge conflicts
@@ -749,7 +754,7 @@ Programmers often talk about maintaining *clean* git histories.
 We say a repo has a clean history if it is easy to see who is working on what,
 and that there is no extra stuff in the history that we don't need.
 
-Since we're done with the `bigfix` and `userinput` branches, 
+Since we're done with the `bigfix` and `userinput` branches,
 we should delete them with the `git branch -d command`.
 
 Run the following commands to delete these branches.
@@ -787,7 +792,7 @@ $ ls
 $ git merge new_feature
 ```
 
-**HINT:** 
+**HINT:**
 Running `git log --graph` will show an ASCII version of the graph.
 
 You should check the [git cheatsheet](https://github.com/mikeizbicki/ucr-cs100/blob/2015winter/textbook/cheatsheets/git-cheatsheet.md) to figure out what the `git checkout -b` command does.
