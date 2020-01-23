@@ -76,6 +76,12 @@ Other technical articles:
 <!--1. [The fallacy of premature optimization](https://ubiquity.acm.org/article.cfm?id=1513451)-->
 <!--1. [Computer Science from the Bottom Up](https://www.bottomupcs.com/index.xhtml)-->
 
+Cheat sheets:
+
+1. [bash](https://files.fosswire.com/2007/08/fwunixref.pdf)
+1. [vim](https://github.com/mikeizbicki/ucr-cs100/blob/class-template/textbook/cheatsheets/vim-cheatsheet.pdf)
+1. [git](https://education.github.com/git-cheat-sheet-education.pdf)
+
 ## Schedule
 
 ### Lecture
