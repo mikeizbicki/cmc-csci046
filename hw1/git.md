@@ -186,7 +186,7 @@ If they are not, then the program prints an error message describing how to use 
 You can also run your program by launching python interactively, importing your module into the repl, and the calling the main function with the following commands:
 
 ```
-$ python3 message.py
+$ python3 -i message.py
 >>> import message
 >>> message.main('hello')
 ```
