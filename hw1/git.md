@@ -407,7 +407,7 @@ def main(message,input_name):
     if input_name:
         print('enter your name')
         name = input()
-    else
+    else:
         name = 'world'
     print(f'{message} {name}!')
 
