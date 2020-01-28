@@ -82,6 +82,12 @@ Cheat sheets:
 1. [vim](https://github.com/mikeizbicki/ucr-cs100/blob/class-template/textbook/cheatsheets/vim-cheatsheet.pdf)
 1. [git](https://education.github.com/git-cheat-sheet-education.pdf)
 
+Programming games:
+
+1. The [git game](https://github.com/git-game/git-game) and [git game v2](https://github.com/git-game/git-game-v2)
+1. https://vim-adventures.com/
+1. `typespeed` (type this command on the lambda server)
+
 ## Schedule
 
 ### Lecture
