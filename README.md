@@ -89,6 +89,10 @@ Programming games:
 1. `typespeed` (type this command on the lambda server)
 1. [bandit wargames](https://overthewire.org/wargames/bandit/bandit0.html)
 
+Shell:
+
+1. Mike's [dotfiles](https://github.com/mikeizbicki/dotfiles)
+
 ## Schedule
 
 ### Lecture
