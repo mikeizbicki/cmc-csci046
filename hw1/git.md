@@ -86,6 +86,25 @@ Commit your changes using the command:
 $ git commit -m "my first commit"
 ```
 
+**NOTE:**
+Depending on your settings, you may get a message that looks like
+
+```
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <test@cmc.edu>) not allowed
+```
+
+If this happens, you will need to run both `git config` commands above to set your email and username.
+
 Every commit needs a *commit message* that describes what changes we made in the repo.
 Writing clear, succinct, informative commit messages is one of the keys to using git effectively.
 In this case, we passed the `-m` flag to git, so the commit message was specified in the command line.
