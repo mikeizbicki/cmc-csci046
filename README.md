@@ -70,6 +70,7 @@ How to make money/get a good job:
 
 Other technical articles:
 
+1. Mike's [dotfiles](https://github.com/mikeizbicki/dotfiles)
 1. [O(n^2) again](https://news.ycombinator.com/item?id=21743424)
 1. [What every programmer should know about floating-point](https://floating-point-gui.de/)
 1. [The lat/lon floating point delusion](https://www.datafix.com.au/BASHing/2019-08-09.html)
@@ -88,10 +89,6 @@ Programming games:
 1. The [git game](https://github.com/git-game/git-game) and [git game v2](https://github.com/git-game/git-game-v2)
 1. `typespeed` (type this command on the lambda server)
 1. [bandit wargames](https://overthewire.org/wargames/bandit/bandit0.html)
-
-Shell:
-
-1. Mike's [dotfiles](https://github.com/mikeizbicki/dotfiles)
 
 ## Schedule
 
