@@ -84,8 +84,8 @@ Cheat sheets:
 
 Programming games:
 
-1. The [git game](https://github.com/git-game/git-game) and [git game v2](https://github.com/git-game/git-game-v2)
 1. https://vim-adventures.com/
+1. The [git game](https://github.com/git-game/git-game) and [git game v2](https://github.com/git-game/git-game-v2)
 1. `typespeed` (type this command on the lambda server)
 1. [bandit wargames](https://overthewire.org/wargames/bandit/bandit0.html)
 
