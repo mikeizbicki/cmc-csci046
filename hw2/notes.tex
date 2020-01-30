@@ -87,20 +87,24 @@ CSCI046 Notes: Runtime Analysis
 \begin{example}
 Answer the questions below based on the following python code:
 \begin{python}
+print('x')
+print('x')
+print('x')
+
 for i in range(10):
-    print('x')
-for i in range(0,10):
-    print('x')
+    print('y')
 
 for i in range(10,20):
-    print('y')
+    print('z')
+    print('z')
+    print('z')
 \end{python}
     \begin{enumerate}
         \item What is the exact number of times that the letter \texttt{x} will be printed?
             \vspace{1.5in}
         \item What is the exact number of times that the letter \texttt{y} will be printed?
-            %\vspace{1.5in}
-        %\item What is the exact number of times that the letter \texttt{z} will be printed?
+            \vspace{1.5in}
+        \item What is the exact number of times that the letter \texttt{z} will be printed?
         %\item How many times is the letter \texttt{x} printed?
             %\vspace{1.5in}
         %\item How many times is the letter \texttt{y} printed?
@@ -114,12 +118,11 @@ Answer the questions below based on the following python code:
 \begin{python}
 for i in range(10):
     print('x')
+for i in range(20):
     print('x')
 
 for i in range(10):
-    print('y')
     for j in range(20):
-        print('y')
         for k in range(30):
             print('y')
 
@@ -153,13 +156,13 @@ for i in range(10):
 \begin{example}
 Answer the questions below based on the following python code:
 \begin{python}
-print('x')
 for i in range(n):
     print('x')
+for i in range(n*2):
     print('x')
-    print('y')
+
+for i in range(n):
     for j in range(n*2):
-        print('y')
         for k in range(n*3):
             print('y')
 
