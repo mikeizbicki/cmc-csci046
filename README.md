@@ -30,7 +30,7 @@ Primary objectives:
 1. Be able to answer the following three questions about an algorithm:
     1. Is it correct?
     1. How much resources does it consume? (time, memory, money, etc.)
-    1. Can we do better?
+    1. Can we do better??
 
 Secondary objectives:
 
