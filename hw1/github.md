@@ -1,10 +1,7 @@
-# Github Tutrial
+# Github Tutorial
 
-Oh no!
-The title of this page contains a typo.
-Instead of `Tutrial`, it should say `Tutorial`.
-Fortunately, since this project is hosted on github,
-you can use git to fix this mistake for me.
+The title of this page used to contain a typo.
+Now it does not.
 
 Follow [these seven steps](https://jarv.is/notes/how-to-pull-request-fork-github/) to submit a pull request to this repository that fixes the typo.
 (Notice that these instructions are not specifically tailored for this course.
