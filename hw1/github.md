@@ -2,6 +2,8 @@
 
 After following [these seven steps](https://jarv.is/notes/how-to-pull-request-fork-github/), the typo is fixed!
 
+(And we are at a new branch)
+
 <!--
 The basic procedure for contributing a change to a project on github is as follows:
 
