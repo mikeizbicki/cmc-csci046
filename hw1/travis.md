@@ -95,7 +95,7 @@ Steps 4-6 involve creating and adding a `.travis.yml` file to your repository,
 which I've already done for you.
 
 To verify that you have successfully configured travis,
-visit the URL https://travis-ci.org/mikeizbicki/fraction (but replace `mikeizbicki` with your github username).
+visit the URL https://travis-ci.org/mikeizbicki/fraction (but replace `mikeizbicki` with your github username and change .org to.com).
 All travis builds are public information, so if you visit that link as-is you can see the status of my builds.
 
 ## The Travis badge
