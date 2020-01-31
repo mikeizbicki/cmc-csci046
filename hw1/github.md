@@ -1,21 +1,6 @@
-# Github Tutrial
+# Github Tutorial
 
-Oh no!
-The title of this page contains a typo.
-Instead of `Tutrial`, it should say `Tutorial`.
-Fortunately, since this project is hosted on github,
-you can use git to fix this mistake for me.
-
-Follow [these seven steps](https://jarv.is/notes/how-to-pull-request-fork-github/) to submit a pull request to this repository that fixes the typo.
-(Notice that these instructions are not specifically tailored for this course.
-An important part of this class is to be able to adapt other people's documentation into different contexts,
-and I've intentionally chosen to have you follow this tutorial in order to learn how to do this adapting.)
-
-Since everyone is submitting the same pull request for an intentionally made typo,
-I will not accept your pull requests.
-But, if you ever find typos in this repo, please submit a pull request.
-I will accept the pull request and give you extra credit.
-Then everyone will have the benefit of having the typo fixed.
+After following [these seven steps](https://jarv.is/notes/how-to-pull-request-fork-github/), the typo is fixed!
 
 <!--
 The basic procedure for contributing a change to a project on github is as follows:
