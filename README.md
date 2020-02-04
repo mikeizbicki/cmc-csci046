@@ -73,6 +73,8 @@ Other technical articles:
 1. [Command-line tools can be faster than a hadoop cluster](https://news.ycombinator.com/item?id=22188877)
 1. [intermediate vim](https://dn.ht/intermediate-vim/)
 1. [Mike's dotfiles](https://github.com/mikeizbicki/dotfiles)
+1. [The missing semester of CS education](https://news.ycombinator.com/item?id=22226380)
+1. [Larry Wall's three virtures of a programmer](http://threevirtues.com/)
 <!--
 1. [O(n^2) again](https://news.ycombinator.com/item?id=21743424)
 1. [What every programmer should know about floating-point](https://floating-point-gui.de/)
@@ -194,7 +196,7 @@ then you will get extra credit.
 The first time you do this, you will get 1 point of extra credit;
 subsequent times you will get less.
 
-If you make a contribution to an open source project during the course, 
+If you make a contribution to an open source project during the course,
 you will get extra credit depending on the magnitude of your contribution.
 See https://up-for-grabs.net for some projects that are looking for new contributors.
 
