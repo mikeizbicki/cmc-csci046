@@ -1,5 +1,8 @@
 # HTML Validation with Stacks
 
+You will implement an extended version of the balanced parentheses algorithm that checks whether html tags are balanced.
+(See [chapter 4.7](https://runestone.academy/runestone/books/published/pythonds/BasicDS/BalancedSymbolsAGeneralCase.html) of the book for details on the balanced parentheses algorithm.)
+
 **Due date:**
 Thursday, 13 February at midnight
 (I'm open to pull requests on this date)
@@ -12,11 +15,6 @@ Thursday, 13 February at midnight
 1. practice using the github/travis toolchain
 
 ## Background
-
-In class, we discussed the "balanced parenthesis" algorithm,
-which uses the stack data structure to check whether parentheses are balanced.
-(The book presents this algorithm in [chapter 4.7](https://runestone.academy/runestone/books/published/pythonds/BasicDS/BalancedSymbolsAGeneralCase.html).)
-In this homework, you will implement an extended version of this algorithm that checks whether html tags are balanced.
 
 HTML is how webpages format their content.
 A simple example is the following code:
