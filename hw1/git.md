@@ -454,7 +454,7 @@ hello world!
 But now if you run the command
 
 ```
-$ pytohn3 message.py --message=hello --input_name
+$ python3 message.py --message=hello --input_name
 ```
 
 The program will ask you for your name and greet you by name:
