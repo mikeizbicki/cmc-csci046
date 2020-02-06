@@ -75,6 +75,7 @@ Other technical articles:
 1. [Mike's dotfiles](https://github.com/mikeizbicki/dotfiles)
 1. [The missing semester of CS education](https://news.ycombinator.com/item?id=22226380)
 1. [Larry Wall's three virtures of a programmer](http://threevirtues.com/)
+1. [timeit documentation](https://docs.python.org/3/library/timeit.html)
 <!--
 1. [O(n^2) again](https://news.ycombinator.com/item?id=21743424)
 1. [What every programmer should know about floating-point](https://floating-point-gui.de/)
