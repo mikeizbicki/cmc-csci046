@@ -15,6 +15,7 @@ Thursday, 13 February at midnight
 
 In class, we discussed the "balanced parenthesis" algorithm,
 which uses the stack data structure to check whether parentheses are balanced.
+(The book presents this algorithm in [chapter 4.7](https://runestone.academy/runestone/books/published/pythonds/BasicDS/BalancedSymbolsAGeneralCase.html).)
 In this homework, you will implement an extended version of this algorithm that checks whether html tags are balanced.
 
 HTML is how webpages format their content.
