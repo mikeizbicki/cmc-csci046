@@ -33,14 +33,14 @@ Closing tags always have the same text as an opening tag, except that a slash `/
 
 There are many html tags that control different formatting options,
 and they get combined in complex ways to generate the layout of webpages.
-For example, the `<emph>` tag causes text to be italicized and the `<u>` tag causes text to be underlined.
+For example, the `<em>` tag causes text to be italicized and the `<u>` tag causes text to be underlined.
 The HTML:
 
 ```
-<u>Data structures</u> is <strong>the <emph>best</emph></strong>!
+<u>Data structures</u> is <strong>the <em>best</em></strong>!
 ```
 
-results in text that looks like: <u>Data structures</u> is <strong>the <emph>best</emph></strong>!
+results in text that looks like: <u>Data structures</u> is <strong>the <em>best</em></strong>!
 
 Large webpages have tens of thousands of html tags in a single file,
 and it is important to verify that this html is correct.
