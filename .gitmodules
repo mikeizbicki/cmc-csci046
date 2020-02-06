@@ -1,0 +1,3 @@
+[submodule "hw1/fraction"]
+	path = hw1/fraction
+	url = https://github.com/mikeizbicki/fraction
