@@ -75,9 +75,9 @@ Other technical articles:
 1. [Mike's dotfiles](https://github.com/mikeizbicki/dotfiles)
 1. [The missing semester of CS education](https://news.ycombinator.com/item?id=22226380)
 1. [Larry Wall's three virtures of a programmer](http://threevirtues.com/)
-1. [timeit documentation](https://docs.python.org/3/library/timeit.html)
 1. [accidentally quadratic](https://accidentallyquadratic.tumblr.com/post/161243900944/mercurial-changegroup-application)
 1. [the history of git](https://www.welcometothejungle.com/en/articles/btc-history-git)
+
 <!--
 1. [O(n^2) again](https://news.ycombinator.com/item?id=21743424)
 1. [What every programmer should know about floating-point](https://floating-point-gui.de/)
@@ -85,6 +85,11 @@ Other technical articles:
 -->
 <!--1. [The fallacy of premature optimization](https://ubiquity.acm.org/article.cfm?id=1513451)-->
 <!--1. [Computer Science from the Bottom Up](https://www.bottomupcs.com/index.xhtml)-->
+
+Library documentation:
+
+1. [timeit](https://docs.python.org/3/library/timeit.html)
+1. [collections](https://docs.python.org/3/library/collections.html)
 
 Cheat sheets:
 
