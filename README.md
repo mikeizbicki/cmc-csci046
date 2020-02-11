@@ -76,6 +76,7 @@ Other technical articles:
 1. [The missing semester of CS education](https://news.ycombinator.com/item?id=22226380)
 1. [Larry Wall's three virtures of a programmer](http://threevirtues.com/)
 1. [timeit documentation](https://docs.python.org/3/library/timeit.html)
+1. [accidentally quadratic](https://accidentallyquadratic.tumblr.com/post/161243900944/mercurial-changegroup-application)
 <!--
 1. [O(n^2) again](https://news.ycombinator.com/item?id=21743424)
 1. [What every programmer should know about floating-point](https://floating-point-gui.de/)
@@ -95,7 +96,10 @@ Programming games:
 1. https://vim-adventures.com/
 1. The [git game](https://github.com/git-game/git-game) and [git game v2](https://github.com/git-game/git-game-v2)
 1. `typespeed` (type this command on the lambda server)
+
+<!--
 1. [bandit wargames](https://overthewire.org/wargames/bandit/bandit0.html)
+-->
 
 ## Schedule
 
