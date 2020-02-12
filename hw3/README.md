@@ -5,7 +5,7 @@ You will implement an extended version of the balanced parentheses algorithm tha
 
 **Due date:**
 Thursday, 13 February at midnight
-(I'm open to pull requests on this date)
+(you may suggest an alternative due date by submitting a pull request)
 
 **Learning Objectives:**
 
