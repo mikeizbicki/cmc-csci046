@@ -1,8 +1,18 @@
 import timeit
 
+n = 100
+
 seconds = timeit.timeit(
-    'is_balanced_parens_3(xs)',
-    'from balanced_parens import is_balanced_parens_3; n=1000; xs=n*"["+n*"]"',
+    'par_checker(xs)',
+    'from balanced_parens_2 import par_checker; n='+str(n)+'; xs=n*"["+n*"]"',
     number=1000
     )
-print('seconds=',seconds)
+print('par_checker takes ',seconds,'seconds')
+
+seconds = timeit.timeit(
+    'is_balanced_parens_3(xs)',
+    'from balanced_parens import is_balanced_parens_3; n='+str(n)+'; xs=n*"["+n*"]"',
+    number=1000
+    )
+print('is_balanced_parens_3 takes ',seconds,'seconds')
+
