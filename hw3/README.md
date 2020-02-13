@@ -4,7 +4,7 @@ You will implement an extended version of the balanced parentheses algorithm tha
 (See [chapter 4.7](https://runestone.academy/runestone/books/published/pythonds/BasicDS/BalancedSymbolsAGeneralCase.html) of the book for details on the balanced parentheses algorithm.)
 
 **Due date:**
-Thursday, 13 February at midnight
+Friday, 14 February at midnight
 (you may suggest an alternative due date by submitting a pull request)
 
 **Learning Objectives:**
