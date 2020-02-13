@@ -90,6 +90,7 @@ Library documentation:
 
 1. [timeit](https://docs.python.org/3/library/timeit.html)
 1. [collections](https://docs.python.org/3/library/collections.html)
+1. [copy](https://docs.python.org/3/library/copy.html)
 
 Cheat sheets:
 
