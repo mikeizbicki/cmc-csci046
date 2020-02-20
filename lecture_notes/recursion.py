@@ -44,13 +44,12 @@ def sum_recursive(xs):
     '''
     Returns the sum of the elements of the input list.
 
-    >>> sum_iterative([1,2,3,4,5])
+    >>> sum_recursive([1,2,3,4,5])
     15
     '''
     i = 0
     total = 0
     def go(i, total):
-        print('i=',i,'total=',total)
         if i<len(xs):
             return total
         total += xs[i]
@@ -125,8 +124,6 @@ def binary_search_recursive(xs,val):
     left = 0
     right = len(xs)-1
     def go(left,right):
-        if left > right:
-            return None
         mid = (left+right)//2
         if val < xs[mid]:
             right = mid-1
