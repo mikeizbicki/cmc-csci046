@@ -3,7 +3,7 @@
 You will implement a solution to Lewis Carroll's [word ladder game](https://en.wikipedia.org/wiki/Word_ladder).
 
 **Due date:**
-Thursday, 20 February at midnight
+Sunday, 23 February at midnight
 (you may suggest an alternative due date by submitting a pull request)
 
 **Learning Objectives:**
@@ -32,7 +32,7 @@ money
 ```
 
 In this assignment, you will implement a function `word_ladder` that generates these word ladders.
-There are many possible algorithms to generate word ladders, 
+There are many possible algorithms to generate word ladders,
 but a simple one uses a combination of stacks and queues as shown in the following pseudocode.
 
 ```
