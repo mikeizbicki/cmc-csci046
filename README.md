@@ -125,8 +125,8 @@ Programming games:
 | 5    | Tues, 18 Feb | Recursion I                                     | MR 5.1-5.10   |
 | 5    | Thur, 20 Feb | Recursion II                                    |               |
 | 6    | Tues, 25 Feb | Sorting: binary search                          | MR 6.3-6.4    |
-| 6    | Thur, 27 Feb | Sorting I                                       | MR 6.6-6.12   |
-| 7    | Tues, 03 Mar | Sorting II                                      | [stackoverflow](https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array) |
+| 6    | Thur, 27 Feb | Sorting: algorithms I                           | MR 6.6-6.12   |
+| 7    | Tues, 03 Mar | Sorting: algorithms II                          | [stackoverflow](https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array) |
 | 7    | Thur, 05 Mar | Sorting: hash functions                         | MR 6.5        |
 | 8    | Tues, 10 Mar | Recursion: divide and conquer                   |               |
 | 8    | Thur, 12 Mar | Recursion: divide and conquer                   |               |
