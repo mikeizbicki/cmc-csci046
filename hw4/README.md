@@ -3,7 +3,7 @@
 You will implement a solution to Lewis Carroll's [word ladder game](https://en.wikipedia.org/wiki/Word_ladder).
 
 **Due date:**
-Thursday, 20 February at midnight
+Sunday, 23 February at midnight
 (you may suggest an alternative due date by submitting a pull request)
 
 **Learning Objectives:**
