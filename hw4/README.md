@@ -4,7 +4,7 @@ You will implement a solution to Lewis Carroll's [word ladder game](https://en.w
 
 **Due date:**
 Sunday, 23 February at midnight
-(you may suggest an alternative due date by submitting a pull request)
+
 
 **Learning Objectives:**
 
