@@ -9,6 +9,7 @@ Sunday, 23 February at midnight
 **Learning Objectives:**
 
 1. implement a complex algorithm involving both queues and stacks
+1. understand python memory management
 1. practice translating pseudocode into python
 1. practice using the github/travis toolchain
 
