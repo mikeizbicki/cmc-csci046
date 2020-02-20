@@ -75,11 +75,10 @@ Other technical articles:
 1. [Mike's dotfiles](https://github.com/mikeizbicki/dotfiles)
 1. [The missing semester of CS education](https://news.ycombinator.com/item?id=22226380)
 1. [Larry Wall's three virtures of a programmer](http://threevirtues.com/)
-1. [accidentally quadratic](https://accidentallyquadratic.tumblr.com/post/161243900944/mercurial-changegroup-application)
+1. [accidentally quadratic blog](https://accidentallyquadratic.tumblr.com/post/161243900944/mercurial-changegroup-application) and a [windows bug caused by an O(n^2) algorithm](https://news.ycombinator.com/item?id=21743424)
 1. [the history of git](https://www.welcometothejungle.com/en/articles/btc-history-git)
 
 <!--
-1. [O(n^2) again](https://news.ycombinator.com/item?id=21743424)
 1. [What every programmer should know about floating-point](https://floating-point-gui.de/)
 1. [The lat/lon floating point delusion](https://www.datafix.com.au/BASHing/2019-08-09.html)
 -->
@@ -91,6 +90,7 @@ Library documentation:
 1. [timeit](https://docs.python.org/3/library/timeit.html)
 1. [collections](https://docs.python.org/3/library/collections.html)
 1. [copy](https://docs.python.org/3/library/copy.html)
+1. [traceback](https://docs.python.org/3/library/traceback.html)
 
 Cheat sheets:
 
@@ -230,6 +230,23 @@ Also *Your* Job to Learn! Helping Students Reflect on their Learning Progress
 Should you Allow your Students to Grade their own Homework?
 
 Peer and Self Assessment in Massive Online Classes
+-->
+
+## Notes
+
+<!--
+The book includes a library called `pythonds` using
+```
+from pythonds.basic import Stack
+```
+This library exists only for the book and is not something widely used.
+The goal of this class is to teach you how real python programmers work,
+and so you should not use this library.
+Instead use a list data structure whenever the book uses a stack.
+
+The Recursion/scope lecture was very disorganized because I tried to improvise too much.
+I need to add more structure to lectures.
+Also, draw the frames with both line numbers and local/global variables.
 -->
 
 ## Accommodations for Disabilities
