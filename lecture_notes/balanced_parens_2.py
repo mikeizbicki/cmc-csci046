@@ -14,8 +14,8 @@ def par_checker(symbol_string):
 1   s = []
 1   balanced = True
     index = 0
-    while index < len(symbol_string) and balanced:
-#n   for index in range(len(symbol_string)):
+#    while index < len(symbol_string) and balanced:
+   for index in range(len(symbol_string)):
     1   symbol = symbol_string[index]
     1   if symbol in "([{":
     1       s.append(symbol)
