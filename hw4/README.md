@@ -23,7 +23,6 @@ stone
 atone
 alone
 clone
-clone
 coons
 conns
 cones
