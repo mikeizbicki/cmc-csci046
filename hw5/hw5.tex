@@ -844,6 +844,104 @@ print('ys=',ys)
 \end{problem}
 \vspace{2in}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\noindent
+\textbf{Note:}
+There are many ways in python to make shallow copies of containers besides using \texttt{copy.copy}.
+
+\begin{problem}
+Write the output of the following python code.
+\begin{python}
+xs = [1,2,3]
+ys = xs[:]
+ys.append('a')
+print('xs=',xs)
+print('ys=',ys)
+\end{python}
+\end{problem}
+\vspace{2in}
+
+\begin{problem}
+Write the output of the following python code.
+\begin{python}
+xs = [1,2,3]
+ys = list(xs)
+ys.append('a')
+print('xs=',xs)
+print('ys=',ys)
+\end{python}
+\end{problem}
+\vspace{2in}
+
+\newpage
+\noindent
+\textbf{Note:}
+Modifying a container that you are looping over is dangerous;
+strange behavior can occur depending on how you modify the container.
+We call these errors ``silent errors'' because they do not generate error messages.
+
+Silent errors are one of the most insidious sources of programming bugs because they are so difficult to detect.
+Unfortunately, python is notorious for these silent errors due to its weak type system.
+Other languages (like C++, Java, and Haskell) have much stronger type systems that prevent certain classes of silent errors from ever occuring.
+
+If you want to modify a container inside a for loop,
+you should probably instead loop over a copy of the container to prevent unintended behavior.
+
+\begin{problem}
+Write the output of the following python code.
+\begin{python}
+xs = [1,2,3,4,5]
+for x in xs:
+    print('x=',x)
+    xs.pop()
+\end{python}
+\end{problem}
+\vspace{2in}
+
+\begin{problem}
+Write the output of the following python code.
+\begin{python}
+xs = [1,2,3,4,5]
+for x in xs:
+    print('x=',x)
+    del xs[0]
+\end{python}
+\end{problem}
+\vspace{2in}
+
+\newpage
+\begin{problem}
+Write the output of the following python code.
+\begin{python}
+xs = [1,2,3,4,5]
+for x in list(xs):
+    print('x=',x)
+    xs.pop()
+\end{python}
+\end{problem}
+\vspace{2in}
+
+\begin{problem}
+\sout{Write the output of the following python code.}
+Not all containers allow modification in the middle of a loop;
+the following code tries to modify a \texttt{deque} and generates an error.
+These error messages are good, and follow the so-called ``fail loudly'' principle.
+The inconsistency that some containers fail loudly and some fail silently is one of python's major flaws (IMNSHO).
+You do not have to write anything for this problem (but you should type it into the python interpreter).
+
+\begin{python}
+from collections import deque
+xs = deque([1,2,3,4,5])
+for x in xs:
+    print('x=',x)
+    del xs[0]
+\end{python}
+\end{problem}
+\vspace{2in}
+
+
 \ignore{
 \newpage
 \begin{problem}
