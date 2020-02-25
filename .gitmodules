@@ -7,3 +7,6 @@
 [submodule "hw4/word_ladder"]
 	path = hw4/word_ladder
 	url = https://github.com/mikeizbicki/word_ladder
+[submodule "hw6/binary_search"]
+	path = hw6/binary_search
+	url = https://github.com/mikeizbicki/binary_search
