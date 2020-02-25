@@ -163,10 +163,10 @@ We will have approximately 1 assignment per week in this course according to the
 | ---------- | ------- | ------ | ------------------------------- |
 | 1          | project | 10     | Unix/Git tutorial               |
 | 2          | math    | 10     | Analysis/Big-O                  |
-| 3          | project | 10     | RPN calculator (stack)          |
+| 3          | project | 10     | HTML validator                  |
 | 4          | project | 10     | word ladders                    |
-| 5          | math    | 10     | recursion                       |
-| 6          | project | 10     | implement sorts                 |
+| 5          | math    | 10     | memory management               |
+| 6          | project | 10     | binary search                   |
 | 7          | project | 10     | twitter data analysis           |
 | 8          | test    | 20     | midterm                         |
 | 9          | project | 10     | BST                             |
