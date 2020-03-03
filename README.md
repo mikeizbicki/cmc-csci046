@@ -78,6 +78,7 @@ Other technical articles:
 1. [accidentally quadratic blog](https://accidentallyquadratic.tumblr.com/post/161243900944/mercurial-changegroup-application) and a [windows bug caused by an O(n^2) algorithm](https://news.ycombinator.com/item?id=21743424)
 1. [the history of git](https://www.welcometothejungle.com/en/articles/btc-history-git)
 1. [timsort](https://svn.python.org/projects/python/trunk/Objects/listsort.txt) -- Tim's [Zen of Python](http://www.openbookproject.net/books/bpp4awd/_static/ch10/zen.html)
+1. [stackoverflow - why processing sorted arrays is faster even in linear search](https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array)
 
 <!--
 1. [What every programmer should know about floating-point](https://floating-point-gui.de/)
@@ -127,7 +128,7 @@ Programming games:
 | 5    | Thur, 20 Feb | Recursion II                                    |               |
 | 6    | Tues, 25 Feb | Sorting: binary search                          | MR 6.3-6.4    |
 | 6    | Thur, 27 Feb | Sorting: algorithms I                           | MR 6.6-6.12   |
-| 7    | Tues, 03 Mar | Sorting: algorithms II                          | [stackoverflow](https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array) |
+| 7    | Tues, 03 Mar | Sorting: algorithms II                          |               |
 | 7    | Thur, 05 Mar | Sorting: hash functions                         | MR 6.5        |
 | 8    | Tues, 10 Mar | Recursion: divide and conquer                   |               |
 | 8    | Thur, 12 Mar | Recursion: divide and conquer                   |               |
