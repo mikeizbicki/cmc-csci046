@@ -77,6 +77,7 @@ Other technical articles:
 1. [Larry Wall's three virtures of a programmer](http://threevirtues.com/)
 1. [accidentally quadratic blog](https://accidentallyquadratic.tumblr.com/post/161243900944/mercurial-changegroup-application) and a [windows bug caused by an O(n^2) algorithm](https://news.ycombinator.com/item?id=21743424)
 1. [the history of git](https://www.welcometothejungle.com/en/articles/btc-history-git)
+1. [timsort](https://svn.python.org/projects/python/trunk/Objects/listsort.txt) -- Tim's [Zen of Python](http://www.openbookproject.net/books/bpp4awd/_static/ch10/zen.html)
 
 <!--
 1. [What every programmer should know about floating-point](https://floating-point-gui.de/)
