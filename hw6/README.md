@@ -20,7 +20,7 @@ Complete the following tasks:
 1. Fork the [binary\_search repo](https://github.com/mikeizbicki/binary_search) and enable travis
 1. Update the `README.md` file so that the travis button points to your repo
 1. Implement the `find_smallest_positive`, `count_repeats`, `argmin` functions so that all test cases in `tests/test_main.py` pass.
-   You must implement each function recursively, and you must ensure that they have logrithmic runtime.
+   You must implement each function recursively, and you must ensure that they have logarithmic runtime.
 
 Your grade will be the percentage of test cases that successfully pass in travis.
 
