@@ -10,6 +10,6 @@
 [submodule "hw6/binary_search"]
 	path = hw6/binary_search
 	url = https://github.com/mikeizbicki/binary_search
-[submodule "hw7/sorting_search"]
-	path = hw6/binary_search
+[submodule "hw7/sorting"]
+	path = hw7/sorting
 	url = https://github.com/mikeizbicki/sorting
