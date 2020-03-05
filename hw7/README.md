@@ -37,7 +37,7 @@ You must enable the extra travis test cases by uncommenting the extra credit lin
 
 Submit the link to your forked repository on sakai.
 
-If you completed the extra credit, write a note in sakai so that I no to grade it.
+If you completed the extra credit, write a note in sakai so that I know to grade it.
 
 ## Collaboration Policy
 
