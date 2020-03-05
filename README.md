@@ -169,15 +169,16 @@ We will have approximately 1 assignment per week in this course according to the
 | 4          | project | 10     | word ladders                    |
 | 5          | math    | 10     | memory management               |
 | 6          | project | 10     | binary search                   |
-| 7          | project | 10     | twitter data analysis           |
-| 8          | test    | 20     | midterm                         |
-| 9          | project | 10     | BST                             |
-| 10         | project | 10     | AVL tree                        |
-| 11         | project | 10     | Heaps                           |
-| 12         | math    | 10     | Graphs                          |
-| 13         | project | 10     | Dijkstra                        |
-| 14         | project | 10     | Knapsack                        |
-| 15         | test    | 20     | Final                           |
+| 7          | project | 10     | sorting                         |
+| 8          | test    | 10     | midterm                         |
+| 9          | project | 10     | twitter data analysis           |
+| 10         | project | 10     | BST                             |
+| 11         | project | 10     | AVL tree                        |
+| 12         | project | 10     | Heaps                           |
+| 13         | math    | 10     | Graphs                          |
+| 14         | project | 10     | Dijkstra                        |
+| 15         | project | 10     | Knapsack                        |
+| 16         | test    | 20     | Final                           |
 
 **Late Work Policy:**
 
