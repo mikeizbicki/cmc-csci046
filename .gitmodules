@@ -13,3 +13,6 @@
 [submodule "hw7/sorting"]
 	path = hw7/sorting
 	url = https://github.com/mikeizbicki/sorting
+[submodule "hw9/twitter_coronavirus"]
+	path = hw9/twitter_coronavirus
+	url = https://github.com/mikeizbicki/twitter_coronavirus
