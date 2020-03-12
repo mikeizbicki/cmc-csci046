@@ -58,7 +58,7 @@ Complete the following tasks to familiarize yourself with the sample code:
    This displays the total number of times the hashtag `#coronavirus` was used on 16 February in each of the languages supported by twitter.
    Now manually inspect the output of the `.lang` file using vim:
    ```
-   $ vim outputs/geoTwitter-20-02-16.zip.lang
+   $ vim outputs/geoTwitter20-02-16.zip.lang
    ```
    You should see that the file contains a dictionary of dictionaries.
    The outermost dictionary has languages as the keys, 
