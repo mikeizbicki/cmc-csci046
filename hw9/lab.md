@@ -2,10 +2,12 @@
 
 This lab will teach you the shell scripting and command line tools you will need to complete the twitter analysis homework.
 
+<!--
 Portions of this lab require you to work with a partner.
 So you should pair up with another student.
 Both of you should complete the lab on your own computers,
 but you will have to run certain commands for your partner on your own computer at different steps.
+-->
 
 ### Creating a shell script
 
@@ -25,6 +27,7 @@ $ ls -l script.sh
 ```
 to check the permissions of this file.
 
+<!--
 ### Hacking your partner's account (pt 1)
 
 By default, everyone has read access to everyone else's home folder.
@@ -63,13 +66,16 @@ This will ensure that any new files you create are also hidden.
 **NOTE:**
 Essentially all hacking boils down to understanding how a computer system is configured differently than the admin of the computer thinks.
 Hackers exploit this misconfiguration to their advantage.
+-->
 
 ### Running the shell file
 
+<!--
 Return to your home folder by running
 ```
 $ cd
 ```
+-->
 Now, try to execute your script by running
 ```
 $ ./script.sh
@@ -230,9 +236,10 @@ $ ps -aux | grep username
 You can see what processes other users are running with the same command.
 Just replace `username` with their username instead.
 
+<!--
 Find the pid of one of your partner's processes and run the `kill` command on it.
 You should get a permission denied error.
-
+-->
 
 **NOTE:**
 All you *need* to know for this course is how to find the PID of your processes using the command above.
@@ -360,7 +367,7 @@ $ finger | grep username
 This command lists lots of information about each session,
 but the important thing for right now is the `Tty` column.
 
-**Historical Note:** `Tty` stands for "teletype", 
+**Historical Note:** `Tty` stands for "teletypewriter", 
 which was the original name for a terminal way back in the day when monitors didn't exist and terminal sessions were input on typewriters and output on a printer.
 Today, each terminal session has a unique `tty` file.
 These are special files located in the `/dev/pts` folder on Linux machines.
@@ -371,5 +378,19 @@ Under the `Tty` column of finger's output is a line that looks something like `p
 (the number `23` will be different for every terminal session).
 There is a file in the `/dev/pts` folder that corresponds to your partner's terminal session;
 if the finger command shows that their tty is `pts/23`, for example, then the file is `/dev/pts/23`.
-Run the following command to 
+Run the following command to write to their terminal:
+```
+$ write username pts/23
+```
+Now, whatever you type as input to the write program will be displayed on their terminal.
+You have permission to write to their screen because the `/dev/pts/23` file by default gives write permission to everyone in the same group.
+
+In order to prevent someone from writing to your screen,
+you need to change the group permissions so that writing is not allowed.
+Do this by running
+```
+$ chmod g-w /dev/pts/23
+```
+Now, when other people try to write to your screen,
+they will get permission denied errors.
 -->
