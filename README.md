@@ -234,10 +234,10 @@ Should you Allow your Students to Grade their own Homework?
 
 Peer and Self Assessment in Massive Online Classes
 -->
+<!--
 
 ## Notes
 
-<!--
 The book includes a library called `pythonds` using
 ```
 from pythonds.basic import Stack

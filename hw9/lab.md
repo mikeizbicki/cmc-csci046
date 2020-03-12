@@ -85,7 +85,7 @@ That's because we haven't given the file execute permissions yet.
 
 Run the following command to give yourself execute permissions
 ```
-$ chmod u+x shell.sh
+$ chmod u+x script.sh
 ```
 and then run the file
 ```
@@ -102,7 +102,7 @@ For Mac users, ensure that you are pressing `CTRL` and not `Command`.)
 
 Now restart the program by running 
 ```
-$ ./shell.sh
+$ ./script.sh
 ```
 again.
 This time, however, press `^Z` to end the process.
@@ -140,8 +140,8 @@ Each line corresponds to a process that has been started from your current sessi
 `bash` is the command interpreter that you are typing commands into,
 and `ps` is the command that you just ran.
 
-Now run `./shell.sh`, type `^Z` to pause it, then type `ps` again.
-You should now see an additional line in your output corresponding to the `shell.sh` command.
+Now run `./script.sh`, type `^Z` to pause it, then type `ps` again.
+You should now see an additional line in your output corresponding to the `sh.sh` command.
 The process id (pid) is how we communicate with processes.
 Every time you start a program, a new process is created.
 The `PID` column of `ps`'s output will always be unique,
@@ -195,7 +195,7 @@ You should get different numbers both times.
 
 ### Killing processes
 
-We've already seen that we can stop the `./shell.sh` command by running the `fg` command and then typing `^C`.
+We've already seen that we can stop the `./script.sh` command by running the `fg` command and then typing `^C`.
 `^C` sends a special signal to a process called `SIGINT`,
 and the default response to this signal is to terminate.
 Another way to stop the program is by directly killing it with the `kill` command.
@@ -204,7 +204,7 @@ and you should run
 ```
 $ kill <PID>
 ```
-where `<PID>` is the pid displayed by the `ps` command of your `./shell.sh` process.
+where `<PID>` is the pid displayed by the `ps` command of your `./script.sh` process.
 Go ahead and kill the process that you currently have running in the background from the previous section.
 
 ### Multiple connections
@@ -283,7 +283,7 @@ This ensures that you don't accidentally leave thousands of processes running on
 To see how this works,
 run the command
 ```
-$ ./shell.sh > output2
+$ ./script.sh > output2
 ```
 then type `^Z` and run
 ```
@@ -296,7 +296,7 @@ $ ps -aux | grep username
 ```
 in the OTHER TERMINAL YOU HAVE OPEN.
 
-Next, close the ssh session that you used to run `shell.sh` by running the command
+Next, close the ssh session that you used to run `script.sh` by running the command
 ```
 $ exit
 ```
@@ -305,9 +305,9 @@ again run the command
 ```
 $ ps -aux | grep username
 ```
-and notice that your `shell.sh` process is no longer running.
+and notice that your `script.sh` process is no longer running.
 This is because when you closed your ssh connection,
-the `HUP` signal was sent to the `shell.sh` process,
+the `HUP` signal was sent to the `script.sh` process,
 ending the process.
 
 ### Blocking the `HUP` signal
@@ -318,7 +318,7 @@ To do this, we use the `nohup` command to block the `HUP` signal.
 Reconnect a second terminal to the lambda server,
 and in this terminal run the command
 ```
-$ nohup ./shell.sh > output2
+$ nohup ./script.sh > output2
 ```
 Notice that the only difference between this command and the previous section is the use of the `nohup` command.
 Then type `^Z` and run
@@ -332,7 +332,7 @@ $ ps -aux | grep username
 ```
 in the OTHER TERMINAL YOU HAVE OPEN.
 
-Next, close the ssh session that you used to run `shell.sh` by running the command
+Next, close the ssh session that you used to run `script.sh` by running the command
 ```
 $ exit
 ```
@@ -341,8 +341,8 @@ again run the command
 ```
 $ ps -aux | grep username
 ```
-and notice that your `shell.sh` process is still running.
-Use the `kill` command to end your `shell.sh` process.
+and notice that your `script.sh` process is still running.
+Use the `kill` command to end your `script.sh` process.
 
 When you launch long-running processes on the lambda-server,
 you will have to use the `nohup` command to ensure that they continue to run after you have disconnected.

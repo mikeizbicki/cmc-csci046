@@ -36,7 +36,7 @@ and I encourage you to use vim to explore the dataset.
 
 Complete the following tasks to familiarize yourself with the sample code:
 
-1. Fork the [twitter\_analysis](https://github.com/mikeizbicki/binary_search) repo and clone it onto the lambda-server.
+1. Fork the [twitter\_coronavirus](https://github.com/mikeizbicki/twitter_coronavirus) repo and clone it onto the lambda-server.
    (Notice that this repo does not have travis tests.)
 
 1. **Mapping:**
