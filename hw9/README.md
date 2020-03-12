@@ -5,7 +5,7 @@ You will scan all geotagged tweets sent after November 2019 to monitor for the s
 **Due date:** 
 Thursday, 30 April
 
-(This homework will require LOTs of computation time.  
+(This homework will require LOTs of computation time.
 I recommend that you have your code working by 9 April to ensure that you will have enough time to execute the code.)
 
 **Learning Objectives:**

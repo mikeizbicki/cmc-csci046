@@ -3,7 +3,7 @@
 You will implement several variations of the binary search algorithm.
 
 **Due date:**
-Thursday, 5 March
+Sunday, March 8 by midnight
 (you may suggest an alternative due date by submitting a pull request;
 I will not accept the pull request unless you have completed 2 of the 3 required functions)
 
