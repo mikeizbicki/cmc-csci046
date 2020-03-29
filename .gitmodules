@@ -1,18 +1,21 @@
 [submodule "hw1/fraction"]
-	path = hw1/fraction
+	path = hw01/fraction
 	url = https://github.com/mikeizbicki/fraction
 [submodule "hw3/html_validator"]
-	path = hw3/html_validator
+	path = hw03/html_validator
 	url = https://github.com/mikeizbicki/html_validator
 [submodule "hw4/word_ladder"]
-	path = hw4/word_ladder
+	path = hw04/word_ladder
 	url = https://github.com/mikeizbicki/word_ladder
 [submodule "hw6/binary_search"]
-	path = hw6/binary_search
+	path = hw06/binary_search
 	url = https://github.com/mikeizbicki/binary_search
 [submodule "hw7/sorting"]
-	path = hw7/sorting
+	path = hw07/sorting
 	url = https://github.com/mikeizbicki/sorting
 [submodule "hw9/twitter_coronavirus"]
-	path = hw9/twitter_coronavirus
+	path = hw09/twitter_coronavirus
 	url = https://github.com/mikeizbicki/twitter_coronavirus
+[submodule "hw10/trees"]
+	path = hw10/trees
+	url = https://github.com/mikeizbicki/trees
