@@ -3,7 +3,7 @@
 You will implement the merge and quick sort algorithms.
 
 **Due date:**
-Sunday, 27 March at midnight
+Sunday, 29 March at midnight
 
 **Learning Objectives:**
 
