@@ -19,3 +19,6 @@
 [submodule "hw10/trees"]
 	path = hw10/trees
 	url = https://github.com/mikeizbicki/trees
+[submodule "hw11/trees"]
+	path = hw11/trees
+	url = https://github.com/mikeizbicki/trees
