@@ -10,10 +10,10 @@ but linear runtime in the worst case.)
 The material in these videos corresponds to [Section 7.15 - 7.17](https://runestone.academy/runestone/books/published/pythonds/Trees/toctree.html) in the textbook.
 
 1. **Essential:** The following series of videos by Rob Edwards explains the BST operations:
-1. [Rotations 1](https://www.youtube.com/watch?v=M0Y3kDuyUCU&list=PLpPXw4zFa0uKKhaSz87IowJnOTzh9tiBk&index=56)
-1. [Rotations 2](https://www.youtube.com/watch?v=NczBLeco6XA&list=PLpPXw4zFa0uKKhaSz87IowJnOTzh9tiBk&index=57)
-1. [The AVL Tree](https://www.youtube.com/watch?v=-9sHvAnLN_w&list=PLpPXw4zFa0uKKhaSz87IowJnOTzh9tiBk&index=59)
-1. [Insertion into AVL Tree](https://www.youtube.com/watch?v=7m94k2Qhg68&list=PLpPXw4zFa0uKKhaSz87IowJnOTzh9tiBk&index=65)
+    1. [Rotations 1](https://www.youtube.com/watch?v=M0Y3kDuyUCU&list=PLpPXw4zFa0uKKhaSz87IowJnOTzh9tiBk&index=56)
+    1. [Rotations 2](https://www.youtube.com/watch?v=NczBLeco6XA&list=PLpPXw4zFa0uKKhaSz87IowJnOTzh9tiBk&index=57)
+    1. [The AVL Tree](https://www.youtube.com/watch?v=-9sHvAnLN_w&list=PLpPXw4zFa0uKKhaSz87IowJnOTzh9tiBk&index=59)
+    1. [Insertion into AVL Tree](https://www.youtube.com/watch?v=7m94k2Qhg68&list=PLpPXw4zFa0uKKhaSz87IowJnOTzh9tiBk&index=65)
 
     Questions:
     1. Given a picture of an AVL tree, you should be able to draw the result of applying the *left rotation* and a *right rotation* operations.

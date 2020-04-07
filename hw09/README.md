@@ -81,7 +81,7 @@ Complete the following tasks to familiarize yourself with the sample code:
    ```
    Now you can visualize the `reduced.lang` file with the command
    ```
-   $ ./src/visualize.py --input_path=reduced.lang
+   $ ./src/visualize.py --input_path=reduced.lang --key='#coronavirus'
    ```
    and this displays the combined result.
 
