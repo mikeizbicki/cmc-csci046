@@ -23,7 +23,7 @@ The material in these videos corresponds to [Section 7.1 - 7.7 and 7.11 - 7.14](
 
     Videos:
     1. [Singly linked lists](https://www.youtube.com/watch?v=FSsriWQ0qYE&list=PL5tcWHG-UPH112e7AN7C-fwDVPVrt0wpV&index=5)
-    1. [Cirvular linked lists](https://www.youtube.com/watch?v=5WoNhm7sOnA&list=PL5tcWHG-UPH112e7AN7C-fwDVPVrt0wpV&index=19)
+    1. [Circular linked lists](https://www.youtube.com/watch?v=5WoNhm7sOnA&list=PL5tcWHG-UPH112e7AN7C-fwDVPVrt0wpV&index=19)
     1. [Doubly linked lists](https://www.youtube.com/watch?v=8kptHdreaTA&list=PL5tcWHG-UPH112e7AN7C-fwDVPVrt0wpV&index=24)
 
 1. **Essential.** [Binary Trees in Python: Introduction and Traversal Algorithms](https://www.youtube.com/watch?v=6oL-0TdVy28&list=PL5tcWHG-UPH112e7AN7C-fwDVPVrt0wpV&index=34)
