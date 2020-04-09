@@ -33,7 +33,7 @@ This homework builds off of the `trees` repo for hw10.
     ```
     **NOTE:**
     If you do not see the `origin/avl` line in the output above,
-    then the remaining lines below probably won't work.
+    then the `git pull` command below probably won't work.
     [Issue #71](https://github.com/mikeizbicki/cmc-csci046/issues/71) contains a solution.
     
     To incorporate the origin's `avl` branch into your own,
