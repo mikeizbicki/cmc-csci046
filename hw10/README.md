@@ -4,7 +4,7 @@ You will implement a binary search tree.
 Future assignments will build off of the code in this assignment to implement two more data structures called AVL trees and heaps.
 
 **Due date:**
-Suggested: Wednesday, 8 April 
+Suggested: 8 April 
 
 **Learning Objectives:**
 
