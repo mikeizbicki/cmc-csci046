@@ -3,7 +3,7 @@
 You will implement an extension to the binary search tree called the AVL tree.
 
 **Due date:**
-Sunday, 12 April at midnight
+Tuesday, 14 April at midnight
 
 **Learning Objectives:**
 
