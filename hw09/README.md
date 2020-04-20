@@ -117,11 +117,14 @@ Complete the following tasks:
 
    For each hashtag, you should create an output file in your repo using output redirection
    ```
-   $ ./src/visualize --input_path=PATH --key=HASHTAG | head > viz/HASHTAG
+   $ ./src/visualize.py --input_path=PATH --key=HASHTAG | head > viz/HASHTAG
    ```
    but replace `PATH` with the path to the output of your `reduce.py` file and `HASHTAG` is replaced with the hashtag you are analyzing.
 
 1. Commit all of your code and visualization output files to your github repo and push the results to github.
+    You must edit the `README.md` file to provide a brief explanation of your results.
+    This explanation should be suitable for a future employer to look at while they are interviewing you to get a rough idea of what you accomplished.
+    (And you should tell them about this in your interviews!)
 
 ## Extra credit
 

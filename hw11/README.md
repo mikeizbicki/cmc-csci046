@@ -3,7 +3,8 @@
 You will implement an extension to the binary search tree called the AVL tree.
 
 **Due date:**
-Sunday, 12 April at midnight
+~~Tuesday, 14 April at midnight~~
+Friday, 17 April at midnight
 
 **Learning Objectives:**
 
@@ -31,6 +32,11 @@ This homework builds off of the `trees` repo for hw10.
     origin/avl
     origin/master
     ```
+    **NOTE:**
+    If you do not see the `origin/avl` line in the output above,
+    then the `git pull` command below probably won't work.
+    [Issue #71](https://github.com/mikeizbicki/cmc-csci046/issues/71) contains a solution.
+    
     To incorporate the origin's `avl` branch into your own,
     issue the following pull request:
     ```
