@@ -7,14 +7,16 @@ Instead, the obey the "min-heap" property:
 the value of a parent must be less than or equal to the children.
 Heaps are also sometimes called priority queues.
 
-This table summarizes the differences between the three binary tree structures runtimes:
+This table summarizes the differences between the data structures we've seen so far:
 
-|               | `insert`  | `find`    | `find_smallest`   | `remove`  | `remove_min`  | 
-| ------------- |  -------- | --------- | ----------------- | --------- | ------------- |
-| BST (worst)   | ϴ(n)      | ϴ(n)      | ϴ(n)              | ϴ(n)      | ϴ(n)          |  
-| BST (ave)     | ϴ(log n)  | ϴ(log n)  | ϴ(log n)          | ϴ(log n)  | ϴ(log n)      |  
-| AVLTree       | ϴ(log n)  | ϴ(log n)  | ϴ(log n)          | ϴ(log n)  | ϴ(log n)      |  
-| Heap          | ϴ(log n)  | ---       | ϴ(1)              | ---       | ϴ(log n)      |  
+|                 | `insert`  | `find`    | `find_smallest`   | `remove`  | `remove_min`  | 
+| --------------- |  -------- | --------- | ----------------- | --------- | ------------- |
+| list (sorted)   | ϴ(1)      | ϴ(n)      | ϴ(n)              | ϴ(n)      | ϴ(n)          |  
+| list (unsorted) | ϴ(n)      | ϴ(log n)  | ϴ(log n)          | ϴ(n)      | ϴ(n)          |  
+| BST (worst)     | ϴ(n)      | ϴ(n)      | ϴ(n)              | ϴ(n)      | ϴ(n)          |  
+| BST (ave)       | ϴ(log n)  | ϴ(log n)  | ϴ(log n)          | ϴ(log n)  | ϴ(log n)      |  
+| AVLTree         | ϴ(log n)  | ϴ(log n)  | ϴ(log n)          | ϴ(log n)  | ϴ(log n)      |  
+| Heap            | ϴ(log n)  | ---       | ϴ(1)              | ---       | ϴ(log n)      |  
 
 Heaps can be implemented in two ways:
 1. using an array
