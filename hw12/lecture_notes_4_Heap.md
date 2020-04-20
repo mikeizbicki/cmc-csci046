@@ -13,8 +13,8 @@ This table summarizes the differences between the data structures we've seen so 
 | --------------- |  -------- | --------- | ----------------- | --------- | ------------- |
 | list (unsorted) | ϴ(1)      | ϴ(n)      | ϴ(n)              | ϴ(n)      | ϴ(n)          |  
 | list (sorted)   | ϴ(n)      | ϴ(log n)  | ϴ(log n)          | ϴ(n)      | ϴ(n)          |  
-| BST (worst)     | ϴ(n)      | ϴ(n)      | ϴ(n)              | ϴ(n)      | ϴ(n)          |  
 | BST (ave)       | ϴ(log n)  | ϴ(log n)  | ϴ(log n)          | ϴ(log n)  | ϴ(log n)      |  
+| BST (worst)     | ϴ(n)      | ϴ(n)      | ϴ(n)              | ϴ(n)      | ϴ(n)          |  
 | AVLTree         | ϴ(log n)  | ϴ(log n)  | ϴ(log n)          | ϴ(log n)  | ϴ(log n)      |  
 | Heap            | ϴ(log n)  | ---       | ϴ(1)              | ---       | ϴ(log n)      |  
 
