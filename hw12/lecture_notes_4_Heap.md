@@ -14,7 +14,7 @@ This table summarizes the differences between the three binary tree structures r
 | BST (worst)   | ϴ(n)      | ϴ(n)      | ϴ(n)              | ϴ(n)      | ϴ(n)          |  
 | BST (ave)     | ϴ(log n)  | ϴ(log n)  | ϴ(log n)          | ϴ(log n)  | ϴ(log n)      |  
 | AVLTree       | ϴ(log n)  | ϴ(log n)  | ϴ(log n)          | ϴ(log n)  | ϴ(log n)      |  
-| Heap          | ϴ(log n)  | ---       | ϴ(1)              | ---       | ϴ(1)          |  
+| Heap          | ϴ(log n)  | ---       | ϴ(1)              | ---       | ϴ(log n)      |  
 
 Heaps can be implemented in two ways:
 1. using an array
