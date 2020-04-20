@@ -11,8 +11,8 @@ This table summarizes the differences between the data structures we've seen so 
 
 |                 | `insert`  | `find`    | `find_smallest`   | `remove`  | `remove_min`  | 
 | --------------- |  -------- | --------- | ----------------- | --------- | ------------- |
-| list (sorted)   | ϴ(1)      | ϴ(n)      | ϴ(n)              | ϴ(n)      | ϴ(n)          |  
-| list (unsorted) | ϴ(n)      | ϴ(log n)  | ϴ(log n)          | ϴ(n)      | ϴ(n)          |  
+| list (unsorted) | ϴ(1)      | ϴ(n)      | ϴ(n)              | ϴ(n)      | ϴ(n)          |  
+| list (sorted)   | ϴ(n)      | ϴ(log n)  | ϴ(log n)          | ϴ(n)      | ϴ(n)          |  
 | BST (worst)     | ϴ(n)      | ϴ(n)      | ϴ(n)              | ϴ(n)      | ϴ(n)          |  
 | BST (ave)       | ϴ(log n)  | ϴ(log n)  | ϴ(log n)          | ϴ(log n)  | ϴ(log n)      |  
 | AVLTree         | ϴ(log n)  | ϴ(log n)  | ϴ(log n)          | ϴ(log n)  | ϴ(log n)      |  
