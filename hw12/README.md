@@ -34,14 +34,14 @@ This homework builds off of the `trees` repo for hw10.
     ```
     and you should see output that looks like
     ```
-    origin/avl
-    origin/heap
-    origin/master
+    upstream/avl
+    upstream/heap
+    upstream/master
     ```
-    To incorporate the `origin`'s `heap` branch into your own,
+    To incorporate the `upstream`'s `heap` branch into your own,
     issue the following pull request:
     ```
-    $ git pull origin heap
+    $ git pull upstream heap
     ```
 
 2. Edit the `Trees/Heap.py` file so that all the test cases pass.
