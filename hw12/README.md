@@ -3,7 +3,7 @@
 You will implement an extension to the binary tree called the heap.
 
 **Due date:**
-Tuesday, 28 April at midnight
+Thursday, 30 April at midnight
 
 **Learning Objectives:**
 
