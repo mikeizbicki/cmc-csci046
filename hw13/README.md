@@ -3,7 +3,7 @@
 You will create a pypi package containing all of your code from your `tree` repo.
 
 **Due date:**
-Tuesday, 6 May at midnight
+Tuesday, 5 May at midnight
 
 **Learning Objectives:**
 
