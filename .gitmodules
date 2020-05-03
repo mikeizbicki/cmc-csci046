@@ -25,3 +25,6 @@
 [submodule "hw12/trees"]
 	path = hw12/trees
 	url = https://github.com/mikeizbicki/trees
+[submodule "hw14/risk"]
+	path = hw14/risk
+	url = https://github.com/mikeizbicki/risk
