@@ -1,10 +1,7 @@
 # Unix/Git Tutorial
 
 This tutorial will walk you through how basic unix and git commands work.
-You should complete this tutorial by typing all commands within code blocks into your terminal.
-
-You're strongly encouraged to work with the other students near you during this tutorial.
-In the travis section of this homework assignment, you'll need to collaborate with 5 other students.
+You should complete this tutorial on the lambda server by typing all commands within code blocks into your terminal.
 
 ## Creating your first repo
 
@@ -13,6 +10,12 @@ Create a folder named `firstrepo` and `cd` into it:
 ```
 $ mkdir firstrepo
 $ cd firstrepo
+```
+
+Verify that the folder is empty by running
+```
+$ ls
+$ ls -a
 ```
 
 This folder will be the home of your first git repository.
@@ -56,10 +59,11 @@ $ ls -l --full-time
 ```
 
 Notice how the timestamp in the first `ls` is different than the timestamp in the second `ls`.
-
-**EXERCISE:**
-Run both the commands `ls -l` and `ls -l --full-time` and compare the output.
-Can you tell what the difference between these two commands is?
+Now run the command
+```
+$ ls -l
+```
+Can you figure out what the `--full-time` flag did?
 
 We've created our first file, but git doesn't know about it yet.
 Run the command:
@@ -117,7 +121,7 @@ Let's add some actual code to our project.
 Use vim to create a file `message.py` with the following code:
 
 ```
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
 def main(message):
     print(f'{message} world!')
@@ -134,7 +138,7 @@ This python file is using several things that you may not have seen before:
 
 1. The first line in the file above is called the *shebang*.
    This line is not used by python (it is a python comment because it starts with `#`),
-   but is instead used by the UNIX command line to know what program should be used to run this file.
+   but is instead used by the UNIX shell to know what program should be used to run this file.
    In this case, the shebang says to use the `python3` command.
    You will see these shebang lines frequently in python programs,
    but for our purposes you can ignore them.
@@ -147,8 +151,7 @@ This python file is using several things that you may not have seen before:
 
 1. The code above uses python f-strings,
    which is a new feature added into python 3.6.
-   (If you have an older version of python on your computer, you won't be able to use f-strings.)
-   Whenever a string literal begins with `f'`,
+   Whenever a string literal begins with `f`,
    any values within curly braces will be substituted into the string.
    See [this tutorial](https://cito.github.io/blog/f-strings/) if you want to learn more.
 
@@ -226,7 +229,7 @@ $ git commit -m "added the first code"
 If you run the `ls` command again, you will notice that a file called `__pycache__` has appeared in your directory.
 YOU SHOULD NEVER ADD THE `__pycache__` FILE TO A GIT REPO.
 This file contains something called *bytecode* created by the `python3` command to make running programs faster.
-Only plaintext files should every be added into a git repo.
+Only plaintext files should ever be added into a git repo.
 
 Let's make one more commit so we'll have something to play with.
 Run the command:
@@ -237,7 +240,7 @@ $ echo "This program prints \"hello git\"" > README
 
 **NOTE:**
 The `echo` command prints its arguments to a special file called `stdout`.
-By default, `stdout` is the screen.
+By default, `stdout` is your terminal window (called a `tty` in UNIX).
 Thus, running the command `echo this is a test` will print `this is a test` to the screen.
 The `>` command is called output redirection.
 Output redirection changes `stdout` to point to a file, instead of the screen.
@@ -326,7 +329,8 @@ $ ls -l
 Your `message.py` file disappeared!
 All of the files tracked by git have returned to their previous state.
 
-Let's restore all those changes.  Run the command:
+Let's restore all those changes.
+Run the command:
 
 ```
 $ git checkout master
@@ -358,8 +362,10 @@ This branch was created for you automatically when you ran the `git init` comman
 
 One way to think of branches is as a nice label for your commit hashes.
 Your `master` branch currently points to your commit with the message `modified the README`.
-That's why when we ran `git checkout master` above, it restored our project to the state of that commit.
-We could also have used `git checkout [hash]`, if you replaced `[hash]` with the appropriate hash value.
+That's why when we ran `git checkout master` above,
+it restored our project to the state of that commit.
+We could also have used `git checkout [hash]`,
+if you replaced `[hash]` with the appropriate hash value.
 But that's much less convenient.
 When you use `git checkout` in the future, you will usually be using it on branch names.
 
@@ -420,7 +426,7 @@ The only difference is the asterisk has moved.
 Let's modify our `message.py` file so that it asks the user their name before saying hello:
 
 ```
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
 def main(message,input_name):
     if input_name:
@@ -501,7 +507,8 @@ Notice that the contents of `message.py` are different depending on which branch
 We're not done with this feature yet.
 Whenever you add a feature, you should also update the documentation!
 
-Update the `README` file with the command:
+Ensure that you are in the `userinput` branch,
+and update the `README` file with the command:
 
 ```
 $ echo "This program asks the user for their name, then says hello." > README
@@ -551,7 +558,9 @@ None world!
 
 which doesn't make a lot of sense.
 
-To fix this bug, we'll create a `bugfix` branch and check it out:
+To fix this bug, we'll create a `bugfix` branch and check it out.
+Ensure that you are currently on the master branch,
+then run the commands
 
 ```
 $ git branch bugfix
@@ -678,7 +687,7 @@ CONFLICT (content): Merge conflict in message.py
 Automatic merge failed; fix conflicts and then commit the result.
 ```
 
-This error is called a "merge conflict" and is one of the hardest concepts for new git users to understand.
+This error is called a *merge conflict* and is one of the hardest concepts for new git users to understand.
 Why did this happen?
 
 In our `bugfix` branch above, git automatically merged the `message.py` file for us.
@@ -690,7 +699,7 @@ We have to tell git how to do this manually.
 If you inspect the contents of the `message.py` file, you'll see something like:
 
 ```
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
 def main(message,input_name):
     if input_name:
@@ -720,7 +729,8 @@ In git terminology, `HEAD` is the currently checked out branch and refers to the
 And the lines between `=======` and `>>>>>>>> userinput` belong only to the `userinput` branch.
 
 The key to solving a merge conflict is to edit the lines between `<<<<<<<` and `>>>>>>>` to include only the correct information from each branch.
-In our case, we want the `--message` line from the `master` branch, and the `--input_name` line from the `userinput` branch.
+In our case, we want the `--message` line from the `master` branch,
+and the `--input_name` line from the `userinput` branch.
 So we should modify the `message.py` file to be:
 
 ```

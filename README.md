@@ -1,26 +1,42 @@
 # CSCI046: Data Structures and Algorithms
 
+[![](smbc.png)](https://www.smbc-comics.com/comic/hansel-and-gretel)
+
 ## About the Instructor
 
 |||
 |-|-|
-| Name | Mike Izbicki (you can call me Mike) |
+| Name | Mike Izbicki (call me Mike) |
 | Email | mizbicki@cmc.edu |
 | Office | Adams 216 |
-| Office Hours | Monday 9:00-10:00AM, Tuesday/Thursday 2:30-3:30PM, or by appointment ([see my schedule](https://izbicki.me/schedule.html));<br/> if my door is open, feel free to come in |
+| Office Hours | MW 2pm-3pm, or by appointment |
 | Webpage | [izbicki.me](https://izbicki.me) |
 | Research | Machine Learning (see [izbicki.me/research.html](https://izbicki.me/research.html) for some past projects) |
-| Fun Facts | grew up in San Clemente, 7 years in the navy, phd/postdoc at UC Riverside, taught in [DPRK](https://pust.co) |
+
+Fun facts:
+1. grew up in San Clemente
+1. 7 years in the navy
+1. phd/postdoc at UC Riverside
+1. taught in [DPRK](https://pust.co)
+1. My wife is pregnant and due to have a baby early April.
+   This may result in a class session being rescheduled,
+   depending on when the baby decides to come.
 
 ## About the Course
 
-This is a second semester course in computer science designed for students who have previously taken either CS40 at CMC or CS5 at Mudd.
+<center>
+<img width=100% src=map_of_cs.png />
+</center>
 
-This course is required for the computer science sequence,
-and optional for the data science sequence.
-It will be required for the data science major (if/when it gets approved).
+Data structures is the most important course in computer science,
+and many of the "classic" CS interview questions come from this course.
+Mastering this material is the first step towards getting a [high paying CS job](https://www.levels.fyi/).
 
-<!--Data structures is the most important course of any computer science program.-->
+**Who should take this course?**
+
+This is a second semester course in computer science designed for students who have previously taken either CS40 (CMC), CS5 (Mudd), or CS51 (Pomona).
+This course is required for CMC's data science major and the computer science sequence.
+It is optional for the data science sequence.
 
 **Learning Objectives:**
 
@@ -44,13 +60,84 @@ Differences between this course and HMC's CSCI060HM/CSCI070HM:
 
 1. This course does not cover low-level memory management (C/C++ programming languages)
 1. This course is more practical
-1. There is no lab section
+
+This course is NOT an algorithms course.
+Algorithms courses form the "other half" of classic CS interview questions,
+and you should consider taking [CS148 - Graph Algorithms](https://catalog.claremontmckenna.edu/preview_course_nopop.php?catoid=25&coid=31723) after this course.
 
 **Textbook:**
 
-1. [Problem Solving with Algorithms and Data Structures using Python](https://runestone.academy/runestone/books/published/pythonds/index.html) by Brad Miller and David Ranum
-2. [Algorithms](http://algorithmics.lsi.upc.edu/docs/Dasgupta-Papadimitriou-Vazirani.pdf) by Dasgupta, Papadimitriou, and Vazirani
+All of our textbooks are both [free as in beer](https://en.wiktionary.org/wiki/free_as_in_beer) and [free as in speech](https://en.wiktionary.org/wiki/free_as_in_speech):
 
+1. [Problem Solving with Algorithms and Data Structures using Python](https://runestone.academy/runestone/books/published/pythonds/index.html) by Brad Miller and David Ranum
+
+1. [Official Python Documentation](https://docs.python.org/)
+
+**Grades:**
+
+You will have:
+
+1. Weekly labs (worth 2pts each)
+1. Weekly homeworks (worth 10-25 points each)
+1. No midterms, 1 open book final (worth approx. 30 points)
+1. In total, there will be about 250 points in the class.
+
+Historically, the average student needs to spend about 10 hours per week (including class time) to get an A.
+   About 25% of students will either:
+   spend 15-20 hours per week and get an A,
+   or spend 10 hours per week and get a B/C.
+
+Your final grade will be computed according to the following table,
+with one caveat.
+
+| If your grade satisfies          | then you earn |
+| -------------------------------- | ------------- |
+| 95 &le; grade                    | A             |
+| 90 &le; grade < 95               | A-            |
+| 87 &le; grade < 90               | B+            |
+| 83 &le; grade < 87               | B             |
+| 80 &le; grade < 83               | B-            |
+| 77 &le; grade < 80               | C+            |
+| 73 &le; grade < 77               | C             |
+| 70 &le; grade < 73               | C-            |
+| 67 &le; grade < 70               | D+            |
+| 63 &le; grade < 67               | D             |
+| 60 &le; grade < 63               | D-            |
+| 60 > grade                       | F             |
+
+*CAVEAT:*
+In order to get an A/A- in this course,
+you must also complete one of the following two tasks to learn about the history of unix programming:
+
+1. watch the following two documentaries about open source:
+
+    1. [AT&T Archives: The UNIX Operating System](https://www.youtube.com/watch?v=tc4ROCJYbm0) (from 1982; don't watch this until after spring break) 
+
+    1. [RevolutionOS](https://www.youtube.com/watch?v=4vW62KqKJ5A) (from 2001)
+
+    1. [The Internet's Own Boy: The Story of Aaron Swartz](https://www.youtube.com/watch?v=9vz06QO3UkQ) (from 2014)
+
+1. read chapters 1-3 of [The Art of Unix Programming](http://catb.org/~esr/writings/taoup/html/context.html) by ESR
+
+I also strongly recommend that you read through the following advice from famous programmers,
+but it's not required:
+
+1. [Peter Norvig](https://norvig.com/21-days.html) (AI researcher and senior engineer at Google)
+1. [Paul Graham](http://www.paulgraham.com/college.html) (Founder of YCombinator startup incubator); [being a noob](http://paulgraham.com/noob.html)
+1. [Jeff Atwood](https://blog.codinghorror.com/how-to-become-a-better-programmer-by-not-programming/) (Founder of stackoverflow.com)
+1. [Eric Steven Raymond, better known as ESR](http://www.catb.org/esr/faqs/hacker-howto.html) (a famous hacker)
+
+**Late Work Policy:**
+
+You lose 10% on the assignment for each day late.
+If you have extenuating circumstances, contact me in advance of the due date and I may extend the due date for you.
+
+It is usually better to submit a correct assignment late than an incorrect one on time.
+<!--
+2. [Algorithms](http://algorithmics.lsi.upc.edu/docs/Dasgupta-Papadimitriou-Vazirani.pdf) by Dasgupta, Papadimitriou, and Vazirani
+-->
+
+<!--
 **Optional Readings:**
 
 Advice on how to be a good programmer:
@@ -77,15 +164,15 @@ Other technical articles:
 1. [Larry Wall's three virtures of a programmer](http://threevirtues.com/)
 1. [accidentally quadratic blog](https://accidentallyquadratic.tumblr.com/post/161243900944/mercurial-changegroup-application) and a [windows bug caused by an O(n^2) algorithm](https://news.ycombinator.com/item?id=21743424)
 1. [the history of git](https://www.welcometothejungle.com/en/articles/btc-history-git)
-1. [timsort](https://svn.python.org/projects/python/trunk/Objects/listsort.txt) -- Tim's [Zen of Python](http://www.openbookproject.net/books/bpp4awd/_static/ch10/zen.html)
+1. [timsort](https://svn.python.org/projects/python/trunk/Objects/listsort.txt) - Tim's [Zen of Python](http://www.openbookproject.net/books/bpp4awd/_static/ch10/zen.html)
 1. [stackoverflow - why processing sorted arrays is faster even in linear search](https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array)
 
-<!--
 1. [What every programmer should know about floating-point](https://floating-point-gui.de/)
 1. [The lat/lon floating point delusion](https://www.datafix.com.au/BASHing/2019-08-09.html)
--->
-<!--1. [The fallacy of premature optimization](https://ubiquity.acm.org/article.cfm?id=1513451)-->
-<!--1. [Computer Science from the Bottom Up](https://www.bottomupcs.com/index.xhtml)-->
+1. [The fallacy of premature optimization](https://ubiquity.acm.org/article.cfm?id=1513451)
+1. [Computer Science from the Bottom Up](https://www.bottomupcs.com/index.xhtml)
+
+1. https://choosealicense.com/
 
 Library documentation:
 
@@ -94,19 +181,11 @@ Library documentation:
 1. [copy](https://docs.python.org/3/library/copy.html)
 1. [traceback](https://docs.python.org/3/library/traceback.html)
 
-Cheat sheets:
-
-1. [bash](https://files.fosswire.com/2007/08/fwunixref.pdf)
-1. [vim](https://github.com/mikeizbicki/ucr-cs100/blob/class-template/textbook/cheatsheets/vim-cheatsheet.pdf)
-1. [git](https://education.github.com/git-cheat-sheet-education.pdf)
-
 Programming games:
 
 1. https://vim-adventures.com/
 1. The [git game](https://github.com/git-game/git-game) and [git game v2](https://github.com/git-game/git-game-v2)
 1. `typespeed` (type this command on the lambda server)
-
-<!--
 1. [bandit wargames](https://overthewire.org/wargames/bandit/bandit0.html)
 -->
 
@@ -114,52 +193,58 @@ Programming games:
 
 ### Lecture
 
-| Week | Date         | Topic                                           | Reading       |
-| ---- | ------------ | ----------------------------------------------- | ------------- |
-| 1    | Tues, 21 Jan | Intro to shell / vim / git / travis             |               |
-| 1    | Thur, 23 Jan | Intro to shell / vim / git / travis             |               |
-| 2    | Tues, 28 Jan | Intro to shell / vim / git / travis             |               |
-| 2    | Thur, 30 Jan | Python features                                 | MR 1-2        |
-| 3    | Tues, 04 Feb | Analysis I                                      | MR 3, DPV 0.3 |
-| 3    | Thur, 06 Feb | Analysis II                                     | [PythonWiki](https://wiki.python.org/moin/TimeComplexity) |
-| 4    | Tues, 11 Feb | Basic data structures: stack                    | MR 4.1-4.9    |
-| 4    | Thur, 13 Feb | Basic data structures: queue                    | MR 4.10-4.23  |
-| 5    | Tues, 18 Feb | Recursion I                                     | MR 5.1-5.10   |
-| 5    | Thur, 20 Feb | Recursion II                                    |               |
-| 6    | Tues, 25 Feb | Sorting: binary search                          | MR 6.3-6.4    |
-| 6    | Thur, 27 Feb | Sorting: algorithms I                           | MR 6.6-6.12   |
-| 7    | Tues, 03 Mar | Sorting: algorithms II                          |               |
-| 7    | Thur, 05 Mar | Sorting: hash functions                         | MR 6.5        |
-| 8    | Tues, 10 Mar | Recursion: divide and conquer                   |               |
-| 8    | Thur, 12 Mar | Recursion: divide and conquer                   |               |
-| 9    | Tues, 17 Mar | **NO CLASS:** Spring Break                      |               |
-| 9    | Thur, 19 Mar | **NO CLASS:** Spring Break                      |               |
-| 10   | Tues, 24 Mar | Trees I                                         | MR 7.1-7.7    |
-| 10   | Thur, 26 Mar | Trees II                                        |               |
-| 11   | Tues, 31 Mar | Trees: BST                                      | MR 7.11-7.14  |
-| 11   | Thur, 02 Apr | Trees: AVL                                      | MR 7.15-7.17  |
-| 12   | Tues, 07 Apr | Trees: Heaps                                    | MR 7.8-7.10   |
-| 12   | Thur, 09 Apr | Graphs: representations                         | MR 8.1-8.6    |
-| 13   | Tues, 14 Apr | Graphs: traversals                              | MR 8.7-8.18   |
-| 13   | Thur, 16 Apr | Graphs: Dijkstra                                | MR 8.20-8.21  |
-| 14   | Tues, 21 Apr | Graphs: Prim                                    | MR 8.22       |
-| 14   | Thur, 23 Apr | Graphs: Kruskal                                 |               |
-| 15   | Tues, 28 Apr | Recursion: dynamic programming (matrix mul)     | DPV 6.5       |
-| 15   | Thur, 30 Apr | Recursion: dynamic programming (knapsack)       | DPV 6.4       |
-| 16   | Thur, 05 May | P vs NP                                         | DPV 8.1, 8.2  |
-| 16   | Thur, 07 May | **NO CLASS:** Reading Day                       |               |
+| Week | Date        | Topic                                                |
+| ---- | ----------- | ---------------------------------------------------- |
+| 0    | M, 25 Jan   | Unix + open source workflow                          |
+| 0    | W, 27 Jan   | Unix + open source workflow                          |
+| 1    | M, 01 Feb   | Intermediate Python Features                         |
+| 1    | W, 03 Feb   | Intermediate Python Features                         | <!-- Fri, 5 Feb is last day to add/drop -->
+| 2    | M, 08 Feb   | Algorithm Analysis                                   | 
+| 2    | W, 10 Feb   | Algorithm Analysis                                   | 
+| 3    | M, 15 Feb   | Stacks + Queues                                      |
+| 3    | W, 17 Feb   | Stacks + Queues                                      |
+| 4    | M, 22 Feb   | Recursion                                            |
+| 4    | W, 24 Feb   | Recursion                                            | 
+| 5    | M, 01 Mar   | Sorting                                              | <!-- unlogged tables -->
+| 5    | W, 03 Mar   | Sorting                                              |
+| 6    | M, 08 Mar   | **Spring Break**                                     |
+| 6    | W, 10 Mar   | **Spring Break**                                     |
+| 7    | M, 15 Mar   | Parallel Algorithms                                  |
+| 7    | W, 17 Mar   | Parallel Algorithms                                  |
+| 8    | M, 22 Mar   | Trees                                                |
+| 8    | W, 24 Mar   | Trees                                                |
+| 9    | M, 29 Mar   | BST Trees                                            |
+| 9    | W, 31 Mar   | BST Trees                                            | <!-- Cesar chavez day, observed on Friday -->
+| 10   | M, 05 Apr   | AVL Trees                                            |
+| 10   | W, 07 Apr   | AVL Trees                                            |
+| 11   | M, 12 Apr   | Heap Trees                                           |
+| 11   | W, 14 Apr   | Heap Trees                                           |
+| 12   | M, 19 Apr   | Generators                                           |
+| 12   | W, 21 Apr   | Generators                                           |
+| 13   | M, 26 Apr   | Graphs                                               |
+| 13   | W, 28 Apr   | Graphs                                               |
+| 14   | M, 03 May   | Graphs                                               |
+| 14   | W, 05 May   | Graphs                                               |
 
 <!--
-More reading:
-https://choosealicense.com/
-RSA: DPV 1.4.2
-(karatsuba) DPV 1.1, 2.1
-(strassen)  DPV 2.5
--->
-
 ### Assignments
 
 We will have approximately 1 assignment per week in this course according to the following schedule.
+
+1: Git
+2: Runtime Analysis
+3: HTML_validator
+4: word_ladder
+5: scope and memory management
+6: binary search
+7: sorting
+8: midterm
+9: twitter
+10: binary search tree
+11: AVL tree
+12: Heap
+13: pypi
+14: risk
 
 | Assignment | Type    | Points | Topic                           |
 | ---------- | ------- | ------ | ------------------------------- |
@@ -179,61 +264,47 @@ We will have approximately 1 assignment per week in this course according to the
 | 14         | project | 10     | Dijkstra                        |
 | 15         | project | 10     | Knapsack                        |
 | 16         | test    | 20     | Final                           |
-
-**Late Work Policy:**
-
-You lose 10% on the assignment for each day late.
-If you have extenuating circumstances, contact me in advance of the due date and I may extend the due date for you.
-
-It is usually better to submit a correct assignment late than an incorrect one on time.
-
-**Collaboration Policy:**
-
-For project/math assignments:
-you may use any resources you like and discuss with whomever you like.
-Learning the material in this course is your responsibility,
-and I don't want to put any artificial restrictions on any of the assignments that will get in your way.
-
-
-Tests will be take home and open notes.
-The only restriction is you are not allowed to talk to other students in the class about the contents.
-
-**Technology Policy:**
-
-You must use either vim or emacs to complete all programming assignments.
-
-You must not share your lambda-server password with anyone else.
-
-**Extra credit:**
-
-If you submit a pull request to this repo that gets accepted (e.g. you fix a typo),
-then you will get extra credit.
-The first time you do this, you will get 1 point of extra credit;
-subsequent times you will get less.
-
-If you make a contribution to an open source project during the course,
-you will get extra credit depending on the magnitude of your contribution.
-See https://up-for-grabs.net for some projects that are looking for new contributors.
-
-<!--
-Possible other assignments:
-programming: analyze all tweets
-math: NP-hard problems
-programming: learn git
-programming, fibonacci divide and conquer (see Dasupta 0.4)
 -->
 
-<!--
-## Self Grading
+## Technology Policy
 
-[An outlook on self-assessment of homework assignments in higher mathematics education](https://link.springer.com/article/10.1186/s40594-018-0146-z)
+1. You must complete all programming assignments on the lambda server.
 
-Also *Your* Job to Learn! Helping Students Reflect on their Learning Progress
+1. You must use either vim or emacs to complete all programming assignments.
+   In particular, you may not use VSCode, IDLE, or PyCharm for any reason.
 
-Should you Allow your Students to Grade their own Homework?
+1. You must not share your lambda-server password with anyone else.
 
-Peer and Self Assessment in Massive Online Classes
--->
+Violations of any of these policies will be treated as academic integrity violations.
+
+## Collaboration Policy
+
+You are encouraged to discuss all labs and homeworks with other students,
+subject to the following constraints:
+
+1. you must be the person typing in all code for your assignments, and
+1. you must not copy another student's code.
+
+You may use any online resources you like as references.
+
+**WARNING:**
+All material in this class is cumulative.
+If you work "too closely" with another student on an assignment,
+you won't understand how to complete subsequent assignments,
+and you will quickly fall behind.
+You should view collaboration as a way to improve your understanding,
+not as a way to do less work.
+
+**You are ultimately responsible for ensuring you learn the material!**
+
+## Accommodations for Disabilities
+
+I've tried to design the course to be as accessible as possible for people with disabilities.
+(We'll talk a bit about how to design accessible software in class too!)
+If you need any further accommodations, please ask.
+
+I want you to succeed and I'll make every effort to ensure that you can.
+
 <!--
 
 ## Notes
@@ -251,11 +322,3 @@ The Recursion/scope lecture was very disorganized because I tried to improvise t
 I need to add more structure to lectures.
 Also, draw the frames with both line numbers and local/global variables.
 -->
-
-## Accommodations for Disabilities
-
-I want you to succeed and I'll make every effort to ensure that you can.
-If you need any accommodations, please ask.
-
-If you have already established accommodations with Disability Services at CMC, please communicate your approved accommodations to me at your earliest convenience so we can discuss your needs in this course. You can start this conversation by forwarding me your accommodation letter. If you have not yet established accommodations through Disability Services, but have a temporary health condition or permanent disability (conditions include but are not limited to: mental health, attention-related, learning, vision, hearing, physical or health), you are encouraged to contact Assistant Dean for Disability Services & Academic Success, Kari Rood, at disabilityservices@cmc.edu to ask questions and/or begin the process. General information and the Request for Accommodations form can be found at the CMC DOS Disability Service’s website. Please note that arrangements must be made with advance notice in order to access the reasonable accommodations. You are able to request accommodations from CMC Disability Services at any point in the semester. Be mindful that this process may take some time to complete and accommodations are not retroactive. It is important to Claremont McKenna College to create inclusive and accessible learning environments consistent with federal and state law. If you are not a CMC student, please connect with the Disability Services Coordinator on your campus regarding a similar process.
-
