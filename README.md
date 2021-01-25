@@ -14,10 +14,10 @@
 | Research | Machine Learning (see [izbicki.me/research.html](https://izbicki.me/research.html) for some past projects) |
 
 Fun facts:
-1. grew up in San Clemente
-1. 7 years in the navy
-1. phd/postdoc at UC Riverside
-1. taught in [DPRK](https://pust.co)
+1. Grew up in San Clemente
+1. 7 years in the Navy
+1. PhD/Postdoc at UC Riverside
+1. Taught in [DPRK](https://pust.co)
 1. My wife is pregnant and due to have a baby early April.
    This may result in a class session being rescheduled,
    depending on when the baby decides to come.
@@ -32,7 +32,7 @@ Data structures is the most important course in computer science,
 and many of the "classic" CS interview questions come from this course.
 Mastering this material is the first step towards getting a high paying CS job.
 See:
-1. https://www.levels.fyi
+1. [SWE Salaries at "Big Tech" firms](https://www.levels.fyi)
 1. [tech employers illegally collude to reduce salaries](https://en.wikipedia.org/wiki/High-Tech_Employee_Antitrust_Litigation)
 
 **Who should take this course?**
