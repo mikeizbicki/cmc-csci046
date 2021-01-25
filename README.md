@@ -30,7 +30,10 @@ Fun facts:
 
 Data structures is the most important course in computer science,
 and many of the "classic" CS interview questions come from this course.
-Mastering this material is the first step towards getting a [high paying CS job](https://www.levels.fyi/).
+Mastering this material is the first step towards getting a high paying CS job.
+See:
+1. https://www.levels.fyi
+1. [tech employers illegally collude to reduce salaries](https://en.wikipedia.org/wiki/High-Tech_Employee_Antitrust_Litigation)
 
 **Who should take this course?**
 
