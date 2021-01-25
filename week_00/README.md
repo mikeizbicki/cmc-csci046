@@ -8,7 +8,7 @@
 
 ## Lecture
 
-**Learning Objectives:**
+We will cover how to
 
 1. work on a remote unix server
 1. use the git version control system
@@ -44,11 +44,19 @@ In particular, Windows is not a UNIX operating system.
 
 ## Lab
 
-Pre-lab work:
+**Due Date:**
+
+Labs are always due on midnight of the Sunday of the week that they are assigned (i.e. January 31 for this lab).
+If you either attend the class lab session or collaborate with another student by completing the lab together over zoom, then you get a 48 hour extension until the following Tuesday at midnight (i.e. February 2 for this lab).
+
+Weekly homeworks have the same due dates and extension policies.
+
+
+**Pre-lab work:**
 
 1. Create a GitHub account if you do not already have one.
    Log in, and press the "watch" button at the top of this page.
-   Read and follow the instructions in Issue #1: the meet and greet thread.
+   Read and follow the instructions in [the meet and greet issue](https://github.com/mikeizbicki/cmc-csci046/issues/137).
 
 1. Log in to the lambda server.
    Run the command
@@ -63,17 +71,16 @@ Pre-lab work:
    The first 3 levels are free, but you have to pay to continue playing the game.
    Anyone who completes the entire game gets +1 point extra credit.
 
-1. (Optional)
-   Run the command
+**Instructions:**
+
+1. Run the command
    ```
    $ typespeed
    ```
    to test your UNIX typing skills.
    Programmers spend lots of time at the keyboard,
    and so it pays to actually be able to type well.
-   Anyone who beats my top score gets +1 point extra credit.
-
-Instructions:
+   Anyone who beats my top score gets +0.1 point extra credit and my undying admiration.
 
 1. Complete the [UNIX/git tutorial](git.md)
 1. Follow [these instructions](lambda-server.md) to update your lambda server account's settings
