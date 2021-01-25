@@ -37,9 +37,14 @@ See:
 
 **Who should take this course?**
 
-This is a second semester course in computer science designed for students who have previously taken either CS40 (CMC), CS5 (Mudd), or CS51 (Pomona).
-This course is required for CMC's data science major and the computer science sequence.
-It is optional for the data science sequence.
+1. This is a second semester course in computer science designed for students who have previously taken either CS40 (CMC), CS5 (Mudd), or CS51 (Pomona).
+
+1. You cannot take this course if you've already taken a data structures course
+   (e.g. Pomona: CS62; HMC: CS60, CS70).
+
+1. This course is required for CMC's **data science major** and the computer science sequence.
+   It is optional for the data science sequence.
+   You cannot take this course if you are a computer science major.
 
 **Learning Objectives:**
 
