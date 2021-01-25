@@ -25,22 +25,7 @@ Print each of these cheatsheets, and have them handy for lecture:
 1. [bash](https://files.fosswire.com/2007/08/fwunixref.pdf)
 1. [vim](https://github.com/mikeizbicki/ucr-cs100/blob/class-template/textbook/cheatsheets/vim-cheatsheet.pdf)
 1. [git](https://education.github.com/git-cheat-sheet-education.pdf)
-
-<!--
-## Background
-
-Version control systems are widely used in industry and in open source projects.
-They are the tool that lets many programmers work together on complex software.
-I don't know what programming language you will use at your future job (it may not even exist yet!),
-but I guarantee you will be using version control.
-Currently, git is the most popular version control system and we will use git in this course for all your software projects.
-
-Git is an example of a UNIX command line tool.
-UNIX is a family of operating systems that are widely popular.
-MacOS and Linux are the two most commonly used UNIX operating systems,
-but there are many other examples.
-In particular, Windows is not a UNIX operating system.
--->
+1. [github pull requests](pull_request.png)
 
 ## Lab
 
@@ -84,4 +69,8 @@ Weekly homeworks have the same due dates and extension policies.
 
 1. Complete the [UNIX/git tutorial](git.md)
 1. Follow [these instructions](lambda-server.md) to update your lambda server account's settings
-1. Complete the [github tutorial](github.md)
+1. Complete the [github pull request assignment](github.md)
+
+**Lab Submission:**
+
+By completing the pull request in the instructions above, you have submitted your lab and will get full credit.
