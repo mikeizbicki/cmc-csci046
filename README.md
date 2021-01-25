@@ -111,7 +111,7 @@ you must also complete one of the following two tasks to learn about the history
 
 1. watch the following two documentaries about open source:
 
-    1. [AT&T Archives: The UNIX Operating System](https://www.youtube.com/watch?v=tc4ROCJYbm0) (from 1982; don't watch this until after spring break) 
+    <!-- 1. [AT&T Archives: The UNIX Operating System](https://www.youtube.com/watch?v=tc4ROCJYbm0) (from 1982; don't watch this until after spring break) -->
 
     1. [RevolutionOS](https://www.youtube.com/watch?v=4vW62KqKJ5A) (from 2001)
 
