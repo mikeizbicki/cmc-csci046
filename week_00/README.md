@@ -73,4 +73,5 @@ Weekly homeworks have the same due dates and extension policies.
 
 **Lab Submission:**
 
-By completing the pull request in the instructions above, you have submitted your lab and will get full credit.
+Submit a link to your pull request in sakai.
+(I need the link since your github usernames are pseudonymous, and I won't know who to give credit for the lab without the link.)
