@@ -1,4 +1,4 @@
-# week 00: UNIX and the open source workflow
+# week 00: unix and the open source workflow
 
 <center>
 <a href="https://www.reddit.com/r/linuxmasterrace/comments/3las1l/dilbert_had_it_right_back_in_1995/">
@@ -62,12 +62,12 @@ Weekly homeworks have the same due dates and extension policies.
    ```
    $ typespeed
    ```
-   to test your UNIX typing skills.
+   to test your unix typing skills.
    Programmers spend lots of time at the keyboard,
    and so it pays to actually be able to type well.
    Anyone who beats my top score gets +0.1 point extra credit and my undying admiration.
 
-1. Complete the [UNIX/git tutorial](git.md)
+1. Complete the [unix/git tutorial](git.md)
 1. Follow [these instructions](lambda-server.md) to update your lambda server account's settings
 1. Complete the [github pull request assignment](github.md)
 
