@@ -279,7 +279,7 @@ We will have approximately 1 assignment per week in this course according to the
 1. You must complete all programming assignments on the lambda server.
 
 1. You must use either vim or emacs to complete all programming assignments.
-   In particular, you may not use VSCode, IDLE, or PyCharm for any reason.
+   In particular, you may not use the GitHub text editor, VSCode, IDLE, or PyCharm for any reason.
 
 1. You must not share your lambda-server password with anyone else.
 
