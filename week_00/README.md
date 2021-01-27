@@ -1,4 +1,4 @@
-# week 00: unixX and the open source workflow
+# week 00: unix and the open source workflow
 
 <center>
 <a href="https://www.reddit.com/r/linuxmasterrace/comments/3las1l/dilbert_had_it_right_back_in_1995/">
