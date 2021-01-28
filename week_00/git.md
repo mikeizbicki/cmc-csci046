@@ -217,6 +217,7 @@ $ python3 -i message.py
 Lines beginning with `$` are shell commands,
 and lines beginning with `>>>` are python commands.
 This is a standard convention that most authors follow.
+In order to exist the Python interpreter, press `CTRL+D` on an empty line.
 
 Now let's add `message.py` to the repo and commit your changes:
 
