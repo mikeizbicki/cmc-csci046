@@ -115,7 +115,7 @@ In this case, we passed the `-m` flag to git, so the commit message was specifie
 If we did not pass a flag, then git would have opened the vim editor for us to type a longer commit message.
 Whether or not you use the `-m` flag is purely a matter of style, but in my experience, it's usually easier to add the flag.
 
-## Creating a UNIX python program
+## Creating a unix python program
 
 Let's add some actual code to our project.
 Use vim to create a file `message.py` with the following code:
@@ -138,7 +138,7 @@ This python file is using several things that you may not have seen before:
 
 1. The first line in the file above is called the *shebang*.
    This line is not used by python (it is a python comment because it starts with `#`),
-   but is instead used by the UNIX shell to know what program should be used to run this file.
+   but is instead used by the unix shell to know what program should be used to run this file.
    In this case, the shebang says to use the `python3` command.
    You will see these shebang lines frequently in python programs,
    but for our purposes you can ignore them.
@@ -240,7 +240,7 @@ $ echo "This program prints \"hello git\"" > README
 
 **NOTE:**
 The `echo` command prints its arguments to a special file called `stdout`.
-By default, `stdout` is your terminal window (called a `tty` in UNIX).
+By default, `stdout` is your terminal window (called a `tty` in unix).
 Thus, running the command `echo this is a test` will print `this is a test` to the screen.
 The `>` command is called output redirection.
 Output redirection changes `stdout` to point to a file, instead of the screen.
