@@ -2,7 +2,7 @@
 
 Oh no!
 The title of this page contains a typo.
-Instead of `Tutorial', it should say `Tutorial`.
+Instead of `Tutrial`, it should say `Tutorial`.
 Fortunately, since this project is hosted on github,
 you can use git to fix this mistake for me.
 
