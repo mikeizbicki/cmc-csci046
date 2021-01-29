@@ -16,7 +16,7 @@
 Fun facts:
 1. grew up in San Clemente
 1. 7 years in the navy
-1. phd/postdoc at UC Riverside
+1. PhD/postdoc at UC Riverside
 1. taught in [DPRK](https://pust.co)
 1. My wife is pregnant and due to have a baby early April.
    This may result in a class session being rescheduled,
