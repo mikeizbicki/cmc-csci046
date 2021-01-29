@@ -1,4 +1,4 @@
-# Github Tutrial
+# Github Tutorial
 
 Oh no!
 The title of this page contains a typo.
