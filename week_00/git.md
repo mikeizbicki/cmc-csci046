@@ -718,7 +718,7 @@ if __name__=='__main__':
 =======
     parser.add_argument('--message',choices=['hello','goodbye'])
     parser.add_argument('--input_name',action='store_true')
->>>>>>> master
+>>>>>>> userinput
     args = parser.parse_args()
     main(args.message,args.input_name)
 ```
