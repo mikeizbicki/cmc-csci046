@@ -8,7 +8,7 @@
 
 ## Lecture
 
-We will cover how to
+We will cover how to:
 
 1. work on a remote unix server
 1. use the git version control system
