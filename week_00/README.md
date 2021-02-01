@@ -67,7 +67,7 @@ Weekly homeworks have the same due dates and extension policies.
    and so it pays to actually be able to type well.
    Anyone who beats my top score gets +0.1 point extra credit and my undying admiration.
 
-1. Complete the [unix/git tutorial](git.md)
+1.	romplete the [unix/git tutorial](git.md)
 1. Follow [these instructions](lambda-server.md) to update your lambda server account's settings
 1. Complete the [github pull request assignment](github.md)
 
