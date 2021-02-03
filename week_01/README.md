@@ -39,7 +39,7 @@ None :)
 
 1. Update your forked repo so that it has all the content of my upstream repo.
    Use the following flowchart to help you get the commands correct:
-   <img width='80%' src=update_downstream.png />
+   <img width='100%' src=update_downstream.png />
    Note that the steps with "negative numbers" are events that have already happened,
    steps with "zero numbers" are events that you only have to run once to setup your local repo.
    Every time you need to perform this procedure, you start with step 1.
