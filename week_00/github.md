@@ -6,7 +6,7 @@ Instead of `Tutrial`, it should say `Tutorial`.
 Fortunately, since this project is hosted on github,
 you can use git to fix this mistake for me.
 
-Follow the 5-step procedure in the figure below to submit a pull request that fixes this typo.
+Follow the 5 step procedure in the figure below to submit a pull request that fixes this typo.
 
 <img width=100% src=pull_request.png />
 
