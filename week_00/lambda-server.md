@@ -31,6 +31,7 @@ Run the following commands to download and install the settings files:
 $ curl https://raw.githubusercontent.com/mikeizbicki/dotfiles/master/.git-prompt.sh > .git-prompt.sh
 $ curl https://raw.githubusercontent.com/mikeizbicki/dotfiles/master/.bashrc        > .bashrc
 $ curl https://raw.githubusercontent.com/mikeizbicki/dotfiles/master/.vimrc         > .vimrc
+$ curl https://raw.githubusercontent.com/mikeizbicki/dotfiles/master/.dircolors     > .dircolors
 ```
 Then logout and login again for the changes to take effect.
 You know your changes worked if your command prompt is now green.
