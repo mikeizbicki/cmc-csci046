@@ -1,7 +1,7 @@
 # week 02: stacks + intro to runtime analysis
 
 <center>
-<img width=80% src=tests2.jpg />
+<img width=60% src=tests2.jpg />
 </center>
 
 ## Lecture
