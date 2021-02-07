@@ -1,3 +1,11 @@
 [submodule "continuous-integration"]
 	path = week_00/homework
 	url = https://github.com/mikeizbicki/continuous-integration
+
+[submodule "functional-python"]
+	path = week_01/functional-python
+	url = https://github.com/mikeizbicki/functional-python
+
+[submodule "html_validator"]
+	path = week_02/html_validator
+	url = https://github.com/mikeizbicki/html_validator
