@@ -6,9 +6,18 @@
 
 ## Lecture
 
-1. stacks
-    1. in python, implemented using lists
-    1. methods:
+1. key vocabulary
+    1. abstract data types (ADT)
+        1. defines an interface
+        1. no implementation details
+    1. data structure
+        1. defines an interface
+        1. includes implementation details
+    1. informally, ADTs are also called data structures
+
+1. stack ADT, list data structure
+    1. in python, always implemented using lists
+    1. interface:
         1. `push`: add something on top; in python, we use the `append` method
         1. `pop`: take something off the top
     1. balanced parenthesis algorithm
@@ -21,6 +30,10 @@
 
 1. runtime analysis
     1. big O/Omega/Theta notation
+
+**Pre-lecture work:**
+
+1. print the `big-o.pdf` file 
 
 ## Lab
 
