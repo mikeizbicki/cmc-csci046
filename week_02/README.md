@@ -6,8 +6,14 @@
 
 ## Lecture
 
+1. announcements
+    1. great job using github issues
+    1. there's no need to submit a pull request with homework assignments
+
+1. first "actual computer science" instead of programming/engineering
+
 1. key vocabulary
-    1. abstract data types (ADT)
+    1. abstract data types (ADTs)
         1. defines an interface
         1. no implementation details
     1. data structure
@@ -21,6 +27,7 @@
         1. `push`: add something on top; in python, we use the `append` method
         1. `pop`: take something off the top
     1. balanced parenthesis algorithm
+        1. key technical interview question
     1. Reference: [textbook chapter 4](https://runestone.academy/runestone/books/published/pythonds/BasicDS/toctree.html)
         1. The textbook has their own library with a specially designed `Stack` object
         1. In the real python world, everyone just uses the `list` type for stacks,
