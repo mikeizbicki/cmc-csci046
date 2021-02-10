@@ -10,7 +10,7 @@
     1. great job using github issues
     1. there's no need to submit a pull request with homework assignments
 
-1. first "actual computer science" instead of programming/engineering
+1. first "actual computer science" instead of "programming"/"engineering"
 
 1. key vocabulary
     1. abstract data types (ADTs)
