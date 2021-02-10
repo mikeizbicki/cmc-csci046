@@ -9,3 +9,7 @@
 [submodule "html_validator"]
 	path = week_02/html_validator
 	url = https://github.com/mikeizbicki/html_validator
+
+[submodule "example-homework"]
+	path = week_02/example-homework
+	url = https://github.com/mikeizbicki/example-homework
