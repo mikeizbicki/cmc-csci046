@@ -2,6 +2,8 @@ def balanced_parens(text):
     '''
     Checks whether every ( has a matching ).
 
+    >>> balanced_parens('')
+    True
     >>> balanced_parens('(()())')
     True
     >>> balanced_parens('(()(()((()))))()(())')
@@ -14,14 +16,21 @@ def balanced_parens(text):
     False
     '''
     stack = []
-    for i, symbol in enumerate(text):
+    for symbol in text:
+    #for i, symbol in enumerate(text):
+    #for i in range(len(text)):
+    #    symbol = text[i]
         if symbol == '(':
             stack.append(symbol)
         else:
             if len(stack) == 0:
                 return False
             stack.pop()
-    return len(stack) == 0
+    #return len(stack) == 0
+    if len(stack) == 0:
+        return True
+    else:
+        return False
 
 
 def balanced_parens2(text):
@@ -46,7 +55,7 @@ def balanced_parens2(text):
     False
     '''
     stack = []
-    for i, symbol in enumerate(text):
+    for symbol in text:
         if symbol in '([{' :
             stack.append(symbol)
         else:
