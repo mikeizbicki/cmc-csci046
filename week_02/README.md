@@ -61,4 +61,5 @@
 
 ## Lab
 
-TBA
+There is no required lab for this week.
+Instead, you just focus on completing the homework assignment (which is worth 12 points this week).
