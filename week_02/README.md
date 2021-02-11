@@ -61,5 +61,16 @@
 
 ## Lab
 
-There is no required lab for this week.
-Instead, you just focus on completing the homework assignment (which is worth 12 points this week).
+1. There is no required lab for this week.
+   Instead, you just focus on completing the homework assignment (which is worth 12 points this week).
+
+1. (optional)
+   Some of my former students at UCR put together two games for testing your git skills.
+   The games have you executing git commands to advance to the next level.
+   The links are:
+
+   1. https://github.com/git-game/git-game
+   1. https://github.com/git-game/git-game-v2
+
+   You can earn +1 point of extra credit for each game that you complete.
+   To claim the extra credit, send me an email telling me how the game ends.
