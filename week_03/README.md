@@ -20,7 +20,7 @@
 
         1. queue = FIFO (first in first out)
 
-        1. <a href=https://gohighbrow.com/stacks-and-queues/><img src=stack-vs-queue.png /></a>
+        1. <a href=https://gohighbrow.com/stacks-and-queues/><img src=stack-v-queue.png /></a>
 
     1. Reference: [textbook chapter 4](https://runestone.academy/runestone/books/published/pythonds/BasicDS/toctree.html)
 
