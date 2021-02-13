@@ -1,7 +1,7 @@
 # week 03: queues + more runtime analysis
 
 <center>
-<img width=60% src=simpsons.jpg />
+<img width=40% src=simpsons.jpg />
 </center>
 
 ## Lecture
