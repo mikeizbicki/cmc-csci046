@@ -315,18 +315,9 @@ I want you to succeed and I'll make every effort to ensure that you can.
 
 <!--
 
-## Notes
+Next class should cover:
 
-The book includes a library called `pythonds` using
-```
-from pythonds.basic import Stack
-```
-This library exists only for the book and is not something widely used.
-The goal of this class is to teach you how real python programmers work,
-and so you should not use this library.
-Instead use a list data structure whenever the book uses a stack.
+and/or short circuiting
+sys.exit() and bash $?
 
-The Recursion/scope lecture was very disorganized because I tried to improvise too much.
-I need to add more structure to lectures.
-Also, draw the frames with both line numbers and local/global variables.
 -->
