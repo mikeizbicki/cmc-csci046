@@ -49,13 +49,13 @@ Secondary objectives:
 ## Schedule
 
 We will follow the course lectures for CMC's data structures course.
-That course is 3 weeks longer, so I've crossed out the lectures we will not have time to cover below.
+That course is 4 weeks longer, so I've ~~crossed out~~ the lectures we will not have time to cover below.
 (I'll still provide the lectures/materials if you'd like to review these topics yourself.)
 
 | Week | Topic                                                |
 | ---- | ---------------------------------------------------- |
-| 0    | Unix + open source workflow                          |
-| 0    | Unix + open source workflow                          |
+| 0    | ~~Unix + open source workflow~~                      |
+| 0    | ~~Unix + open source workflow~~                      |
 | 1    | Intermediate Python Features                         |
 | 1    | Intermediate Python Features                         |
 | 2    | Algorithm Analysis                                   | 
