@@ -207,10 +207,10 @@ Programming games:
 | 0    | W, 27 Jan   | Unix + open source workflow                          |
 | 1    | M, 01 Feb   | Intermediate Python Features                         |
 | 1    | W, 03 Feb   | Intermediate Python Features                         | <!-- Fri, 5 Feb is last day to add/drop -->
-| 2    | M, 08 Feb   | Algorithm Analysis                                   | 
-| 2    | W, 10 Feb   | Algorithm Analysis                                   | 
-| 3    | M, 15 Feb   | Stacks + Queues                                      |
-| 3    | W, 17 Feb   | Stacks + Queues                                      |
+| 2    | M, 08 Feb   | Stacks + Algorithm Analysis                          | 
+| 2    | W, 10 Feb   | Stacks + Algorithm Analysis                          | 
+| 3    | M, 15 Feb   | Queues + Algorithm Analysis                          |
+| 3    | W, 17 Feb   | Queues + Algorithm Analysis                          |
 | 4    | M, 22 Feb   | Recursion                                            |
 | 4    | W, 24 Feb   | Recursion                                            | 
 | 5    | M, 01 Mar   | Sorting                                              | <!-- unlogged tables -->

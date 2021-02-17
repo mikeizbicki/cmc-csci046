@@ -15,7 +15,7 @@ def balanced_parens(text):
     >>> balanced_parens('(()()))')
     False
     '''
-    stack = []
+    stack = deque([])
     for symbol in text:
         if symbol == '(':
             stack.append(symbol)
