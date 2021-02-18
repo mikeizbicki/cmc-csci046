@@ -30,8 +30,7 @@
 
 ## Lab
 
-1. Complete the mid-semester survey if you haven't already:
-   https://docs.google.com/forms/d/1vJ9UnXJVtI9kxI3uobiB3TEh9EuLzfPR2SG4VRod-fU/edit
+1. [Click here to complete the mid-semester survey if you haven't already](https://docs.google.com/forms/d/1vJ9UnXJVtI9kxI3uobiB3TEh9EuLzfPR2SG4VRod-fU/)
 
 1. Check your answers for page 9 of the `big-o.pdf` notes.
    (There is nothing to submit for this problem, it is only for your own reference.)
