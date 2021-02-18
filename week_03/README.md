@@ -30,8 +30,6 @@
 
 ## Lab
 
-You have three tasks for this lab.
-
 1. Complete the mid-semester survey if you haven't already:
    https://docs.google.com/forms/d/1vJ9UnXJVtI9kxI3uobiB3TEh9EuLzfPR2SG4VRod-fU/edit
 
