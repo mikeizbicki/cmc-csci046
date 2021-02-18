@@ -91,9 +91,9 @@
    $ python3 -m timeit -s 'import palindrome; from collections import deque; xs=deque([1]*100000)' 'palindrome.check_palindrome_1(xs)'
    ```
 
-   Complete the following table with actual measured runtimes by substituting the values for `x` and the function in the command above.
+   Complete the following table with actual measured runtimes by substituting the values for `xs` and the function in the command above.
 
-   |                        | `x=("1"*100000)` | `x=([1]*100000)` | `x=deque([1]*100000)` |
+   |                        | `xs=("1"*100000)` | `xs=([1]*100000)` | `xs=deque([1]*100000)` |
    | ---------------------- | ---------------- | ---------------- | --------------------- |
    | `check_palindrome_1`   |                  |                  |                       |
    | `check_palindrome_2`   |                  |                  |                       |
