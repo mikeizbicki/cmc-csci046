@@ -93,10 +93,10 @@
 
    Complete the following table with actual measured runtimes by substituting the values for `x` and the function in the command above.
 
-   |                        | `x=([1]*100000)` | `x=deque([1]*100000)` |
-   | ---------------------- | ---------------- | --------------------- |
-   | `check_palindrome_1`   |                  |                       |
-   | `check_palindrome_2`   |                  |                       |
+   |                        | `x=("1"*100000)` | `x=([1]*100000)` | `x=deque([1]*100000)` |
+   | ---------------------- | ---------------- | ---------------- | --------------------- |
+   | `check_palindrome_1`   |                  |                  |                       |
+   | `check_palindrome_2`   |                  |                  |                       |
 
    You should observe that one of these entries is significantly slower than the others.
    This slow entry should match the asymptotically large entry from the previous problem.
