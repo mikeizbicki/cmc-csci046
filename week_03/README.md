@@ -63,7 +63,8 @@
    | `check_palindrome_2`   |       |        |         |
 
    **HINT:**
-   The run times for indexing into a string are the same as those for indexing a list.
+   The runtimes for indexing into a string are the same as those for indexing a list, which is O(1).
+   The runtime for indexing into a deque is O(n).
 
    **HINT:**
    One of these entries should be asymptotically larger than the others.
