@@ -5,3 +5,15 @@
 [submodule "functional-python"]
 	path = week_01/functional-python
 	url = https://github.com/mikeizbicki/functional-python
+
+[submodule "html_validator"]
+	path = week_02/html_validator
+	url = https://github.com/mikeizbicki/html_validator
+
+[submodule "example-homework"]
+	path = week_02/example-homework
+	url = https://github.com/mikeizbicki/example-homework
+
+[submodule "word_ladder"]
+	path = week_03/word_ladder
+	url = https://github.com/mikeizbicki/word_ladder
