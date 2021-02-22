@@ -1,12 +1,15 @@
 # week 04: recursion + binary search
 
 <center>
-<img src=r_154444_mWjbZ.jpg />
+<img src=r_154444_mWjbZ.jpg width=400px />
 
 <br/>
 <br/>
 
-<img src=Strip-Oracle-v-Google-650-finalenglish-4.jpg />
+"GNU" is the name of an open source project that replicates much of the UNIX operating system.
+It is a recursive acronym standing for "GNU's Not UNIX".
+
+<img src=Strip-Oracle-v-Google-650-finalenglish-4.jpg width=400px />
 </center>
 
 ## Lecture
