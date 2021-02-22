@@ -76,7 +76,7 @@
    ```
    where `SETUP_CODE` is a code snippet that defines some variables, and `CODE_TO_TIME` is a code snippet that will get run 1000000 times in order to determine how fast the code is.
 
-   For example, in order to measure the runtime of the `check_palindrome_1` function on a lest and deque of length 5, we could run the commands:
+   For example, in order to measure the runtime of the `check_palindrome_1` function on a list and deque of length 5, we could run the commands:
    ```
    $ python3 -m timeit -s 'import palindrome; xs=[1,2,3,2,1]' 'palindrome.check_palindrome_1(xs)'
    $ python3 -m timeit -s 'import palindrome; from collections import deque; xs=deque([1,2,3,2,1])' 'palindrome.check_palindrome_1(xs)'
