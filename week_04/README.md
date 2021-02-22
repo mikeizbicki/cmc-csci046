@@ -24,7 +24,8 @@ It is a recursive acronym standing for "GNU's Not UNIX".
         1. A recursive algorithm must have a base case.
         1. A recursive algorithm must change its state and move toward the base case.
         1. A recursive algorithm must call itself, recursively.
-    1. If these laws are not satisfied, then a *stack overflow* occurs
+    1. If these laws are not satisfied, then a *stack overflow* occurs.
+       This is the recursive analogue of an infinite loop.
     1. Advantage of recursion:
         1. Easy to prove that algorithms are correct (CSCI148: algorithms)
         1. Easy to prove the runtime of the algorithm using the [Master theorem](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms))
