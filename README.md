@@ -207,10 +207,10 @@ Programming games:
 | 0    | W, 27 Jan   | Unix + open source workflow                          |
 | 1    | M, 01 Feb   | Intermediate Python Features                         |
 | 1    | W, 03 Feb   | Intermediate Python Features                         | <!-- Fri, 5 Feb is last day to add/drop -->
-| 2    | M, 08 Feb   | Algorithm Analysis                                   | 
-| 2    | W, 10 Feb   | Algorithm Analysis                                   | 
-| 3    | M, 15 Feb   | Stacks + Queues                                      |
-| 3    | W, 17 Feb   | Stacks + Queues                                      |
+| 2    | M, 08 Feb   | Stacks + Algorithm Analysis                          | 
+| 2    | W, 10 Feb   | Stacks + Algorithm Analysis                          | 
+| 3    | M, 15 Feb   | Queues + Algorithm Analysis                          |
+| 3    | W, 17 Feb   | Queues + Algorithm Analysis                          |
 | 4    | M, 22 Feb   | Recursion                                            |
 | 4    | W, 24 Feb   | Recursion                                            | 
 | 5    | M, 01 Mar   | Sorting                                              | <!-- unlogged tables -->
@@ -315,18 +315,9 @@ I want you to succeed and I'll make every effort to ensure that you can.
 
 <!--
 
-## Notes
+Next class should cover:
 
-The book includes a library called `pythonds` using
-```
-from pythonds.basic import Stack
-```
-This library exists only for the book and is not something widely used.
-The goal of this class is to teach you how real python programmers work,
-and so you should not use this library.
-Instead use a list data structure whenever the book uses a stack.
+and/or short circuiting
+sys.exit() and bash $?
 
-The Recursion/scope lecture was very disorganized because I tried to improvise too much.
-I need to add more structure to lectures.
-Also, draw the frames with both line numbers and local/global variables.
 -->
