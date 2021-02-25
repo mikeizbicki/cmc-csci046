@@ -190,10 +190,10 @@ There are two tables for you to fill out and submit to sakai.
    |                            | `array`  | `list`  | `tuple`     | `deque`       |
    | -------------------------- | ---------| --------|------------ | ------------- |
    | `sequential_search_itr`    | O(n)     | O(n)    | O(n)        | O(n)          |
-   | `sequential_search_rec`    | O(n)     | O(n)    | O(n)        | O(n)          |
+   | `sequential_search_rec`    | ---      | ---     | ---         | ---           |
    | `binary_search_itr`        | O(log n) | O(log n)| O(log n)    | O(n)          |
    | `binary_search_rec`        | O(log n) | O(log n)| O(log n)    | O(n)          |
-   | `binary_search_rec2`       | O(log n) | O(n)    | O(n)        | O(n)          |
+   | `binary_search_rec2`       | O(log n) | O(n)    | O(n)        | ---           |
 
 To submit your lab, copy your completed tables with runtimes into sakai.
 There is no need to copy the big-o table.
