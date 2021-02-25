@@ -171,7 +171,7 @@ There are two tables for you to fill out ans submit to sakai.
    |                            | `array`  | `list`  | `tuple`     | `deque`       |
    | -------------------------- | ---------| --------|------------ | ------------- |
    | `sequential_search_itr`    |          |         |             |               |
-   | `sequential_search_rec`    |          |         |             |               |
+   | `sequential_search_rec`    |  ---     | ---     |  ---        |  ---          |
    | `binary_search_itr`        |          |         |             |               |
    | `binary_search_rec`        |          |         |             |               |
    | `binary_search_rec2`       |          |         |             |               |
@@ -181,6 +181,8 @@ There are two tables for you to fill out ans submit to sakai.
    1. for the `list` container, the binary search that relies on slicing is slow
    1. the `tuple` container behaves just like the list container
    1. binary search does not work at all for the `deque` continer
+   1. the `sequential_search_rec` gets a `RecursionError` for large `n` values;
+      this is one of the reasons we tend to prefer for loops over recursion when possible
 
    We will prove all of these statements formally next week in class by showing that the runtimes are:
 
