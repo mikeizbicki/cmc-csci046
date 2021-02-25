@@ -47,7 +47,7 @@ It is a recursive acronym standing for "GNU's Not UNIX".
 ## Lab
 
 The format of this lab is similar to last week's.
-There are two tables for you to fill out ans submit to sakai.
+There are two tables for you to fill out and submit to sakai.
 
 1. First, we will measure just how good the O(log n) runtime for binary search is.
 
