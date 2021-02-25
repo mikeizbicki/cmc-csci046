@@ -174,13 +174,14 @@ There are two tables for you to fill out and submit to sakai.
    | `sequential_search_rec`    |  ---     | ---     |  ---        |  ---          |
    | `binary_search_itr`        |          |         |             |               |
    | `binary_search_rec`        |          |         |             |               |
-   | `binary_search_rec2`       |          |         |             |               |
+   | `binary_search_rec2`       |          |         |             |  ---          |
 
    You should notice that:
    1. for the `array` container, all implementations of binary search work well
    1. for the `list` container, the binary search that relies on slicing is slow
    1. the `tuple` container behaves just like the list container
-   1. binary search does not work at all for the `deque` container
+   1. binary search provides no speed up for the `deque` container;
+      the `deque` container also does not support slicing, and so the `binary_search_rec2` function will have a type error
    1. the `sequential_search_rec` gets a `RecursionError` for large `n` values;
       this is one of the reasons we tend to prefer for loops over recursion when possible
 
