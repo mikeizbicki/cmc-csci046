@@ -47,7 +47,7 @@ It is a recursive acronym standing for "GNU's Not UNIX".
 ## Lab
 
 The format of this lab is similar to last week's.
-There are two tables for you to fill out ans submit to sakai.
+There are two tables for you to fill out and submit to sakai.
 
 1. First, we will measure just how good the O(log n) runtime for binary search is.
 
@@ -180,7 +180,7 @@ There are two tables for you to fill out ans submit to sakai.
    1. for the `array` container, all implementations of binary search work well
    1. for the `list` container, the binary search that relies on slicing is slow
    1. the `tuple` container behaves just like the list container
-   1. binary search does not work at all for the `deque` continer
+   1. binary search does not work at all for the `deque` container
    1. the `sequential_search_rec` gets a `RecursionError` for large `n` values;
       this is one of the reasons we tend to prefer for loops over recursion when possible
 
