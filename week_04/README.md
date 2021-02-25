@@ -180,7 +180,7 @@ There are two tables for you to fill out ans submit to sakai.
    1. for the `array` container, all implementations of binary search work well
    1. for the `list` container, the binary search that relies on slicing is slow
    1. the `tuple` container behaves just like the list container
-   1. binary search does not work at all for the `deque` continer
+   1. binary search does not work at all for the `deque` container
 
    We will prove all of these statements formally next week in class by showing that the runtimes are:
 
