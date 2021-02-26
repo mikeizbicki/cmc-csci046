@@ -17,3 +17,7 @@
 [submodule "word_ladder"]
 	path = week_03/word_ladder
 	url = https://github.com/mikeizbicki/word_ladder
+
+[submodule "binary_search"]
+	path = week_04/binary_search
+	url = https://github.com/mikeizbicki/binary_search

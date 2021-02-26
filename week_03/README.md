@@ -35,7 +35,7 @@
 1. Check your answers for page 9 of the `big-o.pdf` notes.
    (There is nothing to submit for this problem, it is only for your own reference.)
     1. `1 = O(n)`
-    1. `2n log(n) = O(n^2)`
+    1. `3n log(n) = O(n^2)`
     1. `1 = Omega(1/n)`
     1. `log_2 n = Theta(log_3 n)`
     1. `log n = Omega(1/log n)`
@@ -76,7 +76,7 @@
    ```
    where `SETUP_CODE` is a code snippet that defines some variables, and `CODE_TO_TIME` is a code snippet that will get run 1000000 times in order to determine how fast the code is.
 
-   For example, in order to measure the runtime of the `check_palindrome_1` function on a lest and deque of length 5, we could run the commands:
+   For example, in order to measure the runtime of the `check_palindrome_1` function on a list and deque of length 5, we could run the commands:
    ```
    $ python3 -m timeit -s 'import palindrome; xs=[1,2,3,2,1]' 'palindrome.check_palindrome_1(xs)'
    $ python3 -m timeit -s 'import palindrome; from collections import deque; xs=deque([1,2,3,2,1])' 'palindrome.check_palindrome_1(xs)'
