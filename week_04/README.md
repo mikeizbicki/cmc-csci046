@@ -157,10 +157,10 @@ There are two tables for you to fill out and submit to sakai.
    If it's not obvious to you how these commands would generate different output if `xs` were a list,
    then you should also run them for `xs = [1, 2, 3, 4, 5]` before continuing.
 
-   The following terminal command measures the runtime of the `binary_search_itr` command from the `notes.py` file on an array of length `n=100000`:
+   The following terminal command measures the runtime of the `binary_search_itr` command from the `notes.py` file on an array of length `n=100000000`:
    ```
    $ python3 -m timeit \
-        -s 'import notes; import numpy; n = 100000; xs = numpy.array(range(-n,n))' \
+        -s 'import notes; import numpy; n = 100000000; xs = numpy.array(range(-n,n))' \
         'notes.binary_search_itr(xs,5)'
    ```
 
