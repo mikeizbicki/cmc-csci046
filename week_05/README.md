@@ -1,7 +1,7 @@
 # week 05: recursion + sorting
 
 <center>
-<img src=1612627667-20210206.png />
+<img src=1612627667-20210206.png width=400px />
 </center>
 
 Other sorting comics:
