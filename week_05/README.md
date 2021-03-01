@@ -49,14 +49,16 @@ Other sorting comics:
 Use the master theorem to solve the following recurrence relations.
 Write your answer in Theta notation.
 
-1. T(n) = T(n/2) + n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(this is the runtime of the bad binary search)
-1. T(n) = T(n/2) + 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(this is the runtime of the correct binary search)
-1. T(n) = T(n/3) + 1    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(this is the runtime of "trinary search")
-1. T(n) = 2T(n/2) + 1    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(this is the runtime for [finding the median of an unsorted list](https://en.wikipedia.org/wiki/Quickselect))
-1. T(n) = 2T(n/2) + n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(this is the runtime of merge sort)
-1. T(n) = 3T(n/3) + n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(this is the runtime of a trinary merge sort)
-1. T(n) = 2T(n/2) + n^2
-1. T(n) = T(n/2) + n^2
-1. T(n) = T(n/2) + n^3
-1. T(n) = 7T(n/8) + n^2  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(this is the runtime of [Strassen's matrix multiplication algorithm](https://en.wikipedia.org/wiki/Strassen_algorithm)
-1. T(n) = 3T(n/2) + n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(this is the runtime of [Karatsuba's integer multiplication algorithm](https://en.wikipedia.org/wiki/Karatsuba_algorithm))
+| recurrence | solution | practical application |
+| ---------- | -------- | --------------------- |
+| T(n) = T(n/2) + n    | | runtime of the bad binary search |
+| T(n) = T(n/2) + 1    | | runtime of the correct binary search |
+| T(n) = T(n/3) + 1    | | runtime of "trinary search" |
+| T(n) = 2T(n/2) + 1   | | runtime for [finding the median of an unsorted list](https://en.wikipedia.org/wiki/Quickselect) |
+| T(n) = 2T(n/2) + n   | | runtime of merge sort |
+| T(n) = 3T(n/3) + n   | | runtime of a trinary merge sort |
+| T(n) = 2T(n/2) + n^2 | |  |
+| T(n) = T(n/2) + n^2  | |  |
+| T(n) = T(n/2) + n^3  | |  |
+| T(n) = 7T(n/8) + n^2 | | runtime of [Strassen's matrix multiplication algorithm](https://en.wikipedia.org/wiki/Strassen_algorithm) |
+| T(n) = 3T(n/2) + n   | | runtime of [Karatsuba's integer multiplication algorithm](https://en.wikipedia.org/wiki/Karatsuba_algorithm) |
