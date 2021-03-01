@@ -31,14 +31,14 @@ Other sorting comics:
 
       | algorithm         | best case run time | average case run time | worst case run time | auxiliary space complexity | notes |
       | ----------------- | ------------------ | --------------------- | ------------------- | -------------------------- | ----- | 
-      | [selection sort](https://en.wikipedia.org/wiki/Selection_sort)    | O(n^2) | O(n^2) | O(n^2) | O(1) | never used |
-      | [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort) | O(n) | O(n^2) | O(n^2) | O(1) | never used |
-      | [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) | O(n) | O(n^2) | O(n^2) | O(1) | great constant factor; combined with other algorithms to improve best case behavior |
-      | \*[merge sort](https://en.wikipedia.org/wiki/Merge_sort) | O(n log n) | O(n log n) | O(n log n) | O(n) | simple, easy analysis |
-      | \*[quick sort](https://en.wikipedia.org/wiki/Quicksort) | O(n) | O(n log n) | O(n^2) | O(log n) | the most widely implemented sorting algorithm; fast constant factor but more difficult to analyze theoretically |
-      | [tim sort](https://en.wikipedia.org/wiki/Timsort)   | O(n) | O(n log n) | O(n log n) | O(n) | default sort in python; optimized constant factor for real world data |
-      | [heap sort](https://en.wikipedia.org/wiki/Heapsort) | O(n log n) | O(n log n) | O(n log n) | O(1) | we will implement a version later in the semester |
-      | [radix sort](https://en.wikipedia.org/wiki/Radix_sort) | O(n) | O(n) | O(n) | O(n) | not a comparison based sort; only works for integers |
+      | [selection sort](https://en.wikipedia.org/wiki/Selection_sort)    | Θ(n^2) | Θ(n^2) | Θ(n^2) | Θ(1) | never used |
+      | [bubble sort](https://en.wikipedia.org/wiki/Bubble_sort) | Θ(n) | Θ(n^2) | Θ(n^2) | Θ(1) | never used |
+      | [insertion sort](https://en.wikipedia.org/wiki/Insertion_sort) | Θ(n) | Θ(n^2) | Θ(n^2) | Θ(1) | great constant factor; combined with other algorithms to improve best case behavior |
+      | \*[merge sort](https://en.wikipedia.org/wiki/Merge_sort) | Θ(n log n) | Θ(n log n) | Θ(n log n) | Θ(n) | simple, easy analysis |
+      | \*[quick sort](https://en.wikipedia.org/wiki/Quicksort) | Θ(n) | Θ(n log n) | Θ(n^2) | Θ(log n) | the most widely implemented sorting algorithm; fast constant factor but more difficult to analyze theoretically |
+      | [tim sort](https://en.wikipedia.org/wiki/Timsort)   | Θ(n) | Θ(n log n) | Θ(n log n) | Θ(n) | default sort in python; optimized constant factor for real world data |
+      | [heap sort](https://en.wikipedia.org/wiki/Heapsort) | Θ(n log n) | Θ(n log n) | Θ(n log n) | Θ(1) | we will implement a version later in the semester |
+      | [radix sort](https://en.wikipedia.org/wiki/Radix_sort) | Θ(n) | Θ(n) | Θ(n) | Θ(n) | not a comparison based sort; only works for integers |
 
       Joke algorithm: [quantum bogo sort](https://quantumcomputing.stackexchange.com/questions/1265/what-can-we-learn-from-quantum-bogosort) runs in time O(1) but almost certainly destroys the universe
 
