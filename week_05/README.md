@@ -60,5 +60,5 @@ Write your answer in Theta notation.
 | T(n) = 2T(n/2) + n^2 | |  |
 | T(n) = T(n/2) + n^2  | |  |
 | T(n) = T(n/2) + n^3  | |  |
-| T(n) = 7T(n/8) + n^2 | | runtime of [Strassen's matrix multiplication algorithm](https://en.wikipedia.org/wiki/Strassen_algorithm) |
+| T(n) = 7T(n/2) + n^2 | | runtime of [Strassen's matrix multiplication algorithm](https://en.wikipedia.org/wiki/Strassen_algorithm) |
 | T(n) = 3T(n/2) + n   | | runtime of [Karatsuba's integer multiplication algorithm](https://en.wikipedia.org/wiki/Karatsuba_algorithm) |
