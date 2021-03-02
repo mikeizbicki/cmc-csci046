@@ -19,5 +19,9 @@
 	url = https://github.com/mikeizbicki/word_ladder
 
 [submodule "binary_search"]
-	path = week_04/binary_search_ladder
+	path = week_04/binary_search
 	url = https://github.com/mikeizbicki/binary_search
+
+[submodule "sorting"]
+	path = week_05/sorting
+	url = https://github.com/mikeizbicki/sorting

@@ -35,7 +35,7 @@
 1. Check your answers for page 9 of the `big-o.pdf` notes.
    (There is nothing to submit for this problem, it is only for your own reference.)
     1. `1 = O(n)`
-    1. `2n log(n) = O(n^2)`
+    1. `3n log(n) = O(n^2)`
     1. `1 = Omega(1/n)`
     1. `log_2 n = Theta(log_3 n)`
     1. `log n = Omega(1/log n)`
