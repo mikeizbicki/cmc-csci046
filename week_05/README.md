@@ -42,6 +42,15 @@ Other sorting comics:
 
       Joke algorithm: [quantum bogo sort](https://quantumcomputing.stackexchange.com/questions/1265/what-can-we-learn-from-quantum-bogosort) runs in time O(1) but almost certainly destroys the universe
 
+      **Shell sort**:
+        1. interesting from a CS theory standpoint, but not from a practical standpoint
+        1. the worst-case runtime is currently unknown
+        1. researchers have bounded the runtime as
+
+           <img src='shell_omega.svg' />
+
+           <img src='shell_o.svg' />
+
    1. reference: [textbook sections 6.6-6.12](https://runestone.academy/runestone/books/published/pythonds/SortSearch/toctree.html)
 
 ## Lab
