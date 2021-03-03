@@ -47,9 +47,10 @@ Other sorting comics:
         1. the worst-case runtime is currently unknown
         1. researchers have bounded the runtime as
 
-           <img src='shell_omega.svg' />
+           <img src='shell_omega.svg' /><br/>
 
            <img src='shell_o.svg' />
+        1. for details, see: https://en.wikipedia.org/wiki/Shellsort
 
    1. reference: [textbook sections 6.6-6.12](https://runestone.academy/runestone/books/published/pythonds/SortSearch/toctree.html)
 
