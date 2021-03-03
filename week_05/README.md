@@ -56,19 +56,27 @@ Other sorting comics:
 
 ## Lab
 
-Use the master theorem to solve the following recurrence relations.
-Write your answer in Theta notation.
+Use the master theorem to solve the following recurrence relations in Theta notation.
 
-| recurrence | solution | practical application |
-| ---------- | -------- | --------------------- |
-| T(n) = T(n/2) + n    | | runtime of the bad binary search |
-| T(n) = T(n/2) + 1    | | runtime of the correct binary search |
-| T(n) = T(n/3) + 1    | | runtime of "trinary search" |
-| T(n) = 2T(n/2) + 1   | | runtime for [finding the median of an unsorted list](https://en.wikipedia.org/wiki/Quickselect) |
-| T(n) = 2T(n/2) + n   | | runtime of merge sort |
-| T(n) = 3T(n/3) + n   | | runtime of a trinary merge sort |
-| T(n) = 2T(n/2) + n^2 | |  |
-| T(n) = T(n/2) + n^2  | |  |
-| T(n) = T(n/2) + n^3  | |  |
-| T(n) = 7T(n/2) + n^2 | | runtime of [Strassen's matrix multiplication algorithm](https://en.wikipedia.org/wiki/Strassen_algorithm) |
-| T(n) = 3T(n/2) + n   | | runtime of [Karatsuba's integer multiplication algorithm](https://en.wikipedia.org/wiki/Karatsuba_algorithm) |
+| recurrence           | solution                       | practical application                     |
+| -------------------- | ------------------------------ | ----------------------------------------- |
+| T(n) = T(n/2) + n    | <!-- Theta( n            ) --> | runtime of the bad binary search          |
+| T(n) = T(n/2) + 1    | <!-- Theta( log n        ) --> | runtime of the correct binary search      |
+| T(n) = T(n/3) + 1    | <!-- Theta( log n        ) --> | runtime of "trinary search"               |
+| T(n) = 2T(n/2) + 1   | <!-- Theta( n            ) --> | runtime for [finding the median of an unsorted list](https://en.wikipedia.org/wiki/Quickselect) |
+| T(n) = 2T(n/2) + n   | <!-- Theta( n log n      ) --> | runtime of merge sort                     |
+| T(n) = 3T(n/3) + n   | <!-- Theta( n log n      ) --> | runtime of a trinary merge sort           |
+| T(n) = T(n/2) + n^2  | <!-- Theta( n^2          ) --> |                                           |
+| T(n) = 2T(n/2) + n^2 | <!-- Theta( n^2          ) --> |                                           |
+| T(n) = 3T(n/2) + n^2 | <!-- Theta( n^2          ) --> |                                           |
+| T(n) = 3T(n/2) + n   | <!-- Theta( n^(log_2 3)  ) --> | runtime of [Karatsuba's integer multiplication algorithm](https://en.wikipedia.org/wiki/Karatsuba_algorithm); HINT: Case 1 |
+| T(n) = 7T(n/2) + n^2 | <!-- Theta( n^(log_2 7)  ) --> | runtime of [Strassen's matrix multiplication algorithm](https://en.wikipedia.org/wiki/Strassen_algorithm) |
+
+**Submission:**
+The answers are included as comments in the `README.md` file.
+Check your answers for correctness,
+and when you have finished,
+submit a statement to sakai that you have completed the lab.
+The lab will be graded for completion, not for correctness.
+
+On your final, you will have multiple problems where you have to solve these recurrences.
