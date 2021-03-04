@@ -317,7 +317,16 @@ I want you to succeed and I'll make every effort to ensure that you can.
 
 Next class should cover:
 
-and/or short circuiting
-sys.exit() and bash $?
+big pdf assignment:
+    and/or short circuiting
+    del lines[i] vs remove
+
+word_ladder assignment:
+    open the file
+    del lines[i]
+
+twitter: 
+    sys.exit() and bash $?
+
 
 -->
