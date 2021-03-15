@@ -6,6 +6,9 @@
 
 ## Lecture
 
+Shell scripting involves lots of seemingly unrelated concepts.
+Once you understand them, you can automated data analysis pipelines and create very complex programs very easily.
+
 1. File permissions
     
     1. `ls -l` will list the permissions
@@ -22,13 +25,31 @@
        and always refers to the same location on the computer,
        no matter what your working directory is.
 
+    1. On unix, any character except a `/` is valid in a filename.
+       (On Windows, there are many more limitations on what is a valid filename.)
+       If you have special characters like spaces in a filename, you must escape them or put them in quotation marks.
+       For example, the following are equivalent paths:
+       ```
+       /fast-data/twitter\ 2020
+       '/fast-data/twitter 2020'
+       "/fast-data/twitter 2020"
+       ```
+
     1. Any path that does not start with a `/` is called a *relative path*.
        Relative path is converted to an absolute path by prepending the working directory.
        For example, the relative path `relative/path` as an absolute path is
        ```
-       $(pwd)/relative_path
+       "$(pwd)/relative/path"
        ```
        The `$(...)` syntax executes the comand within parentheses and replaces it in the string.
+
+    1. Single quotes and double quotes behave the same in python, but differently in the shell.
+       Variable substitution is allowed in double quotes but not single quotes.
+       The following paths are different:
+       ```
+       "$(pwd)/relative/path"
+       '$(pwd)/relative/path'
+       ```
 
     1. When working on a project, all paths in the project are specified according to the root of the project.
        Therefore, you should always keep yourself in the root folder while working.
@@ -46,14 +67,30 @@
            ```
            #!/usr/bin/python3
            ```
+        1. POSIX shell scripts start with
+           ```
+           #!/bin/sh
+           ```
         1. Bash scripts start with
            ```
            #!/bin/bash
            ```
+           Bash scripts support all the features of the POSIX shell, plus some additional syntax.
+           Your default shell on the lambda server is the bash shell.
+           There are many other shells that extend the POSIX shell.
+           The default on Macs is zsh.
+           Windows does not have a POSIX-compliant shell preinstalled.
         1. R scripts start with
            ```
            #!/usr/bin/Rscript
            ```
+
+    1. When executing a script, you must:
+        1. have the execute bit set
+        1. either:
+            1. call it with an absolute path
+            1. a relative path that contains a `/`
+            1. have the script's directory be located within the `$PATH` environment variable
 
 1. Script arguments
     1. Access the raw arguments in python with
@@ -78,9 +115,16 @@
     1. Examples:
 
        ```
-       $ ps -ef | grep username
+       $ ls | wc -l
        ```
-       (grep supports arbitrary regex)
+
+       ```
+       $ ps -ef | grep username             # grep supports arbitrary regex
+       ```
+
+       ```
+       $ time unzip -p /data-fast/twitter\ 2020/geoTwitter20-01-01.zip | wc -l
+       ```
 
        ```
        $ unzip -p /data-fast/geoTwitter-20-01-01.zip | head -n1 | python3 -m json.tool | vim -
@@ -110,7 +154,8 @@
     1. `bg` runs a stopped command in the background
 
 1. For loops
-
+   
+   Reference: https://linuxize.com/post/bash-for-loop/
 <!--
 counter / defaultdict in python
 serialization / deseialization of unicode
