@@ -1,7 +1,7 @@
 # week 07: unix shell scripting
 
 <center>
-<img src=Strip-Ou-sont-les-tests-unitaires-english650-final.jpg width=400px />
+<img src=Strip-Ou-sont-les-tests-unitaires-english650-final.jpg />
 </center>
 
 ## Lecture
