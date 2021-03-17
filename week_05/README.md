@@ -26,7 +26,7 @@ Other sorting comics:
 
        See: https://en.wikipedia.org/wiki/Comparison_sort#Number_of_comparisons_required_to_sort_a_list
 
-   1. Every good computer scientists has the following table memorized.
+   1. Every good computer scientist has the following table memorized.
       The notation is typically expressed using O() instead of Theta notation, but Theta is more accurate.
 
       | algorithm         | best case run time | average case run time | worst case run time | auxiliary space complexity | notes |
