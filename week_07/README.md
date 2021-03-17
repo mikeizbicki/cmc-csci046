@@ -136,22 +136,24 @@ Once you understand them, you can automated data analysis pipelines and create v
     
 1. Signals
 
-    1. `kill` politely requests that a program kill itself.
-       It gives the program a chance to save files before ending.
-    1. `kill -9` impolitely kills the program without asking first.
-       The program has no chance to save files, it just stops.
-       Only use this as a last resort when `kill` doesn't work.
     1. `ps` lists running processes created by your current shell
     1. `ps -ef` lists all running processes
     1. `ps -ef | grep username` filters the output of `ps -ef` to only include lines that contain the string `username`
-    1. `nohup CMD &` runs the command `CMD` in the background
-    1. The ssh server sends `SIGHUP` whenever your shell session disconnects.
-       The default behavior of `SIGHUP` is to stop the program,
-       but you can use the `nohup` program to block `SIGHUP`.
+    1. `kill PID` politely requests that program `PID` kill itself.
+       It gives the program a chance to save files before ending.
+       Technically, `kill` sends `SIGTERM` (= signal terminate).
+    1. `kill -9 PID` impolitely kills program `PID` without asking first.
+       The program has no chance to save files, it just stops.
+       Only use this as a last resort when `kill` doesn't work.
+       Technically, `kill -9` sends `SIGKILL` (= signal kill) to the process.
     1. `CTRL+C` sends `SIGINT` (= signal interupt), which typically stops a program
     1. `CTRL+Z` sends `SIGSTOP` (= signal stop), stops a command
     1. `fg` runs a stopped command in the foreground
     1. `bg` runs a stopped command in the background
+    1. The ssh server sends `SIGHUP` (= signal hang up) whenever your shell session disconnects.
+       The default behavior of `SIGHUP` is to stop the program,
+       but you can use the `nohup` program to block `SIGHUP`.
+    1. `nohup CMD &` runs the command `CMD` in the background
 
 1. For loops
    
