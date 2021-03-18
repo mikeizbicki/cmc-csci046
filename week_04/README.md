@@ -108,7 +108,7 @@ There are two tables for you to fill out and submit to sakai.
    >>> import numpy
    >>> numpy.array([1, 2, 3, 4, 5])
    array([1, 2, 3, 4, 5])
-   >>> numpy.array(range(1,6)
+   >>> numpy.array(range(1,6))
    array([1, 2, 3, 4, 5])
    ```
    The array supports a very similar interface as a list.

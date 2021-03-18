@@ -25,3 +25,7 @@
 [submodule "sorting"]
 	path = week_05/sorting
 	url = https://github.com/mikeizbicki/sorting
+
+[submodule "twitter_coronavirus"]
+	path = week_07/twitter_coronavirus
+	url = https://github.com/mikeizbicki/twitter_coronavirus
