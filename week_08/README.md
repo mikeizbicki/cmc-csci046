@@ -91,7 +91,10 @@
 
     1. OOP vocabulary:
 
-        1. an "instance" of a class is a variable whose type is that class
+        1. an "object" is what a variable references;
+           an "instance" of a class is an object whose type is that "class";
+
+           in python, the `type` function returns the type of the object
 
         1. Python uses "duck typing" for classes
 
@@ -163,3 +166,34 @@
 
        this should never be used by "library" code,
        and only used by "application" code;
+
+## Homework/lab instructions
+
+There is no separate graded lab for this week.
+We will still have lab, and it will be a chance for everyone to work/ask questions.
+
+1. On github:
+
+    1. **Do not fork the containers repo!**
+       We will be using this repo for the next several weeks over homeworks,
+       and it will be important in the future that it is not forked.
+
+    1. Instead, create a new repo on your account github account.
+       You must name it something other than containers.
+
+1. On the lambda server:
+
+    1. Clone your repo.
+
+    1. Add my repo as a remote.
+
+    1. Pull the contents of my repo into yours.
+
+       Even though your repo is not a fork of mine,
+       all the steps for working with git are exactly the same.
+       The "fork" abstraction is a github-only thing,
+       and not relevant to git at all.
+
+    1. Fix the files in the `containers` folder so that all test cases pass.
+
+1. Submit the link to your github repo on sakai.
