@@ -12,3 +12,8 @@ and this document will describe them.
 
 1. (+0.1 pt)
    Run the `typespeed` command and beat my score.
+
+1. (+1 pt each)
+   Complete either of the git games:
+   1. https://github.com/git-game/git-game
+   1. https://github.com/git-game/git-game-v2

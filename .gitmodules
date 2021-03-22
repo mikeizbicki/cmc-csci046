@@ -9,3 +9,23 @@
 [submodule "html_validator"]
 	path = week_02/html_validator
 	url = https://github.com/mikeizbicki/html_validator
+
+[submodule "example-homework"]
+	path = week_02/example-homework
+	url = https://github.com/mikeizbicki/example-homework
+
+[submodule "word_ladder"]
+	path = week_03/word_ladder
+	url = https://github.com/mikeizbicki/word_ladder
+
+[submodule "binary_search"]
+	path = week_04/binary_search
+	url = https://github.com/mikeizbicki/binary_search
+
+[submodule "sorting"]
+	path = week_05/sorting
+	url = https://github.com/mikeizbicki/sorting
+
+[submodule "twitter_coronavirus"]
+	path = week_07/twitter_coronavirus
+	url = https://github.com/mikeizbicki/twitter_coronavirus
