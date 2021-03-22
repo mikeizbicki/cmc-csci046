@@ -4,13 +4,17 @@
 
 1. The `class` keyword let's you define your own data structures
 
+    1. Book Reference: [Chapter 1.13](https://runestone.academy/runestone/books/published/pythonds/Introduction/ObjectOrientedProgramminginPythonDefiningClasses.html) and [Chapter 2](https://runestone.academy/runestone/books/published/pythonds/ProperClasses/toctree.html)
+
     1. Object Oriented Programming (OOP) is programming with classes
 
         1. IMNSHO, most OOP programming take the "using classes" idea too far, and use classes where it's not appropriate
 
+           <!--
            <img src=1*6rqSrrz_Q5m80KZM9XbqRg.jpeg />
 
            <img src=8jcj2z7h61741.png width=600px />
+           -->
 
            <img src=object-oriented-programming-is-an-exceptionally-bad-idea-which-could-only-63887355.png />
 
@@ -105,11 +109,16 @@
 
         1. functions within a class are called "methods"
 
-        1. functions that begin/end with double underscores are called "double underscore" or "dunder" methods
+        1. functions that begin/end with double underscores are called "double underscore"/"dunder" methods or "magic" methods
 
             1. `__init__` is the "constructor" and is called when an instance is first created
 
                <img src=m3vxtt66jsg61.jpg width=400px />
+
+            1. `__str__` / `__repr__` methods let us "pretty print" our objects;
+               `__str__` should be human readable, `__repr__` should be machine readable
+
+               Reference: https://stackoverflow.com/questions/1436703/what-is-the-difference-between-str-and-repr
 
             1. `__iter__` / `__next__` are functions for creating "iterable" classes", or "generators"
 
