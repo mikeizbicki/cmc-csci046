@@ -10,11 +10,13 @@
 
         1. IMNSHO, most OOP programming take the "using classes" idea too far, and use classes where it's not appropriate
 
-           <!--
            <img src=1*6rqSrrz_Q5m80KZM9XbqRg.jpeg />
+           <br/>
+           <br/>
 
            <img src=8jcj2z7h61741.png width=600px />
-           -->
+           <br/>
+           <br/>
 
            <img src=object-oriented-programming-is-an-exceptionally-bad-idea-which-could-only-63887355.png />
 
