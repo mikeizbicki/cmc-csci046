@@ -29,3 +29,7 @@
 [submodule "twitter_coronavirus"]
 	path = week_07/twitter_coronavirus
 	url = https://github.com/mikeizbicki/twitter_coronavirus
+
+[submodule "containers"]
+	path = week_08/containers
+	url = https://github.com/mikeizbicki/containers
