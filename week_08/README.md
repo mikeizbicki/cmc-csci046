@@ -1,4 +1,4 @@
-# week 08: classes
+# week 08: Classes / Object Oriented Programming / Iterators
 
 <img src=Strip-Souvenirs-650-finalenglish.jpg />
 
