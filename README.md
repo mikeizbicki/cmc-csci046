@@ -325,6 +325,10 @@ word_ladder assignment:
     open the file
     del lines[i]
 
+big-oh:
+    big-o of the word ladder with set vs list
+    memory usage O(1) vs O(n) vs O(n^2)
+
 twitter: 
     sys.exit() and bash $?
 
@@ -332,5 +336,16 @@ twitter:
 in the sorting assignment, the _merge function is a dependency of quick_sorted();
 passing the test cases for _merge guarantees that the function works,
 but you can still get errors inside the function if you have errors outside the functiton
+
+lab processes:
+
+1. add discussion of how the HUP signal is sent differently for different OSes
+2. limitted number of processes on the lambda server, show the fork resource exhausted error
+3. killall/kill $(...) to kill processes
+4. fork bomb
+5. debug map.py by looking inside the nohup.out file
+6. (un)buffered io, stdout vs stderr, redirection applies only to stdout
+
+No `nohup.out` file in the repo.
 
 -->
