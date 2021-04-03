@@ -1,6 +1,6 @@
 # Week 09: Unicode
 
-Today (Mar 31) is [César Chávez](https://en.wikipedia.org/wiki/Cesar_Chavez_Day),
+Today (Mar 31) is [César Chávez Day](https://en.wikipedia.org/wiki/Cesar_Chavez_Day),
 which commemorates the labor movement of primarily migrant Latino farm workers in California.
 In order to observe the holiday, we will discuss how to properly handle Spanish (and all non-English) words and names inside Python.
 
