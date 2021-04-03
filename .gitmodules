@@ -17,3 +17,23 @@
 [submodule "word_ladder"]
 	path = week_03/word_ladder
 	url = https://github.com/mikeizbicki/word_ladder
+
+[submodule "binary_search"]
+	path = week_04/binary_search
+	url = https://github.com/mikeizbicki/binary_search
+
+[submodule "sorting"]
+	path = week_05/sorting
+	url = https://github.com/mikeizbicki/sorting
+
+[submodule "twitter_coronavirus"]
+	path = week_07/twitter_coronavirus
+	url = https://github.com/mikeizbicki/twitter_coronavirus
+
+[submodule "containers_08"]
+	path = week_08/containers
+	url = https://github.com/mikeizbicki/containers
+
+[submodule "containers_09"]
+	path = week_09/containers
+	url = https://github.com/mikeizbicki/containers
