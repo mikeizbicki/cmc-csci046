@@ -12,8 +12,14 @@
 
     1. Binary search trees (BSTs) let us perform both insertion and deletion in O(log n) time.
 
-    1. The "right" way to think of them is as a combination of sorting and binary search algorithms merged together in one.
+        1. The "right" way to think of them is as a combination of sorting and binary search algorithms merged together in one.
     
+        1. Technically, the BST doesn't guarantee worst case runtimes of O(log n) time.
+
+        1. It guarantees that the works case runtimes are O(height), and the height is O(n) in the worst case.
+
+        1. Next week, we will extend the BST to the AVL tree, which guarantees the height is O(log n).
+
     1. The downside of BSTs is that their implementations will get very complicated.
        Fortunately, they only need to be implemented once, then everyone else can use them.
 
@@ -31,17 +37,24 @@
         1. AVL trees
         1. Heap trees
 
-1. traversals
-    1. pre-order
-    1. in-order
-    1. post-order
+1. 3 algorithms on binary trees:
+    1. traversals
+        1. pre-order
+        1. in-order
+        1. post-order
+    1. height
+    1. size
+
+1. 3 algorithms on binary search trees:
+    1. find
+    2. insert
+    3. delete
 
 1. python concepts
-    1. superclasses, inheritance
     1. static methods
+    1. superclasses, inheritance
+    1. WET vs DRY programming
+        1. WET: wastes everyone time / we enjoy typing
+        1. DRY: don't repeat yourself
 
-1. WET vs DRY programming
-    1. WET: wastes everyone time / we enjoy typing
-    1. DRY: don't repeat yourself
-
-       <img src=keep-my-diaper-and-my-code-dry.jpg />
+           <img src=keep-my-diaper-and-my-code-dry.jpg />
