@@ -1,6 +1,6 @@
 # Week 10: Binary Search Trees (BSTs) / Recursive Data Structures
 
-<img src=cgxof0jkru551.png />
+<img width=600px src=cgxof0jkru551.png />
 
 <!--
 <img src=l5nus3752l261.png />
