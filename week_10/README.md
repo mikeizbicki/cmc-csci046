@@ -58,3 +58,35 @@
         1. DRY: don't repeat yourself
 
            <img src=keep-my-diaper-and-my-code-dry.jpg />
+
+## Lab
+
+TBA
+
+## Homework instructions
+
+1. The https://github.com/mikeizbicki/containers repo has a new branch called `unicode`.
+   This branch contains the homework for this week.
+
+1. You should:
+
+    1. Create and checkout a branch in your homework repo called `bst`.
+       `bst` should be based off of the `master` branch and not the `unicode` branch.
+
+       **IMPORTANT:**
+       If your `bst` branch is based off of your `unicode` branch instead of `master`,
+       you will receive -2 points on the assignment.
+
+    1. Pull the contents of my `bst` branch into your branch.
+
+    1. Fix the file `containers/BinaryTree.py` and `containers/BST.py` so that all the test cases pass.
+
+    1. Update your `README.md` file to include build status icons for both files.
+
+    1. **IMPORTANT:**
+       All your work must be done in the `bst` branch,
+       and **you must not merge your work into either the `master` or `unicode` branches**.
+       If you merge your work into either `master` or `unicode`, you will receive -2 points on the assignment.
+
+1. Submit the link to your `bst` branch on github to sakai.
+   If you submit a link to any other branch instead, you will receive -2 points on the assignment.
