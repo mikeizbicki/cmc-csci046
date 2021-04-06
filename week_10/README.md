@@ -40,8 +40,17 @@
 1. 3 algorithms on binary trees:
     1. traversals
         1. pre-order
+        -Node
+        -Left
+        -Right
         1. in-order
+        -Left 
+        -Node
+        -Right
         1. post-order
+        -Left
+        -Right
+        -Node
     1. height
     1. size
 
