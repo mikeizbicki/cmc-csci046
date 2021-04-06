@@ -39,15 +39,15 @@
 
 1. 3 algorithms on binary trees:
     1. traversals
-        1. pre-order
+        1. pre-order <br />
         i.Node <br />
         ii.Left <br />
         iii.Right <br />
-        1. in-order
+        1. in-order <br />
         i.Left <br />
         ii.Node <br />
         iii.Right <br />
-        1. post-order
+        1. post-order <br />
         i.Left <br />
         ii.Right <br />
         iii.Node <br />
