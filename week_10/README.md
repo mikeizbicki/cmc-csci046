@@ -61,7 +61,7 @@
 
 ## Lab
 
-TBA
+No separate graded lab.
 
 ## Homework instructions
 
