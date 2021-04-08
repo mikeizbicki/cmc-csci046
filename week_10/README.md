@@ -65,7 +65,7 @@ No separate graded lab.
 
 ## Homework instructions
 
-1. The https://github.com/mikeizbicki/containers repo has a new branch called `unicode`.
+1. The https://github.com/mikeizbicki/containers repo has a new branch called `bst`.
    This branch contains the homework for this week.
 
 1. You should:
