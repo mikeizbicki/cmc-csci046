@@ -283,6 +283,14 @@ $ ps -ef | grep username
 where `username` is your username.
 You should see all the processes created from both of your connected sessions.
 
+**NOTE:**
+If you have a particularly long username,
+the command above may not work for you as written.
+The output of `ps -ef` will truncate usernames that are too long,
+and so the `grep` command won't be able to find them.
+If you use the first 6 characters of your username in the grep command (instead of your full username),
+then the command should work.
+
 The vertical bar `|` is called a pipe.
 Pipes connect the output (`stdout`) of the program on the left to the input (`stdin`) of the program on the right.
 The `grep` program reads one line at a time from its input and outputs only those lines containing `username`.

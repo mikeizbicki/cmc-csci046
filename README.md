@@ -213,26 +213,26 @@ Programming games:
 | 3    | W, 17 Feb   | Queues + Algorithm Analysis                          |
 | 4    | M, 22 Feb   | Recursion                                            |
 | 4    | W, 24 Feb   | Recursion                                            | 
-| 5    | M, 01 Mar   | Sorting                                              | <!-- unlogged tables -->
+| 5    | M, 01 Mar   | Sorting                                              |
 | 5    | W, 03 Mar   | Sorting                                              |
 | 6    | M, 08 Mar   | **Spring Break**                                     |
 | 6    | W, 10 Mar   | **Spring Break**                                     |
 | 7    | M, 15 Mar   | Parallel Algorithms                                  |
 | 7    | W, 17 Mar   | Parallel Algorithms                                  |
-| 8    | M, 22 Mar   | Trees                                                |
-| 8    | W, 24 Mar   | Trees                                                |
-| 9    | M, 29 Mar   | BST Trees                                            |
-| 9    | W, 31 Mar   | BST Trees                                            | <!-- Cesar chavez day, observed on Friday -->
-| 10   | M, 05 Apr   | AVL Trees                                            |
-| 10   | W, 07 Apr   | AVL Trees                                            |
-| 11   | M, 12 Apr   | Heap Trees                                           |
-| 11   | W, 14 Apr   | Heap Trees                                           |
-| 12   | M, 19 Apr   | Generators                                           |
-| 12   | W, 21 Apr   | Generators                                           |
-| 13   | M, 26 Apr   | Graphs                                               |
-| 13   | W, 28 Apr   | Graphs                                               |
-| 14   | M, 03 May   | Graphs                                               |
-| 14   | W, 05 May   | Graphs                                               |
+| 8    | M, 22 Mar   | Classes / generators                                 |
+| 8    | W, 24 Mar   | Classes / generators                                 |
+| 9    | M, 29 Mar   | ~~class cancelled for baby~~                         |
+| 9    | W, 31 Mar   | Unicode                                              | <!-- Cesar chavez day, observed on Friday -->
+| 10   | M, 05 Apr   | BST Trees                                            |
+| 10   | W, 07 Apr   | BST Trees                                            |
+| 11   | M, 12 Apr   | AVL Trees                                            |
+| 11   | W, 14 Apr   | AVL Trees                                            |
+| 12   | M, 19 Apr   | Heap Trees                                           |
+| 12   | W, 21 Apr   | Heap Trees                                           |
+| 13   | M, 26 Apr   | Hash Tables                                          |
+| 13   | W, 28 Apr   | Hash Tables                                          |
+| 14   | M, 03 May   | Graphs + Risk board game AI                          |
+| 14   | W, 05 May   | Graphs + Risk board game AI                          |
 
 <!--
 ### Assignments
@@ -325,6 +325,10 @@ word_ladder assignment:
     open the file
     del lines[i]
 
+big-oh:
+    big-o of the word ladder with set vs list
+    memory usage O(1) vs O(n) vs O(n^2)
+
 twitter: 
     sys.exit() and bash $?
 
@@ -333,4 +337,16 @@ in the sorting assignment, the _merge function is a dependency of quick_sorted()
 passing the test cases for _merge guarantees that the function works,
 but you can still get errors inside the function if you have errors outside the functiton
 
+lab processes:
+
+1. add discussion of how the HUP signal is sent differently for different OSes
+2. limitted number of processes on the lambda server, show the fork resource exhausted error
+3. killall/kill $(...) to kill processes
+4. fork bomb
+5. debug map.py by looking inside the nohup.out file
+6. (un)buffered io, stdout vs stderr, redirection applies only to stdout
+
+No `nohup.out` file in the repo.
+
+introduce superclasses/static methods before the week on BSTs; it's too much to do it all at once; consider doing the deque class
 -->
