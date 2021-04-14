@@ -41,3 +41,7 @@
 [submodule "containers_10"]
 	path = week_10/containers
 	url = https://github.com/mikeizbicki/containers
+
+[submodule "containers_11"]
+	path = week_11/containers
+	url = https://github.com/mikeizbicki/containers
