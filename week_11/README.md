@@ -111,3 +111,6 @@ The runtime of find/insert/delete on any BST is O(n).
 1. Submit the link to your `avltree` branch on github to sakai.
    If you submit a link to any other branch instead,
    you will receive -2 points on the assignment.
+
+1. **GRADING:**
+   Because there are fewer test cases in this assignment, and the assignment is worth more points, each failing test case penalizes you -2 points instead of -1 point as in other assignments.
