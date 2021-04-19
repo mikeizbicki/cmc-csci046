@@ -45,3 +45,7 @@
 [submodule "containers_11"]
 	path = week_11/containers
 	url = https://github.com/mikeizbicki/containers
+
+[submodule "containers_12"]
+	path = week_12/containers
+	url = https://gitlab.com/claremont-mckenna/random-project-name
