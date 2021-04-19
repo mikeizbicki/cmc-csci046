@@ -40,14 +40,15 @@ Note:
 
 1. Operations:
 
-   1. `insert` pseudocode:
-      1. Find the "next" position; see https://stackoverflow.com/questions/18241192/implement-heap-using-a-binary-tree for hints
+   1. `insert`
 
-      1. Add the node in the next position
+   1. `remove_min`
 
-      1. Swap with parents until the heap property is satisfied
+   1. `find_smallest`
 
-   1. `remove` pseudocode
+   1. (you should be annoyed that I've used `min` in some functions and `smallest` in others)
+
+   1. pseudocode is provided in the comments of the `containers/Heap.py` file
 
 ## Homework instructions
 
