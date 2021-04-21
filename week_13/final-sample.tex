@@ -1,0 +1,469 @@
+\documentclass[12pt]{exam}
+\usepackage[utf8]{inputenc}
+
+\usepackage[normalem]{ulem}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = black, %Colour for external hyperlinks
+  linkcolor    = blue, %Colour of internal links
+  citecolor    = blue  %Colour of citations
+}
+
+\usepackage{multirow}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\usepackage[table]{xcolor}
+\usepackage{color}
+\usepackage{colortbl}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{gray}{rgb}{0.7,0.7,0.7}
+
+\usepackage{listings}
+\lstset {
+	basicstyle=\ttfamily,
+    ,language=SQL
+    ,showstringspaces=false
+    ,keepspaces=true
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% question definitions
+
+%\printanswers
+
+\newcommand*{\hl}[1]{\colorbox{yellow}{#1}}
+
+\newcommand*{\answerLong}[2]{
+    \ifprintanswers{\hl{#1}}
+\else{#2}
+\fi
+}
+
+\newcommand*{\answer}[1]{\answerLong{#1}{~}}
+
+\newcommand*{\TrueFalse}[1]{%
+\ifprintanswers
+    \ifthenelse{\equal{#1}{T}}{%
+        \hl{\textbf{TRUE}}\hspace*{14pt}False
+    }{
+        True\hspace*{14pt}\hl{\textbf{FALSE}}
+    }
+\else
+    {True}\hspace*{20pt}False
+\fi
+} 
+%% The following code is based on an answer by Gonzalo Medina
+%% https://tex.stackexchange.com/a/13106/39194
+\newlength\TFlengthA
+\newlength\TFlengthB
+\settowidth\TFlengthA{\hspace*{1.3in}}
+\newcommand\TFQuestion[2]{%
+    \setlength\TFlengthB{\linewidth}
+    \addtolength\TFlengthB{-\TFlengthA}
+    \parbox[t]{\TFlengthA}{\TrueFalse{#1}}\parbox[t]{\TFlengthB}{#2}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\theoremstyle{definition}
+\newtheorem{problem}{Problem}
+\newcommand{\E}{\mathbb E}
+\newcommand{\R}{\mathbb R}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\newcommand{\trans}[1]{{#1}^{T}}
+\newcommand{\loss}{\ell}
+\newcommand{\w}{\mathbf w}
+\newcommand{\x}{\mathbf x}
+\newcommand{\y}{\mathbf y}
+\newcommand{\ltwo}[1]{\lVert {#1} \rVert}
+
+\newcommand{\ignore}[1]{}
+
+\usepackage{listings}
+
+% Default fixed font does not support bold face
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
+
+% Python style for highlighting
+\newcommand\pythonstyle{\lstset{
+language=Python,
+basicstyle=\ttm,
+otherkeywords={self},             % Add keywords here
+keywordstyle=\ttb\color{deepblue},
+emph={MyClass,__init__},          % Custom highlighting
+emphstyle=\ttb\color{deepred},    % Custom highlighting style
+stringstyle=\color{deepgreen},
+frame=tb,                         % Any extra options here
+showstringspaces=false            % 
+stepnumber=1,
+numbers=left
+}}
+
+\lstnewenvironment{python}[1][]
+{
+    \pythonstyle
+    \lstset{#1}
+}
+{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+    {
+\Large
+    CSCI046 Final (Sample)
+}
+
+    %\vspace{0.1in}
+%CSCI046, Mike Izbicki
+
+    \vspace{0.1in}
+\end{center}
+
+\noindent
+\textbf{Collaboration policy:} 
+
+\vspace{0.1in}
+\noindent
+You may not:
+\begin{enumerate}
+    \item discuss the exam with any human other than Mike; this includes:
+        \begin{enumerate}
+            \item asking your friend for clarification about what a problem is asking
+            \item asking your friend if they've completed the exam
+        \end{enumerate}
+\end{enumerate}
+
+\noindent
+You may:
+\begin{enumerate}
+    \item take as much time as needed
+    \item use any written notes / electronic resources you would like
+    \item ask Mike to clarify questions via email
+\end{enumerate}
+
+
+\vspace{0.15in}
+
+\vspace{0.25in}
+\noindent
+Name: 
+
+\noindent
+\rule{\textwidth}{0.1pt}
+\vspace{0.15in}
+
+
+\newpage
+\begin{problem}
+(3 pts)
+    Complete each equation below by adding the symbol $O$ if $f=O(g)$, $\Omega$ if $f=\Omega(g)$, or $\Theta$ if $f=\Theta(g)$.  
+    The first row is completed for you as an example.
+
+    You will lose one point for each incorrect answer.
+
+{\renewcommand{\arraystretch}{3.4}
+\begin{tabular}{c c c c c c}
+    & f(n) &~\hspace{0.5in}~$ $~\hspace{0.5in}~& g(n) &\\
+    \hline
+    & $1$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & $O(n)$ &  &\\
+    \arrayrulecolor{gray}\hline
+    & $1.1^n$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & \answer{$\Omega$} $n^2$ &  &\\
+    \arrayrulecolor{gray}\hline
+    & $1/n$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & \answer{$O$} $1$ &  &\\
+    \arrayrulecolor{gray}\hline
+    & $\log_4 n$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & \answer{$\Theta$} $\log_3 n$ &  &\\
+    \arrayrulecolor{gray}\hline
+    & $2^{n}$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & \answer{$\Omega$} $n^2$ &  &\\
+    \arrayrulecolor{gray}\hline
+    & $\log n$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & \answer{$O$} $\sqrt n$ &  &\\
+    \arrayrulecolor{gray}\hline
+    & $\log (n^3)$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & \answer{$\Theta$} $\log n$ &  &\\
+    \arrayrulecolor{gray}\hline
+    & $\log (n!)$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & \answer{$\Theta$} $n\log n$ &  &\\
+    \arrayrulecolor{gray}\hline
+    & $n!$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & \answer{$\Omega$} $n^2$ &  &\\
+    \arrayrulecolor{gray}\hline
+    & $(\log n)^4$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & \answer{$\Omega$} $(\log n)^3$ &  &\\
+    \arrayrulecolor{gray}\hline
+
+    %& $O(1)$ & or & $O(n)$ & or & equal\\
+    %& $O(n\log n)$ & or & $O(n^2)$ & or & equal\\
+    %& $\Theta(1)$ & or & $\Theta(1/n)$ & or & equal\\
+    %& $\Omega(\log_2 n)$ & or & $\Omega(\log_3 n)$ & or & equal\\
+    %& $O(n^{42})$ & or & $O(42^n)$ & or & equal\\
+    %& $\Theta(5\cdot10^{30})$ & or & $\Theta(\log n)$ & or & equal\\
+    %& $\Omega(\log n)$ & or & $\Omega(\log (n^2))$ & or & equal\\
+    %& $O(2^n)$ & or & $O(3^n)$ & or & equal\\
+    %& $\Theta(n!)$ & or & $\Theta(n^2)$ & or & equal\\
+    %& $\Omega(\log n)$ & or & $\Omega((\log n)^2)$ & or & equal\\
+\end{tabular}
+}
+\end{problem}
+
+\newpage
+\begin{problem}
+(15 pts)
+For each question below, circle either True or False.
+Each correct answer will result in +1 point,
+each incorrect answer will result in -1 point,
+and each blank answer in 0 points.
+\begin{enumerate}
+\item \TFQuestion{T}{Any procedure with worst-case runtime $O(n)$ is guaranteed to have best case runtime $O(n^2)$.}
+\item \TFQuestion{T}{Given an array of $n$ integers randomly generated between 1 and 1000, there exists an algorithm to sort these integers in time $O(n)$.}
+\item \TFQuestion{F}{Python's built-in \lstinline{sort} function uses Quicksort.}
+\item \TFQuestion{F}{Merge sort is guaranteed to run asymptotically faster than insertion sort for all input lists.}
+\item \TFQuestion{T}{Python's built-in \lstinline{sort} function allocates $\Omega(n)$ memory.}
+\item \TFQuestion{F}{Python's built-in \lstinline{range} function allocates $\Theta(n)$ memory.}
+\item \TFQuestion{T}{In python 3, the \lstinline{__elem__} method of the \lstinline{set} class is asymptotically faster than the \lstinline{__elem__} method of the \lstinline{list} class.}
+\item \TFQuestion{T}{The worst case runtime for inserting into an AVL Tree is better than the worst case runtime for inserting into a BST.}
+\item \TFQuestion{F}{Python dictionaries are internally implemented using an AVL tree written in the C programming language.}
+\item \TFQuestion{T}{The height of every BST is guaranteed to be $\Omega(\log n)$.}
+\item \TFQuestion{F}{There does not exist a binary tree that is both a valid heap and a valid AVL tree.}
+\item \TFQuestion{F}{In python 3, a \lstinline{list} variable can be used as the key for a dictionary.}
+\item \TFQuestion{F}{A pre-order traversal of a \lstinline{heap} will traverse the elements in sorted order.}
+\item \TFQuestion{F}{If you release an open source project using the GPL license, the GPL license will guarantee that no one can make money selling your code without your permission.}
+\item \TFQuestion{F}{If you find a github repo with no \lstinline{LICENSE} file, you may legally use code from this repo in a BSD3-licensed project.}
+\end{enumerate}
+\end{problem}
+
+\newpage
+\begin{problem}
+Consider the following two functions:
+\begin{python}
+def print_container_1(xs):
+    for i in range(len(xs)):
+        print('xs[i]=',xs[i])
+
+def print_container_2(xs):
+    for i,x in enumerate(xs):
+        print('i,x=',(i,x))
+\end{python}
+Notice that both functions will work whether the \texttt{xs} parameter is a list or a deque.
+Whenever a function works for more than one type of input, we call it \textbf{polymorphic}.
+\begin{enumerate}
+    \item 
+        (1 pt)
+        Assume we have a \textbf{list} with \texttt{n} elements.
+        What is the runtime of \texttt{print\_container\_1} on this list?
+        Your answer must be tight and in big-O notation.
+
+        \answer{$O(n)$}
+        \vspace{0.8in}
+    \item 
+        (1 pt)
+        Assume we have a \textbf{list} with \texttt{n} elements.
+        What is the runtime of \texttt{print\_container\_2} on this list?
+        Your answer must be tight and in big-O notation.
+
+        \answer{$O(n)$}
+        \vspace{0.8in}
+    \item 
+        (1 pt)
+        Assume we have a \textbf{deque} with \texttt{n} elements.
+        What is the runtime of \texttt{print\_container\_1} on this deque?
+        Your answer must be tight and in big-O notation.
+
+        \answer{$O(n^2)$}
+        \vspace{0.8in}
+    \item 
+        (1 pt)
+        Assume we have a \textbf{deque} with \texttt{n} elements.
+        What is the runtime of \texttt{print\_container\_2} on this deque?
+        Your answer must be tight and in big-O notation.
+
+        \answer{$O(n)$}
+        \vspace{0.8in}
+\end{enumerate}
+\end{problem}
+
+\ignore{
+\newpage
+\begin{problem}
+Consider the following python function.
+\begin{python}
+def foo(xs,ys):
+    for x in xs:
+        if x in ys:
+            print('x in ys for x=',x)
+\end{python}
+Notice that \texttt{foo} is polymorphic in both \texttt{xs} and \texttt{ys}.
+\begin{enumerate}
+    \item 
+        Assume that \texttt{xs} is a \textbf{list} with $n$ elements,
+        and that \texttt{ys} is a \textbf{list} with $m$ elements.
+        What is the runtime of \texttt{foo}?
+        (Use big-O notation.)
+        \vspace{1in}
+    \item
+        Assume that \texttt{xs} is a \textbf{list} with $n$ elements,
+        and that \texttt{ys} is a \textbf{deque} with $m$ elements.
+        What is the runtime of \texttt{foo}?
+        (Use big-O notation.)
+        \vspace{1in}
+    \item
+        Assume that \texttt{xs} is a \textbf{list} with $n$ elements,
+        and that \texttt{ys} is a \textbf{set} with $m$ elements.
+        What is the runtime of \texttt{foo}?
+        (Use big-O notation.)
+        \vspace{1in}
+    \item
+        Assume that \texttt{xs} is a \textbf{list} with $n$ elements,
+        and that \texttt{ys} is a \textbf{dict} with $m$ elements.
+        What is the runtime of \texttt{foo}?
+        (Use big-O notation.)
+        \vspace{1in}
+\end{enumerate}
+\end{problem}
+}
+
+\ignore{
+\newpage
+\begin{problem}
+    Use iterative substitution to solve the following recurrence relation in big-O notation.
+    \begin{equation*}
+        T(n) = T(n-3) + n
+    \end{equation*}
+\end{problem}
+
+
+\newpage
+\begin{problem}
+    Use iterative substitution to solve the following recurrence relation in big-O notation.
+    \begin{equation*}
+        T(n) = 3T(n/3) + 1
+    \end{equation*}
+\end{problem}
+
+\newpage
+\begin{problem}
+    Use iterative substitution to solve the following recurrence relation in big-O notation.
+    \begin{equation*}
+        T(n) = T(n/3) + 1
+    \end{equation*}
+\end{problem}
+}
+
+
+
+
+\newpage
+\begin{problem}
+    We saw in class that binary search runs in logrithmic time.
+    One possible idea for speeding up the computation is to perform trinary search
+    (that is, split the list into three sections rather than two on each recursive call).
+    The following code implements trinary search.
+\begin{python}
+def trinary_search(xs,val):
+    left = 0
+    right = len(xs)
+    def go(left,right):
+        if right-left<3:
+            return val in xs[left:right]
+        mid1 = left + (right-left)//3
+        mid2 = left + (right-left)//3*2
+        if val < xs[mid1]:
+            return go(left,mid1)
+        elif val < xs[mid2]:
+            return go(mid1,mid2)
+        else:
+            return go(mid2,right)
+    return go(left,right)
+\end{python}
+
+    \begin{enumerate}
+        \item
+            (2 pts)
+            What is the recurrence relation describing the runtime of \texttt{trinary\_search}?
+            Assume that the input data structue is a list.
+
+            \answer{$T(n) = 3T(n/3) + 1$}
+
+        \newpage
+        \item
+            (2 pts)
+            Solve the recurrence relation you gave for part 1 using the master theorem,
+            and report your answer using $\Theta$ notation.
+            (You can get full credit on this problem even if you gave the wrong answer on the previous problem.)
+
+            \answer{$\Theta(\log n)$}
+    \end{enumerate}
+\end{problem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\begin{problem}
+In the questions below, assume that all data structures from the homeworks are correctly implemented.
+\begin{enumerate}
+\item
+(2 pts)
+What is the worst-case runtime of the \lstinline{avl_sorted} function defined below in terms of the length $n$ of the input list?
+(Use $\Theta$ notation.)
+\begin{python}
+from containers import AVLTree
+
+def avl_sorted(xs):
+    avl = AVLTree(xs)
+    return xs.to_list('inorder')
+\end{python}
+
+\answer{$\Theta(n \log n)$}
+
+\vspace{1.5in}
+\item
+(2 pts)
+What is the runtime of the code below in terms of $n$?
+(Use $\Theta$ notation.)
+   
+\begin{python}
+from containers import BST
+
+bst = BST()
+for i in range(n):
+    bst.insert(i)
+    for x in bst.to_list('inorder'):
+        print("x=",x)
+    bst.remove(i)
+\end{python}
+\answer{$\Theta(n)$}
+
+\vspace{1in}
+\noindent
+        \textbf{NOTE:}
+The first problem above is asking for a \emph{worst case} runtime,
+whereas the second problem is only asking for a runtime.
+This is because in the first problem, there are many possible lists that could be input into the function, and each list might have different runtimes.
+In the second problem, there is only one particular sequence of values that will get inserted.
+Since there are not multiple possibilities, the worst/best/average cases for this problem are all going to be the same sequence.
+Note that this does not mean that the worst/best/average cases for the BST itself are the same.
+The final exam will test your ability to understand all of these subtleties.
+
+\end{enumerate}
+\end{problem}
+
+
+\newpage
+\begin{problem}
+    The previous problems total 30 points.
+    You will have 10 more points worth of problems related to material from the last 2 weeks of class. 
+\end{problem}
+\end{document}
