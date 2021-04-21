@@ -50,6 +50,46 @@ Note:
 
    1. pseudocode is provided in the comments of the `containers/Heap.py` file
 
+## Hash-based data structures
+
+1. our `AVLTree`/`BST` data structures implement the same interface as python's built-in `set`
+    1. construct a set, removing duplicates
+    1. check for containment
+
+1. but the runtimes are different, see: https://wiki.python.org/moin/TimeComplexity
+    1. python's built-in types use a hash table implementation, rather than a tree-based implementation
+    1. in general, hash tables are "slightly" better in the average case, but MUCH worse in the worst case
+    1. programming languages like C++ that *really* care about runtime use tree-based data structures
+    1. python uses hash-based data structures due to the "data changing" problem
+
+1. a hash function converts a type into an integer (typically 64 bit)
+   1. in python, implemented with the `__hash__` magic method
+   1. good hashes are "random"
+        1. they need to give the same number every time for the same input
+        1. small changes in the input should result in large changes of the output
+
+Advanced runtime analysis:
+1. (not on final)
+1. the runtimes of hash data structures are really the number of times we call the hash function
+
+   the runtimes of tree data structures are really the number of times we call the `<`/`>` functions
+
+   but what if those functions are particularly slow/fast?
+
+    1. hash functions take time Theta(k) for inputs of size k
+        1. very large constant factor (for a good hash)
+    1. `<`,`>` operators used in tree-based methods take time O(1) in a typical case, and Theta(k) only in the worst case
+        1. you can "early stop" the comparison as soon as you find the answer
+
+1. overall "more correct" runtimes
+
+    1. hash-set:
+        1. insert/lookup/delete (ave): O(k)
+        1. insert/lookup/delete (worst): O(n+k)
+    1. avltree-set:
+        1. insert/lookup/delete, average case comparisons, total runtime: O(log n)
+        1. insert/lookup/delete, worst case comparisons, total runtime: O(k log n)
+
 ## Homework instructions
 
 1. Git is a protocol, and not a webpage.
