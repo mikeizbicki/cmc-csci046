@@ -59,8 +59,11 @@ Note:
 1. but the runtimes are different, see: https://wiki.python.org/moin/TimeComplexity
     1. python's built-in types use a hash table implementation, rather than a tree-based implementation
     1. in general, hash tables are "slightly" better in the average case, but MUCH worse in the worst case
-    1. programming languages like C++ that *really* care about runtime use tree-based data structures
-    1. python uses hash-based data structures due to the "data changing" problem
+        1. programming languages like C++ that really care about runtime use tree-based data structures
+        1. lots of security vulnerabilities related to people using hash tables when they shouldn'y
+            1. https://www.securityweek.com/hash-table-collision-attacks-could-trigger-ddos-massive-scale
+            1. https://www.kb.cert.org/vuls/id/903934
+    1. python uses hash-based data structures to provide an easier interface for beginners
 
 1. a hash function converts a type into an integer (typically 64 bit)
    1. in python, implemented with the `__hash__` magic method
