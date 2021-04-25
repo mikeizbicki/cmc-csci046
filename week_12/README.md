@@ -36,7 +36,7 @@ Note:
 
     1. Heap property:
         1. Min-heap: The value of any node is smaller than the value of its children
-        1. Max-heap: The value of any node is smaller than the value of its children
+        1. Max-heap: The value of any node is larger than the value of its children
 
 1. Operations:
 
