@@ -1,6 +1,42 @@
 # Week 13: Graphs
 
-Notes to be added.
+<img src=graphs.jpg />
+
+Graphs are one of the key unifying concepts in computer science.
+Many problems can be solved by:
+1. convert the problem into the language of graphs, and then
+2. use an appropriate graph algorithm.
+For example:
+1. All artificial intelligence problems fit this pattern.
+1. Many of the classic SWE interview questions fit this pattern.
+   (The other common patterns are divide and conquer and dynamic programming.)
+If you go on to take CSCI148 Graph Algorithms with Prof Sarah Cannon,
+you'll cover these concepts in great detail.
+
+Key vocabulary:
+1. node
+1. edge
+1. weight
+1. label
+1. directed/undirected
+1. path
+1. shortest path
+1. shortest path tree
+1. cycle
+1. acyclic
+
+We will cover three graph algorithms in this class.
+Remarkably, they have essentially the same pseudocode,
+but by swapping which data structure we use,
+we get different algorithms.
+
+| Algorithm | Data Structure | Run Time |
+| --------- | -------------- | -------- |
+| Depth First Search (DFS) | Stack (list/deque) | O(V + E) |
+| Bread First Search (BFS) | Queue (deque) | O(V + E) |
+| Dijkstra's Algorithm (shortest path) | Priority Queue (heap) | O( (V + E) log V) |
+
+Textbook reference: [chapter 8](https://runestone.academy/runestone/books/published/pythonds/Graphs/toctree.html)
 
 ## Homework
 

@@ -49,3 +49,7 @@
 [submodule "containers_12"]
 	path = week_12/containers
 	url = https://gitlab.com/claremont-mckenna/random-project-name
+
+[submodule "risk"]
+	path = week_14/risk
+	url = https://github.com/mikeizbicki/risk
