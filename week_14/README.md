@@ -1,5 +1,7 @@
 # More Graphs/Wrap up
 
+Notes to be added.
+
 ## Homework: conquer the world with Risk
 
 You will implement several graph algorithms to develop a tool for the game of Risk.
