@@ -163,7 +163,7 @@ To ensure this is the case, you will have to modify the set of neighbors in the 
 
 Complete the following tasks:
 
-1. Fork the [risk repo](https://github.com/mikeizbicki/risk) and enable travis
+1. Fork the [risk repo](https://github.com/mikeizbicki/risk) and clone it onto the lambda server
 1. Update the `README.md` file so that the github actions badge points to your repo
 1. Implement the `is_valid_path`, `is_valid_attack_path`, `cost_of_attack_path`, `shortest_path`, `can_reinforce`, `cheapest_attack_path`, and `can_attack` functions.
 1. Submit the link to your github repo into sakai.
