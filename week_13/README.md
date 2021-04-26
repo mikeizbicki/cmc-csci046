@@ -6,6 +6,7 @@ Graphs are one of the key unifying concepts in computer science.
 Many problems can be solved by:
 1. convert the problem into the language of graphs, and then
 2. use an appropriate graph algorithm.
+
 For example:
 1. All artificial intelligence problems fit this pattern.
 1. Many of the classic SWE interview questions fit this pattern.
