@@ -34,7 +34,7 @@ we get different algorithms.
 | Algorithm | Data Structure | Run Time |
 | --------- | -------------- | -------- |
 | Depth First Search (DFS) | Stack (list/deque) | O(V + E) |
-| Bread First Search (BFS) | Queue (deque) | O(V + E) |
+| Breadth First Search (BFS) | Queue (deque) | O(V + E) |
 | Dijkstra's Algorithm (shortest path) | Priority Queue (heap) | O( (V + E) log V) |
 
 Textbook reference: [chapter 8](https://runestone.academy/runestone/books/published/pythonds/Graphs/toctree.html)
