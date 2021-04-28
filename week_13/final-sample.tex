@@ -234,7 +234,7 @@ and each blank answer in 0 points.
 \item \TFQuestion{F}{Merge sort is guaranteed to run asymptotically faster than insertion sort for all input lists.}
 \item \TFQuestion{T}{Python's built-in \lstinline{sort} function allocates $\Omega(n)$ memory.}
 \item \TFQuestion{F}{Python's built-in \lstinline{range} function allocates $\Theta(n)$ memory.}
-\item \TFQuestion{T}{In python 3, the \lstinline{__elem__} method of the \lstinline{set} class is asymptotically faster than the \lstinline{__elem__} method of the \lstinline{list} class.}
+\item \TFQuestion{T}{In python 3, the \lstinline{__contains__} method of the \lstinline{set} class is asymptotically faster than the \lstinline{__contains__} method of the \lstinline{list} class.}
 \item \TFQuestion{T}{The worst case runtime for inserting into an AVL Tree is better than the worst case runtime for inserting into a BST.}
 \item \TFQuestion{F}{Python dictionaries are internally implemented using an AVL tree written in the C programming language.}
 \item \TFQuestion{T}{The height of every BST is guaranteed to be $\Omega(\log n)$.}
@@ -396,7 +396,7 @@ def trinary_search(xs,val):
             What is the recurrence relation describing the runtime of \texttt{trinary\_search}?
             Assume that the input data structue is a list.
 
-            \answer{$T(n) = 3T(n/3) + 1$}
+            \answer{$T(n) = T(n/3) + 1$}
 
         \newpage
         \item
