@@ -5,26 +5,28 @@
 ## Big ideas
 
 1. For every data structure, know the runtimes of the operations
+    1. Changing data structure (e.g. list -> deque, list -> numpy.array) can speed up the program dramatically
+        1. "No free lunch": there is no universally optimal data structure
     1. Quadratic runtimes are the worst
         1. Fast enough that you don't notice a problem at first
         1. But once there's lots of data, things get REAL SLOW
-    1. Happens all the time in practice:
+        1. Happens all the time in practice:
 
-       1. Microsoft Windows arranging the tiles on the desktop
+           1. Microsoft Windows arranging the tiles on the desktop
 
-          https://randomascii.wordpress.com/2021/02/16/arranging-invisible-icons-in-quadratic-time/
-    
-       1. reduce GTA load times from 7 minutes to instant by removing accidentally quadratic code
+              https://randomascii.wordpress.com/2021/02/16/arranging-invisible-icons-in-quadratic-time/
+        
+           1. reduce GTA load times from 7 minutes to instant by removing accidentally quadratic code
 
-          https://nee.lv/2021/02/28/How-I-cut-GTA-Online-loading-times-by-70/
+              https://nee.lv/2021/02/28/How-I-cut-GTA-Online-loading-times-by-70/
 
-       1. stackoverflow crashed due to accidentally quadratic code
-       
-          https://stackstatus.net/post/147710624694/outage-postmortem-july-20-2016
+           1. stackoverflow crashed due to accidentally quadratic code
+           
+              https://stackstatus.net/post/147710624694/outage-postmortem-july-20-2016
 
-       1. many more examples
-       
-          https://accidentallyquadratic.tumblr.com/
+           1. many more examples
+           
+              https://accidentallyquadratic.tumblr.com/
 
 1. Binary Search/AVL tree is magical
     1. O(n) => O(log n) = basically instant for all n
@@ -68,7 +70,7 @@
 
 Where to go from here?
 1. CSCI143: Big Data (practice of data science)
-1. CSCI145/MATH166: Data Mining (theory of data science))
+1. CSCI145/MATH166: Data Mining (theory of data science)
 1. CSCI148: Graph Algorithms (SWE interview questions)
 
 **If there's ever anything I can do to help you in the future, please reach out.**
