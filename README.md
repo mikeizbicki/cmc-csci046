@@ -328,9 +328,11 @@ word_ladder assignment:
 big-oh:
     big-o of the word ladder with set vs list
     memory usage O(1) vs O(n) vs O(n^2)
+    accidentally quadratic
 
 twitter: 
     sys.exit() and bash $?
+    use the cowsay and fortune as an example for piping
 
 
 in the sorting assignment, the _merge function is a dependency of quick_sorted();
@@ -349,4 +351,15 @@ lab processes:
 No `nohup.out` file in the repo.
 
 introduce superclasses/static methods before the week on BSTs; it's too much to do it all at once; consider doing the deque class
+
+Should probably do doubly linked list as Deque before doing BSTs
+
+Demo something like the insert function in class; it's difficult for students to do the recursive inserts that modify the node values
+
+Should add an insert/remove_min function to the BST/AVLTree class? as an analogy to the heap
+
+Clarify which trees should have duplicates/no duplicates
+
+Add tests to BST/AVLTree/Heap for runtime of operations
+
 -->
