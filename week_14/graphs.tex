@@ -1,0 +1,541 @@
+\documentclass[12pt]{exam}
+\usepackage[utf8]{inputenc}
+
+\usepackage[normalem]{ulem}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = black, %Colour for external hyperlinks
+  linkcolor    = blue, %Colour of internal links
+  citecolor    = blue  %Colour of citations
+}
+
+\usepackage{multirow}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\usepackage[table]{xcolor}
+\usepackage{color}
+\usepackage{colortbl}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{gray}{rgb}{0.7,0.7,0.7}
+
+\usepackage{listings}
+\lstset {
+	basicstyle=\ttfamily,
+    ,language=SQL
+    ,showstringspaces=false
+    ,keepspaces=true
+}
+
+\usepackage {tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{positioning}
+\definecolor {processblue}{cmyk}{0.96,0,0,0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% question definitions
+
+%\printanswers
+
+\newcommand*{\hl}[1]{\colorbox{yellow}{#1}}
+
+\newcommand*{\answerLong}[2]{
+    \ifprintanswers{\hl{#1}}
+\else{#2}
+\fi
+}
+
+\newcommand*{\answer}[1]{\answerLong{#1}{~}}
+
+\newcommand*{\TrueFalse}[1]{%
+\ifprintanswers
+    \ifthenelse{\equal{#1}{T}}{%
+        \hl{\textbf{TRUE}}\hspace*{14pt}False
+    }{
+        True\hspace*{14pt}\hl{\textbf{FALSE}}
+    }
+\else
+    {True}\hspace*{20pt}False
+\fi
+} 
+%% The following code is based on an answer by Gonzalo Medina
+%% https://tex.stackexchange.com/a/13106/39194
+\newlength\TFlengthA
+\newlength\TFlengthB
+\settowidth\TFlengthA{\hspace*{1.3in}}
+\newcommand\TFQuestion[2]{%
+    \setlength\TFlengthB{\linewidth}
+    \addtolength\TFlengthB{-\TFlengthA}
+    \parbox[t]{\TFlengthA}{\TrueFalse{#1}}\parbox[t]{\TFlengthB}{#2}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\theoremstyle{definition}
+\newtheorem{problem}{Problem}
+\newcommand{\E}{\mathbb E}
+\newcommand{\R}{\mathbb R}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\newcommand{\trans}[1]{{#1}^{T}}
+\newcommand{\loss}{\ell}
+\newcommand{\w}{\mathbf w}
+\newcommand{\x}{\mathbf x}
+\newcommand{\y}{\mathbf y}
+\newcommand{\ltwo}[1]{\lVert {#1} \rVert}
+
+\newcommand{\ignore}[1]{}
+
+\usepackage{listings}
+
+% Default fixed font does not support bold face
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
+
+% Python style for highlighting
+\newcommand\pythonstyle{\lstset{
+language=Python,
+basicstyle=\ttm,
+otherkeywords={self},             % Add keywords here
+keywordstyle=\ttb\color{deepblue},
+emph={MyClass,__init__},          % Custom highlighting
+emphstyle=\ttb\color{deepred},    % Custom highlighting style
+stringstyle=\color{deepgreen},
+frame=tb,                         % Any extra options here
+showstringspaces=false            % 
+stepnumber=1,
+numbers=left
+}}
+
+\lstnewenvironment{python}[1][]
+{
+    \pythonstyle
+    \lstset{#1}
+}
+{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+    {
+\Large
+    CSCI046: Graphs Example Problems
+}
+
+    %\vspace{0.1in}
+%CSCI046, Mike Izbicki
+
+    \vspace{0.1in}
+\end{center}
+
+
+\begin{problem}
+List all of the shortest paths from node S to node T in the following graph.
+If no path exists between these two nodes, say so.
+
+    \vspace{0.1in}
+\begin{center}
+\begin {tikzpicture}[
+    %-latex ,
+    auto ,
+    node distance =1.5in and 1.5in,
+    on grid ,
+    semithick ,
+    -{Latex[length=3mm]},
+    state/.style ={
+        circle,
+        color = black ,
+        draw,
+        text=black ,
+        minimum width =1 cm
+    },
+    term/.style ={
+        color = black ,
+        draw,
+        line width=2pt,
+        text=black ,
+        minimum width =1 cm,
+        minimum height =1 cm
+    }]
+
+\node[term] (S) {S};
+\node[state] (A) [right=of S] {A};
+\node[state] (B) [right=of A] {B};
+\node[state] (C) [right=of B] {C};
+\node[state] (D) [below right= 1.5in and 0.75in of S] {D};
+\node[state] (E) [right=of D] {E};
+\node[state] (F) [right=of E] {F};
+\node[state] (G) [right=of F] {G};
+\node[state] (H) [below left= 1.5in and 0.75in of D] {H};
+\node[state] (I) [right=of H] {I};
+\node[state] (J) [right=of I] {J};
+\node[state] (K) [right=of J] {K};
+\node[state] (L) [below right= 1.5in and 0.75in of H] {L};
+\node[state] (M) [right=of L] {M};
+\node[term] (T) [right=of M] {T};
+\node[state] (O) [right=of T] {O};
+
+    \path (S) edge node{1} (A);
+        \path (A) edge node{1} (B);
+        \path (A) edge node{7} (F);
+        \path (A) edge node{5} (E);
+    \path (S) edge node{3} (D);
+        \path (A) edge node{1} (D);
+        \path (D) edge node{3} (E);
+        %\path (D) edge node{2} (J);
+    \path (S) edge[bend right=25] node{2} (H);
+        \path (H) edge node{2} (D);
+        %\path (H) edge node{2} (E);
+        \path (H) edge node{1} (I);
+        \path (H) edge node{17} (L);
+
+
+    \path (L) edge node{2} (I);
+    \path (L) edge node{2} (J);
+    \path (L) edge node{2} (M);
+    \path (L) edge[bend right=30] node{2} (O);
+
+    \path (B) edge[bend left=15] node{3} (C);
+    \path (C) edge[bend left=15] node{2} (B);
+    \path (C) edge node{2} (F);
+    \path (C) edge node{7} (K);
+    \path (C) edge[bend left=50] node{2} (O);
+
+    \path (G) edge node{4} (C);
+    \path (G) edge node{2} (K);
+    \path (G) edge node{5} (O);
+
+    \path (J) edge node{2} (T);
+    \path (K) edge node{2} (T);
+    \path (O) edge node{9} (T);
+
+    \path (J) edge node{2} (M);
+    \path (M) edge node{1} (T);
+    \path (O) edge node{2} (K);
+
+    \path (K) edge node{3} (F);
+    \path (E) edge[bend right=25] node{7} (J);
+    \path (E) edge[bend left=25] node{5} (J);
+    \path (F) edge node{2} (J);
+%\path (A) edge [loop left] node[left] {$1/4$} (A);
+%\path (S) edge [bend left =25] node[below =0.15 cm] {$1/2$} (A);
+%\path (A) edge [bend right = -15] node[below =0.15 cm] {$1/2$} (C);
+%\path (A) edge [bend left =25] node[above] {$1/4$} (B);
+%\path (B) edge [bend left =15] node[below =0.15 cm] {$1/2$} (A);
+%\path (C) edge [bend left =15] node[below =0.15 cm] {$1/2$} (B);
+%\path (B) edge [bend right = -25] node[below =0.15 cm] {$1/2$} (C);
+\end{tikzpicture}
+\end{center}
+\end{problem}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\begin{problem}
+List all of the shortest paths from node S to node T in the following graph.
+If no path exists between these two nodes, say so.
+
+    \vspace{0.1in}
+\begin{center}
+\begin {tikzpicture}[
+    %-latex ,
+    auto ,
+    node distance =1.5in and 1.5in,
+    on grid ,
+    semithick ,
+    %-{Latex[length=3mm]},
+    state/.style ={
+        circle,
+        color = black ,
+        draw,
+        text=black ,
+        minimum width =1 cm
+    },
+    term/.style ={
+        color = black ,
+        draw,
+        line width=2pt,
+        text=black ,
+        minimum width =1 cm,
+        minimum height =1 cm
+    }]
+
+\node[term] (S) {S};
+\node[state] (A) [right=of S] {A};
+\node[state] (B) [right=of A] {B};
+\node[state] (C) [right=of B] {C};
+\node[state] (D) [below right= 1.5in and 0.75in of S] {D};
+\node[state] (E) [right=of D] {E};
+\node[state] (F) [right=of E] {F};
+\node[state] (G) [right=of F] {G};
+\node[state] (H) [below left= 1.5in and 0.75in of D] {H};
+\node[state] (I) [right=of H] {I};
+\node[state] (J) [right=of I] {J};
+\node[state] (K) [right=of J] {K};
+\node[state] (L) [below right= 1.5in and 0.75in of H] {L};
+\node[state] (M) [right=of L] {M};
+\node[term] (T) [right=of M] {T};
+\node[state] (O) [right=of T] {O};
+
+    \path (S) edge node{1} (A);
+        \path (A) edge node{1} (B);
+        \path (A) edge node{7} (F);
+        \path (A) edge node{5} (E);
+    \path (S) edge node{3} (D);
+        \path (A) edge node{1} (D);
+        \path (D) edge node{3} (E);
+        %\path (D) edge node{2} (J);
+    \path (S) edge[bend right=25] node{2} (H);
+        \path (H) edge node{2} (D);
+        %\path (H) edge node{2} (E);
+        \path (H) edge node{1} (I);
+        \path (H) edge node{17} (L);
+
+
+    \path (L) edge node{2} (I);
+    \path (L) edge node{2} (J);
+    \path (L) edge node{2} (M);
+    \path (L) edge[bend right=30] node{2} (O);
+
+    \path (B) edge[bend left=15] node{3} (C);
+    \path (C) edge[bend left=15] node{2} (B);
+    \path (C) edge node{2} (F);
+    \path (C) edge node{7} (K);
+    \path (C) edge[bend left=50] node{2} (O);
+
+    \path (G) edge node{4} (C);
+    \path (G) edge node{2} (K);
+    \path (G) edge node{5} (O);
+
+    \path (J) edge node{2} (T);
+    \path (K) edge node{2} (T);
+    \path (O) edge node{9} (T);
+
+    \path (J) edge node{2} (M);
+    \path (M) edge node{1} (T);
+    \path (O) edge node{2} (K);
+
+    \path (K) edge node{3} (F);
+    \path (E) edge[bend right=25] node{7} (J);
+    \path (E) edge[bend left=25] node{5} (J);
+    \path (F) edge node{2} (J);
+%\path (A) edge [loop left] node[left] {$1/4$} (A);
+%\path (S) edge [bend left =25] node[below =0.15 cm] {$1/2$} (A);
+%\path (A) edge [bend right = -15] node[below =0.15 cm] {$1/2$} (C);
+%\path (A) edge [bend left =25] node[above] {$1/4$} (B);
+%\path (B) edge [bend left =15] node[below =0.15 cm] {$1/2$} (A);
+%\path (C) edge [bend left =15] node[below =0.15 cm] {$1/2$} (B);
+%\path (B) edge [bend right = -25] node[below =0.15 cm] {$1/2$} (C);
+\end{tikzpicture}
+\end{center}
+\end{problem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\begin{problem}
+List all of the shortest paths from node S to node T in the following graph.
+If no path exists between these two nodes, say so.
+
+    \vspace{0.1in}
+\begin{center}
+\begin {tikzpicture}[
+    %-latex ,
+    auto ,
+    node distance =1.5in and 1.5in,
+    on grid ,
+    semithick ,
+    -{Latex[length=3mm]},
+    state/.style ={
+        circle,
+        color = black ,
+        draw,
+        text=black ,
+        minimum width =1 cm
+    },
+    term/.style ={
+        color = black ,
+        draw,
+        line width=2pt,
+        text=black ,
+        minimum width =1 cm,
+        minimum height =1 cm
+    }]
+
+\node[term] (S) {S};
+\node[state, label=above:1] (A) [right=of S] {A};
+\node[state, label=above:5] (B) [right=of A] {B};
+\node[state, label=above:9] (C) [right=of B] {C};
+\node[state, label=above:2] (D) [below right= 1.5in and 0.75in of S] {D};
+\node[state, label=above:2] (E) [right=of D] {E};
+\node[state, label=above:4] (F) [right=of E] {F};
+\node[state, label=above:2] (G) [right=of F] {G};
+\node[state, label=above:3] (H) [below left= 1.5in and 0.75in of D] {H};
+\node[state, label=above:1] (I) [right=of H] {I};
+\node[state, label=right:9] (J) [right=of I] {J};
+\node[state, label=right:8] (K) [right=of J] {K};
+\node[state, label=above:3] (L) [below right= 1.5in and 0.75in of H] {L};
+\node[state, label=above:5] (M) [right=of L] {M};
+\node[term] (T) [right=of M] {T};
+\node[state, label=right:3] (O) [right=of T] {O};
+
+    \path (S) edge  (A);
+        \path (A) edge  (B);
+        \path (A) edge  (F);
+        \path (A) edge  (E);
+    \path (S) edge  (D);
+        \path (A) edge  (D);
+        \path (D) edge  (E);
+        %\path (D) edge  (J);
+    \path (S) edge[bend right=25]  (H);
+        \path (H) edge  (D);
+        %\path (H) edge  (E);
+        \path (H) edge  (I);
+        \path (H) edge  (L);
+
+
+    \path (L) edge  (I);
+    \path (L) edge  (J);
+    \path (L) edge  (M);
+    \path (L) edge[bend right=30] (O);
+
+    \path (B) edge[bend left=15]  (C);
+    \path (C) edge[bend left=15]  (B);
+    \path (C) edge  (F);
+    \path (C) edge  (K);
+    \path (C) edge[bend left=50] (O);
+
+    \path (G) edge  (C);
+    \path (G) edge  (K);
+    \path (G) edge  (O);
+
+    \path (J) edge  (T);
+    \path (K) edge  (T);
+    \path (O) edge  (T);
+
+    \path (J) edge  (M);
+    \path (M) edge  (T);
+    \path (O) edge  (K);
+
+    \path (K) edge  (F);
+    \path (E) edge[bend right=25] (J);
+    \path (E) edge[bend left=25]  (J);
+    \path (F) edge  (J);
+\end{tikzpicture}
+\end{center}
+\end{problem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\begin{problem}
+List all of the shortest paths from node S to node T in the following graph.
+If no path exists between these two nodes, say so.
+
+    \vspace{0.1in}
+\begin{center}
+\begin {tikzpicture}[
+    %-latex ,
+    auto ,
+    node distance =1.5in and 1.5in,
+    on grid ,
+    semithick ,
+    %-{Latex[length=3mm]},
+    state/.style ={
+        circle,
+        color = black ,
+        draw,
+        text=black ,
+        minimum width =1 cm
+    },
+    term/.style ={
+        color = black ,
+        draw,
+        line width=2pt,
+        text=black ,
+        minimum width =1 cm,
+        minimum height =1 cm
+    }]
+
+\node[term] (S) {S};
+\node[state, label=above:1] (A) [right=of S] {A};
+\node[state, label=above:5] (B) [right=of A] {B};
+\node[state, label=above:9] (C) [right=of B] {C};
+\node[state, label=above:2] (D) [below right= 1.5in and 0.75in of S] {D};
+\node[state, label=above:2] (E) [right=of D] {E};
+\node[state, label=above:4] (F) [right=of E] {F};
+\node[state, label=above:2] (G) [right=of F] {G};
+\node[state, label=above:3] (H) [below left= 1.5in and 0.75in of D] {H};
+\node[state, label=above:1] (I) [right=of H] {I};
+\node[state, label=right:9] (J) [right=of I] {J};
+\node[state, label=right:8] (K) [right=of J] {K};
+\node[state, label=above:3] (L) [below right= 1.5in and 0.75in of H] {L};
+\node[state, label=above:5] (M) [right=of L] {M};
+\node[term] (T) [right=of M] {T};
+\node[state, label=right:3] (O) [right=of T] {O};
+
+    \path (S) edge  (A);
+        \path (A) edge  (B);
+        \path (A) edge  (F);
+        \path (A) edge  (E);
+    \path (S) edge  (D);
+        \path (A) edge  (D);
+        \path (D) edge  (E);
+        %\path (D) edge  (J);
+    \path (S) edge[bend right=25]  (H);
+        \path (H) edge  (D);
+        %\path (H) edge  (E);
+        \path (H) edge  (I);
+        \path (H) edge  (L);
+
+
+    \path (L) edge  (I);
+    \path (L) edge  (J);
+    \path (L) edge  (M);
+    \path (L) edge[bend right=30] (O);
+
+    \path (B) edge[bend left=15]  (C);
+    \path (C) edge[bend left=15]  (B);
+    \path (C) edge  (F);
+    \path (C) edge  (K);
+    \path (C) edge[bend left=50] (O);
+
+    \path (G) edge  (C);
+    \path (G) edge  (K);
+    \path (G) edge  (O);
+
+    \path (J) edge  (T);
+    \path (K) edge  (T);
+    \path (O) edge  (T);
+
+    \path (J) edge  (M);
+    \path (M) edge  (T);
+    \path (O) edge  (K);
+
+    \path (K) edge  (F);
+    \path (E) edge[bend right=25] (J);
+    \path (E) edge[bend left=25]  (J);
+    \path (F) edge  (J);
+\end{tikzpicture}
+\end{center}
+\end{problem}
+
+\end{document}
