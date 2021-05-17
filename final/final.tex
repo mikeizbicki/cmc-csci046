@@ -1,0 +1,613 @@
+\documentclass[12pt]{exam}
+\usepackage[utf8]{inputenc}
+
+\usepackage[normalem]{ulem}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = black, %Colour for external hyperlinks
+  linkcolor    = blue, %Colour of internal links
+  citecolor    = blue  %Colour of citations
+}
+
+\usepackage{multirow}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\usepackage[table]{xcolor}
+\usepackage{color}
+\usepackage{colortbl}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{gray}{rgb}{0.7,0.7,0.7}
+
+\usepackage{listings}
+\lstset {
+	basicstyle=\ttfamily,
+    ,language=SQL
+    ,showstringspaces=false
+    ,keepspaces=true
+}
+
+\usepackage {tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{positioning}
+\definecolor {processblue}{cmyk}{0.96,0,0,0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% question definitions
+
+\printanswers
+
+\newcommand*{\hl}[1]{\colorbox{yellow}{#1}}
+
+\newcommand*{\answerLong}[2]{
+    \ifprintanswers{\hl{#1}}
+\else{#2}
+\fi
+}
+
+\newcommand*{\answer}[1]{\answerLong{#1}{~}}
+
+\newcommand*{\TrueFalse}[1]{%
+\ifprintanswers
+    \ifthenelse{\equal{#1}{T}}{%
+        \hl{\textbf{TRUE}}\hspace*{14pt}False
+    }{
+        True\hspace*{14pt}\hl{\textbf{FALSE}}
+    }
+\else
+    {True}\hspace*{20pt}False
+\fi
+} 
+%% The following code is based on an answer by Gonzalo Medina
+%% https://tex.stackexchange.com/a/13106/39194
+\newlength\TFlengthA
+\newlength\TFlengthB
+\settowidth\TFlengthA{\hspace*{1.3in}}
+\newcommand\TFQuestion[2]{%
+    \setlength\TFlengthB{\linewidth}
+    \addtolength\TFlengthB{-\TFlengthA}
+    \parbox[t]{\TFlengthA}{\TrueFalse{#1}}\parbox[t]{\TFlengthB}{#2}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\theoremstyle{definition}
+\newtheorem{problem}{Problem}
+\newcommand{\E}{\mathbb E}
+\newcommand{\R}{\mathbb R}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\newcommand{\trans}[1]{{#1}^{T}}
+\newcommand{\loss}{\ell}
+\newcommand{\w}{\mathbf w}
+\newcommand{\x}{\mathbf x}
+\newcommand{\y}{\mathbf y}
+\newcommand{\ltwo}[1]{\lVert {#1} \rVert}
+
+\newcommand{\ignore}[1]{}
+
+\usepackage{listings}
+
+% Default fixed font does not support bold face
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
+
+% Python style for highlighting
+\newcommand\pythonstyle{\lstset{
+language=Python,
+basicstyle=\ttm,
+otherkeywords={self},             % Add keywords here
+keywordstyle=\ttb\color{deepblue},
+emph={MyClass,__init__},          % Custom highlighting
+emphstyle=\ttb\color{deepred},    % Custom highlighting style
+stringstyle=\color{deepgreen},
+frame=tb,                         % Any extra options here
+showstringspaces=false            % 
+stepnumber=1,
+numbers=left
+}}
+
+\lstnewenvironment{python}[1][]
+{
+    \pythonstyle
+    \lstset{#1}
+}
+{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+    {
+\Large
+    CSCI046 Final, Spring 2021
+}
+
+    \vspace{0.1in}
+\end{center}
+
+\noindent
+\textbf{Collaboration policy:} 
+
+\vspace{0.1in}
+\noindent
+You may not:
+\begin{enumerate}
+    \item discuss the exam with any human other than Mike; this includes:
+        \begin{enumerate}
+            \item asking your friend for clarification about what a problem is asking
+            \item asking your friend if they've completed the exam
+        \end{enumerate}
+\end{enumerate}
+
+\noindent
+You may:
+\begin{enumerate}
+    \item take as much time as needed
+    \item use any written notes / electronic resources you would like
+    \item ask Mike to clarify questions via email
+\end{enumerate}
+
+
+\vspace{0.15in}
+
+\vspace{0.25in}
+\noindent
+Name: 
+
+\noindent
+\rule{\textwidth}{0.1pt}
+\vspace{0.15in}
+
+
+\newpage
+\begin{problem}
+(3 pts)
+    Complete each equation below by adding the symbol $O$ if $f=O(g)$, $\Omega$ if $f=\Omega(g)$, or $\Theta$ if $f=\Theta(g)$.  
+    The first row is completed for you as an example.
+
+    You will lose one point for each incorrect answer.
+
+{\renewcommand{\arraystretch}{3.4}
+\begin{tabular}{c c c c c c}
+    & f(n) &~\hspace{0.5in}~$ $~\hspace{0.5in}~& g(n) &\\
+    \hline
+    & $1$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & $O(n)$ &  &\\
+    \arrayrulecolor{gray}\hline
+    & $n^3$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & \answer{$\Omega$} $n^2$ &  &\\
+    \arrayrulecolor{gray}\hline
+    & $1/n$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & \answer{$\Omega$} $1/n^2$ &  &\\
+    \arrayrulecolor{gray}\hline
+    & $\frac n {\log n}$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & \answer{$O$} $\left(\frac n {\log n}\right)^2$ &  &\\
+    \arrayrulecolor{gray}\hline
+    & $2^{n}$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & \answer{$O$} $3^n$ &  &\\
+    \arrayrulecolor{gray}\hline
+    & $\log (2^n)$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & \answer{$\Theta$} $\log (3^n)$ &  &\\
+    \arrayrulecolor{gray}\hline
+    & $\log n$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & \answer{$O$} $n^{0.01}$ &  &\\
+    \arrayrulecolor{gray}\hline
+    & $\log (3n)$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & \answer{$\Theta$} $\log (4n)$ &  &\\
+    \arrayrulecolor{gray}\hline
+    & $n$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & \answer{$\Theta$} $n+n$ &  &\\
+    \arrayrulecolor{gray}\hline
+    & $2^n$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & \answer{$\Omega$} $n^2$ &  &\\
+    \arrayrulecolor{gray}\hline
+
+    %& $O(1)$ & or & $O(n)$ & or & equal\\
+    %& $O(n\log n)$ & or & $O(n^2)$ & or & equal\\
+    %& $\Theta(1)$ & or & $\Theta(1/n)$ & or & equal\\
+    %& $\Omega(\log_2 n)$ & or & $\Omega(\log_3 n)$ & or & equal\\
+    %& $O(n^{42})$ & or & $O(42^n)$ & or & equal\\
+    %& $\Theta(5\cdot10^{30})$ & or & $\Theta(\log n)$ & or & equal\\
+    %& $\Omega(\log n)$ & or & $\Omega(\log (n^2))$ & or & equal\\
+    %& $O(2^n)$ & or & $O(3^n)$ & or & equal\\
+    %& $\Theta(n!)$ & or & $\Theta(n^2)$ & or & equal\\
+    %& $\Omega(\log n)$ & or & $\Omega((\log n)^2)$ & or & equal\\
+\end{tabular}
+}
+\end{problem}
+
+\newpage
+\begin{problem}
+(20 pts)
+For each question below, circle either True or False.
+Each correct answer will result in +1 point,
+each incorrect answer will result in -1 point,
+and each blank answer in 0 points.
+\begin{enumerate}
+\item \TFQuestion{T}{Any procedure with worst-case runtime $\Theta(n^2)$ is guaranteed to have best case runtime $O(n^2)$.}
+\item \TFQuestion{F}{TimSort is asymptotically faster than Merge sort on worst case input.}
+\item \TFQuestion{T}{TimSort is asymptotically faster than insertion sort on worst case input.}
+\item \TFQuestion{T}{When Python's built-in \lstinline{sorted} function is called on a list, it returns a new list object and leaves the original list unchanged.}
+\item \TFQuestion{F}{Binary search can be efficiently implemented using Python's built-in \lstinline{deque} data structure.}
+\item \TFQuestion{T}{Tuples cannot be modified in python after they are created.}
+\item \TFQuestion{T}{Python's built-in \lstinline{enumerate} function allocates $\Theta(1)$ memory.}
+\item \TFQuestion{F}{Python's built-in \lstinline{range} function is implemented natively in python using the \lstinline{yield} keyword.}
+\item \TFQuestion{T}{In Python 3, all classes that implement the \lstinline{__hash__} magic method are assumed to be immutable.}
+\item \TFQuestion{T}{The worst case runtime for inserting into a Binary Heap is better than the worst case runtime for inserting into a BST.}
+\item \TFQuestion{F}{Python sets implement the \lstinline{__hash__} magic method.}
+\item \TFQuestion{T}{The height of every binary heap is guaranteed to be $\Theta(\log n)$.}
+\item \TFQuestion{T}{The height of every AVL tree is guaranteed to be $\Theta(\log n)$.}
+\item \TFQuestion{F}{In Python 3, a \lstinline{deque} variable can be used as the key for a dictionary.}
+\item \TFQuestion{T}{An in-order traversal of a \lstinline{BST} will traverse the elements in sorted order.}
+\item \TFQuestion{F}{The Linux kernel is licensed using the GPL \emph{version 3}.}
+\item \TFQuestion{T}{If you find a github repo using the BSD3 license, you may legally use code from this repo in a GPL licensed project.}
+
+\item\TFQuestion{T}{Given the string ``C\'esar Ch\'avez'', an NFC-normalized UTF-8 encoding will require fewer bytes than a NFD-normalized UTF-8 encoding.}
+\item\TFQuestion{T}{Given any string in NFC form, normalizing to NFD and back to NFC is guaranteed to be an idempotent operation (i.e. you will get the same string back.)}
+\item\TFQuestion{T}{Given any string in NFKD form, normalizing to NFD and back to NFKD is guaranteed to be an idempotent operation (i.e. you will get the same string back.)}
+\end{enumerate}
+\end{problem}
+
+\newpage
+\begin{problem}
+Consider the following three functions:
+\begin{python}
+def print_container_1(xs):
+    for i in range(len(xs)):
+        print(xs.pop())
+
+def print_container_2_list(xs):
+    for i in range(len(xs)):
+        print(xs.pop(0))
+
+def print_container_2_deque(xs):
+    for i in range(len(xs)):
+        print(xs.popleft())
+\end{python}
+Notice that the first function will work whether the \texttt{xs} parameter is a list or a deque (i.e.\ it is \emph{polymorphic}).
+The other two functions, however, are not polymorphic and will throw errors when run with the wrong input type.
+\begin{enumerate}
+    \item 
+        (1 pt)
+        Assume we have a \textbf{list} with \texttt{n} elements.
+        What is the runtime of \texttt{print\_container\_1} on this list?
+        Your answer must be tight and in big-O notation.
+
+        \answer{$O(n)$}
+        \vspace{0.8in}
+    \item 
+        (1 pt)
+        Assume we have a \textbf{list} with \texttt{n} elements.
+        What is the runtime of \texttt{print\_container\_2\_list} on this list?
+        Your answer must be tight and in big-O notation.
+
+        \answer{$O(n^2)$}
+        \vspace{0.8in}
+    \item 
+        (1 pt)
+        Assume we have a \textbf{deque} with \texttt{n} elements.
+        What is the runtime of \texttt{print\_container\_1} on this deque?
+        Your answer must be tight and in big-O notation.
+
+        \answer{$O(n)$}
+        \vspace{0.8in}
+    \item 
+        (1 pt)
+        Assume we have a \textbf{deque} with \texttt{n} elements.
+        What is the runtime of \texttt{print\_container\_2\_deque} on this deque?
+        Your answer must be tight and in big-O notation.
+
+        \answer{$O(n)$}
+        \vspace{0.8in}
+\end{enumerate}
+\end{problem}
+
+\ignore{
+\newpage
+\begin{problem}
+Consider the following python function.
+\begin{python}
+def foo(xs,ys):
+    for x in xs:
+        if x in ys:
+            print('x in ys for x=',x)
+\end{python}
+Notice that \texttt{foo} is polymorphic in both \texttt{xs} and \texttt{ys}.
+\begin{enumerate}
+    \item 
+        Assume that \texttt{xs} is a \textbf{list} with $n$ elements,
+        and that \texttt{ys} is a \textbf{list} with $m$ elements.
+        What is the runtime of \texttt{foo}?
+        (Use big-O notation.)
+        \vspace{1in}
+    \item
+        Assume that \texttt{xs} is a \textbf{list} with $n$ elements,
+        and that \texttt{ys} is a \textbf{deque} with $m$ elements.
+        What is the runtime of \texttt{foo}?
+        (Use big-O notation.)
+        \vspace{1in}
+    \item
+        Assume that \texttt{xs} is a \textbf{list} with $n$ elements,
+        and that \texttt{ys} is a \textbf{set} with $m$ elements.
+        What is the runtime of \texttt{foo}?
+        (Use big-O notation.)
+        \vspace{1in}
+    \item
+        Assume that \texttt{xs} is a \textbf{list} with $n$ elements,
+        and that \texttt{ys} is a \textbf{dict} with $m$ elements.
+        What is the runtime of \texttt{foo}?
+        (Use big-O notation.)
+        \vspace{1in}
+\end{enumerate}
+\end{problem}
+}
+
+\ignore{
+\newpage
+\begin{problem}
+    Use iterative substitution to solve the following recurrence relation in big-O notation.
+    \begin{equation*}
+        T(n) = T(n-3) + n
+    \end{equation*}
+\end{problem}
+
+
+\newpage
+\begin{problem}
+    Use iterative substitution to solve the following recurrence relation in big-O notation.
+    \begin{equation*}
+        T(n) = 3T(n/3) + 1
+    \end{equation*}
+\end{problem}
+
+\newpage
+\begin{problem}
+    Use iterative substitution to solve the following recurrence relation in big-O notation.
+    \begin{equation*}
+        T(n) = T(n/3) + 1
+    \end{equation*}
+\end{problem}
+}
+
+
+
+
+\newpage
+\begin{problem}
+    The code below is my merge sort implementation for the week 5 homework.
+    Recall that we analyzed the runtime of merge sort when the input variable \lstinline{xs} was a \textbf{list} of length $n$,
+    and showed that the runtime was $\Theta(n \log n)$.
+    In this problem, we will compute the runtime when the input variable \lstinline{xs} is a \textbf{deque}.
+\begin{python}
+def merge_sorted(xs, cmp=cmp_standard):
+    if len(xs) <= 1:
+        return xs
+    else:
+        mid = len(xs) // 2
+        left = xs[:mid]
+        right = xs[mid:]
+        return _merged(
+            merge_sorted(left, cmp),
+            merge_sorted(right, cmp),
+            cmp
+            )
+
+def _merged(xs, ys, cmp=cmp_standard):
+    zs = []
+    i = 0
+    j = 0
+    while i < len(xs) and j < len(ys):
+        if cmp(xs[i], ys[j]) == -1:
+            zs.append(xs[i])
+            i += 1
+        else:
+            zs.append(ys[j])
+            j += 1
+    while i < len(xs):
+        zs.append(xs[i])
+        i += 1
+    while j < len(ys):
+        zs.append(ys[j])
+        j += 1
+    return zs
+\end{python}
+    \noindent
+    Note that lines 6 and 7 above take a slice of the \lstinline{xs} variable.
+    The built-in \lstinline{collections.deque} class does not by default support the ability to take slices,
+    and so the code above will generate an error message.
+    It is possible, however, to efficiently add the ability to take slices to the \lstinline{deque} class.
+    (You do not need to understand the details of how to do this, buth this stackoverflow link explains them: \url{https://stackoverflow.com/questions/10003143/how-to-slice-a-deque}.)
+    For this problem, you should assume that the above technique has been used to make the input deque slicable.
+    The runtime of computing the slice is $O(n)$, where $n$ is the size of the deque.
+    \newpage
+    \begin{enumerate}
+        \item
+            (2 pts)
+            Compute the recurrence relation that describes the runtime of the \lstinline{merge_sorted} function when the input variable \lstinline{xs} is a \textbf{deque}.
+            \begin{solution}
+                $$
+                T(n) = 2T(n/2) + n^2
+                $$
+            The key observation is that \lstinline{_merged} takes time $O(n^2)$ because it indexes into a deque.
+            \end{solution}
+            \vspace{4in}
+
+        \item
+            (2 pts)
+            Solve the recurrence relation in part 1 above, and report your answer in $\Theta$ notation.
+            Note that if you do not get the answer to part 1 above correct, you can get partial credit on this problem, but you will not get full credit.
+            \begin{solution}
+                $$
+                \Theta(n^2)
+                $$
+            \end{solution}
+    \end{enumerate}
+\end{problem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\begin{problem}
+In the questions below, assume that all data structures from the homeworks are correctly implemented.
+\begin{enumerate}
+\item
+(2 pts)
+What is the worst-case runtime of the \lstinline{heap_sorted} function defined below in terms of the length $n$ of the input list?
+(Use $\Theta$ notation.)
+\begin{python}
+from containers.Heap import Heap
+
+def heap_sorted(xs):
+    heap = Heap(xs)
+    ret = []
+    while len(heap) > 0:
+        ret.append(heap.find_smallest())
+        heap.remove_min()
+    return ret
+\end{python}
+
+\answer{$\Theta(n \log n)$}
+
+\vspace{1.5in}
+\item
+(2 pts)
+What is the runtime of the code below in terms of $n$?
+(Use $\Theta$ notation.)
+   
+\begin{python}
+from containers.BST import BST
+
+bst = BST()
+for i in range(n**2):
+    bst.insert(i)
+\end{python}
+\answer{$\Theta(n^4)$}
+
+\vspace{1in}
+
+\newpage
+\item
+(2 pts)
+What is the runtime of the code below in terms of $n$?
+(Use $\Theta$ notation.)
+   
+\begin{python}
+from containers.AVLTree import AVLTree
+
+avl = AVLTree()
+for i in range(n):
+    avl.insert(i)
+\end{python}
+\answer{$\Theta(n\log n)$}
+
+\vspace{1in}
+
+\end{enumerate}
+\end{problem}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\begin{problem}
+(3 pts)
+List all of the shortest paths from node S to node T in the following graph.
+If no path exists between these two nodes, say so.
+
+    \vspace{0.1in}
+\begin{center}
+\begin {tikzpicture}[
+    %-latex ,
+    auto ,
+    node distance =1.5in and 1.5in,
+    on grid ,
+    semithick ,
+    %-{Latex[length=3mm]},
+    state/.style ={
+        circle,
+        color = black ,
+        draw,
+        text=black ,
+        minimum width =1 cm
+    },
+    term/.style ={
+        color = black ,
+        draw,
+        line width=2pt,
+        text=black ,
+        minimum width =1 cm,
+        minimum height =1 cm
+    }]
+
+\node[term] (S) {S};
+\node[state, label=above:1] (A) [right=of S] {A};
+\node[state, label=above:5] (B) [right=of A] {B};
+\node[state, label=above:9] (C) [right=of B] {C};
+\node[state, label=above:2] (D) [below right= 1.5in and 0.75in of S] {D};
+\node[state, label=above:2] (E) [right=of D] {E};
+\node[state, label=above:4] (F) [right=of E] {F};
+\node[state, label=above:2] (G) [right=of F] {G};
+\node[state, label=above:3] (H) [below left= 1.5in and 0.75in of D] {H};
+\node[state, label=above:1] (I) [right=of H] {I};
+\node[state, label=right:9] (J) [right=of I] {J};
+\node[state, label=right:8] (K) [right=of J] {K};
+\node[state, label=above:3] (L) [below right= 1.5in and 0.75in of H] {L};
+\node[state, label=above:5] (M) [right=of L] {M};
+\node[term] (T) [right=of M] {T};
+\node[state, label=right:3] (O) [right=of T] {O};
+
+    \path (S) edge  (A);
+        \path (A) edge  (B);
+        \path (A) edge  (F);
+        \path (A) edge  (E);
+    \path (S) edge  (D);
+        \path (A) edge  (D);
+        \path (D) edge  (E);
+        %\path (D) edge  (J);
+    \path (S) edge[bend right=25]  (H);
+        \path (H) edge  (D);
+        %\path (H) edge  (E);
+        \path (H) edge  (I);
+        \path (H) edge  (L);
+
+
+    \path (L) edge  (I);
+    \path (L) edge  (J);
+    \path (L) edge  (M);
+    \path (L) edge[bend right=30] (O);
+
+    \path (B) edge[bend left=15]  (C);
+    \path (C) edge[bend left=15]  (B);
+    \path (C) edge  (F);
+    \path (C) edge  (K);
+    \path (C) edge[bend left=50] (O);
+
+    \path (G) edge  (C);
+    \path (G) edge  (K);
+    \path (G) edge  (O);
+
+    \path (J) edge  (T);
+    \path (K) edge  (T);
+    \path (O) edge  (T);
+
+    \path (J) edge  (M);
+    \path (M) edge  (T);
+    \path (O) edge  (K);
+
+    \path (K) edge  (F);
+    \path (E) edge[bend right=25] (J);
+    \path (E) edge[bend left=25]  (J);
+    \path (F) edge  (J);
+\end{tikzpicture}
+\end{center}
+\end{problem}
+\begin{solution}
+    SHLOT
+\end{solution}
+\end{document}
