@@ -43,7 +43,7 @@ so you should be able to finish this task in under 8 hours.
    This is the most accurate portrayal of hacking in any modern movie, see for example [this article](https://www.pri.org/stories/how-realistic-are-hacks-mr-robot) and [this article](https://www.wired.com/2016/07/real-hackers-behind-mr-robot-get-right/).
    Each additional season is worth 1 point.
 
-**Reading (Non-Fiction):** (1 point per chapter)
+**Reading (Non-Fiction):** (1 point each)
 
 1. Peter Norvig's [Teach Yourself Programming in Ten Years (not 21 days)](https://norvig.com/21-days.html).
     Norvig is one of the founders of Artificial Intelligence and Director of Research at Google.
