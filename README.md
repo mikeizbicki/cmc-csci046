@@ -1,4 +1,9 @@
 # CSCI046: Data Structures and Algorithms
+<!--
+See:
+http://nifty.stanford.edu/2020/schwarz-recursion-to-the-rescue/
+http://nifty.stanford.edu/2020/denero-typing-test/spec.html
+-->
 
 [![](smbc.png)](https://www.smbc-comics.com/comic/hansel-and-gretel)
 
@@ -9,7 +14,7 @@
 | Name | Mike Izbicki (call me Mike) |
 | Email | mizbicki@cmc.edu |
 | Office | Adams 216 |
-| Office Hours | MW 2pm-3pm, or by appointment |
+| Office Hours | TBA |
 | Webpage | [izbicki.me](https://izbicki.me) |
 | Research | Machine Learning (see [izbicki.me/research.html](https://izbicki.me/research.html) for some past projects) |
 
@@ -18,7 +23,7 @@ Fun facts:
 1. 7 years in the navy
 1. phd/postdoc at UC Riverside
 1. taught in [DPRK](https://pust.co)
-1. My wife is pregnant and due to have a baby early April.
+1. My wife is pregnant and due to have a baby April 18th.
    This may result in a class session being rescheduled,
    depending on when the baby decides to come.
 
@@ -32,19 +37,20 @@ Data structures is the most important course in computer science,
 and many of the "classic" CS interview questions come from this course.
 Mastering this material is the first step towards getting a high paying CS job.
 See:
-1. https://www.levels.fyi
+1. <https://www.levels.fyi>
 1. [tech employers illegally collude to reduce salaries](https://en.wikipedia.org/wiki/High-Tech_Employee_Antitrust_Litigation)
 
 **Who should take this course?**
 
 1. This is a second semester course in computer science designed for students who have previously taken either CS40 (CMC), CS5 (Mudd), or CS51 (Pomona).
 
-1. You cannot take this course if you've already taken a data structures course
-   (e.g. Pomona: CS62; HMC: CS60, CS70).
+1. You cannot take this course if:
+    1. you have already taken a data structures course
+       (e.g. Pomona: CS62; HMC: CS60, CS70), or
+    1. you are a CS major through Mudd or Pomona.
 
 1. This course is required for CMC's **data science major** and the computer science sequence.
    It is optional for the data science sequence.
-   You cannot take this course if you are a computer science major.
 
 **Learning Objectives:**
 
@@ -83,12 +89,12 @@ All of our textbooks are both [free as in beer](https://en.wiktionary.org/wiki/f
 
 **Grades:**
 
-You will have:
+Your grade will be composed of:
 
-1. Weekly labs (worth 2pts each)
-1. Weekly homeworks (worth 10-25 points each)
-1. No midterms, 1 open book final (worth approx. 30 points)
-1. In total, there will be about 250 points in the class.
+1. Weekly labs (worth `2**1` points)
+1. Weekly quizzes (worth `2**2` or `2**3` points)
+1. Weekly projects (worth `2**4` or `2**5` points)
+1. No midterm/final exam.
 
 Historically, the average student needs to spend about 10 hours per week (including class time) to get an A.
    About 25% of students will either:
@@ -113,33 +119,22 @@ with one caveat.
 | 60 &le; grade < 63               | D-            |
 | 60 > grade                       | F             |
 
-*CAVEAT:*
-In order to get an A/A- in this course,
-you must also complete one of the following two tasks to learn about the history of unix programming:
+**Caveats::**
 
-1. watch the following two documentaries about open source:
+There are 2 "caveat tasks" in this course.
+These tasks should be easy, and everyone will get full credit on the task just for completing the task.
+If you don't complete one of the tasks, however, your grade (from the table above) will be docked 10%.
+(For example, an A- grade would become a B- grade.) 
+You have the entire semester (until I submit grades) to complete these tasks.
 
-    <!-- 1. [AT&T Archives: The UNIX Operating System](https://www.youtube.com/watch?v=tc4ROCJYbm0) (from 1982; don't watch this until after spring break) -->
-
-    1. [RevolutionOS](https://www.youtube.com/watch?v=4vW62KqKJ5A) (from 2001)
-
-    1. [The Internet's Own Boy: The Story of Aaron Swartz](https://www.youtube.com/watch?v=9vz06QO3UkQ) (from 2014)
-
-1. read chapters 1-3 of [The Art of Unix Programming](http://catb.org/~esr/writings/taoup/html/context.html) by ESR
-
-I also strongly recommend that you read through the following advice from famous programmers,
-but it's not required:
-
-1. [Peter Norvig](https://norvig.com/21-days.html) (AI researcher and senior engineer at Google)
-1. [Paul Graham](http://www.paulgraham.com/college.html) (Founder of YCombinator startup incubator); [being a noob](http://paulgraham.com/noob.html)
-1. [Jeff Atwood](https://blog.codinghorror.com/how-to-become-a-better-programmer-by-not-programming/) (Founder of stackoverflow.com)
-1. [Eric Steven Raymond, better known as ESR](http://www.catb.org/esr/faqs/hacker-howto.html) (a famous hacker)
+You can find the details about the caveat tasks at:
+1. <caveat_tasks/typespeed.md>
+1. <caveat_tasks/culture.md>
 
 **Late Work Policy:**
 
-You lose 10% on the assignment for each day late.
-If you have extenuating circumstances, contact me in advance of the due date and I may extend the due date for you.
-
+You lose `2**i` points on every assignment,
+where `i` is the number of days late.
 It is usually better to submit a correct assignment late than an incorrect one on time.
 <!--
 2. [Algorithms](http://algorithmics.lsi.upc.edu/docs/Dasgupta-Papadimitriou-Vazirani.pdf) by Dasgupta, Papadimitriou, and Vazirani
@@ -197,83 +192,6 @@ Programming games:
 1. [bandit wargames](https://overthewire.org/wargames/bandit/bandit0.html)
 -->
 
-## Schedule
-
-### Lecture
-
-| Week | Date        | Topic                                                |
-| ---- | ----------- | ---------------------------------------------------- |
-| 0    | M, 25 Jan   | Unix + open source workflow                          |
-| 0    | W, 27 Jan   | Unix + open source workflow                          |
-| 1    | M, 01 Feb   | Intermediate Python Features                         |
-| 1    | W, 03 Feb   | Intermediate Python Features                         | <!-- Fri, 5 Feb is last day to add/drop -->
-| 2    | M, 08 Feb   | Stacks + Algorithm Analysis                          | 
-| 2    | W, 10 Feb   | Stacks + Algorithm Analysis                          | 
-| 3    | M, 15 Feb   | Queues + Algorithm Analysis                          |
-| 3    | W, 17 Feb   | Queues + Algorithm Analysis                          |
-| 4    | M, 22 Feb   | Recursion                                            |
-| 4    | W, 24 Feb   | Recursion                                            | 
-| 5    | M, 01 Mar   | Sorting                                              |
-| 5    | W, 03 Mar   | Sorting                                              |
-| 6    | M, 08 Mar   | **Spring Break**                                     |
-| 6    | W, 10 Mar   | **Spring Break**                                     |
-| 7    | M, 15 Mar   | Parallel Algorithms                                  |
-| 7    | W, 17 Mar   | Parallel Algorithms                                  |
-| 8    | M, 22 Mar   | Classes / generators                                 |
-| 8    | W, 24 Mar   | Classes / generators                                 |
-| 9    | M, 29 Mar   | ~~class cancelled for baby~~                         |
-| 9    | W, 31 Mar   | Unicode                                              | <!-- Cesar chavez day, observed on Friday -->
-| 10   | M, 05 Apr   | BST Trees                                            |
-| 10   | W, 07 Apr   | BST Trees                                            |
-| 11   | M, 12 Apr   | AVL Trees                                            |
-| 11   | W, 14 Apr   | AVL Trees                                            |
-| 12   | M, 19 Apr   | Heap Trees                                           |
-| 12   | W, 21 Apr   | Heap Trees                                           |
-| 13   | M, 26 Apr   | Hash Tables                                          |
-| 13   | W, 28 Apr   | Hash Tables                                          |
-| 14   | M, 03 May   | Graphs + Risk board game AI                          |
-| 14   | W, 05 May   | Graphs + Risk board game AI                          |
-
-<!--
-### Assignments
-
-We will have approximately 1 assignment per week in this course according to the following schedule.
-
-1: Git
-2: Runtime Analysis
-3: HTML_validator
-4: word_ladder
-5: scope and memory management
-6: binary search
-7: sorting
-8: midterm
-9: twitter
-10: binary search tree
-11: AVL tree
-12: Heap
-13: pypi
-14: risk
-
-| Assignment | Type    | Points | Topic                           |
-| ---------- | ------- | ------ | ------------------------------- |
-| 1          | project | 10     | Unix/Git tutorial               |
-| 2          | math    | 10     | Analysis/Big-O                  |
-| 3          | project | 10     | HTML validator                  |
-| 4          | project | 10     | word ladders                    |
-| 5          | math    | 10     | memory management               |
-| 6          | project | 10     | binary search                   |
-| 7          | project | 10     | sorting                         |
-| 8          | test    | 10     | midterm                         |
-| 9          | project | 10     | twitter data analysis           |
-| 10         | project | 10     | BST                             |
-| 11         | project | 10     | AVL tree                        |
-| 12         | project | 10     | Heaps                           |
-| 13         | math    | 10     | Graphs                          |
-| 14         | project | 10     | Dijkstra                        |
-| 15         | project | 10     | Knapsack                        |
-| 16         | test    | 20     | Final                           |
--->
-
 ## Technology Policy
 
 1. You must complete all programming assignments on the lambda server.
@@ -281,7 +199,7 @@ We will have approximately 1 assignment per week in this course according to the
 1. You must use either vim or emacs to complete all programming assignments.
    In particular, you may not use the GitHub text editor, VSCode, IDLE, or PyCharm for any reason.
 
-1. You must not share your lambda-server password with anyone else.
+1. You must not share your lambda-server credentials with anyone else.
 
 Violations of any of these policies will be treated as academic integrity violations.
 
@@ -295,15 +213,16 @@ subject to the following constraints:
 
 You may use any online resources you like as references.
 
-**WARNING:**
-All material in this class is cumulative.
-If you work "too closely" with another student on an assignment,
-you won't understand how to complete subsequent assignments,
-and you will quickly fall behind.
-You should view collaboration as a way to improve your understanding,
-not as a way to do less work.
-
-**You are ultimately responsible for ensuring you learn the material!**
+> **WARNING:**
+> 
+> All material in this class is cumulative.
+> If you work "too closely" with another student on an assignment,
+> you won't understand how to complete subsequent assignments,
+> and you will quickly fall behind.
+> You should view collaboration as a way to improve your understanding,
+> not as a way to do less work.
+> 
+> **You are ultimately responsible for ensuring you learn the material!**
 
 ## Accommodations for Disabilities
 
