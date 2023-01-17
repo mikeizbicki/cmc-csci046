@@ -531,8 +531,8 @@ Your repo DAG now looks like:
 
 We say that `userinput` is "two commits ahead" of `master` because we have created two commits on the `userinput` branch.
 
-The way branches are used out in the real world depends on the company you work for and the product you're making.
 A typical software engineer might make anywhere from one new branch per week to 5 or more new branches per day.
+The amount of branching depends on the types of programs being developed and the difficulty of the features being added.
 
 ## Fixing a bug
 
