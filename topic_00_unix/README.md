@@ -12,9 +12,7 @@ We will cover how to
 
 1. work on a remote unix server
 1. use the git version control system
-<!--
 1. use continuous integration to "prove" that your code works
--->
 
 Cheat sheets:
 
@@ -28,6 +26,8 @@ Cheat sheets:
 **Due Date:**
 
 Labs are always due on midnight of the Sunday of the week that they are assigned (i.e. January 22 for this lab).
+
+Since this is the first lab, there will be no late penalty applied if you cannot complete it in time.
 
 **Pre-lab work:**
 
@@ -45,6 +45,15 @@ Labs are always due on midnight of the Sunday of the week that they are assigned
    ```
    Complete all instructions in order to learn vim.
    This should take 30-60 minutes.
+
+   Vim is famous for having a steep learning curve,
+   and has inspired lots of memes/comics:
+
+   <img src=vim-productivity.jpg width=500px>
+
+   <img src=vim-comic2.webp width=500px>
+
+   <img src=vim-comic.jpg width=500px>
 
     1. (Optional)
        Play the https://vim-adventures.com game to learn vim while playing a game.
@@ -79,3 +88,15 @@ Labs are always due on midnight of the Sunday of the week that they are assigned
 
 Submit a link to your pull request in sakai.
 (I need the link since your github usernames are pseudonymous, and I won't know who to give credit for the lab without the link.)
+
+## Homework
+
+**Due date:**
+
+Homeworks are always due on midnight of the Sunday of the week that they are assigned (i.e. January 24 for this homework).
+
+Since this is the first homework assignment, there will be no late penalty applied if you cannot complete it in time.
+
+**Instructions:**
+
+See the [homework](homework) git submodule.
