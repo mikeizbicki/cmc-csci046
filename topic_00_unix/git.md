@@ -91,6 +91,7 @@ $ git commit -m "my first commit"
 ```
 
 > **NOTE:**
+>
 > Depending on your settings, you may get a message that looks like
 > 
 > ```
@@ -213,11 +214,12 @@ $ python3 -i message.py
 >>> message.main('hello')
 ```
 
-**NOTE:**
-Lines beginning with `$` are shell commands,
-and lines beginning with `>>>` are python commands.
-This is a standard convention that most authors follow.
-In order to exist the Python interpreter, press `CTRL+D` on an empty line.
+> **NOTE:**
+>
+> Lines beginning with `$` are shell commands,
+> and lines beginning with `>>>` are python commands.
+> This is a standard convention that most authors follow.
+> In order to exist the Python interpreter, press `CTRL+D` on an empty line.
 
 Now let's add `message.py` to the repo and commit your changes:
 
@@ -226,11 +228,12 @@ $ git add message.py
 $ git commit -m "added the first code"
 ```
 
-**WARNING:**
-If you run the `ls` command again, you will notice that a file called `__pycache__` has appeared in your directory.
-YOU SHOULD NEVER ADD THE `__pycache__` FILE TO A GIT REPO.
-This file contains something called *bytecode* created by the `python3` command to make running programs faster.
-Only plaintext files should ever be added into a git repo.
+> **WARNING:**
+>
+> If you run the `ls` command again, you will notice that a file called `__pycache__` has appeared in your directory.
+> YOU SHOULD NEVER ADD THE `__pycache__` FILE TO A GIT REPO.
+> This file contains something called *bytecode* created by the `python3` command to make running programs faster.
+> Only plaintext files should ever be added into a git repo.
 
 Let's make one more commit so we'll have something to play with.
 Run the command:
@@ -239,13 +242,14 @@ Run the command:
 $ echo "This program prints \"hello git\"" > README
 ```
 
-**NOTE:**
-The `echo` command prints its arguments to a special file called `stdout`.
-By default, `stdout` is your terminal window (called a `tty` in unix).
-Thus, running the command `echo this is a test` will print `this is a test` to the screen.
-The `>` command is called output redirection.
-Output redirection changes `stdout` to point to a file, instead of the screen.
-Therefore, placing `> README` at the end of the `echo` command causes the output to be placed into the `README` file instead of displayed on the screen.
+> **NOTE:**
+>
+> The `echo` command prints its arguments to a special file called `stdout`.
+> By default, `stdout` is your terminal window (called a `tty` in unix).
+> Thus, running the command `echo this is a test` will print `this is a test` to the screen.
+> The `>` command is called output redirection.
+> Output redirection changes `stdout` to point to a file, instead of the screen.
+> Therefore, placing `> README` at the end of the `echo` command causes the output to be placed into the `README` file instead of displayed on the screen.
 
 The command `cat` prints the contents of a file.
 Verify that your `README` file has changed using the command:
@@ -262,7 +266,7 @@ $ git commit -m "modified the README"
 
 Uh oh!
 
-We got an error message saying that ends with `no changes added to the commit`.
+We got an error message that ends with `no changes added to the commit`.
 
 Every time you modify a file, if you want that file included in the commit,
 you must explicitly tell git to add the file again.
