@@ -19,13 +19,14 @@ http://nifty.stanford.edu/2020/denero-typing-test/spec.html
 | Research | Machine Learning (see [izbicki.me/research.html](https://izbicki.me/research.html) for some past projects) |
 
 Fun facts:
-1. grew up in San Clemente
+1. grew up in San Clemente (~1hr south of Claremont, on the beach)
 1. 7 years in the navy
+    1. nuclear submarine officer, personally converted >10g of uranium into pure energy
+    1. worked at National Security Agency (NSA)
+    1. left Navy as a [conscientious objector](https://www.nytimes.com/2011/02/23/nyregion/23objector.html)
 1. phd/postdoc at UC Riverside
-1. taught in [DPRK](https://pust.co)
-1. My wife is pregnant and due to have a baby April 18th.
-   This may result in a class session being rescheduled,
-   depending on when the baby decides to come.
+1. taught in [DPRK (i.e. North Korea)](https://pust.co)
+1. my wife is pregnant and due to have a baby April 18th
 
 ## About the Course
 
