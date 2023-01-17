@@ -146,13 +146,17 @@ This python file is using several things that you may not have seen before:
 
 1. The `__name__` variable is a special built-in python variable that is always defined.
    (All variables surrounded by `__` are special built-in variables.)
-   `__name__` is set to `__main__` whenever the python script is run from the command line.
-   Thus, for example, if we run the command `python3 message.py`, then `__name__==__main__` will evaluate to `True` and the program will enter the body of the if statement;
+   `__name__` is set to `'__main__'` whenever the python script is run from the command line.
+   Thus, for example, if we run the command `python3 message.py`, then `__name__ == '__main__'` will evaluate to `True` and the program will enter the body of the if statement.
 
-1. The code above uses python f-strings,
+1. The line
+   ```
+       print(f'{message} world!')
+   ```
+   uses python f-strings,
    which is a new feature added into python 3.6.
    Whenever a string literal begins with `f`,
-   any values within curly braces will be substituted into the string.
+   any python code within curly braces will be evaluated and substituted into the string.
    See [this tutorial](https://cito.github.io/blog/f-strings/) if you want to learn more.
 
 1. The argparse library is used to pass command line arguments to python programs.
