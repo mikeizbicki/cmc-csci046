@@ -71,9 +71,9 @@ Labs are always due on midnight of the Sunday of the week that they are assigned
 
 1. Complete the [unix/git tutorial](git.md)
 
-1. Follow [these instructions](lambda-server.md) to update your lambda server account's settings
-
 1. Complete the [github pull request assignment](github.md)
+
+1. Follow [these instructions](lambda-server.md) to update your lambda server account's settings
 
 **Lab Submission:**
 
