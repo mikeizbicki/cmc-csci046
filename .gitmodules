@@ -1,0 +1,55 @@
+[submodule "continuous-integration"]
+	path = topic_00_unix/homework
+	url = https://github.com/mikeizbicki/continuous-integration
+
+#[submodule "functional-python"]
+	#path = week_01/functional-python
+	#url = https://github.com/mikeizbicki/functional-python
+
+#[submodule "html_validator"]
+	#path = week_02/html_validator
+	#url = https://github.com/mikeizbicki/html_validator
+
+#[submodule "example-homework"]
+	#path = week_02/example-homework
+	#url = https://github.com/mikeizbicki/example-homework
+
+#[submodule "word_ladder"]
+	#path = week_03/word_ladder
+	#url = https://github.com/mikeizbicki/word_ladder
+
+#[submodule "binary_search"]
+	#path = week_04/binary_search
+	#url = https://github.com/mikeizbicki/binary_search
+
+#[submodule "sorting"]
+	#path = week_05/sorting
+	#url = https://github.com/mikeizbicki/sorting
+
+#[submodule "twitter_coronavirus"]
+	#path = week_07/twitter_coronavirus
+	#url = https://github.com/mikeizbicki/twitter_coronavirus
+
+#[submodule "containers_08"]
+	#path = week_08/containers
+	#url = https://github.com/mikeizbicki/containers
+
+#[submodule "containers_09"]
+	#path = week_09/containers
+	#url = https://github.com/mikeizbicki/containers
+
+#[submodule "containers_10"]
+	#path = week_10/containers
+	#url = https://github.com/mikeizbicki/containers
+
+#[submodule "containers_11"]
+	#path = week_11/containers
+	#url = https://github.com/mikeizbicki/containers
+
+#[submodule "containers_12"]
+	#path = week_12/containers
+	#url = https://gitlab.com/claremont-mckenna/random-project-name
+
+#[submodule "risk"]
+	#path = week_14/risk
+	#url = https://github.com/mikeizbicki/risk
