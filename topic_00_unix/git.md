@@ -801,6 +801,13 @@ The resulting DAG is
 <img src="img/12b.png?raw=true"
 </p>
 
+You've now completed the unix/git tutorial.
+
+It's okay if you don't feel like you 100% understand all of the above commands.
+We will continue practicing all of these commands throughout the course of the semester,
+and by the end of the semester all of this will be second nature.
+
+<!--
 ## Exercise
 
 Given the same repo above, draw the DAG that results after running the following commands.
@@ -828,4 +835,4 @@ Running `git log --graph` will show an ASCII version of the graph.
 
 You should check the [git cheatsheet](https://github.com/mikeizbicki/ucr-cs100/blob/2015winter/textbook/cheatsheets/git-cheatsheet.md) to figure out what the `git checkout -b` command does.
 
-
+-->
