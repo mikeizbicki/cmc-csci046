@@ -91,7 +91,6 @@ $ git commit -m "my first commit"
 ```
 
 > **NOTE:**
->
 > Depending on your settings, you may get a message that looks like
 > 
 > ```
@@ -215,7 +214,6 @@ $ python3 -i message.py
 ```
 
 > **NOTE:**
->
 > Lines beginning with `$` are shell commands,
 > and lines beginning with `>>>` are python commands.
 > This is a standard convention that most authors follow.
@@ -243,7 +241,6 @@ $ echo "This program prints \"hello git\"" > README
 ```
 
 > **NOTE:**
->
 > The `echo` command prints its arguments to a special file called `stdout`.
 > By default, `stdout` is your terminal window (called a `tty` in unix).
 > Thus, running the command `echo this is a test` will print `this is a test` to the screen.
@@ -313,8 +310,8 @@ So to inspect that commit, I would run:
 $ git checkout a20aef2096d98ab53d1495f823409e2cc8cd54b9
 ```
 
-**NOTE:**
-You should replace the hash above with the hash of your `my first commit`
+> **NOTE:**
+> You should replace the hash above with the hash of your `my first commit`
 
 Now let's see what happened.
 Run the command:
