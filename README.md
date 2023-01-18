@@ -96,12 +96,21 @@ Your grade will be composed of:
 1. Weekly quizzes (worth `2**2` or `2**3` points)
 1. Weekly projects (worth `2**4` or `2**5` points)
 1. No midterm/final exam.
+    1. Non-seniors will complete a final project due during finals week.
 1. [Occassional extra credit assignments](extra_credit/README.md)
 
 Historically, the average student needs to spend about 10 hours per week (including class time) to get an A.
    About 25% of students will either:
    spend 15-20 hours per week and get an A,
    or spend 10 hours per week and get a B/C.
+
+**Late Work Policy:**
+
+You lose `2**i` points on every assignment,
+where `i` is the number of days late.
+It is usually better to submit a correct assignment late than an incorrect one on time.
+
+**Grade Schedule:**
 
 Your final grade will be computed according to the following table,
 with one caveat.
@@ -133,11 +142,6 @@ You can find the details about the caveat tasks at:
 1. [caveat_tasks/typespeed.md](caveat_tasks/typespeed.md)
 1. [caveat_tasks/culture.md](caveat_tasks/culture.md)
 
-**Late Work Policy:**
-
-You lose `2**i` points on every assignment,
-where `i` is the number of days late.
-It is usually better to submit a correct assignment late than an incorrect one on time.
 <!--
 2. [Algorithms](http://algorithmics.lsi.upc.edu/docs/Dasgupta-Papadimitriou-Vazirani.pdf) by Dasgupta, Papadimitriou, and Vazirani
 -->
@@ -194,7 +198,9 @@ Programming games:
 1. [bandit wargames](https://overthewire.org/wargames/bandit/bandit0.html)
 -->
 
-## Technology Policy
+## Academic Integrity
+
+**Technology Policy:**
 
 1. You must complete all programming assignments on the lambda server.
 
@@ -205,7 +211,7 @@ Programming games:
 
 Violations of any of these policies will be treated as academic integrity violations.
 
-## Collaboration Policy
+**Collaboration Policy**
 
 You are encouraged to discuss all labs and homeworks with other students,
 subject to the following constraints:
@@ -224,9 +230,9 @@ You may use any online resources you like as references.
 > You should view collaboration as a way to improve your understanding,
 > not as a way to do less work.
 > 
-> **You are ultimately responsible for ensuring you learn the material!**
+> *You are ultimately responsible for ensuring you learn the material!*
 
-## Accommodations for Disabilities
+## Accommodations Policy
 
 I've tried to design the course to be as accessible as possible for people with disabilities.
 (We'll talk a bit about how to design accessible software in class too!)
