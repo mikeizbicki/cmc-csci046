@@ -15,6 +15,7 @@ http://nifty.stanford.edu/2020/denero-typing-test/spec.html
 | Email | mizbicki@cmc.edu |
 | Office | Adams 216 |
 | Office Hours | TBA |
+| Zoom | See [Issue #325](https://github.com/mikeizbicki/cmc-csci046/issues/325) |
 | Webpage | [izbicki.me](https://izbicki.me) |
 | Research | Machine Learning (see [izbicki.me/research.html](https://izbicki.me/research.html) for some past projects) |
 
