@@ -112,3 +112,7 @@ Submit a link to your pull request in sakai.
 
 Homeworks will generally be posted into the `homework` [git submodule](https://www.atlassian.com/git/tutorials/git-submodule) for each week.
 Homeworks are always due on Tuesday of the week after they are assigned (i.e. Jan 24 for this homework).
+
+*For this hw only: There will be no late penalty if you miss the due date, but please be reasonable.*
+
+
