@@ -99,14 +99,16 @@ and I want to ensure that everyone has sufficient time to complete it based on t
 
 1. Complete the [unix/git tutorial](git.md)
 
-1. Complete the [github pull request assignment](github.md)
-
 1. Follow [these instructions](lambda-server.md) to update your lambda server account's settings
 
+1. Complete the [github pull request assignment](github.md) (we'll cover the details of how to do this Monday, so you don't need to complete it until then)
+
+<!--
 **Lab Submission:**
 
 Submit a link to your pull request in sakai.
 (I need the link since your github usernames are pseudonymous, and I won't know who to give credit for the lab without the link.)
+-->
 
 ## Homework
 
