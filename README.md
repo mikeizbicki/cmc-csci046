@@ -37,14 +37,14 @@ Fun facts:
 
 Data structures is the most important course in computer science,
 and many of the "classic" CS interview questions come from this course.
-Mastering this material is the first step towards getting a high paying CS job.
+Mastering this material is the first step towards getting a high-paying CS job.
 See:
 1. <https://www.levels.fyi>
 1. [tech employers illegally collude to reduce salaries](https://en.wikipedia.org/wiki/High-Tech_Employee_Antitrust_Litigation)
 
 **Who should take this course?**
 
-1. This is a second semester course in computer science designed for students who have previously taken either CS40 (CMC), CS5 (Mudd), or CS51 (Pomona).
+1. This is a second-semester course in computer science designed for students who have previously taken either CS40 (CMC), CS5 (Mudd), or CS51 (Pomona).
 
 1. You cannot take this course if:
     1. you have already taken a data structures course
@@ -69,7 +69,7 @@ Secondary objectives:
 1. Learn basic shell programming
 1. More experience with python programming
 1. Solve the questions asked in programming interviews and contests
-1. Introduction to the mathematics of programming (overlap with discrete math)
+1. Introduction to the mathematics of programming (overlaps with discrete math)
 1. Introduction to the hacker culture
 
 Differences between this course and HMC's CSCI060HM/CSCI070HM:
@@ -98,7 +98,7 @@ Your grade will be composed of:
 1. Weekly projects (worth `2**4` or `2**5` points)
 1. No midterm/final exam.
     1. Non-seniors will complete a final project due during finals week.
-1. [Occassional extra credit assignments](extra_credit/README.md)
+1. [Occasional extra credit assignments](extra_credit/README.md)
 
 Historically, the average student needs to spend about 10 hours per week (including class time) to get an A.
    About 25% of students will either:
@@ -131,7 +131,7 @@ with one caveat.
 | 60 &le; grade < 63               | D-            |
 | 60 > grade                       | F             |
 
-**Caveats::**
+**Caveats:**
 
 There are 2 "caveat tasks" in this course.
 These tasks should be easy, and everyone will get full credit on the task just for completing the task.
