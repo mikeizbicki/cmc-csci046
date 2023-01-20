@@ -10,10 +10,12 @@ Follow the 5 step procedure in the figure below to submit a pull request that fi
 
 <img width=100% src=pull_request.png />
 
+<!--
 > **NOTE:**
 > If you would like more detailed written instructions, you can follow [this seven step procedure](https://jarv.is/notes/how-to-pull-request-fork-github/).
 > This procedure has 2 extra steps in it in order to make it a bit more robust.
 > We will cover the purpose of these 2 extra steps later.
+-->
 
 Since everyone is submitting the same pull request for an intentionally made typo,
 I will not accept your pull requests.
