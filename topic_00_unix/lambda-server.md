@@ -1,4 +1,4 @@
-# Customizing your bash prompt
+# Customizing your settings
 
 Recall that if you run the command
 ```
