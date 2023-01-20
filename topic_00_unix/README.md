@@ -97,9 +97,11 @@ and I want to ensure that everyone has sufficient time to complete it based on t
    and so it pays to actually be able to type well.
    -->
 
-1. Complete the [unix/git tutorial](git.md)
+1. Visit the [test-messaging](https://github.com/mikeizbicki/test-messaging) repo and complete the instructions in the README.
 
-1. Follow [these instructions](lambda-server.md) to update your lambda server account's settings
+1. Complete the [unix/git tutorial](git.md).
+
+1. Follow [these instructions](lambda-server.md) to update your lambda server account's settings.
 
 1. Complete the [github pull request assignment](github.md) (we'll cover the details of how to do this Monday, so you don't need to complete it until then)
 
