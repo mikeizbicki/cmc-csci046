@@ -45,3 +45,4 @@ $ curl https://raw.githubusercontent.com/mikeizbicki/dotfiles/master/.vimrc     
 $ curl https://raw.githubusercontent.com/mikeizbicki/dotfiles/master/.dircolors     > .dircolors
 ```
 Then logout and login again for the changes to take effect.
+You know everything worked if your prompt on the lambda server is green.
