@@ -97,7 +97,7 @@ and I want to ensure that everyone has sufficient time to complete it based on t
    and so it pays to actually be able to type well.
    -->
 
-1. Visit the [test-messaging](https://github.com/mikeizbicki/test-messaging) repo and complete the instructions in the README.
+1. Visit the [messages](https://github.com/mikeizbicki/messages) repo and complete the instructions in the README.
 
 1. Complete the [unix/git tutorial](git.md).
 

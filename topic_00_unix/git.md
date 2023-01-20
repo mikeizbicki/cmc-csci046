@@ -1,6 +1,8 @@
 # Unix/Git Tutorial
 
 This tutorial will walk you through how basic unix and git commands work.
+It will prepare you to complete the first quiz in the class.
+
 You should complete this tutorial on the lambda server by typing all commands within code blocks into your terminal.
 
 ## Creating your first repo
@@ -803,9 +805,8 @@ The resulting DAG is
 
 You've now completed the unix/git tutorial.
 
-It's okay if you don't feel like you 100% understand all of the above commands.
-We will continue practicing all of these commands throughout the course of the semester,
-and by the end of the semester all of this will be second nature.
+At this point, you should understand how to complete all of the problems in the practice quizzes,
+and you can use those quizzes to test your understanding of how unix and git works.
 
 <!--
 ## Exercise
