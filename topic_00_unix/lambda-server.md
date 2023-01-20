@@ -1,14 +1,25 @@
 # Customizing your bash prompt
 
-I keep all of my settings archived in a git repo located at https://github.com/mikeizbicki/dotfiles .
+Recall that if you run the command
+```
+$ ls -a
+```
+in your home folder, there are many "hidden files".
+Because in UNIX hidden files always begin with `.`,
+these files are often called "dotfiles".
+Dotfiles in the home folder are commonly used to store settings for various programs.
+
+I keep all of my settings archived in a git repo located at <https://github.com/mikeizbicki/dotfiles>.
 This ensures that I can easily keep all of my settings consistent between all of the computers that I use.
 It also lets me share my settings with you :)
 
-There are three files that will be useful for you in this class:
+There are four files that will be particularly useful for you in this class:
 
-1. The `.git-prompt.sh` file has tools for working with git,
+1. The `.git-prompt.sh` file has tools for working with git.
 
-1. The `.bashrc` file has settings for your bash shell, and
+1. The `.bashrc` file has settings for your bash shell.
+
+1. The `.dircolors` file is not a standard file but something that's included in my `.bashrc` in order to get better coloring in the terminal.
 
 1. The `.vimrc` file has good default settings for vim.
 
@@ -34,4 +45,3 @@ $ curl https://raw.githubusercontent.com/mikeizbicki/dotfiles/master/.vimrc     
 $ curl https://raw.githubusercontent.com/mikeizbicki/dotfiles/master/.dircolors     > .dircolors
 ```
 Then logout and login again for the changes to take effect.
-You know your changes worked if your command prompt is now green.
