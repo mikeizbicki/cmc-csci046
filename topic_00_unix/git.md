@@ -5,6 +5,13 @@ It will prepare you to complete the first quiz in the class.
 
 You should complete this tutorial on the lambda server by typing all commands within code blocks into your terminal.
 
+> **NOTE:**
+> 
+> There is a lot of material in these instructions related to git that we have not covered in class.
+> That is intentional.
+> The purpose of this assignment is not just to learn git,
+> but also to learn how to follow tutorials about material that you have never learned about before.
+
 ## Creating your first repo
 
 Create a folder named `firstrepo` and `cd` into it:
