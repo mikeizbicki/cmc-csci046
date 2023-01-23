@@ -1,23 +1,18 @@
 # CSCI046: Data Structures and Algorithms
-<!--
-See:
-http://nifty.stanford.edu/2020/schwarz-recursion-to-the-rescue/
-http://nifty.stanford.edu/2020/denero-typing-test/spec.html
--->
 
 [![](smbc.png)](https://www.smbc-comics.com/comic/hansel-and-gretel)
 
 ## About the Instructor
 
 |||
-|-|-|
-| Name | Mike Izbicki (call me Mike) |
-| Email | mizbicki@cmc.edu |
-| Office | Adams 216 |
-| Office Hours | TBA |
-| Zoom | See [Issue #325](https://github.com/mikeizbicki/cmc-csci046/issues/325) |
-| Webpage | [izbicki.me](https://izbicki.me) |
-| Research | Machine Learning (see [izbicki.me/research.html](https://izbicki.me/research.html) for some past projects) |
+|---------------|-------------------------------|
+| Name          | Mike Izbicki (call me Mike)   |
+| Email         | mizbicki@cmc.edu              |
+| Office        | Adams 216                     |
+| Office Hours  | TBA                           |
+| Zoom          | See [Issue #325](https://github.com/mikeizbicki/cmc-csci046/issues/325) |
+| Webpage       | [izbicki.me](https://izbicki.me) |
+| Research      | Machine Learning (see [izbicki.me/research.html](https://izbicki.me/research.html) for some past projects) |
 
 Fun facts:
 1. grew up in San Clemente (~1hr south of Claremont, on the beach)
@@ -59,6 +54,8 @@ See:
 Primary objectives:
 
 1. Learn basic devops and how open source software is developed
+    1. linux terminal 
+    1. git
 1. Be able to answer the following three questions about an algorithm:
     1. Is it correct?
     1. How much resources does it consume? (time, memory, money, etc.)
@@ -66,10 +63,8 @@ Primary objectives:
 
 Secondary objectives:
 
-1. Learn basic shell programming
 1. More experience with python programming
 1. Solve the questions asked in programming interviews and contests
-1. Introduction to the mathematics of programming (overlap with discrete math)
 1. Introduction to the hacker culture
 
 Differences between this course and HMC's CSCI060HM/CSCI070HM:
@@ -96,11 +91,13 @@ Your grade will be composed of:
 1. Weekly labs (worth `2**1` points)
 1. Weekly quizzes (worth `2**2` or `2**3` points)
 1. Weekly projects (worth `2**4` or `2**5` points)
-1. No midterm/final exam.
+1. 4 exams (worth `2**8` points each)
+    <!--
     1. Non-seniors will complete a final project due during finals week.
+    -->
 1. [Occassional extra credit assignments](extra_credit/README.md)
 
-Historically, the average student needs to spend about 10 hours per week (including class time) to get an A.
+Historically, the average student needs to spend about 10 hours per week (outside of class) to get an A.
    About 25% of students will either:
    spend 15-20 hours per week and get an A,
    or spend 10 hours per week and get a B/C.
@@ -131,7 +128,7 @@ with one caveat.
 | 60 &le; grade < 63               | D-            |
 | 60 > grade                       | F             |
 
-**Caveats::**
+**Caveats:**
 
 There are 2 "caveat tasks" in this course.
 These tasks should be easy, and everyone will get full credit on the task just for completing the task.
@@ -142,62 +139,6 @@ You have the entire semester (until I submit grades) to complete these tasks.
 You can find the details about the caveat tasks at:
 1. [caveat_tasks/typespeed.md](caveat_tasks/typespeed.md)
 1. [caveat_tasks/culture.md](caveat_tasks/culture.md)
-
-<!--
-2. [Algorithms](http://algorithmics.lsi.upc.edu/docs/Dasgupta-Papadimitriou-Vazirani.pdf) by Dasgupta, Papadimitriou, and Vazirani
--->
-
-<!--
-**Optional Readings:**
-
-Advice on how to be a good programmer:
-
-1. [Peter Norvig](https://norvig.com/21-days.html) (AI researcher and senior engineer at Google)
-1. [Paul Graham](http://www.paulgraham.com/college.html) (Founder of YCombinator startup incubator); [being a noob](http://paulgraham.com/noob.html)
-1. [Jeff Atwood](https://blog.codinghorror.com/how-to-become-a-better-programmer-by-not-programming/) (Founder of stackoverflow.com)
-1. [Eric Steven Raymond, better known as esr](http://www.catb.org/esr/faqs/hacker-howto.html) (a famous hacker)
-
-How to make money/get a good job:
-
-1. [Yes, the median salary at facebook is $240k](https://www.sfchronicle.com/business/networth/article/Yes-median-pay-at-Facebook-really-is-about-12870786.php)
-1. [A detailed analysis of FAANG salaries](https://huyenchip.com/2020/01/18/tech-workers-19k-compensation-details.html), with raw data from [levels.fyi](https://www.levels.fyi/SE/Amazon/Google/Facebook/#)
-1. [The high-tech employee antitrust litigation](https://en.wikipedia.org/wiki/High-Tech_Employee_Antitrust_Litigation)
-1. [Get jobs from GitHub/HackerNews](https://news.ycombinator.com/item?id=22050802)
-1. [/r/cscareerquestions](https://www.reddit.com/r/cscareerquestions/top/)
-
-Other technical articles:
-
-1. [Command-line tools can be faster than a hadoop cluster](https://news.ycombinator.com/item?id=22188877)
-1. [intermediate vim](https://dn.ht/intermediate-vim/)
-1. [Mike's dotfiles](https://github.com/mikeizbicki/dotfiles)
-1. [The missing semester of CS education](https://news.ycombinator.com/item?id=22226380)
-1. [Larry Wall's three virtures of a programmer](http://threevirtues.com/)
-1. [accidentally quadratic blog](https://accidentallyquadratic.tumblr.com/post/161243900944/mercurial-changegroup-application) and a [windows bug caused by an O(n^2) algorithm](https://news.ycombinator.com/item?id=21743424)
-1. [the history of git](https://www.welcometothejungle.com/en/articles/btc-history-git)
-1. [timsort](https://svn.python.org/projects/python/trunk/Objects/listsort.txt) - Tim's [Zen of Python](http://www.openbookproject.net/books/bpp4awd/_static/ch10/zen.html)
-1. [stackoverflow - why processing sorted arrays is faster even in linear search](https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array)
-
-1. [What every programmer should know about floating-point](https://floating-point-gui.de/)
-1. [The lat/lon floating point delusion](https://www.datafix.com.au/BASHing/2019-08-09.html)
-1. [The fallacy of premature optimization](https://ubiquity.acm.org/article.cfm?id=1513451)
-1. [Computer Science from the Bottom Up](https://www.bottomupcs.com/index.xhtml)
-
-1. https://choosealicense.com/
-
-Library documentation:
-
-1. [timeit](https://docs.python.org/3/library/timeit.html)
-1. [collections](https://docs.python.org/3/library/collections.html)
-1. [copy](https://docs.python.org/3/library/copy.html)
-1. [traceback](https://docs.python.org/3/library/traceback.html)
-
-Programming games:
-
-1. https://vim-adventures.com/
-1. The [git game](https://github.com/git-game/git-game) and [git game v2](https://github.com/git-game/git-game-v2)
-1. `typespeed` (type this command on the lambda server)
-1. [bandit wargames](https://overthewire.org/wargames/bandit/bandit0.html)
--->
 
 ## Academic Integrity
 
@@ -214,24 +155,24 @@ Violations of any of these policies will be treated as academic integrity violat
 
 **Collaboration Policy**
 
-You are encouraged to discuss all labs and homeworks with other students,
-subject to the following constraints:
+1. You are highly encouraged to collaborate with students
 
-1. you must be the person typing in all code for your assignments, and
-1. you must not copy another student's code.
+    1. in class/lab,
 
-You may use any online resources you like as references.
+    1. in the QCL,
 
-> **WARNING:**
-> 
-> All material in this class is cumulative.
-> If you work "too closely" with another student on an assignment,
-> you won't understand how to complete subsequent assignments,
-> and you will quickly fall behind.
-> You should view collaboration as a way to improve your understanding,
-> not as a way to do less work.
-> 
-> *You are ultimately responsible for ensuring you learn the material!*
+    1. and in office hours.
+
+1. You MAY NOT look at another student's code (or have another human look at your code) in any other context.
+
+1. You MAY NOT look at another student's code on github.
+
+    1. All projects are developed as open source projects,
+        and so the code is published openly online.
+        The benefits of this model include:
+        (1) you actually learn how to develop/contribute to open source projects;
+        (2) future employers see you have github activity.
+        Please do not abuse this privillage.
 
 ## Accommodations Policy
 
@@ -291,3 +232,50 @@ Clarify which trees should have duplicates/no duplicates
 Add tests to BST/AVLTree/Heap for runtime of operations
 
 -->
+<!--
+See:
+http://nifty.stanford.edu/2020/schwarz-recursion-to-the-rescue/
+http://nifty.stanford.edu/2020/denero-typing-test/spec.html
+-->
+
+<!--
+1. [Yes, the median salary at facebook is $240k](https://www.sfchronicle.com/business/networth/article/Yes-median-pay-at-Facebook-really-is-about-12870786.php)
+1. [A detailed analysis of FAANG salaries](https://huyenchip.com/2020/01/18/tech-workers-19k-compensation-details.html), with raw data from [levels.fyi](https://www.levels.fyi/SE/Amazon/Google/Facebook/#)
+1. [The high-tech employee antitrust litigation](https://en.wikipedia.org/wiki/High-Tech_Employee_Antitrust_Litigation)
+1. [Get jobs from GitHub/HackerNews](https://news.ycombinator.com/item?id=22050802)
+1. [/r/cscareerquestions](https://www.reddit.com/r/cscareerquestions/top/)
+
+Other technical articles:
+
+1. [Command-line tools can be faster than a hadoop cluster](https://news.ycombinator.com/item?id=22188877)
+1. [intermediate vim](https://dn.ht/intermediate-vim/)
+1. [Mike's dotfiles](https://github.com/mikeizbicki/dotfiles)
+1. [The missing semester of CS education](https://news.ycombinator.com/item?id=22226380)
+1. [Larry Wall's three virtures of a programmer](http://threevirtues.com/)
+1. [accidentally quadratic blog](https://accidentallyquadratic.tumblr.com/post/161243900944/mercurial-changegroup-application) and a [windows bug caused by an O(n^2) algorithm](https://news.ycombinator.com/item?id=21743424)
+1. [the history of git](https://www.welcometothejungle.com/en/articles/btc-history-git)
+1. [timsort](https://svn.python.org/projects/python/trunk/Objects/listsort.txt) - Tim's [Zen of Python](http://www.openbookproject.net/books/bpp4awd/_static/ch10/zen.html)
+1. [stackoverflow - why processing sorted arrays is faster even in linear search](https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array)
+
+1. [What every programmer should know about floating-point](https://floating-point-gui.de/)
+1. [The lat/lon floating point delusion](https://www.datafix.com.au/BASHing/2019-08-09.html)
+1. [The fallacy of premature optimization](https://ubiquity.acm.org/article.cfm?id=1513451)
+1. [Computer Science from the Bottom Up](https://www.bottomupcs.com/index.xhtml)
+
+1. https://choosealicense.com/
+
+Library documentation:
+
+1. [timeit](https://docs.python.org/3/library/timeit.html)
+1. [collections](https://docs.python.org/3/library/collections.html)
+1. [copy](https://docs.python.org/3/library/copy.html)
+1. [traceback](https://docs.python.org/3/library/traceback.html)
+
+Programming games:
+
+1. https://vim-adventures.com/
+1. The [git game](https://github.com/git-game/git-game) and [git game v2](https://github.com/git-game/git-game-v2)
+1. `typespeed` (type this command on the lambda server)
+1. [bandit wargames](https://overthewire.org/wargames/bandit/bandit0.html)
+-->
+
