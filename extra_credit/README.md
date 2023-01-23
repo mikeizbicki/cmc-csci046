@@ -14,3 +14,5 @@ All extra credit opportunities will be posted here.
 
 1. (+4 points)
    Install linux on your computer and use it exclusively for all throughout the semester (not just for this class, but for all your computing).
+
+   You must install linux before February 14th to get this extra credit.

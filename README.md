@@ -23,6 +23,7 @@ Fun facts:
 1. phd/postdoc at UC Riverside
 1. taught in [DPRK (i.e. North Korea)](https://pust.co)
 1. my wife is pregnant and due to have a baby April 18th
+    1. I will take 2 weeks off for paternity leave when the baby comes
 
 ## About the Course
 
@@ -51,16 +52,17 @@ See:
 
 **Learning Objectives:**
 
-Primary objectives:
-
-1. Learn basic devops and how open source software is developed
+1. Learn basic the basics of
     1. linux terminal 
     1. git
+    1. open source software
+
 1. Be able to answer the following three questions about an algorithm:
     1. Is it correct?
     1. How much resources does it consume? (time, memory, money, etc.)
     1. Can we do better?
 
+<!--
 Secondary objectives:
 
 1. More experience with python programming
@@ -71,6 +73,7 @@ Differences between this course and HMC's CSCI060HM/CSCI070HM:
 
 1. This course does not cover low-level memory management (C/C++ programming languages)
 1. This course is more practical
+-->
 
 This course is NOT an algorithms course.
 Algorithms courses form the "other half" of classic CS interview questions,
@@ -107,6 +110,8 @@ Historically, the average student needs to spend about 10 hours per week (outsid
 You lose `2**i` points on every assignment,
 where `i` is the number of days late.
 It is usually better to submit a correct assignment late than an incorrect one on time.
+
+I expect that most students will be submitted assignments late at some point.
 
 **Grade Schedule:**
 
@@ -149,7 +154,7 @@ You can find the details about the caveat tasks at:
 1. You must use either vim or emacs to complete all programming assignments.
    In particular, you may not use the GitHub text editor, VSCode, IDLE, or PyCharm for any reason.
 
-1. You must not share your lambda-server credentials with anyone else.
+1. You must not share your lambda server credentials with anyone else.
 
 Violations of any of these policies will be treated as academic integrity violations.
 
