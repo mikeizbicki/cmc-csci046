@@ -793,7 +793,7 @@ Programmers often talk about maintaining *clean* git histories.
 We say a repo has a clean history if it is easy to see who is working on what,
 and that there is no extra stuff in the history that we don't need.
 
-Since we're done with the `bigfix` and `userinput` branches,
+Since we're done with the `bugfix` and `userinput` branches,
 we should delete them with the `git branch -d command`.
 
 Run the following commands to delete these branches.
