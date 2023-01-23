@@ -109,7 +109,12 @@ Historically, the average student needs to spend about 10 hours per week (outsid
 **Late Work Policy:**
 
 You lose `2**i` points on every assignment,
-where `i` is the number of days late.
+where `i` is the number of days late minus 1.
+
+> **Example:**
+> Homeworks will be due on Tuesdays, so if you submit on Wednesday then `i=0` and you receive a `2**0` (i.e. `1`) point penalty.
+> If you submit on Friday, you receive a `2**2` (i.e. 4) point penalty.
+
 It is usually better to submit a correct assignment late than an incorrect one on time.
 
 I expect that most students will be submitted assignments late at some point.
