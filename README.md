@@ -117,7 +117,7 @@ where `i` is the number of days late minus 1.
 
 It is usually better to submit a correct assignment late than an incorrect one on time.
 
-I expect that most students will be submitted assignments late at some point.
+I expect that most students will be submit late assignments at some point.
 
 **Grade Schedule:**
 
