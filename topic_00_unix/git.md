@@ -213,7 +213,7 @@ When the `parse_args` function is executed,
 the `argparse` module checks if the command line arguments are valid.
 If they are not, then the program prints an error message describing how to use the software correctly and then aborts.
 
-You can also run your program by launching python interactively, importing your module into the repl, and the calling the main function with the following commands:
+You can also run your program by launching python interactively, importing your module into the repo, and then calling the main function with the following commands:
 
 ```
 $ python3 -i message.py
@@ -793,7 +793,7 @@ Programmers often talk about maintaining *clean* git histories.
 We say a repo has a clean history if it is easy to see who is working on what,
 and that there is no extra stuff in the history that we don't need.
 
-Since we're done with the `bigfix` and `userinput` branches,
+Since we're done with the `bugfix` and `userinput` branches,
 we should delete them with the `git branch -d command`.
 
 Run the following commands to delete these branches.
