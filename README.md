@@ -97,7 +97,7 @@ Your grade will be composed of:
 1. Weekly quizzes (worth `2**2` or `2**3` points)
 1. Weekly projects (worth `2**4` or `2**5` points)
 1. No midterm/final exam.
-    1. Non-seniors will complete a final project due during finals week.
+    1. Non-graduating students will complete a final project due during finals week.
 1. [Occassional extra credit assignments](extra_credit/README.md)
 
 Historically, the average student needs to spend about 10 hours per week (including class time) to get an A.
