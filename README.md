@@ -180,7 +180,7 @@ I've tried to design the course to be as accessible as possible for people with 
 (We'll talk a bit about how to design accessible software in class too!)
 If you need any further accommodations, please ask.
 
-I want you to succeed and I'll make every effort to ensure that you can.
+I want you to succeed, and I'll make every effort to ensure that you can.
 
 <!--
 
