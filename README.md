@@ -35,8 +35,9 @@ Data structures is the most important course in computer science,
 and many of the "classic" CS interview questions come from this course.
 Mastering this material is the first step towards getting a high paying CS job.
 See:
-1. <https://www.levels.fyi>
-1. [tech employers illegally collude to reduce salaries](https://en.wikipedia.org/wiki/High-Tech_Employee_Antitrust_Litigation)
+1. Salaries: <https://www.levels.fyi>
+1. Benefits: <https://www.levels.fyi/benefits/Paternity-Leave/>
+1. [This is despite tech employers illegally colluding to reduce salaries](https://en.wikipedia.org/wiki/High-Tech_Employee_Antitrust_Litigation)
 
 **Who should take this course?**
 
@@ -92,8 +93,8 @@ All of our textbooks are both [free as in beer](https://en.wiktionary.org/wiki/f
 Your grade will be composed of:
 
 1. Weekly labs (worth `2**1` points)
-1. Weekly quizzes (worth `2**2` or `2**3` points)
-1. Weekly projects (worth `2**4` or `2**5` points)
+1. Weekly quizzes (worth `2**2` to `2**4` points)
+1. Weekly projects (worth `2**3` to `2**5` points)
 1. 4 exams (worth `2**8` points each)
     <!--
     1. Non-seniors will complete a final project due during finals week.
@@ -160,6 +161,9 @@ Violations of any of these policies will be treated as academic integrity violat
 
 **Collaboration Policy**
 
+1. There are no restrictions on what you can post to GitHub Issues.
+    In particular, you are highly encouraged to post detailed questions/answers/comments with lots of code.
+
 1. You are highly encouraged to collaborate with students
 
     1. in class/lab,
@@ -172,12 +176,12 @@ Violations of any of these policies will be treated as academic integrity violat
 
 1. You MAY NOT look at another student's code on github.
 
-    1. All projects are developed as open source projects,
-        and so the code is published openly online.
-        The benefits of this model include:
-        (1) you actually learn how to develop/contribute to open source projects;
-        (2) future employers see you have github activity.
-        Please do not abuse this privillage.
+    All projects are developed as open source projects,
+    and so the code is published openly online.
+    The benefits of this model include:
+    (1) you actually learn how to develop/contribute to open source projects;
+    (2) future employers see you have github activity.
+    Please do not abuse this privillage.
 
 ## Accommodations Policy
 
