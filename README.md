@@ -155,12 +155,14 @@ You can find the details about the caveat tasks at:
 
 **Technology Policy:**
 
-1. You must complete all programming assignments on the lambda server.
+1. You MUST complete all programming assignments on the lambda server.
 
-1. You must use either vim or emacs to complete all programming assignments.
+1. You MUST use either vim or emacs to complete all programming assignments.
    In particular, you may not use the GitHub text editor, VSCode, IDLE, or PyCharm for any reason.
 
-1. You must not share your lambda server credentials with anyone else.
+   In particular: You MAY NOT use the GitHub interface to edit files for a pull request.
+
+1. You MAY NOT share your lambda server credentials with anyone else.
 
 Violations of any of these policies will be treated as academic integrity violations.
 
