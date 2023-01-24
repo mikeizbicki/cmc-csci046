@@ -96,7 +96,7 @@ Your grade will be composed of:
 1. Weekly quizzes (worth `2**2` or `2**3` or `2**4` points)
 1. Weekly projects (worth `2**3` or `2**4` or `2**5` points)
 1. No Exams!
- 
+
     1. Non-graduating students will complete a final project due during finals week.
 1. [Occassional extra credit assignments](extra_credit/README.md)
 
