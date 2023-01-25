@@ -22,8 +22,10 @@
 1. memory management in python
     1. local vs global variables
         1. (optional reference) [realpython](https://realpython.com/python-scope-legb-rule/)
+    <!--
     1. assignment, copy, and deepcopy
         1. (optional reference) [realpython](https://realpython.com/copying-python-objects/)
+    -->
 
 ## Lab
 
