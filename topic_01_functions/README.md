@@ -77,7 +77,7 @@
        ```
        The `yy` yanks (vim's language for copying) the entire line,
        and the `"p` indicates that we are yanking into the `p` register (vim's language for clipboard).
-       Your typical muggle text editor has only a single clipboard to copy/paste from, but vim has a separate registor for every key on the keyboard.
+       Your typical muggle text editor has only a single clipboard to copy/paste from, but vim has a separate register for every key on the keyboard.
        This lets us copy/paste many different things at the same time.
        Macros use the same registers as yanking/pasting, so by yanking into the `p` register we are also creating the `p` macro.
        
