@@ -33,7 +33,7 @@ Fun facts:
 
 Data structures is the most important course in computer science,
 and many of the "classic" CS interview questions come from this course.
-Mastering this material is the first step towards getting a high paying CS job.
+Mastering this material is the first step towards getting a high-paying CS job.
 See:
 1. Salaries: <https://www.levels.fyi>
 1. Benefits: <https://www.levels.fyi/benefits/Paternity-Leave/>
@@ -41,7 +41,7 @@ See:
 
 **Who should take this course?**
 
-1. This is a second semester course in computer science designed for students who have previously taken either CS40 (CMC), CS5 (Mudd), or CS51 (Pomona).
+1. This is a second-semester course in computer science designed for students who have previously taken either CS40 (CMC), CS5 (Mudd), or CS51 (Pomona).
 
 1. You cannot take this course if:
     1. you have already taken a data structures course
@@ -97,7 +97,7 @@ Your grade will be composed of:
 1. Weekly projects (worth `2**3` or `2**4` or `2**5` points)
 1. No exams!!!
     1. Non-graduating students will complete a final project due during finals week.
-1. [Occassional extra credit assignments](extra_credit/README.md)
+1. [Occasional extra credit assignments](extra_credit/README.md)
 
 Historically, the average student needs to spend about 10 hours per week (outside of class) to get an A.
    About 25% of students will either:
