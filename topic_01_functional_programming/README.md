@@ -97,16 +97,3 @@
        ```
 
     1. (optional) For a detailed reference on writing your own vim macros (it's actually quite easy), see <https://vim.fandom.com/wiki/Macros>
-
-1. The main part of this lab can be found in the `lab.pdf` file.
-   Instructions are included in the file itself.
-   You should print this file and complete it.
-
-   Once you've completed the lab, submit to sakai the statement `I have completed all the problems in the lab.`.
-   I'm not going to make you scan such a large document, and I'll just take your word that you've completed it.
-
-   **WARNING:**
-   It will be tempting to not take this assignment seriously because it is long and there is nothing to turn in.
-   Do not fall into this trap.
-   The assignment is designed to illustrate several pitfalls that students regularly fall into in this course,
-   and if you do not fully understand the concepts in the assignment then you will lose MANY points in future assignments when you can't get the test cases to pass.
