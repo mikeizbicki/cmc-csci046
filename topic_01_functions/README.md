@@ -98,4 +98,4 @@
        print("python_variable_name=", python_variable_name)
        ```
 
-    1. (optional) For a detailed reference on writing your own vim macros (it's actually quite easy), see <https://vim.fandom.com/wiki/Macros>
+    1. (optional) For a detailed reference on writing your own vim macros, see <https://vim.fandom.com/wiki/Macros>.
