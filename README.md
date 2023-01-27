@@ -1,6 +1,6 @@
 # CSCI046: Data Structures and Algorithms
 
-<!-- editting the file -->
+message for second section
 
 [![](smbc.png)](https://www.smbc-comics.com/comic/hansel-and-gretel)
 
