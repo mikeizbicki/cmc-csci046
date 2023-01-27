@@ -1,5 +1,7 @@
 # CSCI046: Data Structures and Algorithms
 
+message for second section
+
 [![](smbc.png)](https://www.smbc-comics.com/comic/hansel-and-gretel)
 
 ## About the Instructor
@@ -9,7 +11,7 @@
 | Name          | Mike Izbicki (call me Mike)   |
 | Email         | mizbicki@cmc.edu              |
 | Office        | Adams 216                     |
-| Office Hours  | TBA                           |
+| Office Hours  | See [Issue #416](https://github.com/mikeizbicki/cmc-csci046/issues/416) |
 | Zoom          | See [Issue #325](https://github.com/mikeizbicki/cmc-csci046/issues/325) |
 | Webpage       | [izbicki.me](https://izbicki.me) |
 | Research      | Machine Learning (see [izbicki.me/research.html](https://izbicki.me/research.html) for some past projects) |
@@ -33,7 +35,7 @@ Fun facts:
 
 Data structures is the most important course in computer science,
 and many of the "classic" CS interview questions come from this course.
-Mastering this material is the first step towards getting a high paying CS job.
+Mastering this material is the first step towards getting a high-paying CS job.
 See:
 1. Salaries: <https://www.levels.fyi>
 1. Benefits: <https://www.levels.fyi/benefits/Paternity-Leave/>
@@ -41,7 +43,7 @@ See:
 
 **Who should take this course?**
 
-1. This is a second semester course in computer science designed for students who have previously taken either CS40 (CMC), CS5 (Mudd), or CS51 (Pomona).
+1. This is a second-semester course in computer science designed for students who have previously taken either CS40 (CMC), CS5 (Mudd), or CS51 (Pomona).
 
 1. You cannot take this course if:
     1. you have already taken a data structures course
@@ -93,11 +95,11 @@ All of our textbooks are both [free as in beer](https://en.wiktionary.org/wiki/f
 Your grade will be composed of:
 
 1. Weekly labs (worth `2**1` points)
-1. Weekly quizzes (worth `2**2` to `2**4` points)
-1. Weekly projects (worth `2**3` to `2**5` points)
+1. Weekly quizzes (worth `2**2` or `2**3` or `2**4` points)
+1. Weekly projects (worth `2**3` or `2**4` or `2**5` points)
 1. No exams!!!
     1. Non-graduating students will complete a final project due during finals week.
-1. [Occassional extra credit assignments](extra_credit/README.md)
+1. [Occasional extra credit assignments](extra_credit/README.md)
 
 Historically, the average student needs to spend about 10 hours per week (outside of class) to get an A.
    About 25% of students will either:
@@ -107,10 +109,15 @@ Historically, the average student needs to spend about 10 hours per week (outsid
 **Late Work Policy:**
 
 You lose `2**i` points on every assignment,
-where `i` is the number of days late.
+where `i` is the number of days late minus 1.
+
+> **Example:**
+> Homeworks will be due on Tuesdays, so if you submit on Wednesday then `i=0` and you receive a `2**0` (i.e. `1`) point penalty.
+> If you submit on Friday, you receive a `2**2` (i.e. 4) point penalty.
+
 It is usually better to submit a correct assignment late than an incorrect one on time.
 
-I expect that most students will be submitted assignments late at some point.
+I expect that most students will be submit late assignments at some point.
 
 **Grade Schedule:**
 
@@ -148,12 +155,14 @@ You can find the details about the caveat tasks at:
 
 **Technology Policy:**
 
-1. You must complete all programming assignments on the lambda server.
+1. You MUST complete all programming assignments on the lambda server.
 
-1. You must use either vim or emacs to complete all programming assignments.
+1. You MUST use either vim or emacs to complete all programming assignments.
    In particular, you may not use the GitHub text editor, VSCode, IDLE, or PyCharm for any reason.
 
-1. You must not share your lambda server credentials with anyone else.
+   In particular: You MAY NOT use the GitHub interface to edit files for a pull request.
+
+1. You MAY NOT share your lambda server credentials with anyone else.
 
 Violations of any of these policies will be treated as academic integrity violations.
 

@@ -12,9 +12,9 @@ It will also help you pass the [culture fit test](https://triplebyte.com/blog/wh
 
 ## Task
 
-You must earn 4 points by watching/reading the shows/books below.
+You must earn `2**2` points by watching/reading the shows/books below.
 Each point should take at most 2 hours to complete,
-so you should be able to finish this task in under 8 hours.
+so you should be able to finish this task in under `2**3` hours.
 
 **Watching (non-fiction):** (1 point each)
 

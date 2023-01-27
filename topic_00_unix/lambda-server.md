@@ -27,7 +27,7 @@ To get these files, we will use the `curl` command.
 `curl` takes a url as an input parameter, downloads the url, and prints the result to `stdout`.
 For example, to download and view my `.vimrc` file, you can run the command
 ```
-curl https://raw.githubusercontent.com/mikeizbicki/dotfiles/master/.vimrc
+$ curl https://raw.githubusercontent.com/mikeizbicki/dotfiles/master/.vimrc
 ```
 
 Notice that the `curl` command does not save the file, it only prints it to `stdout`.
@@ -37,7 +37,8 @@ For now, in order to save the file,
 we will use output redirection with the `>` symbol.
 (Recall that output redirection causes anything printed to `stdout` to be saved to a file instead of printed to the terminal.)
 
-Run the following commands to download and install the settings files:
+Run the following commands in your home folder to download and install the settings files.
+(Recall that you can get to your home folder by running `cd` with no arguments.)
 ```
 $ curl https://raw.githubusercontent.com/mikeizbicki/dotfiles/master/.git-prompt.sh > .git-prompt.sh
 $ curl https://raw.githubusercontent.com/mikeizbicki/dotfiles/master/.bashrc        > .bashrc

@@ -1,0 +1,563 @@
+\documentclass[10pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage[shortlabels]{enumitem}
+\usepackage[normalem]{ulem}
+\usepackage{courier}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = black, %Colour for external hyperlinks
+  linkcolor    = blue, %Colour of internal links
+  citecolor    = blue  %Colour of citations
+}
+
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\lstset{
+    language=HTML
+    ,basicstyle=\linespread{1}\ttfamily
+    ,keywordstyle=
+    %,numbers=left
+    ,breaklines=true
+    }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\theoremstyle{definition}
+\newtheorem{problem}{Problem}
+\newtheorem{note}{Note}
+\newcommand{\E}{\mathbb E}
+\newcommand{\R}{\mathbb R}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\newcommand{\trans}[1]{{#1}^{T}}
+\newcommand{\loss}{\ell}
+\newcommand{\w}{\mathbf w}
+\newcommand{\mle}[1]{\hat{#1}_{\textit{mle}}}
+\newcommand{\map}[1]{\hat{#1}_{\textit{map}}}
+\newcommand{\normal}{\mathcal{N}}
+\newcommand{\x}{\mathbf x}
+\newcommand{\y}{\mathbf y}
+\newcommand{\ltwo}[1]{\lVert {#1} \rVert}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\begin{center}
+    {
+\Large
+    Quiz: Functions (Practice Problems)
+}
+
+    \vspace{0.1in}
+\end{center}
+
+\vspace{0.15in}
+\noindent
+%\textbf{Note:}
+\begin{note}
+The format of this quiz will be the same as the previous quiz (4 problems, each worth 1 point).
+1 of these problems will be taken from the material from topic 0,
+and the other 3 problems will be on functions following the problems below.
+\end{note}
+\vspace{0.15in}
+
+\section{Functional Programming}
+\begin{note}
+    I will generate new problems from the problems below by: (1) changing the expressions in the lambda functions, (2) changing the values in the range function.
+\end{note}
+\vspace{0.15in}
+
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd
+$ rm -rf quiz
+$ mkdir quiz
+$ cd quiz
+$ cat > foo.py <<EOF
+def foo(x):
+    return x+1
+xs = [1, 2, 3]
+xs = [foo(x) for x in xs]
+print("xs=", xs)
+EOF
+$ python3 foo.py
+\end{lstlisting}
+\vspace{0.4in}
+
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd
+$ rm -rf quiz
+$ mkdir quiz
+$ cd quiz
+$ cat > foo.py <<EOF
+def foo(x):
+    return x+1
+xs = [1, 2, 3]
+xs = map(foo, xs)
+xs = list(xs)
+print("xs=", xs)
+EOF
+$ python3 foo.py
+\end{lstlisting}
+\vspace{0.4in}
+
+\newpage
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd
+$ rm -rf quiz
+$ mkdir quiz
+$ cd quiz
+$ cat > foo.py <<EOF
+xs = range(3, 5)
+xs = map(lambda x: x+1, xs)
+xs = list(xs)
+print("xs=", xs)
+EOF
+$ python3 foo.py
+\end{lstlisting}
+\vspace{0.4in}
+
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd
+$ rm -rf quiz
+$ mkdir quiz
+$ cd quiz
+$ cat > foo.py <<EOF
+foo = lambda x: x*2
+xs = range(5, 1, -2)
+xs = map(foo, xs)
+xs = list(xs)
+print("xs=", xs)
+EOF
+$ python3 foo.py
+\end{lstlisting}
+\vspace{0.4in}
+
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd
+$ rm -rf quiz
+$ mkdir quiz
+$ cd quiz
+$ cat > foo.py <<EOF
+foo = lambda x: x < 5
+xs = range(10)
+xs = [x for x in xs if foo(x)]
+xs = list(xs)
+print("xs=", xs)
+EOF
+$ python3 foo.py
+\end{lstlisting}
+\vspace{0.4in}
+
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd
+$ rm -rf quiz
+$ mkdir quiz
+$ cd quiz
+$ cat > foo.py <<EOF
+foo = lambda x: x < 5
+xs = range(10)
+xs = filter(foo, xs)
+xs = list(xs)
+print("xs=", xs)
+EOF
+$ python3 foo.py
+\end{lstlisting}
+\vspace{0.4in}
+
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd
+$ rm -rf quiz
+$ mkdir quiz
+$ cd quiz
+$ cat > foo.py <<EOF
+xs = range(10)
+xs = [x*2 for x in xs if x<5]
+xs = list(xs)
+print("xs=", xs)
+EOF
+$ python3 foo.py
+\end{lstlisting}
+\vspace{0.4in}
+
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd
+$ rm -rf quiz
+$ mkdir quiz
+$ cd quiz
+$ cat > foo.py <<EOF
+xs = range(10)
+xs = map(lambda x: x*2, xs)
+xs = filter(lambda x: x<5, xs)
+xs = list(xs)
+print("xs=", xs)
+EOF
+$ python3 foo.py
+\end{lstlisting}
+\vspace{0.4in}
+
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd
+$ rm -rf quiz
+$ mkdir quiz
+$ cd quiz
+$ cat > foo.py <<EOF
+xs = range(10)
+xs = filter(lambda x: x<5, xs)
+xs = map(lambda x: x*2, xs)
+xs = list(xs)
+print("xs=", xs)
+EOF
+$ python3 foo.py
+\end{lstlisting}
+\vspace{0.4in}
+
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd
+$ rm -rf quiz
+$ mkdir quiz
+$ cd quiz
+$ cat > foo.py <<EOF
+xs = map(lambda x: x*2, filter(lambda x: x<5, range(10)))
+xs = list(xs)
+print("xs=", xs)
+EOF
+$ python3 foo.py
+\end{lstlisting}
+\vspace{0.4in}
+
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd
+$ rm -rf quiz
+$ mkdir quiz
+$ cd quiz
+$ cat > foo.py <<EOF
+xs = filter(lambda x: x<5, map(lambda x: x*2, range(10)))
+xs = list(xs)
+print("xs=", xs)
+EOF
+$ python3 foo.py
+\end{lstlisting}
+\vspace{0.4in}
+
+\newpage
+\section{Scope}
+\begin{note}
+    I will generate new problems from the problems below by: (1) adding/removing the global keyword, (2) changing constants in the python code, or (3) re-ordering or duplicating lines.
+\end{note}
+
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd
+$ rm -rf quiz
+$ mkdir quiz
+$ cd quiz
+$ cat > foo.py <<EOF
+x = 1
+def foo(x):
+    return x + 1
+x = 2
+print('foo(3)=', foo(3))
+EOF
+$ python3 foo.py
+\end{lstlisting}
+%\vspace{0.4in}
+
+
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd
+$ rm -rf quiz
+$ mkdir quiz
+$ cd quiz
+$ cat > foo.py <<EOF
+x = 1
+def foo(y):
+    x = 3
+    return y + x
+print('foo(3)=', foo(3))
+EOF
+$ python3 foo.py
+\end{lstlisting}
+%\vspace{0.4in}
+
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd
+$ rm -rf quiz
+$ mkdir quiz
+$ cd quiz
+$ cat > foo.py <<EOF
+x = 1
+def foo(y):
+    x = 3
+    return y + x
+foo(5)
+print('x=', x)
+EOF
+$ python3 foo.py
+\end{lstlisting}
+%\vspace{0.4in}
+
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd
+$ rm -rf quiz
+$ mkdir quiz
+$ cd quiz
+$ cat > foo.py <<EOF
+x = 1
+def foo(x):
+    return x + 1
+foo(5)
+print('x=', x)
+EOF
+$ python3 foo.py
+\end{lstlisting}
+\vspace{0.4in}
+
+
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd
+$ rm -rf quiz
+$ mkdir quiz
+$ cd quiz
+$ cat > foo.py <<EOF
+x = 1
+def foo(y):
+    global x
+    x = y
+foo(5)
+print('x=', x)
+EOF
+$ python3 foo.py
+\end{lstlisting}
+\vspace{0.4in}
+
+
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd
+$ rm -rf quiz
+$ mkdir quiz
+$ cd quiz
+$ cat > foo.py <<EOF
+xs = [1, 2, 3]
+def foo(y):
+    xs.append(y)
+foo(5)
+print('sum(xs)=',sum(xs))
+EOF
+$ python3 foo.py
+\end{lstlisting}
+\vspace{0.4in}
+
+
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd
+$ rm -rf quiz
+$ mkdir quiz
+$ cd quiz
+$ cat > foo.py <<EOF
+xs = [1, 2, 3]
+def foo(y):
+    xs = [y, y, y]
+    return y
+foo(5)
+print('sum(xs)=',sum(xs))
+EOF
+$ python3 foo.py
+\end{lstlisting}
+\vspace{0.4in}
+
+
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd
+$ rm -rf quiz
+$ mkdir quiz
+$ cd quiz
+$ cat > foo.py <<EOF
+xs = [1, 2, 3]
+def foo(y):
+    global xs
+    xs = [y, y, y]
+    return y
+foo(5)
+print('sum(xs)=',sum(xs))
+EOF
+$ python3 foo.py
+\end{lstlisting}
+\vspace{0.4in}
+
+
+\newpage
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd
+$ rm -rf quiz
+$ mkdir quiz
+$ cd quiz
+$ cat > foo.py <<EOF
+xs = [1, 2, 3]
+def foo():
+    xs.pop()
+def bar():
+    global xs
+    xs = [4, 5, 6]
+    xs.append(7)
+foo()
+bar()
+foo()
+bar()
+foo()
+foo()
+print('sum(xs)=',sum(xs))
+EOF
+$ python3 foo.py
+\end{lstlisting}
+\vspace{0.4in}
+
+
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd
+$ rm -rf quiz
+$ mkdir quiz
+$ cd quiz
+$ cat > foo.py <<EOF
+xs = [1, 2, 3]
+def foo():
+    global xs
+    xs.pop()
+def bar():
+    global xs
+    xs = [4, 5, 6]
+    xs.append(7)
+foo()
+bar()
+foo()
+bar()
+foo()
+foo()
+print('sum(xs)=',sum(xs))
+EOF
+$ python3 foo.py
+\end{lstlisting}
+\vspace{0.4in}
+
+
+%\begin{problem}
+    %Write the output of the final command in the following terminal session.
+    %If the command has no output, then leave the problem blank.
+%\end{problem}
+%\begin{lstlisting}
+%$ cd
+%$ rm -rf quiz
+%$ mkdir quiz
+%$ cd quiz
+%$ cat > foo.py <<EOF
+%xs = [1, 2, 3]
+%def foo():
+    %global xs
+    %xs.pop()
+%def bar():
+    %xs = [4, 5, 6]
+    %xs.append(7)
+%foo()
+%bar()
+%foo()
+%bar()
+%foo()
+%foo()
+%print('sum(xs)=',sum(xs))
+%EOF
+%$ python3 foo.py
+%\end{lstlisting}
+%\vspace{0.4in}
+
+\end{document}
