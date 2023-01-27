@@ -1,5 +1,7 @@
 # CSCI046: Data Structures and Algorithms
 
+<!-- editting the file -->
+
 [![](smbc.png)](https://www.smbc-comics.com/comic/hansel-and-gretel)
 
 ## About the Instructor
@@ -9,7 +11,7 @@
 | Name          | Mike Izbicki (call me Mike)   |
 | Email         | mizbicki@cmc.edu              |
 | Office        | Adams 216                     |
-| Office Hours  | TBA                           |
+| Office Hours  | See [Issue #416](https://github.com/mikeizbicki/cmc-csci046/issues/416) |
 | Zoom          | See [Issue #325](https://github.com/mikeizbicki/cmc-csci046/issues/325) |
 | Webpage       | [izbicki.me](https://izbicki.me) |
 | Research      | Machine Learning (see [izbicki.me/research.html](https://izbicki.me/research.html) for some past projects) |
@@ -33,7 +35,7 @@ Fun facts:
 
 Data structures is the most important course in computer science,
 and many of the "classic" CS interview questions come from this course.
-Mastering this material is the first step towards getting a high paying CS job.
+Mastering this material is the first step towards getting a high-paying CS job.
 See:
 1. Salaries: <https://www.levels.fyi>
 1. Benefits: <https://www.levels.fyi/benefits/Paternity-Leave/>
@@ -41,7 +43,7 @@ See:
 
 **Who should take this course?**
 
-1. This is a second semester course in computer science designed for students who have previously taken either CS40 (CMC), CS5 (Mudd), or CS51 (Pomona).
+1. This is a second-semester course in computer science designed for students who have previously taken either CS40 (CMC), CS5 (Mudd), or CS51 (Pomona).
 
 1. You cannot take this course if:
     1. you have already taken a data structures course
@@ -95,9 +97,15 @@ Your grade will be composed of:
 1. Weekly labs (worth `2**1` points)
 1. Weekly quizzes (worth `2**2` or `2**3` or `2**4` points)
 1. Weekly projects (worth `2**3` or `2**4` or `2**5` points)
+<<<<<<< HEAD
 1. No exams
     1. Non-graduating students will complete a final project due during finals week.
 1. [Occassional extra credit assignments](extra_credit/README.md)
+=======
+1. No exams!!!
+    1. Non-graduating students will complete a final project due during finals week.
+1. [Occasional extra credit assignments](extra_credit/README.md)
+>>>>>>> upstream/2023spring
 
 Historically, the average student needs to spend about 10 hours per week (outside of class) to get an A.
    About 25% of students will either:
