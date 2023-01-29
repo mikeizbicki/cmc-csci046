@@ -100,8 +100,14 @@ Your grade will be composed of:
 1. Weekly quizzes (worth `2**2` or `2**3` or `2**4` points)
 1. Weekly projects (worth `2**3` or `2**4` or `2**5` points)
 1. No exams!!!
+<<<<<<< HEAD
     1. Non-graduating students will complete a final project due during finals week.
 1. [Occasional extra credit assignments](extra_credit/README.md)
+=======
+    
+    1. Non-graduating students will complete a final project due during finals week.
+    --.[Occassional extra credit assignments](extra_credit/README.md)
+>>>>>>> ffe045f (remove exams)
 
 Historically, the average student needs to spend about 10 hours per week (outside of class) to get an A.
    About 25% of students will either:
