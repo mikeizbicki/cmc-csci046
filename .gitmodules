@@ -2,9 +2,9 @@
 	path = topic_00_unix/homework
 	url = https://github.com/mikeizbicki/continuous-integration
 
-#[submodule "functional-python"]
-	#path = week_01/functional-python
-	#url = https://github.com/mikeizbicki/functional-python
+[submodule "functional-python"]
+	path = topic_01_functions/functional-python
+	url = https://github.com/mikeizbicki/functional-python
 
 #[submodule "html_validator"]
 	#path = week_02/html_validator

@@ -22,38 +22,51 @@
 1. memory management in python
     1. local vs global variables
         1. (optional reference) [realpython](https://realpython.com/python-scope-legb-rule/)
+    <!--
     1. assignment, copy, and deepcopy
         1. (optional reference) [realpython](https://realpython.com/copying-python-objects/)
-
-**Prelecture Work:**
-
-None :)
+    -->
 
 ## Lab
 
 **Pre-lab work:**
 
-None :)
+1. Ensure that you have completed the entire lab for `topic_00` before completing this lab.
+
+1. Spend at least 20 minutes reviewing how to use vim effectively.
+    You can either:
+    
+    1. re-do the vimtutor tutorial from last pre-lab, or
+    2. try the more interactive tutorial at <https://www.openvim.com/>.
 
 **Instructions:**
 
-1. Update your forked repo so that it has all the content of my upstream repo.
-   Use the following flowchart to help you get the commands correct:
-   <img width='100%' src=update_downstream.png />
-   Note that the steps with "negative numbers" are events that have already happened,
-   steps with "zero numbers" are events that you only have to run once to setup your local repo.
-   Every time you need to perform this procedure, you start with step 1.
+1. In the previous lab, you forked the class repository.
+    Since then, however, I have made updates to the class repo,
+    and those updates won't be reflected in your forked repo.
+    In this first task,
+    you must update your forked repo so that it has all the content of my upstream repo.
+
+    Use the following flowchart to help you get the commands correct:
+
+    <img width='100%' src=update_downstream.png />
+
+    Note that the steps with "negative numbers" are events that have already happened,
+    steps with "zero numbers" are events that you only have to run once to setup your local repo.
+    Every time you need to update your repo,
+    you will start with step 1.
 
 1. In this task you will setup the `@p` macro for debugging python programs.
 
     1. Ensure that you have updated your local git repo with the latest upstream.
 
-    1. Open the file `week_01/p_macro` in vim.
+    1. `cd` into the `topic_01_functions` folder and then open the file `p_macro` in vim.
        You should see contents that look like
        ```
-       ^y$iprint("^[A=",^[pa)^[^
+       ^y$iprint("^[A=", ^[pa)^[^
        ```
-       This is the "source code" for the macro, and is the sequence of key presses that will be sent to vim whenever you activate the macro.
+       This is the "source code" for the macro,
+       and is the sequence of key presses that will be sent to vim whenever you activate the macro.
        The `^[` characters should appear in a slightly different color, and if you move your cursor over them, you'll notice they behave like a single character.
        This is how the `Esc` key gets rendered in the terminal, so each of these characters will cause the `Esc` key to be pressed.
 
@@ -62,7 +75,8 @@ None :)
        ```
        "pyy
        ```
-       The `yy` yanks (vim's language for copying) the entire line, and the `"p` indicates that we are yanking into the `p` register (vim's language for clipboard).
+       The `yy` yanks (vim's language for copying) the entire line,
+       and the `"p` indicates that we are yanking into the `p` register (vim's language for clipboard).
        Your typical muggle text editor has only a single clipboard to copy/paste from, but vim has a separate registor for every key on the keyboard.
        This lets us copy/paste many different things at the same time.
        Macros use the same registers as yanking/pasting, so by yanking into the `p` register we are also creating the `p` macro.
@@ -81,20 +95,7 @@ None :)
        With your cursor anywhere on the line, type `@p` to activate the macro.
        If you've created the macro correctly, you should get the result
        ```
-       print("python_variable_name=",python_variable_name)
+       print("python_variable_name=", python_variable_name)
        ```
 
-    1. (optional) For a detailed reference on writing your own vim macros (it's actually quite easy), see https://vim.fandom.com/wiki/Macros
-
-1. The main part of this lab can be found in the `lab.pdf` file.
-   Instructions are included in the file itself.
-   You should print this file and complete it.
-
-   Once you've completed the lab, submit to sakai the statement `I have completed all the problems in the lab.`.
-   I'm not going to make you scan such a large document, and I'll just take your word that you've completed it.
-
-   **WARNING:**
-   It will be tempting to not take this assignment seriously because it is long and there is nothing to turn in.
-   Do not fall into this trap.
-   The assignment is designed to illustrate several pitfalls that students regularly fall into in this course,
-   and if you do not fully understand the concepts in the assignment then you will lose MANY points in future assignments when you can't get the test cases to pass.
+    1. (optional) For a detailed reference on writing your own vim macros, see <https://vim.fandom.com/wiki/Macros>.
