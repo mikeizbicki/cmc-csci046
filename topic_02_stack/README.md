@@ -16,7 +16,7 @@ For today's lecture:
        > **HINT:**
        > If your `git pull` command tries to do a rebase instead of a merge, then add the `--rebase=false` command line parameter to get
        > ```
-       > $ git pull upstream 2023spring --rebase-false
+       > $ git pull upstream 2023spring --rebase=false
        > ```
 
 Git notes:
