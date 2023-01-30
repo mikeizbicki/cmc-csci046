@@ -7,7 +7,7 @@
 ## Lecture
 
 Shell scripting involves lots of seemingly unrelated concepts.
-Once you understand them, you can automated data analysis pipelines and create very complex programs very easily.
+Once you understand them, you can automate data analysis pipelines and create very complex programs very easily.
 
 1. File permissions
     
