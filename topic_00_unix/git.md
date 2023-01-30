@@ -201,7 +201,7 @@ But if we try to run the command
 $ python3 message.py --message=hi
 ```
 
-we can output that looks like
+we get an output that looks like
 
 ```
 usage: message.py [-h] [--message {hello,goodbye}]
