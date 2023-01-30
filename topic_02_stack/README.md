@@ -30,20 +30,31 @@ Git notes:
     1. data structure
         1. defines an interface
         1. includes implementation details
-    1. informally, ADTs are also called data structures
+    1. informally, ADTs are sometimes called data structures
 
-1. stack ADT, list data structure
-    1. in python, always implemented using lists
+1. stack ADT
+
+    <img src=stack.webp width=800px />
+
     1. interface:
-        1. `push`: add something on top; in python, we use the `append` method
+        1. `push`: add something to the top
         1. `pop`: take something off the top
-    1. balanced parenthesis algorithm
-        1. key technical interview question
-    1. Reference: [textbook chapter 4](https://runestone.academy/runestone/books/published/pythonds/BasicDS/toctree.html)
-        1. The textbook has their own library with a specially designed `Stack` object
-        1. In the real python world, everyone just uses the `list` type for stacks,
+
+    1. reference: [textbook chapter 4](https://runestone.academy/runestone/books/published/pythonds/BasicDS/toctree.html)
+
+    1. implementation (1):
+        1. the textbook has their own library with a specially designed `Stack` object
+        1. in the real python world, everyone just uses the `list` type for stacks,
            so that's what we'll use in this course
 
+    1. implementation (2):
+        1. in Python, always use a list to represent the stack ADT
+        1. interface:
+            1. `push` implemented with `append` method
+            1. `pop` implemented with `pop` metod
+
+    1. balanced parenthesis algorithm
+        1. key technical interview question
 ## Lab
 
 TBA
