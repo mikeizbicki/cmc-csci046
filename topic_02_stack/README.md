@@ -1,14 +1,37 @@
-# week 02: stacks + intro to runtime analysis
+# topic 02: stacks + intro to runtime analysis
 
+<!--
 <center>
 <img width=60% src=tests2.jpg />
 </center>
+-->
+<img src=merge-conflict.jpg width=400px />
+
+For today's lecture:
+
+1. You'll need to get the `stack.py` file to follow along with lecture
+
+    1. Redo the `git pull` procedure from last week's lab
+
+       > **HINT:**
+       > If your `git pull` command tries to do a rebase instead of a merge, then add the `--rebase=false` command line parameter to get
+       > ```
+       > $ git pull upstream 2023spring --rebase=false
+       > ```
+
+Git notes:
+
+1. Git is hard
+
+1. We won't be going over new git material for a long time :)
+
+1. Expect a git review problem on the quiz
+
+    1. If you don't feel 100% confident with the git terminal commands, you should review the git lab from topic00
+
+1. If you ever get *really* stuck, you can always delete your fork/clone and refork/reclone from scratch.
 
 ## Lecture
-
-1. announcements
-    1. great job using github issues
-    1. there's no need to submit a pull request with homework assignments
 
 1. first "actual computer science" instead of "programming"/"engineering"
 
@@ -19,20 +42,36 @@
     1. data structure
         1. defines an interface
         1. includes implementation details
-    1. informally, ADTs are also called data structures
+    1. informally, ADTs are sometimes called data structures
 
-1. stack ADT, list data structure
-    1. in python, always implemented using lists
+1. stack ADT
+
+    <img src=stack.webp width=800px />
+
     1. interface:
-        1. `push`: add something on top; in python, we use the `append` method
+        1. `push`: add something to the top
         1. `pop`: take something off the top
-    1. balanced parenthesis algorithm
-        1. key technical interview question
-    1. Reference: [textbook chapter 4](https://runestone.academy/runestone/books/published/pythonds/BasicDS/toctree.html)
-        1. The textbook has their own library with a specially designed `Stack` object
-        1. In the real python world, everyone just uses the `list` type for stacks,
+
+    1. reference: [textbook chapter 4](https://runestone.academy/runestone/books/published/pythonds/BasicDS/toctree.html)
+
+    1. implementation (1):
+        1. the textbook has their own library with a specially designed `Stack` object
+        1. in the real python world, everyone just uses the `list` type for stacks,
            so that's what we'll use in this course
 
+    1. implementation (2):
+        1. in Python, always use a list to represent the stack ADT
+        1. interface:
+            1. `push` implemented with `append` method
+            1. `pop` implemented with `pop` metod
+
+    1. balanced parenthesis algorithm
+        1. key technical interview question
+## Lab
+
+TBA
+
+<!--
 1. pytest library
     1. Install with the command:
        ```
@@ -59,8 +98,6 @@
 
 1. print the `big-o.pdf` file 
 
-## Lab
-
 1. There is no required lab for this week.
    Instead, you just focus on completing the homework assignment (which is worth 12 points this week).
 
@@ -74,3 +111,4 @@
 
    You can earn +1 point of extra credit for each game that you complete.
    To claim the extra credit, send me an email telling me how the game ends.
+   -->
