@@ -17,6 +17,11 @@ Git notes:
 
 1. Git is hard
 
+1. HINT: If your `git pull` command tries to do a rebase instead of a merge, then add the `--rebase=false` command line parameter to get
+    ```
+    $ git pull upstream 2023spring --rebase-false
+    ```
+
 1. We won't be going over new git material for a long time :)
 
 1. Expect a git review problem on the quiz
