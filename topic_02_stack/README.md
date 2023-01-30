@@ -13,14 +13,15 @@ For today's lecture:
 
     1. Redo the `git pull` procedure from last week's lab
 
+       > **HINT:**
+       > If your `git pull` command tries to do a rebase instead of a merge, then add the `--rebase=false` command line parameter to get
+       > ```
+       > $ git pull upstream 2023spring --rebase-false
+       > ```
+
 Git notes:
 
 1. Git is hard
-
-1. HINT: If your `git pull` command tries to do a rebase instead of a merge, then add the `--rebase=false` command line parameter to get
-    ```
-    $ git pull upstream 2023spring --rebase-false
-    ```
 
 1. We won't be going over new git material for a long time :)
 
