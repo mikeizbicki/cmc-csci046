@@ -1,14 +1,13 @@
-# week 02: stacks + intro to runtime analysis
+# topic 02: stacks + intro to runtime analysis
 
+<!--
 <center>
 <img width=60% src=tests2.jpg />
 </center>
+-->
+<img src=merge-conflict.jpg width=600px />
 
 ## Lecture
-
-1. announcements
-    1. great job using github issues
-    1. there's no need to submit a pull request with homework assignments
 
 1. first "actual computer science" instead of "programming"/"engineering"
 
@@ -33,6 +32,11 @@
         1. In the real python world, everyone just uses the `list` type for stacks,
            so that's what we'll use in this course
 
+## Lab
+
+TBA
+
+<!--
 1. pytest library
     1. Install with the command:
        ```
@@ -59,8 +63,6 @@
 
 1. print the `big-o.pdf` file 
 
-## Lab
-
 1. There is no required lab for this week.
    Instead, you just focus on completing the homework assignment (which is worth 12 points this week).
 
@@ -74,3 +76,4 @@
 
    You can earn +1 point of extra credit for each game that you complete.
    To claim the extra credit, send me an email telling me how the game ends.
+   -->
