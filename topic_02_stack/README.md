@@ -7,6 +7,8 @@
 -->
 <img src=merge-conflict.jpg width=400px />
 
+For today's lecture:
+
 1. You'll need to get the `stack.py` file to follow along with lecture
 
     1. Redo the `git pull` procedure from last week's lab
