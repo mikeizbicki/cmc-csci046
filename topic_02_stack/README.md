@@ -7,6 +7,18 @@
 -->
 <img src=merge-conflict.jpg width=600px />
 
+Git notes:
+
+1. Git is hard
+
+1. We won't be going over new git material for a long time :)
+
+1. Expect a git review problem on the quiz
+
+    1. If you don't feel 100% confident with the git terminal commands, you should review the git lab from topic00
+
+1. If you ever get *really* stuck, you can always delete your fork/clone and refork/reclone from scratch.
+
 ## Lecture
 
 1. first "actual computer science" instead of "programming"/"engineering"
