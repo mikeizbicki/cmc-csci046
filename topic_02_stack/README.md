@@ -5,7 +5,7 @@
 <img width=60% src=tests2.jpg />
 </center>
 -->
-<img src=merge-conflict.jpg width=600px />
+<img src=merge-conflict.jpg width=400px />
 
 Git notes:
 
