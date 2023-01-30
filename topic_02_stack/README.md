@@ -63,7 +63,7 @@ Git notes:
         1. in Python, always use a list to represent the stack ADT
         1. interface:
             1. `push` implemented with `append` method
-            1. `pop` implemented with `pop` metod
+            1. `pop` implemented with `pop` method
 
     1. balanced parenthesis algorithm
         1. key technical interview question
