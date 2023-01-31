@@ -55,7 +55,7 @@ Git notes:
     1. reference: [textbook chapter 4](https://runestone.academy/runestone/books/published/pythonds/BasicDS/toctree.html)
 
     1. implementation (1):
-        1. the textbook has their own library with a specially designed `Stack` object
+        1. the textbook has its own library with a specially designed `Stack` object
         1. in the real python world, everyone just uses the `list` type for stacks,
            so that's what we'll use in this course
 
