@@ -2,7 +2,7 @@
 
 <img src=Strip-Souvenirs-650-finalenglish.jpg />
 
-1. The `class` keyword let's you define your own data structures
+1. The `class` keyword lets you define your own data structures
 
     1. Book Reference: [Chapter 1.13](https://runestone.academy/runestone/books/published/pythonds/Introduction/ObjectOrientedProgramminginPythonDefiningClasses.html) and [Chapter 2](https://runestone.academy/runestone/books/published/pythonds/ProperClasses/toctree.html)
 
