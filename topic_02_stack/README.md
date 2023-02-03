@@ -69,7 +69,7 @@ Git notes:
         1. key technical interview question
 ## Lab
 
-TBA
+See the instructions in the [pytest-lab repo](https://github.com/mikeizbicki/pytest-lab).
 
 <!--
 1. pytest library
