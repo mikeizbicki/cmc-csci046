@@ -73,8 +73,10 @@ and therefore changes the contents of both variables.
 In order to create new, distinct, objects, you must copy the variable.
 When lists contain non-container objects like integers, \texttt{copy} and \texttt{deepcopy} behave exactly the same way.
     When lists contain containers, then texttt{copy} will not make copies of the inner containers, but \texttt{deepcopy} will.
+    Slices always make ``shallow'' copies.
 \end{note}
 
+
 \filbreak
 \begin{problem}
     Write the output of the final command in the following terminal session.
@@ -103,6 +105,41 @@ $ cat > foo.py <<EOF
 import copy
 xs = [1, 2, 3]
 ys = copy.copy(xs)
+ys.append('A')
+print('xs=', xs)
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+import copy
+xs = [1, 2, 3]
+ys = xs[1:]
+ys.append('A')
+print('xs=', xs)
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+import copy
+xs = [1, 2, 3]
+ys = xs[:]
 ys.append('A')
 print('xs=', xs)
 EOF
@@ -156,6 +193,24 @@ $ cd; rm -rf quiz; mkdir quiz; cd quiz
 $ cat > foo.py <<EOF
 import copy
 xs = [[1, 2, 3], [4, 5, 6]]
+ys = xs[:]
+ys.append('A')
+print('xs=', xs)
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+import copy
+xs = [[1, 2, 3], [4, 5, 6]]
 ys = xs
 ys[0].append('A')
 print('xs=', xs)
@@ -194,6 +249,23 @@ import copy
 xs = [[1, 2, 3], [4, 5, 6]]
 ys = copy.deepcopy(xs)
 ys[0].append('A')
+print('xs=', xs)
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+import copy
+xs = [[1, 2, 3], [4, 5, 6]]
+ys = xs[0][:]
+ys.append('A')
 print('xs=', xs)
 EOF
 $ python3 foo.py
@@ -372,6 +444,74 @@ Writing a function that reverses a list is one of the classic interview question
 Interviewers frequently say that they are shocked by the number of interviewees who fail these questions because they don't understand memory management.
 Pay special attention to these problems so that you do not fail future interview questions and can get a great job.
 \end{note}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+def reverse_list(xs):
+    ys = []
+    for i in range(len(xs)):
+        ys.append(xs.pop())
+    return ys
+xs = [1, 2, 3]
+ys = reverse_list(xs)
+print('xs=', xs)
+print('ys=', ys)
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+import copy
+def reverse_list(xs):
+    ys = []
+    xs = copy.copy(xs)
+    for i in range(len(xs)):
+        ys.append(xs.pop())
+    return ys
+xs = [1, 2, 3]
+ys = reverse_list(xs)
+print('xs=', xs)
+print('ys=', ys)
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+def reverse_list(xs):
+    ys = []
+    xs = xs[:]
+    for i in range(len(xs)):
+        ys.append(xs.pop())
+    return ys
+xs = [1, 2, 3]
+ys = reverse_list(xs)
+print('xs=', xs)
+print('ys=', ys)
+EOF
+$ python3 foo.py
+\end{lstlisting}
 
 
 \filbreak
