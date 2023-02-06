@@ -6,6 +6,7 @@
 
 Announcements:
 
+1. Good job collaborating during lab time
 1. Grades up-to-date in sakai
 1. Lots of students still haven't submitted the first assignment 
 
