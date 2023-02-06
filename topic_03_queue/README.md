@@ -4,6 +4,15 @@
 <img width=600px src=tests.png />
 </center>
 
+Announcements:
+
+1. Grades up-to-date in sakai
+1. Lots of students still haven't submitted the first assignment 
+
+    theree's no late penalty
+    
+    but you're officially behind
+
 ## Lecture
 
 1. queue ADT
