@@ -1,8 +1,18 @@
-# week 03: queues + more runtime analysis
+# topic 03: queues + more runtime analysis
 
 <center>
-<img width=40% src=tests.png />
+<img width=600px src=tests.png />
 </center>
+
+Announcements:
+
+1. Good job collaborating during lab time
+1. Grades up-to-date in sakai
+1. Lots of students still haven't submitted the first assignment 
+
+    theree's no late penalty
+    
+    but you're officially behind
 
 ## Lecture
 
@@ -26,10 +36,12 @@
 
 1. more runtime analysis
     1. continue big-o notes
-    1. https://wiki.python.org/moin/TimeComplexity
+    1. <https://wiki.python.org/moin/TimeComplexity>
 
 ## Lab
 
+TBA
+<!--
 1. [Click here to complete the mid-semester survey if you haven't already](https://docs.google.com/forms/d/1vJ9UnXJVtI9kxI3uobiB3TEh9EuLzfPR2SG4VRod-fU/)
 
 1. Check your answers for page 9 of the `big-o.pdf` notes.
@@ -105,3 +117,4 @@
 **Submission:**
 Copy/paste the completed tables into sakai.
 Each table is worth 1 point.
+-->

@@ -55,7 +55,7 @@ Git notes:
     1. reference: [textbook chapter 4](https://runestone.academy/runestone/books/published/pythonds/BasicDS/toctree.html)
 
     1. implementation (1):
-        1. the textbook has their own library with a specially designed `Stack` object
+        1. the textbook has its own library with a specially designed `Stack` object
         1. in the real python world, everyone just uses the `list` type for stacks,
            so that's what we'll use in this course
 
@@ -63,13 +63,13 @@ Git notes:
         1. in Python, always use a list to represent the stack ADT
         1. interface:
             1. `push` implemented with `append` method
-            1. `pop` implemented with `pop` metod
+            1. `pop` implemented with `pop` method
 
     1. balanced parenthesis algorithm
         1. key technical interview question
 ## Lab
 
-TBA
+See the instructions in the [pytest-lab repo](https://github.com/mikeizbicki/pytest-lab).
 
 <!--
 1. pytest library

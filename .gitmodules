@@ -10,13 +10,17 @@
 	path = topic_02_stack/html_validator
 	url = https://github.com/mikeizbicki/html_validator
 
+[submodule "pytest-lab"]
+	path = topic_02_stack/pytest-lab_validator
+	url = https://github.com/mikeizbicki/pytest-lab
+
 #[submodule "example-homework"]
 	#path = week_02/example-homework
 	#url = https://github.com/mikeizbicki/example-homework
 
-#[submodule "word_ladder"]
-	#path = week_03/word_ladder
-	#url = https://github.com/mikeizbicki/word_ladder
+[submodule "word_ladder"]
+	path = topic_03_queue/word_ladder
+	url = https://github.com/mikeizbicki/word_ladder
 
 #[submodule "binary_search"]
 	#path = week_04/binary_search
