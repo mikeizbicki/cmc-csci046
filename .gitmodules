@@ -18,6 +18,10 @@
 	#path = week_02/example-homework
 	#url = https://github.com/mikeizbicki/example-homework
 
+[submodule "lab-timeit"]
+	path = topic_03_queue/lab-timeit
+	url = https://github.com/mikeizbicki/lab-timeit
+
 [submodule "word_ladder"]
 	path = topic_03_queue/word_ladder
 	url = https://github.com/mikeizbicki/word_ladder
