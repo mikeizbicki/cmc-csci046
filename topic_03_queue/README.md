@@ -10,7 +10,7 @@ Announcements:
 1. Grades up-to-date in sakai
 1. Lots of students still haven't submitted the first assignment 
 
-    theree's no late penalty
+    there's no late penalty
     
     but you're officially behind
 
