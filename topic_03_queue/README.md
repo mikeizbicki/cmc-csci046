@@ -40,7 +40,7 @@ Announcements:
 
 ## Lab
 
-Posited at <https://github.com/mikeizbicki/lab-timit>.
+Posted at <https://github.com/mikeizbicki/lab-timit>.
 <!--
 1. Check your answers for page 9 of the `big-o.pdf` notes.
    (There is nothing to submit for this problem, it is only for your own reference.)
