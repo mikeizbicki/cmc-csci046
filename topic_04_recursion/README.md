@@ -16,6 +16,14 @@ It is a recursive acronym standing for "GNU's Not UNIX".
 
 1. My solution to the HTML_Validator homework is posted at <https://github.com/mikeizbicki/html_validator/blob/solution/HTML_Validator.py>
 
+1. Word ladder notes:
+    1. Second hardest homework you'll have
+    1. Next few homeworks will be easier (... but not easy ...)
+    1. Most of your grade is in the projects
+        1. Historically, most students are not able to solve all problems
+        1. This is what will separate As/Bs/Cs in the class
+        1. Word ladder is worth (very approximately) 5% of your final grade
+
 ## Lecture
 
 1. Debugging tips
