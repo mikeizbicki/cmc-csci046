@@ -30,7 +30,8 @@ It is a recursive acronym standing for "GNU's Not UNIX".
        $ pip3 install pytest-xdist
        $ python3 -m pytest -n4
        ```
-       (My solution takes about 5 minutes to run with this command.)
+       My solution takes about 5 minutes to run with this command,
+       and 8 minutes to run with the non-parallel command.
 
 1. More runtime analysis
 
