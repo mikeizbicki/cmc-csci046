@@ -45,7 +45,7 @@ It is a recursive acronym standing for "GNU's Not UNIX".
 
    Official python documentation for container runtimes: <https://wiki.python.org/moin/TimeComplexity>
 
-   <img src=math.webp />
+   <img src=math.webp width=300px />
 
 1. Recursion
     1. Closely related to proof by induction (CSCI055/MATH055: discrete math)
