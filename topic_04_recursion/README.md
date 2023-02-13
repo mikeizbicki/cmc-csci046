@@ -71,10 +71,10 @@ It is a recursive acronym standing for "GNU's Not UNIX".
     1. the most fundamental/important problem of computer science
     1. sequential search:
         1. works for any input
-        1. worst case runtime is Theta(n)
+        1. worst case runtime is $\Theta(n)$
     1. binary search
-        1. requires the input be sorted; we will see next week that this takes time Theta(n log n)
-        1. worst case runtime is Theta(log n)
+        1. requires the input be sorted; we will see next week that this takes time $\Theta(n log n)$
+        1. worst case runtime is $\Theta(log n)$
     1. Reference: [textbook chapter 6.1-6.4](https://runestone.academy/runestone/books/published/pythonds/SortSearch/toctree.html)
 
 ## Lab
