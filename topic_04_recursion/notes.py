@@ -10,7 +10,7 @@ def factorial_itr(n):
     3628800
     '''
     ret = 1
-    for i in range(1,n+1):
+    for i in range(1, n+1):
         ret *= i
     return ret
 
@@ -113,9 +113,9 @@ def binary_search_itr(xs, y):
     True
     >>> binary_search_itr([1, 3, 5, 7, 9, 11], 8)
     False
-    >>> binary_search_itr(list(range(-1001,1001,2)), 9)
+    >>> binary_search_itr(list(range(-1001, 1001, 2)), 9)
     True
-    >>> binary_search_itr(list(range(-1000,1000,2)), 9)
+    >>> binary_search_itr(list(range(-1000, 1000, 2)), 9)
     False
     '''
     if len(xs) == 0:
@@ -150,9 +150,9 @@ def binary_search_rec(xs, y):
     True
     >>> binary_search_rec([1, 3, 5, 7, 9, 11], 8)
     False
-    >>> binary_search_rec(list(range(-1001,1001,2)), 9)
+    >>> binary_search_rec(list(range(-1001, 1001, 2)), 9)
     True
-    >>> binary_search_rec(list(range(-1000,1000,2)), 9)
+    >>> binary_search_rec(list(range(-1000, 1000, 2)), 9)
     False
     '''
     if len(xs) == 0:
@@ -186,9 +186,9 @@ def binary_search_rec2(xs, y):
     True
     >>> binary_search_rec2([1, 3, 5, 7, 9, 11], 8)
     False
-    >>> binary_search_rec2(list(range(-1001,1001,2)), 9)
+    >>> binary_search_rec2(list(range(-1001, 1001, 2)), 9)
     True
-    >>> binary_search_rec2(list(range(-1000,1000,2)), 9)
+    >>> binary_search_rec2(list(range(-1000, 1000, 2)), 9)
     False
     '''
     if len(xs) == 0:
