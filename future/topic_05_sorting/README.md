@@ -22,7 +22,7 @@ Other sorting comics:
 
 1. Sorting
 
-    1. Theorem: every comparison based sorting algorithm has best case runtime Omega(n log n)
+    1. Theorem: every comparison based sorting algorithm has worst case runtime Omega(n log n)
 
        See: https://en.wikipedia.org/wiki/Comparison_sort#Number_of_comparisons_required_to_sort_a_list
 
