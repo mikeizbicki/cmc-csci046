@@ -1,4 +1,4 @@
-# week 04: recursion + binary search
+# topic 04: recursion + more runtimes + binary search
 
 <center>
 <img src=r_154444_mWjbZ.jpg width=400px />
@@ -12,7 +12,30 @@ It is a recursive acronym standing for "GNU's Not UNIX".
 <img src=Strip-Oracle-v-Google-650-finalenglish-4.jpg width=400px />
 </center>
 
+## Announcements
+
+1. My solution to the HTML_Validator homework is posted at <https://github.com/mikeizbicki/html_validator/blob/solution/HTML_Validator.py>
+
 ## Lecture
+
+1. Debugging tips
+    1. Always verify helper functions first
+    1. Run the tests in a separate terminal from vim
+    1. Use vim to open multiple files at once
+    1. Make full use of the pytest output
+    1. Use `--last-failed` (skip successful tests) and `-x` (stop after first failed test)
+    1. Test parts of code without using pytest (and do this often!!!)
+    1. Run tests in parallel
+       ```
+       $ pip3 install pytest-xdist
+       $ python3 -m pytest -n4
+       ```
+
+1. More runtime analysis
+
+   Official python documentation for container runtimes: <https://wiki.python.org/moin/TimeComplexity>
+
+   <img src=math.webp />
 
 1. Recursion
     1. Closely related to proof by induction (CSCI055/MATH055: discrete math)
@@ -46,6 +69,9 @@ It is a recursive acronym standing for "GNU's Not UNIX".
 
 ## Lab
 
+TBA (there will be required partner work)
+
+<!--
 The format of this lab is similar to last week's.
 There are two tables for you to fill out and submit to sakai.
 
@@ -198,7 +224,6 @@ There are two tables for you to fill out and submit to sakai.
 To submit your lab, copy your completed tables with runtimes into sakai.
 There is no need to copy the big-o table.
 
-<!--
 1. Recall that a python list is created with square brackets `[]` or the `list` function:
    ```
    >>> list1 = [1, 2, 3, 4, 5]
