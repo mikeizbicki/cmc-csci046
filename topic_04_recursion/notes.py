@@ -6,6 +6,12 @@ def factorial_itr(n):
     '''
     computes the factorial of n iteratively
 
+    >>> factorial_itr(1)
+    1
+    >>> factorial_itr(2)
+    2
+    >>> factorial_itr(3)
+    6
     >>> factorial_itr(10)
     3628800
     '''
@@ -19,6 +25,12 @@ def factorial_rec(n):
     '''
     computes the factorial of n recursively
 
+    >>> factorial_rec(1)
+    1
+    >>> factorial_rec(2)
+    2
+    >>> factorial_rec(3)
+    6
     >>> factorial_rec(10)
     3628800
     '''
