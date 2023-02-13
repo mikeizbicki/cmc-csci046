@@ -10,7 +10,7 @@ Announcements:
 1. Grades up-to-date in sakai
 1. Lots of students still haven't submitted the first assignment 
 
-    theree's no late penalty
+    there's no late penalty
     
     but you're officially behind
 
@@ -42,7 +42,7 @@ Announcements:
 
 ## Lab
 
-Posited at <https://github.com/mikeizbicki/lab-timit>.
+Posted at <https://github.com/mikeizbicki/lab-timit>.
 <!--
 1. Check your answers for page 9 of the `big-o.pdf` notes.
    (There is nothing to submit for this problem, it is only for your own reference.)

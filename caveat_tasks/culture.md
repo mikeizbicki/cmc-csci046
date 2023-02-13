@@ -88,7 +88,7 @@ so you should be able to finish this task in under `2**3` hours.
 
 ## Submission
 
-Reply to [this github issue](https://github.com/mikeizbicki/cmc-csci143/issues/450) with a list of the tasks that you completed.
+Reply to [this github issue](https://github.com/mikeizbicki/cmc-csci046/issues/450) with a list of the tasks that you completed.
 For each task, you'll need to write a 1-2 sentence summary of what you learned/liked/disliked about the task.
 
 > **NOTE:**
