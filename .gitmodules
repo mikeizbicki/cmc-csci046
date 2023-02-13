@@ -26,9 +26,9 @@
 	path = topic_03_queue/word_ladder
 	url = https://github.com/mikeizbicki/word_ladder
 
-#[submodule "binary_search"]
-	#path = week_04/binary_search
-	#url = https://github.com/mikeizbicki/binary_search
+[submodule "binary_search"]
+	path = topic_04_recursion/binary_search
+	url = https://github.com/mikeizbicki/binary_search
 
 #[submodule "sorting"]
 	#path = week_05/sorting
