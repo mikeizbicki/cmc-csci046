@@ -1,40 +1,10 @@
 ################################################################################
-# factorial
-################################################################################
-
-def factorial_itr(n):
-    '''
-    computes the factorial of n iteratively
-
-    >>> factorial_itr(10)
-    3628800
-    '''
-    ret = 1
-    for i in range(1,n+1):
-        ret *= i
-    return ret
-
-
-def factorial_rec(n):
-    '''
-    computes the factorial of n recursively
-
-    >>> factorial_rec(10)
-    3628800
-    '''
-    if n == 1:
-        return n
-    else:
-        return n * factorial_rec(n-1)
-
-
-################################################################################
 # sequential search
 ################################################################################
 
 def sequential_search_itr(xs, y):
     '''
-    checks whether y is contained in the list xs
+    Check whether y is contained in the list xs
 
     >>> sequential_search_itr([1, 3, 5, 4, 2, 0], 2)
     True
@@ -47,9 +17,24 @@ def sequential_search_itr(xs, y):
     return False
 
 
+def sequential_search_itr2(xs, y):
+    '''
+    Check whether y is contained in the list xs
+
+    >>> sequential_search_itr2([1, 3, 5, 4, 2, 0], 2)
+    True
+    >>> sequential_search_itr2([1, 3, 5, 4, 2, 0], 6)
+    False
+    '''
+    for i in range(len(xs)):
+        if xs[i] == y:
+            return True
+    return False
+
+
 def sequential_search_rec(xs, y):
     '''
-    checks whether y is contained in the list xs
+    Check whether y is contained in the list xs
 
     >>> sequential_search_rec([1, 3, 5, 4, 2, 0], 2)
     True
@@ -65,7 +50,7 @@ def sequential_search_rec(xs, y):
 
 def sequential_search_rec2(xs, y):
     '''
-    checks whether y is contained in the list xs
+    Check whether y is contained in the list xs
 
     >>> sequential_search_rec2([1, 3, 5, 4, 2, 0], 2)
     True
@@ -83,7 +68,7 @@ def sequential_search_rec2(xs, y):
 
 def sequential_search_rec3(xs, y):
     '''
-    checks whether y is contained in the list xs
+    Check whether y is contained in the list xs
 
     >>> sequential_search_rec3([1, 3, 5, 4, 2, 0], 2)
     True
@@ -113,9 +98,9 @@ def binary_search_itr(xs, y):
     True
     >>> binary_search_itr([1, 3, 5, 7, 9, 11], 8)
     False
-    >>> binary_search_itr(list(range(-1001,1001,2)), 9)
+    >>> binary_search_itr(list(range(-1001, 1001, 2)), 9)
     True
-    >>> binary_search_itr(list(range(-1000,1000,2)), 9)
+    >>> binary_search_itr(list(range(-1000, 1000, 2)), 9)
     False
     '''
     if len(xs) == 0:
@@ -150,9 +135,9 @@ def binary_search_rec(xs, y):
     True
     >>> binary_search_rec([1, 3, 5, 7, 9, 11], 8)
     False
-    >>> binary_search_rec(list(range(-1001,1001,2)), 9)
+    >>> binary_search_rec(list(range(-1001, 1001, 2)), 9)
     True
-    >>> binary_search_rec(list(range(-1000,1000,2)), 9)
+    >>> binary_search_rec(list(range(-1000, 1000, 2)), 9)
     False
     '''
     if len(xs) == 0:
@@ -186,9 +171,9 @@ def binary_search_rec2(xs, y):
     True
     >>> binary_search_rec2([1, 3, 5, 7, 9, 11], 8)
     False
-    >>> binary_search_rec2(list(range(-1001,1001,2)), 9)
+    >>> binary_search_rec2(list(range(-1001, 1001, 2)), 9)
     True
-    >>> binary_search_rec2(list(range(-1000,1000,2)), 9)
+    >>> binary_search_rec2(list(range(-1000, 1000, 2)), 9)
     False
     '''
     if len(xs) == 0:

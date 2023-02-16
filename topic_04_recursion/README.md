@@ -1,4 +1,4 @@
-# week 04: recursion + binary search
+# topic 04: recursion + more runtimes + binary search
 
 <center>
 <img src=r_154444_mWjbZ.jpg width=400px />
@@ -12,7 +12,50 @@ It is a recursive acronym standing for "GNU's Not UNIX".
 <img src=Strip-Oracle-v-Google-650-finalenglish-4.jpg width=400px />
 </center>
 
+## Announcements
+
+1. My solution to the HTML_Validator homework is posted at <https://github.com/mikeizbicki/html_validator/blob/solution/HTML_Validator.py>
+
+1. Word ladder notes:
+    1. Second hardest homework you'll have
+    1. Next few homeworks will be easier (... but not easy ...)
+    1. Most of your grade is in the projects
+        1. Historically, most students are not able to solve all problems
+        1. This is what will separate As/Bs/Cs in the class
+        1. Word ladder is worth (very approximately) 5% of your final grade
+
 ## Lecture
+
+1. Debugging tips
+    1. Always verify helper functions first
+    1. Run the tests in a separate terminal from vim
+    1. Use vim to open multiple files at once
+    1. Make full use of the pytest output
+    1. Use `--last-failed` (skip successful tests) and `-x` (stop after first failed test)
+    1. Test parts of code without using pytest (and do this often!!!)
+    1. Run tests in parallel
+       ```
+       $ pip3 install pytest-xdist
+       $ python3 -m pytest -n4
+       ```
+       My solution takes about 5 minutes to run with this command,
+       and 8 minutes to run with the non-parallel command.
+
+1. Search
+    1. the most fundamental/important problem of computer science
+    1. sequential search:
+        1. works for any input
+        1. worst case runtime is $\Theta(n)$
+    1. binary search
+        1. requires the input be sorted; we will see next week that this takes time $\Theta(n \log n)$
+        1. worst case runtime is $\Theta(\log n)$ ---- this is really, really fast!!!
+    1. Reference: [textbook chapter 6.1-6.4](https://runestone.academy/runestone/books/published/pythonds/SortSearch/toctree.html)
+
+1. More runtime analysis
+
+   Official python documentation for container runtimes: <https://wiki.python.org/moin/TimeComplexity>
+
+   <img src=math.webp width=300px />
 
 1. Recursion
     1. Closely related to proof by induction (CSCI055/MATH055: discrete math)
@@ -34,18 +77,11 @@ It is a recursive acronym standing for "GNU's Not UNIX".
         1. for loops are easier when they are applicable
     1. Reference: [textbook chapter 5](https://runestone.academy/runestone/books/published/pythonds/Recursion/TheThreeLawsofRecursion.html)
 
-1. Search
-    1. the most fundamental/important problem of computer science
-    1. sequential search:
-        1. works for any input
-        1. worst case runtime is Theta(n)
-    1. binary search
-        1. requires the input be sorted; we will see next week that this takes time Theta(n log n)
-        1. worst case runtime is Theta(log n)
-    1. Reference: [textbook chapter 6.1-6.4](https://runestone.academy/runestone/books/published/pythonds/SortSearch/toctree.html)
-
 ## Lab
 
+TBA (there will be required partner work)
+
+<!--
 The format of this lab is similar to last week's.
 There are two tables for you to fill out and submit to sakai.
 
@@ -198,7 +234,6 @@ There are two tables for you to fill out and submit to sakai.
 To submit your lab, copy your completed tables with runtimes into sakai.
 There is no need to copy the big-o table.
 
-<!--
 1. Recall that a python list is created with square brackets `[]` or the `list` function:
    ```
    >>> list1 = [1, 2, 3, 4, 5]

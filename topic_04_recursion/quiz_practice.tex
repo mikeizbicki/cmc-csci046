@@ -1,0 +1,555 @@
+\documentclass[10pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage[shortlabels]{enumitem}
+\usepackage[normalem]{ulem}
+\usepackage{courier}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = black, %Colour for external hyperlinks
+  linkcolor    = blue, %Colour of internal links
+  citecolor    = blue  %Colour of citations
+}
+
+\usepackage[T1]{fontenc}
+\usepackage{upquote}
+\usepackage{listings}
+\lstset{
+    language=HTML
+    ,basicstyle=\linespread{1}\ttfamily
+    ,keywordstyle=
+    ,language=sh
+    ,showstringspaces=false
+    ,numbers=left
+    ,breaklines=true
+    }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\theoremstyle{definition}
+\newtheorem{problem}{Problem}
+\newtheorem{note}{Note}
+\newcommand{\E}{\mathbb E}
+\newcommand{\R}{\mathbb R}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\newcommand{\trans}[1]{{#1}^{T}}
+\newcommand{\loss}{\ell}
+\newcommand{\w}{\mathbf w}
+\newcommand{\mle}[1]{\hat{#1}_{\textit{mle}}}
+\newcommand{\map}[1]{\hat{#1}_{\textit{map}}}
+\newcommand{\normal}{\mathcal{N}}
+\newcommand{\x}{\mathbf x}
+\newcommand{\y}{\mathbf y}
+\newcommand{\ltwo}[1]{\lVert {#1} \rVert}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\begin{center}
+    {
+\Large
+    Quiz: Recursion (Practice Problems)
+}
+
+    \vspace{0.1in}
+\end{center}
+
+\begin{note}
+    You will have two quizzes on this material.
+    The first quiz will be worth $2^2$ points,
+    and the second quiz worth $2^3$ points.
+    (Both will have $2^2$ problems,
+    the problems in the second quiz will be worth 2 points each.)
+\end{note}
+
+\begin{note}
+    All of these problems are designed to tests your ability to reason about recursion in an abstract setting.
+    The problems in the \texttt{notes.py} file use recursion to actually implement the practical problem of binary search.
+\end{note}
+
+\begin{note}
+    Recall that recursion must have a base case.
+    Without a base case, the recursion will cause a \emph{stack overflow},
+    which in python is represented by throwing a \texttt{RuntimeError}.
+    The code below catches this exception.
+\end{note}
+
+\filbreak
+\section{Basic Recursion}
+
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+def foo(xs):
+    if len(xs) == 0:
+        return 0
+    return xs[0] + foo(xs[1:])
+try:
+    print('foo([1, 2, 3, 4, 5])=',foo([1, 2, 3, 4, 5]))
+except RuntimeError:
+    print('StackOverflow')
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+def foo(xs):
+    ret = foo(xs[1:])
+    if len(xs) == 0:
+        return 0
+    return xs[0] + ret
+try:
+    print('foo([1, 2, 3, 4, 5])=',foo([1, 2, 3, 4, 5]))
+except RuntimeError:
+    print('StackOverflow')
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+def foo(xs):
+    return foo(xs[1:]) + xs[0]
+try:
+    print('foo([1, 2, 3, 4, 5])=',foo([1, 2, 3, 4, 5]))
+except RuntimeError:
+    print('StackOverflow')
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+def foo(xs):
+    if len(xs) == 0:
+        return 0
+    return - foo(xs[1:]) + xs[0]
+try:
+    print('foo([1, 2, 3, 4, 5])=',foo([1, 2, 3, 4, 5]))
+except RuntimeError:
+    print('StackOverflow')
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+def foo(xs):
+    if len(xs) == 0:
+        return 0
+    return foo(xs[1:-1]) * xs[-1]
+try:
+    print('foo([1, 2, 3, 4, 5])=',foo([1, 2, 3, 4, 5]))
+except RuntimeError:
+    print('StackOverflow')
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+def foo(xs):
+    if len(xs) == 2:
+        return 0
+    return foo(xs[1:-1]) + xs[-1]
+try:
+    print('foo([1, 2, 3, 4, 5])=',foo([1, 2, 3, 4, 5]))
+except RuntimeError:
+    print('StackOverflow')
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+def foo(xs):
+    ret = foo(xs[1:-1]) + xs[-1]
+    if len(xs) == 2:
+        return 0
+    return ret
+try:
+    print('foo([1, 2, 3, 4, 5])=',foo([1, 2, 3, 4, 5]))
+except RuntimeError:
+    print('StackOverflow')
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\filbreak
+\section{Using a Helper Function}
+
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+def foo(xs):
+    def go(i):
+        if i == len(xs):
+            return 0
+        return xs[i] + go(i+1)
+    return go(0)
+try:
+    print('foo([1, 2, 3, 4, 5])=',foo([1, 2, 3, 4, 5]))
+except RuntimeError:
+    print('StackOverflow')
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+def foo(xs):
+    def go(i):
+        if i == -1:
+            return 0
+        return xs[i] + go(i-1)
+    return go(len(xs)-1)
+try:
+    print('foo([1, 2, 3, 4, 5])=',foo([1, 2, 3, 4, 5]))
+except RuntimeError:
+    print('StackOverflow')
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+def foo(xs):
+    def go(i):
+        if i == 0:
+            return xs[0]
+        return xs[i] + go(i // 2)
+    return go(len(xs)-1)
+try:
+    print('foo([1, 2, 3, 4, 5])=',foo([1, 2, 3, 4, 5]))
+except RuntimeError:
+    print('StackOverflow')
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+def foo(xs):
+    if len(xs) == 0:
+        return 0
+    def go(i):
+        return xs[i] + go(i+1)
+    return go(0)
+try:
+    print('foo([1, 2, 3, 4, 5])=',foo([1, 2, 3, 4, 5]))
+except RuntimeError:
+    print('StackOverflow')
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\filbreak
+\section{With an accumulator}
+
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+def foo(xs):
+    def go(i, acc):
+        if len(xs) == i:
+            return acc
+        return go(i+1, acc + xs[i])
+    return go(0, 0)
+try:
+    print('foo([1, 2, 3, 4, 5])=',foo([1, 2, 3, 4, 5]))
+except RuntimeError:
+    print('StackOverflow')
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+def foo(xs):
+    def go(i, acc):
+        if len(xs) == i:
+            return acc
+        return go(i+1, acc + xs[i])
+    return go(1, 2)
+try:
+    print('foo([1, 2, 3, 4, 5])=',foo([1, 2, 3, 4, 5]))
+except RuntimeError:
+    print('StackOverflow')
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+def foo(xs):
+    def go(i, acc):
+        if len(xs) == i:
+            return acc
+        return go(i+1, - acc + xs[i])
+    return go(0, 0)
+try:
+    print('foo([1, 2, 3, 4, 5])=',foo([1, 2, 3, 4, 5]))
+except RuntimeError:
+    print('StackOverflow')
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\section{Multiple Recursion}
+
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+def foo(xs):
+    if len(xs) == 0:
+        return 0
+    return xs[0] + foo(xs[1:]) + foo(xs[2:])
+try:
+    print('foo([1, 2, 3])=',foo([1, 2, 3]))
+except RuntimeError:
+    print('StackOverflow')
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+def foo(xs):
+    if len(xs) == 0:
+        return 0
+    ret = xs[0]
+    ret += foo(xs[1:])
+    ret += foo(xs[:-1])
+    return ret
+try:
+    print('foo([1, 2, 3])=',foo([1, 2, 3]))
+except RuntimeError:
+    print('StackOverflow')
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+def foo(xs):
+    def go(i, acc):
+        if len(xs) <= i:
+            return acc
+        ret = 0
+        ret += go(i+1, acc + xs[i])
+        ret += go(i+2, acc + xs[i])
+        ret += go(i+3, acc + xs[i])
+        return ret
+    return go(0, 0)
+try:
+    print('foo([1, 2, 3])=',foo([1, 2, 3]))
+except RuntimeError:
+    print('StackOverflow')
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+def foo(xs):
+    def go(i, acc):
+        if len(xs) <= i:
+            return acc
+        ret = 0
+        ret += go(i+1, acc + xs[i])
+        ret += go(i+1, acc + xs[i])
+        return ret
+    return go(0, 0)
+try:
+    print('foo([1, 2, 3])=',foo([1, 2, 3]))
+except RuntimeError:
+    print('StackOverflow')
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\filbreak
+\section{Building Lists with Recursion}
+
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+def foo(xs):
+    if len(xs) == 10:
+        return 1
+    xs.append(1)
+    return 2 * foo(xs)
+try:
+    print('foo([])=',foo([]))
+except RuntimeError:
+    print('StackOverflow')
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+def foo(xs):
+    if len(xs) == 10:
+        return 1
+    xs.append(1)
+    return 2 * foo(xs)
+try:
+    print('foo([1, 2, 3])=',foo([1, 2, 3]))
+except RuntimeError:
+    print('StackOverflow')
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+def foo(xs):
+    xs.append(1)
+    return 2 * foo(xs)
+    if len(xs) == 10:
+        return 1
+try:
+    print('foo([1, 2, 3])=',foo([1, 2, 3]))
+except RuntimeError:
+    print('StackOverflow')
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\end{document}

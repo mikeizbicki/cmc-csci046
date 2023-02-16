@@ -54,7 +54,7 @@
     1. static methods
     1. superclasses, inheritance
     1. WET vs DRY programming
-        1. WET: wastes everyone time / we enjoy typing
+        1. WET: wastes everyone's time / we enjoy typing
         1. DRY: don't repeat yourself
 
            <img src=keep-my-diaper-and-my-code-dry.jpg />

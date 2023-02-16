@@ -1,0 +1,270 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{tikz}
+
+\usepackage{color}
+\usepackage{colortbl}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{gray}{rgb}{0.7,0.7,0.7}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = black, %Colour for external hyperlinks
+  linkcolor    = blue, %Colour of internal links
+  citecolor    = blue  %Colour of citations
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\theoremstyle{definition}
+\newtheorem{problem}{Problem}
+\newtheorem{example}{Example}
+\newtheorem{defn}{Definition}
+\newcommand{\E}{\mathbb E}
+\newcommand{\R}{\mathbb R}
+\DeclareMathOperator{\nnz}{nnz}
+\DeclareMathOperator{\determinant}{det}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\newcommand{\trans}[1]{{#1}^{T}}
+\newcommand{\loss}{\ell}
+\newcommand{\w}{\mathbf w}
+\newcommand{\x}{\mathbf x}
+\newcommand{\y}{\mathbf y}
+\newcommand{\lone}[1]{{\lVert {#1} \rVert}_1}
+\newcommand{\ltwo}[1]{{\lVert {#1} \rVert}_2}
+\newcommand{\lp}[1]{{\lVert {#1} \rVert}_p}
+\newcommand{\linf}[1]{{\lVert {#1} \rVert}_\infty}
+\newcommand{\lF}[1]{{\lVert {#1} \rVert}_F}
+
+\usepackage{listings}
+
+% Default fixed font does not support bold face
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
+
+% Python style for highlighting
+\newcommand\pythonstyle{\lstset{
+language=Python,
+basicstyle=\ttm,
+otherkeywords={self},             % Add keywords here
+keywordstyle=\ttb\color{deepblue},
+emph={MyClass,__init__},          % Custom highlighting
+emphstyle=\ttb\color{deepred},    % Custom highlighting style
+stringstyle=\color{deepgreen},
+frame=tb,                         % Any extra options here
+showstringspaces=false,           % 
+stepnumber=1,
+numbers=left
+}}
+
+\lstnewenvironment{python}[1][]
+{
+    \pythonstyle
+    \lstset{#1}
+}
+{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+    {
+\Large
+Math: Big-O/$\Theta$/$\Omega$ Notation
+}
+\end{center}
+
+%\begin{center}
+%\begin{tikzpicture}
+%\draw[help lines, color=gray!30, dashed] (-0.5,-0.5) grid (14.9,9.9);
+%\draw[-,ultra thick] (-0.5,0)--(15,0) node[right]{};
+%\draw[-,ultra thick] (0,-0.5)--(0,10) node[above]{};
+%\end{tikzpicture}
+%\end{center}
+
+\begin{defn}
+    Let $f,g$ be functions from $\R^+\to\R^+$.
+    Then,
+    \begin{enumerate}
+        \item If $\displaystyle\lim_{x\to\infty} \frac{f(x)}{g(x)} < \infty$, then we say $f = O(g)$.
+        \item If $\displaystyle\lim_{x\to\infty} \frac{f(x)}{g(x)} > 0$, then we say $f = \Omega(g)$.
+        %\item If $\lim_{x\to\infty} \frac{f(x)}{g(x)} = 0$, then we say $f = O(g)$.
+        \item We say that $f = \Theta(g)$ if both $f=O(g)$ and $f=\Omega(g)$.
+    \end{enumerate}
+    Intuitively, you should think of $O$ as $\le$, $\Omega$ as $\ge$, and $\Theta$ as $=$.
+\end{defn}
+
+\begin{example}~
+    \begin{enumerate}
+        \item 
+            $f(x) = x$
+            
+            $g(x) = x^2$
+            \vspace{1in}
+        \item
+            $f(x) = x^2$
+            
+            $g(x) = x$
+            \vspace{1in}
+        \item
+            $f(x) = x^2 + 2x + 5$
+            
+            $g(x) = x$
+            \vspace{1in}
+        \item
+            $f(x) = x^2 + 2x + 5$
+            
+            $g(x) = x^2$
+            \vspace{1in}
+        \item
+            $f(x) = x^2 + 2x + 5$
+            
+            $g(x) = x^3$
+    \end{enumerate}
+\end{example}
+
+\newpage
+\begin{example}
+    You should memorize the relationship between the following functions:
+        
+        \vspace{0.15in}
+        \begin{center}
+        $1$\qquad \qquad $\log n$\qquad \qquad  $n$\qquad \qquad  $n\log n$\qquad \qquad  $n^2$\qquad \qquad  $n^3$\qquad \qquad  $2^n$
+        \end{center}
+        \vspace{0.15in}
+\end{example}
+
+\begin{center}
+\begin{tikzpicture}
+\draw[help lines, color=gray!30, dashed] (-0.5,-0.5) grid (14.9,9.9);
+\draw[-,ultra thick] (-0.5,0)--(15,0) node[right]{};
+\draw[-,ultra thick] (0,-0.5)--(0,10) node[above]{};
+\end{tikzpicture}
+\end{center}
+
+\newpage
+\begin{example}
+    Complete each equation below by adding the symbol $O$ if $f=O(g)$, $\Omega$ if $f=\Omega(g)$, or $\Theta$ if $f=\Theta(g)$.  
+    The first row is completed for you as an example.
+
+{\renewcommand{\arraystretch}{4.4}
+\begin{tabular}{c c c c c c}
+    & f(n) &~\hspace{0.5in}~$ $~\hspace{0.5in}~& g(n) &\\
+    \hline
+    & $1$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & $O(n)$ &  &\\
+    \arrayrulecolor{gray}\hline
+    & $3 n\log n$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & $n^2$ &  &\\
+    \arrayrulecolor{gray}\hline
+    & $1$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & $1/n$ &  &\\
+    \arrayrulecolor{gray}\hline
+    & $\log_2 n$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & $\log_3 n$ &  &\\
+    \arrayrulecolor{gray}\hline
+    & $\log n$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & $\frac {1} {\log n}$ &  &\\
+    \arrayrulecolor{gray}\hline
+    & $5\cdot10^{30}$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & $\log n$ &  &\\
+    \arrayrulecolor{gray}\hline
+    & $\log n$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & $\log (n^2)$ &  &\\
+    \arrayrulecolor{gray}\hline
+    & $2^n$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & $3^n$ &  &\\
+    \arrayrulecolor{gray}\hline
+    & $\frac 1 n$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & $\sqrt{\frac 1 n}$ &  &\\
+    \arrayrulecolor{gray}\hline
+    & $\log n$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & $(\log n)^2$ &  &\\
+    \arrayrulecolor{gray}\hline
+
+    %& $O(1)$ & or & $O(n)$ & or & equal\\
+    %& $O(n\log n)$ & or & $O(n^2)$ & or & equal\\
+    %& $\Theta(1)$ & or & $\Theta(1/n)$ & or & equal\\
+    %& $\Omega(\log_2 n)$ & or & $\Omega(\log_3 n)$ & or & equal\\
+    %& $O(n^{42})$ & or & $O(42^n)$ & or & equal\\
+    %& $\Theta(5\cdot10^{30})$ & or & $\Theta(\log n)$ & or & equal\\
+    %& $\Omega(\log n)$ & or & $\Omega(\log (n^2))$ & or & equal\\
+    %& $O(2^n)$ & or & $O(3^n)$ & or & equal\\
+    %& $\Theta(n!)$ & or & $\Theta(n^2)$ & or & equal\\
+    %& $\Omega(\log n)$ & or & $\Omega((\log n)^2)$ & or & equal\\
+\end{tabular}
+}
+\end{example}
+
+%\newpage
+%\begin{problem}
+    %Complete each equation below by adding the symbol $O$ if $f=O(g)$, $\Omega$ if $f=\Omega(g)$, or $\Theta$ if $f=\Theta(g)$.  
+    %If $f$ cannot be related to $g$ using asymptotic notation, draw a slash through the equals sign.
+    %The first row is completed for you as an example.
+%
+%{\renewcommand{\arraystretch}{4.4}
+%\begin{tabular}{c c c c c c}
+    %& f(a,b,c) &~\hspace{0.5in}~$ $~\hspace{0.5in}~& g(a,b,c) &\\
+    %\hline
+    %& $ab$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & $\Omega(b)$ &  &\\
+    %\arrayrulecolor{gray}\hline
+    %& $a^2b$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & $ab^2$ &  &\\
+    %\arrayrulecolor{gray}\hline
+    %& $a\log b$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & $a^b$ &  &\\
+    %\arrayrulecolor{gray}\hline
+    %& $a^2bc^3$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & $a^2b^2c^3$ &  &\\
+    %\arrayrulecolor{gray}\hline
+    %& $\frac ab$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & $\frac a {b^2}$ &  &\\
+    %\arrayrulecolor{gray}\hline
+    %& $\frac ab$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & $(\frac a b)^2$ &  &\\
+    %\arrayrulecolor{gray}\hline
+    %& $a^b$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & $b^a$ &  &\\
+    %\arrayrulecolor{gray}\hline
+    %& $a^b$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & $(\log a)^c$ &  &\\
+    %\arrayrulecolor{gray}\hline
+    %& $a^b$ & ~\hspace{0.5in}~$=$~\hspace{0.5in}~  & $(1+c)^a$ &  &\\
+    %\arrayrulecolor{gray}\hline
+%\end{tabular}
+%}
+%\end{problem}
+
+\newpage
+\begin{example}
+    Simplify the following expressions:
+
+\begin{enumerate}
+    \item $O\bigg(8n^3 + n^2 \bigg)$
+    \vspace{1.5in}
+    \item $O\bigg((7n)^3 + 5n^2\log n + \log n \bigg)$
+    \vspace{1.5in}
+    \item $O\bigg(100000000000 \bigg)$
+    \vspace{1.5in}
+    \item $O\bigg(\log n + 100000000000 \bigg)$
+    \vspace{1.5in}
+%\item $O\bigg(ab^2 + 3a^2b + ab + 10b\bigg)$
+    %\vspace{1.5in}
+%\item $O\bigg(a + b + c + ab + bc + abc\bigg)$
+    %\vspace{1.5in}
+\item $O\bigg(\frac 1 n + \frac 1 {n^2}\bigg)$
+    \vspace{1.5in}
+%\item $O\bigg(\frac 1 n + \frac 1 {nm} + \frac 1 m \bigg)$
+    %\vspace{1.5in}
+%\item $\Omega\bigg((3.45n + n)(\log n^2)\bigg)$
+    %\vspace{1.5in}
+%\item $\Theta\bigg(n(1 + \log n) + n^{3.2} + \log 2^n\bigg)$
+    %\vspace{1.5in}
+\end{enumerate}
+\end{example}
+
+\vspace{0.25in}
+\noindent
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+
