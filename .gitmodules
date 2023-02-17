@@ -18,21 +18,21 @@
 	#path = week_02/example-homework
 	#url = https://github.com/mikeizbicki/example-homework
 
-[submodule "lab-timeit"]
-	path = topic_03_queue/lab-timeit
-	url = https://github.com/mikeizbicki/lab-timeit
-
 [submodule "word_ladder"]
 	path = topic_03_queue/word_ladder
 	url = https://github.com/mikeizbicki/word_ladder
+
+[submodule "lab-timeit"]
+	path = topic_03_queue/lab-timeit
+	url = https://github.com/mikeizbicki/lab-timeit
 
 [submodule "binary_search"]
 	path = topic_04_recursion/binary_search
 	url = https://github.com/mikeizbicki/binary_search
 
 [submodule "lab-timeit2"]
-	path = topic_04_recursion/lab-timeit2
-	url = https://github.com/mikeizbicki/binary_search
+    path = topic_04_recursion/lab-timeit2
+    url = https://github.com/mikeizbicki/lab-timeit2
 
 #[submodule "sorting"]
 	#path = week_05/sorting
@@ -65,3 +65,6 @@
 #[submodule "risk"]
 	#path = week_14/risk
 	#url = https://github.com/mikeizbicki/risk
+[submodule "topic_04_recursion/lab-timeit2"]
+	path = topic_04_recursion/lab-timeit2
+	url = https://github.com/mikeizbicki/lab-timeit2
