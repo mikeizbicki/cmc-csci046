@@ -30,6 +30,10 @@
 	path = topic_04_recursion/binary_search
 	url = https://github.com/mikeizbicki/binary_search
 
+[submodule "lab-timeit2"]
+	path = topic_04_recursion/lab-timeit2
+	url = https://github.com/mikeizbicki/binary_search
+
 #[submodule "sorting"]
 	#path = week_05/sorting
 	#url = https://github.com/mikeizbicki/sorting

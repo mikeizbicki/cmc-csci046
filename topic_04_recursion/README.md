@@ -79,9 +79,14 @@ It is a recursive acronym standing for "GNU's Not UNIX".
 
 ## Lab
 
-TBA (there will be required partner work)
+**Part I:**
 
-<!--
+1. Find a partner, and fork that person's lab-timeit repo.
+    (This is the repo from last week's lab;
+    my upstream repo is <https://github.com/mikeizbicki/lab-timeit>.)
+
+1. 
+
 The format of this lab is similar to last week's.
 There are two tables for you to fill out and submit to sakai.
 
