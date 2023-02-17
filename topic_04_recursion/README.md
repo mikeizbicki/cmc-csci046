@@ -79,4 +79,6 @@ It is a recursive acronym standing for "GNU's Not UNIX".
 
 ## Lab
 
+There is no lecture component for the lab session.
+
 See the <https://github.com/mikeizbicki/lab-timeit2> repo for instructions.
