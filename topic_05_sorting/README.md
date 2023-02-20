@@ -13,6 +13,8 @@
    1. Boredom and drudgery are evil
    1. Laziness is good
 
+   <br/>
+
    <img width=600px src=gates.jpg />
 
    <br/>
