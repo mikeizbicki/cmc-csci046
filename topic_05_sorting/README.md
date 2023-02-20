@@ -12,19 +12,19 @@ Other sorting comics:
 
 ## Lecture
 
-1. Recursion
+1. Recursion runtime analysis with the [Master theorem](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms\))
 
-    1. continue analysis with the master theorem
-
+<!--
 1. best case vs worst case vs average case runtime
 
     1. these are different that O/Omega/Theta, but often confused
+-->
 
 1. Sorting
 
     1. Theorem: every comparison based sorting algorithm has worst case runtime Omega(n log n)
 
-       See: https://en.wikipedia.org/wiki/Comparison_sort#Number_of_comparisons_required_to_sort_a_list
+       See: <https://en.wikipedia.org/wiki/Comparison_sort#Number_of_comparisons_required_to_sort_a_list>
 
    1. Every good computer scientist has the following table memorized.
       The notation is typically expressed using O() instead of Theta notation, but Theta is more accurate.
@@ -50,27 +50,30 @@ Other sorting comics:
            <img src='shell_omega.svg' /><br/>
 
            <img src='shell_o.svg' />
-        1. for details, see: https://en.wikipedia.org/wiki/Shellsort
+        1. for details, see: <https://en.wikipedia.org/wiki/Shellsort>
 
    1. reference: [textbook sections 6.6-6.12](https://runestone.academy/runestone/books/published/pythonds/SortSearch/toctree.html)
 
 ## Lab
 
+TBA
+
+<!--
 Use the master theorem to solve the following recurrence relations in Theta notation.
 
 | recurrence           | solution                       | practical application                     |
 | -------------------- | ------------------------------ | ----------------------------------------- |
-| T(n) = T(n/2) + n    | <!-- Theta( n            ) --> | runtime of the bad binary search          |
-| T(n) = T(n/2) + 1    | <!-- Theta( log n        ) --> | runtime of the correct binary search      |
-| T(n) = T(n/3) + 1    | <!-- Theta( log n        ) --> | runtime of "trinary search"               |
-| T(n) = 2T(n/2) + 1   | <!-- Theta( n            ) --> | runtime for [finding the median of an unsorted list](https://en.wikipedia.org/wiki/Quickselect) |
-| T(n) = 2T(n/2) + n   | <!-- Theta( n log n      ) --> | runtime of merge sort                     |
-| T(n) = 3T(n/3) + n   | <!-- Theta( n log n      ) --> | runtime of a trinary merge sort           |
-| T(n) = T(n/2) + n^2  | <!-- Theta( n^2          ) --> |                                           |
-| T(n) = 2T(n/2) + n^2 | <!-- Theta( n^2          ) --> |                                           |
-| T(n) = 3T(n/2) + n^2 | <!-- Theta( n^2          ) --> |                                           |
-| T(n) = 3T(n/2) + n   | <!-- Theta( n^(log_2 3)  ) --> | runtime of [Karatsuba's integer multiplication algorithm](https://en.wikipedia.org/wiki/Karatsuba_algorithm); HINT: Case 1 |
-| T(n) = 7T(n/2) + n^2 | <!-- Theta( n^(log_2 7)  ) --> | runtime of [Strassen's matrix multiplication algorithm](https://en.wikipedia.org/wiki/Strassen_algorithm) |
+| T(n) = T(n/2) + n    | Theta( n            ) | runtime of the bad binary search          |
+| T(n) = T(n/2) + 1    | Theta( log n        ) | runtime of the correct binary search      |
+| T(n) = T(n/3) + 1    | Theta( log n        ) | runtime of "trinary search"               |
+| T(n) = 2T(n/2) + 1   | Theta( n            ) | runtime for [finding the median of an unsorted list](https://en.wikipedia.org/wiki/Quickselect) |
+| T(n) = 2T(n/2) + n   | Theta( n log n      ) | runtime of merge sort                     |
+| T(n) = 3T(n/3) + n   | Theta( n log n      ) | runtime of a trinary merge sort           |
+| T(n) = T(n/2) + n^2  | Theta( n^2          ) |                                           |
+| T(n) = 2T(n/2) + n^2 | Theta( n^2          ) |                                           |
+| T(n) = 3T(n/2) + n^2 | Theta( n^2          ) |                                           |
+| T(n) = 3T(n/2) + n   | Theta( n^(log_2 3)  ) | runtime of [Karatsuba's integer multiplication algorithm](https://en.wikipedia.org/wiki/Karatsuba_algorithm); HINT: Case 1 |
+| T(n) = 7T(n/2) + n^2 | Theta( n^(log_2 7)  ) | runtime of [Strassen's matrix multiplication algorithm](https://en.wikipedia.org/wiki/Strassen_algorithm) |
 
 **Submission:**
 The answers are included as comments in the `README.md` file.
@@ -80,3 +83,4 @@ submit a statement to sakai that you have completed the lab.
 The lab will be graded for completion, not for correctness.
 
 On your final, you will have multiple problems where you have to solve these recurrences.
+-->
