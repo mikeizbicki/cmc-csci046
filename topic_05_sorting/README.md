@@ -1,14 +1,18 @@
-# week 05: recursion + sorting
+# week 05: more recursion + sorting
 
-<center>
-<img src=1612627667-20210206.png width=400px />
-</center>
+## Announcments
 
-Other sorting comics:
-1. https://www.smbc-comics.com/comic/understanding-2
-1. https://www.smbc-comics.com/comic/2012-12-21
-1. https://www.smbc-comics.com/comic/2010-09-03
-1. https://xkcd.com/1185/
+1. The sorting homework will be relatively easy.
+
+1. Lots of people still using your tools very inefficiently.
+
+   Spend some time this week to review vim and get a good workflow.
+
+   <img width=600px src=gates.jpg />
+
+   <br/>
+
+   <img width=600px src=the-three-chief-virtues-of-a-programmer-are-laziness-impatience-and-hubris-larry-wall.jpg />
 
 ## Lecture
 
@@ -22,7 +26,7 @@ Other sorting comics:
 
 1. Sorting
 
-    1. Theorem: every comparison based sorting algorithm has worst case runtime Omega(n log n)
+    1. Theorem: every comparison based sorting algorithm has worst case runtime $\Omega(n \log n)$
 
        See: <https://en.wikipedia.org/wiki/Comparison_sort#Number_of_comparisons_required_to_sort_a_list>
 
@@ -52,7 +56,28 @@ Other sorting comics:
            <img src='shell_o.svg' />
         1. for details, see: <https://en.wikipedia.org/wiki/Shellsort>
 
+
    1. reference: [textbook sections 6.6-6.12](https://runestone.academy/runestone/books/published/pythonds/SortSearch/toctree.html)
+
+**Fun:**
+
+Since sorting is so fundamental to CS, it is one of the most popular source of comics.
+
+From SMBC:
+
+<img src=20121221.gif width=400px />
+
+<br/>
+
+<img src=1612627667-20210206.png width=400px />
+
+<br/>
+
+<img src=1611767129-20210127.png width=400px />
+
+From XKCD:
+
+<img src=ineffective_sorts_2x.png width=400px />
 
 ## Lab
 
