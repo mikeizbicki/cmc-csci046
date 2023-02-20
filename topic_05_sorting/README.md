@@ -8,6 +8,11 @@
 
    Spend some time this week to review vim and get a good workflow.
 
+   **Remember:**
+
+   1. Boredom and drudgery are evil
+   1. Laziness is good
+
    <img width=600px src=gates.jpg />
 
    <br/>
