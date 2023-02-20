@@ -12,7 +12,7 @@ Other sorting comics:
 
 ## Lecture
 
-1. Recursion runtime analysis with the [Master theorem](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms\))
+1. Recursion runtime analysis with the [Master theorem](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms))
 
 <!--
 1. best case vs worst case vs average case runtime
