@@ -34,9 +34,9 @@
     path = topic_04_recursion/lab-timeit2
     url = https://github.com/mikeizbicki/lab-timeit2
 
-#[submodule "sorting"]
-	#path = week_05/sorting
-	#url = https://github.com/mikeizbicki/sorting
+[submodule "sorting"]
+	path = topic_05_sorting/sorting
+	url = https://github.com/mikeizbicki/sorting
 
 #[submodule "twitter_coronavirus"]
 	#path = week_07/twitter_coronavirus
