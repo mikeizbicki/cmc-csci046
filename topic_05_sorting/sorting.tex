@@ -1,0 +1,108 @@
+\documentclass[10pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage[shortlabels]{enumitem}
+\usepackage[normalem]{ulem}
+\usepackage{courier}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = black, %Colour for external hyperlinks
+  linkcolor    = blue, %Colour of internal links
+  citecolor    = blue  %Colour of citations
+}
+
+\usepackage[T1]{fontenc}
+\usepackage{upquote}
+\usepackage{listings}
+\lstset{
+    language=HTML
+    ,basicstyle=\linespread{1}\ttfamily
+    ,keywordstyle=
+    ,language=sh
+    ,showstringspaces=false
+    ,numbers=left
+    ,breaklines=true
+    }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\theoremstyle{definition}
+\newtheorem{problem}{Problem}
+\newtheorem{note}{Note}
+\newcommand{\E}{\mathbb E}
+\newcommand{\R}{\mathbb R}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\newcommand{\trans}[1]{{#1}^{T}}
+\newcommand{\loss}{\ell}
+\newcommand{\w}{\mathbf w}
+\newcommand{\mle}[1]{\hat{#1}_{\textit{mle}}}
+\newcommand{\map}[1]{\hat{#1}_{\textit{map}}}
+\newcommand{\normal}{\mathcal{N}}
+\newcommand{\x}{\mathbf x}
+\newcommand{\y}{\mathbf y}
+\newcommand{\ltwo}[1]{\lVert {#1} \rVert}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\begin{center}
+    {
+\Large
+    Sorting Notes
+}
+\end{center}
+
+\section{Merge Sort}
+
+\begin{lstlisting}
+def merge_sorted(xs):
+    '''
+    Returns the input list xs in sorted order.
+    '''
+    if len(xs) <= 1:
+        return xs
+    else:
+        mid = len(xs) // 2
+        left = xs[:mid]
+        right = xs[mid:]
+        return _merged(merge_sorted(left), merge_sorted(right))
+
+
+def _merged(xs, ys):
+    '''
+    Assuming xs and ys are sorted lists,
+    returns a sorted list containing the elements of both xs and ys.
+    Runs in linear time.
+    '''
+\end{lstlisting}
+
+\newpage
+\section{Quick Sort}
+
+\begin{lstlisting}
+def quick_sorted(xs):
+    '''
+    Returns the input list xs in sorted order.
+    '''
+    if len(xs) <= 1:
+        return xs
+    mid = len(xs) // 2
+    pivot = xs[mid]
+    xs_smaller = [x for x in xs if x < pivot]
+    xs_bigger  = [x for x in xs if x > pivot]
+    xs_equal   = [x for x in xs if x == pivot]
+    return quick_sorted(xs_smaller) + xs_equal + quick_sorted(xs_greater)
+\end{lstlisting}
+
+
+\end{document}
