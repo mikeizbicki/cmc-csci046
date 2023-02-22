@@ -1,6 +1,6 @@
 # week 05: more recursion + sorting
 
-## Announcements
+## Announcements!
 
 1. The sorting homework will be relatively easy.
 
