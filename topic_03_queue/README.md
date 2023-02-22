@@ -62,8 +62,8 @@ Posted at <https://github.com/mikeizbicki/lab-timit>.
 
    |                        |    `str`   |   `list`   |  `deque`   |
    | ---------------------- |    -----   |   ------   |  -------   |
-   | `check_palindrome_1`   |4.15 ms/loop|4.09 ms/loop| 63 ms/loop |
-   | `check_palindrome_2`   |3.13 ms/loop|3.28 ms/loop|2.88 ms/loop|
+   | `check_palindrome_1`   |            |            |            |
+   | `check_palindrome_2`   |            |            |            |
 
    **HINT:**
    The runtimes for indexing into a string are the same as those for indexing a list, which is O(1).
