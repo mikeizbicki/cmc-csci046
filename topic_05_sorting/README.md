@@ -21,6 +21,17 @@
 
    <img width=600px src=the-three-chief-virtues-of-a-programmer-are-laziness-impatience-and-hubris-larry-wall.jpg />
 
+<br/>
+
+**Wed (22 Feb):**
+
+1. From last class:
+    1. iterative substitution not important
+    1. master theorem is important
+    1. you'll get review of it in the lab this week
+
+1. We're about 1 week ahead of schedule right now
+
 ## Lecture
 
 1. Recursion runtime analysis with the [Master theorem](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms))
