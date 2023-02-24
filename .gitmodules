@@ -73,5 +73,5 @@
 	path = topic_04_recursion/lab-timeit2
 	url = https://github.com/mikeizbicki/lab-timeit2
 [submodule "topic_05_sorting/topic_05_sorting/runtimes-lab"]
-	path = topic_05_sorting/runtimes-lab
+	path = topic_05_sorting/lab-master-theorem
 	url = https://gitlab.com/mikeizbicki/runtimes-lab
