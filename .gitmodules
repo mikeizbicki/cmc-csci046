@@ -38,6 +38,10 @@
 	path = topic_05_sorting/sorting
 	url = https://github.com/mikeizbicki/sorting
 
+[submodule "gitlab"]
+	path = topic_05_sorting/gitlab
+	url = https://gitlab.com/mikeizbicki/runtimes-lab/
+
 #[submodule "twitter_coronavirus"]
 	#path = week_07/twitter_coronavirus
 	#url = https://github.com/mikeizbicki/twitter_coronavirus
@@ -68,3 +72,6 @@
 [submodule "topic_04_recursion/lab-timeit2"]
 	path = topic_04_recursion/lab-timeit2
 	url = https://github.com/mikeizbicki/lab-timeit2
+[submodule "topic_05_sorting/topic_05_sorting/runtimes-lab"]
+	path = topic_05_sorting/runtimes-lab
+	url = https://gitlab.com/mikeizbicki/runtimes-lab

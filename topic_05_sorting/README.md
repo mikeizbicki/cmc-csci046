@@ -99,7 +99,7 @@ From XKCD:
 
 ## Lab
 
-TBA
+See the instructions at <https://gitlab.com/mikeizbicki/runtimes-lab/>.
 
 <!--
 Use the master theorem to solve the following recurrence relations in Theta notation.
