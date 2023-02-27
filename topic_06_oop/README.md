@@ -1,4 +1,4 @@
-# topic 6: Classes / Object Oriented Programming (OOP) / Iterators
+# topic 6: Object Oriented Programming (OOP) / `class` / iterators / `yield` / generators
 
 ## Announcements
 
