@@ -9,14 +9,14 @@
 1. The next 4 homework assignments all work together
     1. You'll create your own data structures / containers
     1. At the end, you'll publish them all as a library (that can be pip installed)
-    1. This assignment is "easy"
+    1. This week's assignment is "easy"
         1. the hard part is getting the concept
         1. there's no tricky edge cases to debug after that
-    1. The next three assignments are hard
+    1. The next three assignments are "hard"
         1. hard concepts and hard tricky edge cases
         1. expect them to take longer than you think
-        1. [A common rule of thumb is to multiply your ETA by pi](https://news.ycombinator.com/item?id=28667174)
-        1. Do that and you'll still be way off
+        1. [a common rule of thumb is to multiply your ETA by pi](https://news.ycombinator.com/item?id=28667174)
+        1. If you do that, you'll still be way off:
         
             <img src=Strip-Souvenirs-650-finalenglish.jpg width=600px />
 
@@ -97,8 +97,7 @@
                         a = next(_iter)
                     except StopIteration:
                         break
-                    else:
-                        c
+                    c
                 ```
                 For a detailed technical explanation, see: <https://snarky.ca/unravelling-for-statements/>
 
@@ -106,7 +105,11 @@
 
 1. PEP8: <https://www.python.org/dev/peps/pep-0008/>
 
-    1. PEP = Python Enhancement Proposal
+    1. Naming:
+        1. PEP = Python Enhancement Proposal
+        1. the 8 in flake8 comes from PEP8
+        1. the flake in flake8 comes from [pyflakes](https://pypi.org/project/pyflakes/),
+            which does [static analysis](https://en.wikipedia.org/wiki/Static_program_analysis) to find broken (i.e. flakey) code
 
     1. class names should be in `CamelCase`
 
