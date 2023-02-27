@@ -8,7 +8,7 @@ class Duck:
         self._name = name
 
     def __repr__(self):
-        return 'Duck(weight=' + str(self._weight) + ',height=' + str(self._height) + ',name=' + self._name + ')'
+        return 'Duck(weight=' + str(self._weight) + ', height=' + str(self._height) + ', name=' + str(self._name) + ')'
 
     def quack(self):
         print('quack... my name is ' + self._name + '... quack')

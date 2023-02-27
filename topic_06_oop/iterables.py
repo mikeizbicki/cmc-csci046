@@ -13,7 +13,7 @@ def factorial(n):
     # raise StopIteration is equivalent to return None
 
 
-# Factorial is the data strucutre that supports for loops;
+# Factorial is a data structure that supports for loops;
 # we know it supports for loops because it implements the __iter__ magic method
 class Factorial:
     def __init__(self, n=None):

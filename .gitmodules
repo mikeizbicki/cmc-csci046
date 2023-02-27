@@ -46,9 +46,9 @@
 	#path = week_07/twitter_coronavirus
 	#url = https://github.com/mikeizbicki/twitter_coronavirus
 
-#[submodule "containers_08"]
-	#path = week_08/containers
-	#url = https://github.com/mikeizbicki/containers
+[submodule "containers_oop"]
+	path = topic_06_oop/containers
+	url = https://github.com/mikeizbicki/containers
 
 #[submodule "containers_09"]
 	#path = week_09/containers

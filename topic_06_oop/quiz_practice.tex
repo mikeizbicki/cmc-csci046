@@ -1,0 +1,361 @@
+\documentclass[10pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage[shortlabels]{enumitem}
+\usepackage[normalem]{ulem}
+\usepackage{courier}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = black, %Colour for external hyperlinks
+  linkcolor    = blue, %Colour of internal links
+  citecolor    = blue  %Colour of citations
+}
+
+\usepackage[T1]{fontenc}
+\usepackage{upquote}
+\usepackage{listings}
+\lstset{
+    language=HTML
+    ,basicstyle=\linespread{1}\ttfamily
+    ,keywordstyle=
+    ,language=sh
+    ,showstringspaces=false
+    ,numbers=left
+    ,breaklines=true
+    }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\theoremstyle{definition}
+\newtheorem{problem}{Problem}
+\newtheorem{note}{Note}
+\newcommand{\E}{\mathbb E}
+\newcommand{\R}{\mathbb R}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\newcommand{\trans}[1]{{#1}^{T}}
+\newcommand{\loss}{\ell}
+\newcommand{\w}{\mathbf w}
+\newcommand{\mle}[1]{\hat{#1}_{\textit{mle}}}
+\newcommand{\map}[1]{\hat{#1}_{\textit{map}}}
+\newcommand{\normal}{\mathcal{N}}
+\newcommand{\x}{\mathbf x}
+\newcommand{\y}{\mathbf y}
+\newcommand{\ltwo}[1]{\lVert {#1} \rVert}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\begin{center}
+    {
+\Large
+    Quiz: OOP (Practice Problems)
+}
+
+    \vspace{0.1in}
+\end{center}
+
+\filbreak
+\section{Classes and Attributes}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    pass
+a = Foo()
+a.message = 'hello world'
+b = Foo()
+b.message = 'hola mundo'
+try:
+    print('a.message=', a.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    pass
+a = Foo()
+b = Foo()
+b.message = 'hello world'
+try:
+    print('a.message=', a.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    message = 'salve munde'
+a = Foo()
+b = Foo()
+b.message = 'hola mundo'
+try:
+    print('a.message=', a.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    pass
+a = Foo()
+b = Foo()
+b.message = 'hola mundo'
+Foo.message = 'salve munde'
+try:
+    print('a.message=', a.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    pass
+a = Foo()
+a.message = 'hello world'
+b = Foo()
+b.message = 'hola mundo'
+Foo.message = 'salve munde'
+try:
+    print('a.message=', a.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Constructors}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    def __init__(self, message):
+        self.message = message
+a = Foo('hello world')
+b = Foo('hola mundo')
+try:
+    print('a.message=', a.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    def __init__(self, message):
+        message = message
+a = Foo('hello world')
+b = Foo('hola mundo')
+try:
+    print('a.message=', a.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    message = 'salve munde'
+    def __init__(self, message):
+        message = message
+a = Foo('hello world')
+b = Foo('hola mundo')
+try:
+    print('a.message=', a.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    def __init__(self, message):
+        Foo.message = message
+a = Foo('hello world')
+b = Foo('hola mundo')
+try:
+    print('a.message=', a.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    def __init__(self, message):
+        Foo.message = message
+a = Foo('hello world')
+b = Foo('hola mundo')
+Foo.message = 'salve mundo'
+try:
+    print('a.message=', a.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    def __init__(self, message):
+        Foo.message = message
+a = Foo('hello world')
+b = Foo('hola mundo')
+b.message = 'salve mundo'
+try:
+    print('a.message=', a.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\subsection{Default Parameters}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    def __init__(self, message=None):
+        self.message = message
+a = Foo()
+b = Foo('hola mundo')
+try:
+    print('a.message=', a.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    def __init__(self, message=None):
+        if message:
+            self.message = message
+a = Foo()
+b = Foo('hola mundo')
+try:
+    print('a.message=', a.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\end{document}
