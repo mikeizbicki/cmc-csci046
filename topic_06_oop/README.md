@@ -105,7 +105,11 @@
 
 1. PEP8: <https://www.python.org/dev/peps/pep-0008/>
 
-    1. PEP = Python Enhancement Proposal
+    1. Naming:
+        1. PEP = Python Enhancement Proposal
+        1. the 8 in flake8 comes from PEP8
+        1. the flake in flake8 comes from [pyflakes](https://pypi.org/project/pyflakes/),
+            which does [static analysis](https://en.wikipedia.org/wiki/Static_program_analysis) to find broken (i.e. flakey) code
 
     1. class names should be in `CamelCase`
 
