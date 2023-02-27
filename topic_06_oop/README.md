@@ -10,11 +10,17 @@
     1. You'll create your own data structures / containers
     1. At the end, you'll publish them all as a library (that can be pip installed)
     1. This assignment is "easy"
+        1. the hard part is getting the concept
+        1. there's no tricky edge cases to debug after that
     1. The next three assignments are hard
+        1. hard concepts and hard tricky edge cases
+        1. expect them to take longer than you think
+        1. [A common rule of thumb is to multiply your ETA by pi](https://news.ycombinator.com/item?id=28667174)
+        1. Do that and you'll still be way off
+        
+            <img src=Strip-Souvenirs-650-finalenglish.jpg width=600px />
 
 ## Lecture Notes
-
-<img src=Strip-Souvenirs-650-finalenglish.jpg />
 
 1. The `class` keyword lets you define your own data structures
 
@@ -49,11 +55,11 @@
 
            in python, the `type` function returns the type of the object
 
-        1. Python uses "duck typing" for classes
+        1. Python uses [duck typing](https://en.wikipedia.org/wiki/Duck_typing)
 
-           <img src=duck.jpg width=600px />
+           <img src=duck.jpg width=400px />
 
-           <img src=dog-duck.jpeg width=600px />
+           <img src=dog-duck.jpeg width=400px />
 
         1. variables within a class are called "attributes" or "properties"
 
@@ -99,6 +105,8 @@
             1. we'll see more examples of these dunder methods throughout the rest of the semester
 
 1. PEP8: <https://www.python.org/dev/peps/pep-0008/>
+
+    1. PEP = Python Enhancement Proposal
 
     1. class names should be in `CamelCase`
 
