@@ -90,6 +90,15 @@ The following code will fail with a `MemoryError` exception.
 This is because we are allocating a very large list inside the function.
 The size of this list is Theta(n),
 and so we say that the *memory usage* of the function is Theta(n).
+
+It's also ugly because we're not reusing any of our previous code,
+and the rewritten code has to keep track of extra information.
+
+KEY IDEA:
+
+If we're only planning on looping over the results,
+we don't actually need to create the entire list before looping.
+We can create the elements one at a time.
 '''
 
 
@@ -122,13 +131,25 @@ The following code will not raise a `MemoryError`
 
 >>> all_factorials_3(10000000000)
 
+Functions that use the `yield` keyword are called generators in python.
+The generator above is syntactic sugar for a class definition that implements the __iter__ dunder method.
+The class below is an example.
 '''
 
 class Factorial:
     '''
-    Functions that use the `yield` keyword are called generators in python.
-    The generator above is syntactic sugar for a class definition that implements the __iter__ dunder method.
+    An iterable that contains all factorial numbers.
+
+    >>> list(Factorial(1))
+    [1]
+    >>> list(Factorial(2))
+    [1, 2]
+    >>> list(Factorial(3))
+    [1, 2, 6]
+    >>> list(Factorial(10))
+    [1, 2, 6, 24, 120, 720, 5040, 40320, 362880, 3628800]
     '''
+
     def __init__(self, n=None):
         '''
         n is the number of iterations we will run;
@@ -164,7 +185,7 @@ class FactorialIter:
         Return the "next" factorial number in our sequence.
         The factorial number corresponding to position self.i
         '''
-        if self.i > self.n:
+        if self.i >= self.n:
             # we're at the end of the iteration
             # if we never raise StopIteration,
             # then the loop will go on forever
