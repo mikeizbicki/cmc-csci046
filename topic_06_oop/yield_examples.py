@@ -118,13 +118,16 @@ def all_factorials_3(n):
 '''
 NOTE:
 
-Functions that use the `yield` keyword are called *generators* in python.
-The generator above is syntactic sugar for the following class definitions.
+The following code will not raise a `MemoryError`
+
+>>> all_factorials_3(10000000000)
+
 '''
 
 class Factorial:
     '''
-
+    Functions that use the `yield` keyword are called generators in python.
+    The generator above is syntactic sugar for a class definition that implements the __iter__ dunder method.
     '''
     def __init__(self, n=None):
         '''
