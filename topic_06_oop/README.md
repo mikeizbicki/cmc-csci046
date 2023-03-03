@@ -99,6 +99,11 @@
                         break
                     c
                 ```
+                where
+                ```
+                iter = lambda x: x.__iter__()
+                next = lambda x: x.__next__()
+                ```
                 For a detailed technical explanation, see: <https://snarky.ca/unravelling-for-statements/>
 
             1. we'll see more examples of these dunder methods throughout the rest of the semester
