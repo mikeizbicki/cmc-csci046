@@ -153,7 +153,7 @@
 
 ## Lab
 
-TBA
+Posted at <https://github.com/mikeizbicki/lab-sorting-runtimes>.
 
 <!--
 There is no separate graded lab for this week.
