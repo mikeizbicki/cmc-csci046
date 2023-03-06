@@ -12,16 +12,17 @@
         1. I believe this is a result of:
             1. clear and objective grading criteria
             1. interesting assignments that prepare you for realworld jobs + technical interviews
-       <!--
-       Message from Guido:
-       ===================
-       You guys rock!
-       This is *really* hard stuff you're learning.
-       (Sorry I couldn't make python any simpler.
-       At least I'm not responsible for your git miseries.)
-       Anyways, you'll all be using this stuff everyday in industry.
-       So keep up the good work!
-       -->
+
+           <!--
+           Message from Guido:
+           ===================
+           You guys rock!
+           This is *really* hard stuff you're learning.
+           Sorry I couldn't make python any simpler.
+           At least you can't "blame" me for your git problems!
+           Anyways, you'll all be using this stuff everyday in industry.
+           So keep up the good work!
+           -->
 
     1. [Google's VP in charge of hiring people says "GPA’s are worthless as a criteria for hiring, and test scores are worthless" because they don’t predict how productive an employee will be.](https://www.nytimes.com/2014/02/23/opinion/sunday/friedman-how-to-get-a-job-at-google.html)
     1. Lot's of "culture fit" interview stuff not in your grade:
