@@ -377,6 +377,105 @@ EOF
 $ python3 foo.py
 \end{lstlisting}
 
+\subsection{With built-in Classes}
+
+\begin{note}
+    Recall that when you subclasss an existing class, you get all the superclass's functionality "for free".
+    It is very common in python to subclass the built-in python classes in order to extend their functionality.
+    Again, these problems focus on the "what/how" instead of the "why".
+\end{note}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo(list):
+    def __init__(self, xs=[]):
+        super().__init__(xs + [0])
+xs = Foo([1])
+xs = Foo([1, 2])
+xs = Foo([1, 2, 3])
+try:
+    print('xs=', xs)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo(list):
+    def __init__(self, xs=[]):
+        xs.append(len(xs))
+        super().__init__(xs)
+xs = Foo([1, 2, 3])
+xs = Foo(xs)
+xs = Foo(xs)
+try:
+    print('xs=', xs)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo(list):
+    def __init__(self, xs=[]):
+        super().__init__(xs)
+        xs.append(len(xs))
+xs = Foo()
+xs = Foo()
+xs = Foo()
+try:
+    print('xs=', xs)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo(list):
+    def __init__(self, xs=[]):
+        xs.append(len(xs))
+        super().__init__(xs)
+xs = Foo()
+xs = Foo([1, 2, 3])
+xs = Foo()
+try:
+    print('xs=', xs)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Static Methods}
@@ -658,6 +757,186 @@ a = Foo('hello world')
 b = Bar('hola mundo')
 try:
     print('Bar.bar()=', Bar.bar())
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Recursive Classes}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    def __init__(self, message=None):
+        self.message = message
+foo = Foo('hello world')
+foo.child = Foo('hola mundo')
+foo.child.child = Foo('salve munde')
+try:
+    print(' foo.child.message=', foo.child.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    def __init__(self, message=None):
+        self.message = message
+foo = Foo('hello world')
+foo.child = Foo('hola mundo')
+foo.child.child = Foo('salve munde')
+try:
+    print(' foo.child.child.child.message=', foo.child.child.child.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    def __init__(self, message=None):
+        self.message = message
+foo = Foo('hello world')
+foo.child = foo
+try:
+    print(' foo.child.child.child.message=', foo.child.child.child.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    def __init__(self, message=None):
+        self.message = message
+foo = Foo('hello world')
+foo.child = Foo('hola mundo')
+foo.child.child = foo
+try:
+    print(' foo.child.child.child.message=', foo.child.child.child.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    def __init__(self, message=None):
+        self.message = message
+foo = Foo('hello world')
+foo.child = Foo('hola mundo')
+foo.child.child = foo.child
+try:
+    print(' foo.child.child.child.message=', foo.child.child.child.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\subsection{With built-in classes}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+xs = [1, 2, 3]
+xs.append(xs)
+xs[0] = xs
+try:
+    print('xs[-1][0][2]=',xs[-1][0][2])
+except TypeError:
+    print('TypeError')
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+xs = [1, 2, 3]
+xs.append(xs)
+xs[0] = xs
+try:
+    print('xs[1][0][2]=',xs[1][0][2])
+except TypeError:
+    print('TypeError')
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo(list):
+    def __init__(self, xs=[]):
+        xs.append(len(xs))
+        super().__init__(xs)
+xs = Foo()
+xs.append(Foo())
+xs[0] = 1
+xs.append(Foo())
+try:
+    print('xs[0]=', xs[0])
 except AttributeError:
     print('AttributeError') 
 EOF
