@@ -1,4 +1,39 @@
-# Week 10: Binary Search Trees (BSTs) / Recursive Data Structures
+# Topic 07: Binary Search Trees (BSTs) / Recursive Data Structures
+
+## Announcements
+
+1. Grades updated in sakai
+
+    <img src=grades.png />
+
+    1. Contact me if there are mistakes
+    1. I'm very proud of you all
+        1. Other professors complain my grades are "too high"
+        1. I believe this is a result of:
+            1. clear and objective grading criteria
+            1. interesting assignments that prepare you for realworld jobs + technical interviews
+    1. [Google's VP in charge of hiring people says "GPA’s are worthless as a criteria for hiring, and test scores are worthless" because they don’t predict how productive an employee will be.](https://www.nytimes.com/2014/02/23/opinion/sunday/friedman-how-to-get-a-job-at-google.html)
+    1. Lot's of "culture fit" interview stuff not in your grade:
+        1. How well do you use your tools (e.g. vim shortcuts)
+        1. Do you use markdown formatting correctly (e.g. reporting error messages with code blocks vs inline code)
+        1. Do you pronounce things correctly (e.g. deque, OOP)
+        1. Do you address people properly (e.g. Mike, not professor)
+
+1. Next 3 homeworks:
+
+    1. They will all have special instructions using the same containers repo
+
+    1. More involved than previous assignments, and they all build off of each other
+
+    1. Worth 32 points instead of 16 points
+
+    1. First homework easiest, second homework hardest, third homework in the middle (but will not allow any collaboration)
+
+1. Modified due dates because of spring break:
+    1. This week's lab due Sunday 19 Mar
+    1. This week's homework due Tuesday 21 Mar
+
+## Lecture
 
 <img width=600px src=cgxof0jkru551.png />
 
@@ -61,32 +96,27 @@
 
 ## Lab
 
-No separate graded lab.
+TBA
 
 ## Homework instructions
 
-1. The https://github.com/mikeizbicki/containers repo has a new branch called `unicode`.
+1. The <https://github.com/mikeizbicki/containers> repo has a new branch called `bst`.
    This branch contains the homework for this week.
 
 1. You should:
 
     1. Create and checkout a branch in your homework repo called `bst`.
-       `bst` should be based off of the `master` branch and not the `unicode` branch.
-
-       **IMPORTANT:**
-       If your `bst` branch is based off of your `unicode` branch instead of `master`,
-       you will receive -2 points on the assignment.
 
     1. Pull the contents of my `bst` branch into your branch.
 
+        > **IMPORTANT:**
+        > All of your work for this assignment must be contained in the `bst` branch of your repo,
+        > and the `master` branch must remain unchanged.
+        > If your master branch is modified in any way,
+        > you will receie a -8 point penalty on this assignment.
+
     1. Fix the file `containers/BinaryTree.py` and `containers/BST.py` so that all the test cases pass.
 
-    1. Update your `README.md` file to include build status icons for both files.
-
-    1. **IMPORTANT:**
-       All your work must be done in the `bst` branch,
-       and **you must not merge your work into either the `master` or `unicode` branches**.
-       If you merge your work into either `master` or `unicode`, you will receive -2 points on the assignment.
-
 1. Submit the link to your `bst` branch on github to sakai.
-   If you submit a link to any other branch instead, you will receive -2 points on the assignment.
+   If you submit a link to any other branch instead,
+   you will receive a -4 point penalty on the assignment.

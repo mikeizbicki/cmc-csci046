@@ -1,0 +1,668 @@
+\documentclass[10pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage[shortlabels]{enumitem}
+\usepackage[normalem]{ulem}
+\usepackage{courier}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = black, %Colour for external hyperlinks
+  linkcolor    = blue, %Colour of internal links
+  citecolor    = blue  %Colour of citations
+}
+
+\usepackage[T1]{fontenc}
+\usepackage{upquote}
+\usepackage{listings}
+\lstset{
+    language=HTML
+    ,basicstyle=\linespread{1}\ttfamily
+    ,keywordstyle=
+    ,language=sh
+    ,showstringspaces=false
+    ,numbers=left
+    ,breaklines=true
+    }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\theoremstyle{definition}
+\newtheorem{problem}{Problem}
+\newtheorem{note}{Note}
+\newcommand{\E}{\mathbb E}
+\newcommand{\R}{\mathbb R}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\newcommand{\trans}[1]{{#1}^{T}}
+\newcommand{\loss}{\ell}
+\newcommand{\w}{\mathbf w}
+\newcommand{\mle}[1]{\hat{#1}_{\textit{mle}}}
+\newcommand{\map}[1]{\hat{#1}_{\textit{map}}}
+\newcommand{\normal}{\mathcal{N}}
+\newcommand{\x}{\mathbf x}
+\newcommand{\y}{\mathbf y}
+\newcommand{\ltwo}[1]{\lVert {#1} \rVert}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\begin{center}
+    {
+\Large
+    Quiz: OOP II (Practice Problems)
+}
+
+    \vspace{0.1in}
+\end{center}
+
+\filbreak
+\section{Inheritance}
+
+\begin{note}
+    Whenever an attribute is not found in a subclass,
+    Python will check the superclass for the attribute before raising the \lstinline{AttributeError} exception.
+\end{note}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    pass
+class Bar(Foo):
+    pass
+a = Foo()
+Foo.message = 'hello world'
+b = Bar()
+Bar.message = 'hola mundo'
+try:
+    print('b.message=', b.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    pass
+class Bar(Foo):
+    pass
+a = Foo()
+Foo.message = 'hello world'
+b = Bar()
+a.message = 'hola mundo'
+try:
+    print('b.message=', b.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    pass
+class Bar(Foo):
+    pass
+a = Foo()
+Foo.message = 'hello world'
+b = Bar()
+a.message = 'hola mundo'
+try:
+    print('b.message=', b.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    pass
+class Bar(Foo):
+    pass
+a = Foo()
+a.message = 'hello world'
+b = Bar()
+try:
+    print('b.message=', b.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    pass
+class Bar(Foo):
+    pass
+a = Foo()
+Foo.message = 'hello world'
+b = Bar()
+Bar.message = 'hola mundo'
+try:
+    print('a.message=', a.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\subsection{With Constructors}
+
+\begin{note}
+    The constructor of a superclass will only be called if it is explicitly called in the constructor of the subclass.
+    You should use the \lstinline{super} function to get the superclass.
+\end{note}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    def __init__(self):
+        self.message = 'hello world'
+class Bar(Foo):
+    def __init__(self):
+        self.message = 'hola mundo'
+a = Foo()
+b = Bar()
+try:
+    print('b.message=', b.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    def __init__(self):
+        self.message = 'hello world'
+class Bar(Foo):
+    def __init__(self):
+        self.message = 'hola mundo'
+        super().__init__()
+a = Foo()
+b = Bar()
+try:
+    print('b.message=', b.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    def __init__(self):
+        self.message = 'hello world'
+class Bar(Foo):
+    def __init__(self):
+        super().__init__()
+        self.message = 'hola mundo'
+a = Foo()
+b = Bar()
+try:
+    print('b.message=', b.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    def __init__(self, message=None):
+        self.message = message
+class Bar(Foo):
+    def __init__(self, message=None):
+        self.message = message
+        super().__init__(message)
+a = Foo('hello world')
+b = Bar('hola mundo')
+try:
+    print('b.message=', b.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    def __init__(self, message=None):
+        Foo.message = message
+class Bar(Foo):
+    def __init__(self, message=None):
+        super().__init__(message)
+a = Foo('hello world')
+b = Bar('hola mundo')
+try:
+    print('b.message=', b.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    def __init__(self, message=None):
+        Foo.message = message
+class Bar(Foo):
+    def __init__(self, message=None):
+        super().__init__(message)
+b = Bar('hola mundo')
+a = Foo('hello world')
+try:
+    print('b.message=', b.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    pass
+class Bar(Foo):
+    def __init__(self, message=None):
+        super().__init__()
+        Foo.message = message
+a = Foo()
+b = Bar('hola mundo')
+c = Bar()
+try:
+    print('b.message=', b.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Static Methods}
+
+\subsection{Without Inheritance}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    def __init__(self, message=None):
+        self.message = message
+    def foo(self):
+        return self.message
+a = Foo('hello world')
+try:
+    print('a.foo()=', a.foo())
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    message = 'salve munde'
+    def __init__(self, message=None):
+        self.message = message
+    @staticmethod
+    def foo():
+        return Foo.message
+a = Foo('hello world')
+try:
+    print('a.foo()=', a.foo())
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    message = 'salve munde'
+    def __init__(self, message=None):
+        self.message = message
+    @staticmethod
+    def foo():
+        return Foo.message
+a = Foo('hello world')
+try:
+    print('Foo.foo()=', Foo.foo())
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    message = 'salve munde'
+    def __init__(self, message=None):
+        Foo.message = message
+    @staticmethod
+    def foo():
+        return Foo.message
+a = Foo('hello world')
+try:
+    print('Foo.foo()=', Foo.foo())
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\subsection{With Inheritance}
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    def __init__(self, message=None):
+        self.message = message
+    def foo(self):
+        return self.message
+class Bar(Foo):
+    def __init__(self, message=None):
+        super().__init__(message)
+    def bar(self):
+        return self.message
+a = Foo('hello world')
+b = Bar('hola mundo')
+try:
+    print('b.foo()=', b.foo())
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    def __init__(self, message=None):
+        self.message = message
+    def foo(self):
+        return self.message
+class Bar(Foo):
+    def __init__(self, message=None):
+        super().__init__(message)
+    def bar(self):
+        return self.message
+a = Foo('hello world')
+b = Bar('hola mundo')
+try:
+    print('a.bar()=', a.bar())
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    def __init__(self, message=None):
+        self.message = message
+    def foo(self):
+        return self.message
+class Bar(Foo):
+    message = 'salve munde'
+    def __init__(self, message=None):
+        super().__init__(message)
+    @staticmethod
+    def bar():
+        return Bar.message
+a = Foo('hello world')
+b = Bar('hola mundo')
+try:
+    print('b.bar()=', b.bar())
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    def __init__(self, message=None):
+        self.message = message
+    def foo(self):
+        return self.message
+class Bar(Foo):
+    message = 'salve munde'
+    def __init__(self, message=None):
+        super().__init__(message)
+    @staticmethod
+    def bar():
+        return Bar.message
+a = Foo('hello world')
+b = Bar('hola mundo')
+try:
+    print('Bar.bar()=', Bar.bar())
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    message = 'salve munde'
+    def __init__(self, message=None):
+        Bar.message = message
+    @staticmethod
+    def foo():
+        return Bar.message
+class Bar(Foo):
+    def __init__(self, message=None):
+        super().__init__(message)
+    @staticmethod
+    def bar():
+        return Foo.message
+a = Foo('hello world')
+b = Bar('hola mundo')
+try:
+    print('Bar.foo()=', Bar.foo())
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\filbreak
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    message = 'salve munde'
+    def __init__(self, message=None):
+        Bar.message = message
+    @staticmethod
+    def foo():
+        return Bar.message
+class Bar(Foo):
+    def __init__(self, message=None):
+        super().__init__(message)
+    @staticmethod
+    def bar():
+        return Foo.message
+a = Foo('hello world')
+b = Bar('hola mundo')
+try:
+    print('Bar.bar()=', Bar.bar())
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
