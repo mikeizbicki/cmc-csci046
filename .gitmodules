@@ -75,3 +75,6 @@
 [submodule "topic_05_sorting/topic_05_sorting/runtimes-lab"]
 	path = topic_05_sorting/lab-master-theorem
 	url = https://gitlab.com/mikeizbicki/runtimes-lab
+[submodule "topic_06_oop/lab-sorting-runtimes"]
+	path = topic_06_oop/lab-sorting-runtimes
+	url = https://github.com/mikeizbicki/lab-sorting-runtimes

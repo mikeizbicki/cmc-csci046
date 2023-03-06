@@ -112,18 +112,15 @@ def binary_search_itr(xs, y):
         mid = (left + right) // 2
         if xs[mid] > y:
             right = mid
-        if xs[mid] < y:
+        elif xs[mid] < y:
             left = mid + 1
-        if xs[mid] == y:
+        elif xs[mid] == y:
             return True
-            left = mid + 1
 
     if xs[left] == y:
         return True
     else:
         return False
-
-    return go(0, len(xs) - 1)
 
 
 def binary_search_rec(xs, y):
