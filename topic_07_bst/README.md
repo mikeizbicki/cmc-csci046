@@ -19,15 +19,15 @@
         1. Do you pronounce things correctly (e.g. deque, OOP)
         1. Do you address people properly (e.g. Mike, not professor)
 
-   <!--
-   Message from Guido:
-   ===================
-   You guys rock!
-   This is all really hard stuff you're learning.
-   These assignments dig into much more advanced CS than my data structures class did,
-   and you'll all be using this everyday in industry.
-   Keep up the good work!
-   -->
+       <!--
+       Message from Guido:
+       ===================
+       You guys rock!
+       This is all really hard stuff you're learning.
+       These assignments dig into much more advanced CS than my data structures class did,
+       and you'll all be using this everyday in industry.
+       Keep up the good work!
+       -->
 
 1. Next 3 homeworks:
 
