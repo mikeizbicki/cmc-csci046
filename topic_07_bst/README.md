@@ -35,9 +35,11 @@
 
     1. More involved than previous assignments, and they all build off of each other
 
-    1. Worth 32 points instead of 16 points
-
-    1. First homework easiest, second homework hardest, third homework in the middle (but will not allow any collaboration)
+    1. First homework easiest (worth 32 points)
+    
+        second homework hardest (worth 32 points)
+        
+        third homework in the middle (worth 64 points, no collaboration allowed)
 
 1. Modified due dates because of spring break:
     1. This week's lab due Sunday 19 Mar
