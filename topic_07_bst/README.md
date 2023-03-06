@@ -12,7 +12,6 @@
         1. I believe this is a result of:
             1. clear and objective grading criteria
             1. interesting assignments that prepare you for realworld jobs + technical interviews
-
            <!--
            Message from Guido:
            ===================
@@ -23,7 +22,6 @@
            Anyways, you'll all be using this stuff everyday in industry.
            So keep up the good work!
            -->
-
     1. [Google's VP in charge of hiring people says "GPA’s are worthless as a criteria for hiring, and test scores are worthless" because they don’t predict how productive an employee will be.](https://www.nytimes.com/2014/02/23/opinion/sunday/friedman-how-to-get-a-job-at-google.html)
     1. Lot's of "culture fit" interview stuff not in your grade:
         1. How well do you use your tools (e.g. vim shortcuts)
