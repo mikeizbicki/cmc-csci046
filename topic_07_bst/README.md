@@ -12,22 +12,23 @@
         1. I believe this is a result of:
             1. clear and objective grading criteria
             1. interesting assignments that prepare you for realworld jobs + technical interviews
+       <!--
+       Message from Guido:
+       ===================
+       You guys rock!
+       This is *really* hard stuff you're learning.
+       (Sorry I couldn't make python any simpler.
+       At least I'm not responsible for your git miseries.)
+       Anyways, you'll all be using this stuff everyday in industry.
+       So keep up the good work!
+       -->
+
     1. [Google's VP in charge of hiring people says "GPA’s are worthless as a criteria for hiring, and test scores are worthless" because they don’t predict how productive an employee will be.](https://www.nytimes.com/2014/02/23/opinion/sunday/friedman-how-to-get-a-job-at-google.html)
     1. Lot's of "culture fit" interview stuff not in your grade:
         1. How well do you use your tools (e.g. vim shortcuts)
         1. Do you use markdown formatting correctly (e.g. reporting error messages with code blocks vs inline code)
         1. Do you pronounce things correctly (e.g. deque, OOP)
         1. Do you address people properly (e.g. Mike, not professor)
-
-       <!--
-       Message from Guido:
-       ===================
-       You guys rock!
-       This is all really hard stuff you're learning.
-       These assignments dig into much more advanced CS than my data structures class did,
-       and you'll all be using this everyday in industry.
-       Keep up the good work!
-       -->
 
 1. Next 3 homeworks:
 
