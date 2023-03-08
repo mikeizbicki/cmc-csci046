@@ -139,7 +139,7 @@ TBA
         > All of your work for this assignment must be contained in the `bst` branch of your repo,
         > and the `master` branch must remain unchanged.
         > If your master branch is modified in any way,
-        > you will receie a -8 point penalty on this assignment.
+        > you will receive a -8 point penalty on this assignment.
 
     1. Fix the file `containers/BinaryTree.py` and `containers/BST.py` so that all the test cases pass.
 
