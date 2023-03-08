@@ -91,7 +91,7 @@
 
         OOP / class inheritence is a tool for "keeping your code DRY"
 
-        <img src=keep-my-diaper-and-my-code-dry.jpg width=400px />
+        <img src=keep-my-diaper-and-my-code-dry.jpg width=300px />
 
 1. Motivation:
     1. Binary search lets us check whether an element is in a sorted list in O(log n) time,
