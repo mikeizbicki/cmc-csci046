@@ -53,6 +53,46 @@
 <img src=l5nus3752l261.png />
 -->
 
+1. Recursive data structures
+    1. No assignments on "linear" data structures.
+        These are all in your quiz on OOP 2.
+
+        They are common for "easy" technical interview questions,
+        but they are never actually implemented in python.
+
+        They are discussed in the textbook,
+        and some good review videos are:
+
+        1. [singly linked lists](https://www.youtube.com/watch?v=FSsriWQ0qYE&list=PL5tcWHG-UPH112e7AN7C-fwDVPVrt0wpV&index=5)
+        1. [circular linked lists](https://www.youtube.com/watch?v=5WoNhm7sOnA&list=PL5tcWHG-UPH112e7AN7C-fwDVPVrt0wpV&index=19)
+        1. [doubly linked lists](https://www.youtube.com/watch?v=8kptHdreaTA&list=PL5tcWHG-UPH112e7AN7C-fwDVPVrt0wpV&index=24)
+    1. You will have assignments on:
+        1. binary trees (containers 1, 2, 3)
+        1. binary search trees (containers 1)
+        1. AVL trees (containers 2)
+        1. Heap trees (containers 3)
+
+1. 3 algorithms on binary trees:
+    1. traversals
+        1. pre-order
+        1. in-order
+        1. post-order
+    1. height
+    1. size
+
+1. 3 algorithms on binary search trees:
+    1. find
+    2. insert
+    3. delete
+
+1. WET vs DRY programming
+    1. WET: wastes everyone's time / we enjoy typing
+    1. DRY: don't repeat yourself
+
+        OOP / class inheritence is a tool for "keeping your code DRY"
+
+        <img src=keep-my-diaper-and-my-code-dry.jpg width=400px />
+
 1. Motivation:
     1. Binary search lets us check whether an element is in a sorted list in O(log n) time,
        but adding new elements to the sorted list takes O(n) time.
@@ -73,38 +113,12 @@
 1. Reference:
     1. [Textbook](https://runestone.academy/runestone/books/published/pythonds/index.html) Sections 7.1-7.7, 7.11-1.14
 
-1. Recursive data structures
-    1. We won't cover:
-        1. [singly linked lists](https://www.youtube.com/watch?v=FSsriWQ0qYE&list=PL5tcWHG-UPH112e7AN7C-fwDVPVrt0wpV&index=5)
-        1. [circular linked lists](https://www.youtube.com/watch?v=5WoNhm7sOnA&list=PL5tcWHG-UPH112e7AN7C-fwDVPVrt0wpV&index=19)
-        1. [doubly linked lists](https://www.youtube.com/watch?v=8kptHdreaTA&list=PL5tcWHG-UPH112e7AN7C-fwDVPVrt0wpV&index=24)
-    1. We will cover:
-        1. binary trees
-        1. binary search trees
-        1. AVL trees
-        1. Heap trees
-
-1. 3 algorithms on binary trees:
-    1. traversals
-        1. pre-order
-        1. in-order
-        1. post-order
-    1. height
-    1. size
-
-1. 3 algorithms on binary search trees:
-    1. find
-    2. insert
-    3. delete
-
-1. python concepts
-    1. static methods
-    1. superclasses, inheritance
-    1. WET vs DRY programming
-        1. WET: wastes everyone's time / we enjoy typing
-        1. DRY: don't repeat yourself
-
-           <img src=keep-my-diaper-and-my-code-dry.jpg />
+        The textbook has a working implementation of a binary search tree that you can base your implementation on.
+        The main difference is that they are implementing a "Dictionary/Map" interface (i.e. associate keys with values),
+        and we are implmementing a "set" interface (only check if keys are contained in the tree, without associating with a value).
+        The set is a bit simpler because there are fewer values to keep track of.
+        We are focusing on the set implementation mainly so you can't just "copy/paste" their solutions and have to reimplement everything from scratch.
+        You can definitely use their implementation as a guide, however.
 
 ## Lab
 
