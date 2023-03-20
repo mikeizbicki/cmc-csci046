@@ -51,9 +51,10 @@ This week in class, we will focus on quiz material:
     1. 100 line python programs can be done in 1 line of shell
     1. One of the most popular programming languages: <https://survey.stackoverflow.co/2022/#most-popular-technologies-language>
 
-    Sometimes called "bash" scripting instead of POSIX/shell scripting
     
     <img src='bash-meme.jpg' width=300px />
+
+    (Sometimes called "bash" scripting instead of "POSIX" or "shell" scripting.)
 
 1. Disadvantage: it's very weird
 
