@@ -37,7 +37,27 @@ There are 2 videos about AVL trees below to use for your assignment.
 1. <https://www.youtube.com/watch?v=U3_ipnPYmXg&list=PLSNWQVdrBwobmS9cowxAldNTEtx0ndsF5&index=23&t=851s>
 1. <https://www.youtube.com/watch?v=a_VJbPyXaWk&list=PLSNWQVdrBwobmS9cowxAldNTEtx0ndsF5&index=22>
 
-This week in class, we will focus on quiz material.
+This week in class, we will focus on quiz material:
+
+1. POSIX = Portable Operating System Interface
+
+    Invented in 1970s
+
+    Works on all computers (Windows added support in 2016)
+
+1. Advantage: Very useful for automating tasks
+    1. Your computer runs hundreds of shell scripts on startup
+    1. Easy to process HUGE datasets quickly (via MapReduce)
+    1. 100 line python programs can be done in 1 line of shell
+    1. One of the most popular programming languages: <https://survey.stackoverflow.co/2022/#most-popular-technologies-language>
+
+    Sometimes called "bash" scripting instead of POSIX/shell scripting
+    
+    <img src='bash-meme.jpg' width=300px />
+
+1. Disadvantage: it's very weird
+
+    <img src='bash-meme.webp' width=300px />
 
 ---
 
@@ -162,4 +182,3 @@ TBA
    > **IMPORTANT:**
    > If you submit a link to any other branch instead,
    > you will receive a -8 point penalty on the assignment.
-
