@@ -144,7 +144,7 @@ The runtime of find/insert/delete on any BST is $O(n)$.
 
 ## Lab
 
-TBA
+The lab is posted at: <https://github.com/mikeizbicki/lab-pipes-twitter>.
 
 ## Homework instructions
 
