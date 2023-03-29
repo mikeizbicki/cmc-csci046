@@ -167,7 +167,7 @@ The lab is posted at: <https://github.com/mikeizbicki/lab-pipes-twitter>.
        > **NOTE:**
        > You `avltree` branch will no longer be passing the BST test cases,
        > and so will have a read test case badge on the `avltree` branch.
-       > The the test case badges are not branch specific, however, but apply to any test cases on any branch.
+       > The test case badges are not branch specific, however, but apply to any test cases on any branch.
        > This means that the test case badge on the `bst` branch will turn red.
        > This is expacted behavior, and will not affect your grade on the BST assignment.
        > When you get the `avltree` branch passing the test case,
