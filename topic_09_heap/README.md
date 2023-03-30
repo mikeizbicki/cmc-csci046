@@ -1,4 +1,4 @@
-# Week 12: Heaps
+# Heaps
 
 <img src=tree.png />
 
