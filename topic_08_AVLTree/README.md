@@ -144,7 +144,7 @@ The runtime of find/insert/delete on any BST is $O(n)$.
 
 ## Lab
 
-TBA
+The lab is posted at: <https://github.com/mikeizbicki/lab-pipes-twitter>.
 
 ## Homework instructions
 
@@ -164,6 +164,16 @@ TBA
        > If any other branch is modified,
        > you will receie a -8 point penalty on this assignment.
 
+       > **NOTE:**
+       > You `avltree` branch will no longer be passing the BST test cases,
+       > and so will have a read test case badge on the `avltree` branch.
+       > The the test case badges are not branch specific, however, but apply to any test cases on any branch.
+       > This means that the test case badge on the `bst` branch will turn red.
+       > This is expacted behavior, and will not affect your grade on the BST assignment.
+       > When you get the `avltree` branch passing the test case,
+       > it will also fix the test case on the `bst` branch.
+       > Later in the course we will see how to adjust the urls in the badges to make them branch specific.
+
     1. Pull the contents of my `avltree` branch into your branch.
 
        > **IMPORTANT:**
@@ -178,7 +188,7 @@ TBA
 
     1. Update your `README.md` file to include build status icons for the AVLTree.
 
-1. Submit the link to your `bst` branch on github to sakai.
+1. Submit the link to your `avltree` branch on github to sakai.
 
    > **IMPORTANT:**
    > If you submit a link to any other branch instead,
