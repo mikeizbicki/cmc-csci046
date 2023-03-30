@@ -24,10 +24,6 @@ Note:
 
 ## Heap
 
-1. This is the data structure that made me a CS student as an undergrad.
-
-   (I was originally an EE major.)
-
 1. A heap is a binary tree that is:
 
     1. Complete
@@ -50,6 +46,7 @@ Note:
 
    1. pseudocode is provided in the comments of the `containers/Heap.py` file
 
+<!--
 ## Hash-based data structures
 
 1. our `AVLTree`/`BST` data structures implement the same interface as python's built-in `set`
@@ -92,35 +89,38 @@ Advanced runtime analysis:
     1. avltree-set:
         1. insert/lookup/delete, average case comparisons, total runtime: O(log n)
         1. insert/lookup/delete, worst case comparisons, total runtime: O(k log n)
+-->
 
-## Homework instructions
+## Homework
 
-1. Git is a protocol, and not a webpage.
+1. Recall that git is a protocol, and not a webpage.
    This means that git can be used with many different websites, or no website at all.
    One popular alternative to GitHub is called GitLab, and your next homework assignment is hosted there.
 
-   The repo located at https://gitlab.com/claremont-mckenna/random-project-name contains a branch called `heap`.
-   This repo is a fork of the https://github.com/mikeizbicki/containers repo;
+   The repo located at <https://gitlab.com/claremont-mckenna/random-project-name> contains a branch called `heap`.
+   This repo is a fork of the <https://github.com/mikeizbicki/containers> repo;
    that means it contains all the same code, plus more.
+   GitHub "forks" are a special type of fork where both versions of code are hosted on github,
+   but in general a fork is any copy of a code repo.
    
-   **HISTORICAL NOTE:**
-   Linus Torvalds created git in 2005 to manage the Linux kernel source code.
-   (See detailed history [on wikipedia](https://en.wikipedia.org/wiki/Git#History).)
-   GitHub was founded 3 years later in 2008, and was definitely not the first website to host repos for open source software.
-   [SourceForge](https://en.wikipedia.org/wiki/SourceForge#History), for example, has been hosting SVN repos since 1999.
-   (SVN is an alternative VCS to git.)
-   "Fork" is a term that's been around in the open source community since the very beginning,
-   and is not something unique to GitHub.
-   Anytime you take someone else's open source code and modify it in any way, you've "forked" that code.
-   Typically, we reserve this word for when two projects share the same initial code,
-   but then do not merge each other's downstream commits for whatever reason.
-   See [wikipedia](https://en.wikipedia.org/wiki/Fork_(software_development)) for details.
-
-   Recall that Microsoft was viewed as the "evil tech giant" by the open source world in the 90s and 00s
-   because they used shady legal tactics to suppress open source software.
-   Today's tech giants like Google/Facebook are better at supporting open source software,
-   but they still do not support open standards (see Google's [AMP](https://www.eff.org/deeplinks/2020/07/googles-amp-canonical-web-and-importance-web-standards-0) and [Floc](https://www.eff.org/deeplinks/2021/03/googles-floc-terrible-idea) systems, and Facebook's [internet.org](https://www.eff.org/deeplinks/2015/05/internetorg-not-neutral-not-secure-and-not-internet) and [lobbying efforts](https://www.eff.org/deeplinks/2021/03/facebooks-pitch-congress-section-230-me-not-thee) ).
-   This is the fundamental reason that many programmers view these tech giants as "evil" today.
+   > **HISTORICAL NOTE:**
+   > Linus Torvalds created git in 2005 to manage the Linux kernel source code.
+   > (See detailed history [on wikipedia](https://en.wikipedia.org/wiki/Git#History).)
+   > GitHub was founded 3 years later in 2008, and was definitely not the first website to host repos for open source software.
+   > [SourceForge](https://en.wikipedia.org/wiki/SourceForge#History), for example, has been hosting SVN repos since 1999.
+   > (SVN is an alternative VCS to git.)
+   > "Fork" is a term that's been around in the open source community since the very beginning,
+   > and is not something unique to GitHub.
+   > Anytime you take someone else's open source code and modify it in any way, you've "forked" that code.
+   > Typically, we reserve this word for when two projects share the same initial code,
+   > but then do not merge each other's downstream commits for whatever reason.
+   > See [wikipedia](https://en.wikipedia.org/wiki/Fork_(software_development)) for details.
+   > 
+   > Recall that Microsoft was viewed as the "evil tech giant" by the open source world in the 90s and 00s
+   > because they used shady legal tactics to suppress open source software.
+   > Today's tech giants like Google/Facebook are better at supporting open source software,
+   > but they still do not support open standards (see Google's [AMP](https://www.eff.org/deeplinks/2020/07/googles-amp-canonical-web-and-importance-web-standards-0) and [Floc](https://www.eff.org/deeplinks/2021/03/googles-floc-terrible-idea) systems, and Facebook's [internet.org](https://www.eff.org/deeplinks/2015/05/internetorg-not-neutral-not-secure-and-not-internet) and [lobbying efforts](https://www.eff.org/deeplinks/2021/03/facebooks-pitch-congress-section-230-me-not-thee) ).
+   > This is the fundamental reason that many programmers view these tech giants as "evil" today.
 
    Microsoft purchased GitHub in 2018 as part of a long-standing plan to ingratiate themselves with the open source community.
    As part of that plan, they offered unlimited use of GitHub Actions as a free service for any open source developer.
@@ -135,16 +135,18 @@ Advanced runtime analysis:
     1. Add a new remote to your local repo on the lambda server that points to the gitlab repo.
 
     1. Create and checkout a branch in your homework repo called `heap`.
-       `heap` should be based off of the `avltree` branch and not the `unicode`, `master`, or `bst` branches.
+       `heap` should be based off of the `bst` branch and not the `master` or `avltree` branches.
 
-       **IMPORTANT:**
-        The code in your `heap` branch will require that you have access to your `BinaryTree` and `BST` classes.
-        If you don't have those classes because you didn't base your `heap` branch off of `avltree`, the code won't work.
+        > **IMPORTANT:**
+        > The code in your `heap` branch will require that you have access to your `BinaryTree` class,
+        > and that `BinaryTree` passes all the test cases.
+        > You do not need to have a working `BST` or `AVLTree` class for this assignment.
 
     1. Pull the contents of the gitlab repo's `heap` branch into your branch.
 
     1. Fix the file `containers/Heap.py` so that all the test cases pass.
 
+    <!--
     1. Create a new file `.github/workflows/heap.yml` that runs the test cases for the `Heap` class.
        You should use the existing files in `.github/workflows` as an example,
        and modify them for the `Heap` class.
@@ -153,14 +155,14 @@ Advanced runtime analysis:
        If you do not create your `heap.yml` file correctly,
        github actions will not run your test cases for you.
        You will therefore get a 0 on the assignment since we will not be able to grade it.
+    -->
 
     1. Update your `README.md` file to include a build status icon for the Heap.
 
-    1. **IMPORTANT:**
-       All your work must be done in the `heap` branch,
-       and **you must not merge your work into the `master`, `bst`, `avltree`, or `unicode` branches**.
-       If you merge your work into any of these branches, you will receive -2 points on the assignment.
+    1. All your work must be done in the `heap` branch,
+       and you must not merge your work into the `master`, `bst`, `avltree` branches.
+       If you merge your work into any of these branches, you will receive a -8 point penalty on the assignment.
 
 1. Submit the link to your `heap` branch on github to sakai.
    If you submit a link to any other branch instead,
-   you will receive -2 points on the assignment.
+   you will receive a -8 point penalty on the assignment.
