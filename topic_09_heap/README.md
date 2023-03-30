@@ -97,7 +97,7 @@ Advanced runtime analysis:
    This means that git can be used with many different websites, or no website at all.
    One popular alternative to GitHub is called GitLab, and your next homework assignment is hosted there.
 
-   The repo located at <https://gitlab.com/claremont-mckenna/random-project-name> contains a branch called `heap`.
+   The repo located at <https://gitlab.com/mikeizbicki/random-project> contains a branch called `heap`.
    This repo is a fork of the <https://github.com/mikeizbicki/containers> repo;
    that means it contains all the same code, plus more.
    GitHub "forks" are a special type of fork where both versions of code are hosted on github,
