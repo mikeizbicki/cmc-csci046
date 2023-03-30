@@ -93,6 +93,19 @@ Advanced runtime analysis:
 
 ## Homework
 
+> **IMPORTANT:**
+> You should think of this homework like a "take home test" with no time limit.
+> Therefore, this homework has a modified collaboration policy:
+> You may not work with another human on this assignment in any way.
+> For example, you may not:
+>     1. Discuss the code with another student.
+>     2. Look at another student's code.
+>     3. Visit the QCL for help with this assignment.
+>     4. Post issues to github related to the assignment.
+> If you do have a question, you can ask me in office hours or over email.
+> I may or may not be able to answer your question.
+> I will answer questions related to git or the heap at a high level, but I will not answer questions related to python.
+
 1. Recall that git is a protocol, and not a webpage.
    This means that git can be used with many different websites, or no website at all.
    One popular alternative to GitHub is called GitLab, and your next homework assignment is hosted there.
