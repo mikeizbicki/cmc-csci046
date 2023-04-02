@@ -135,7 +135,7 @@ Advanced runtime analysis:
    > but they still do not support open standards (see Google's [AMP](https://www.eff.org/deeplinks/2020/07/googles-amp-canonical-web-and-importance-web-standards-0) and [Floc](https://www.eff.org/deeplinks/2021/03/googles-floc-terrible-idea) systems, and Facebook's [internet.org](https://www.eff.org/deeplinks/2015/05/internetorg-not-neutral-not-secure-and-not-internet) and [lobbying efforts](https://www.eff.org/deeplinks/2021/03/facebooks-pitch-congress-section-230-me-not-thee) ).
    > This is the fundamental reason that many programmers view these tech giants as "evil" today.
 
-   Microsoft purchased GitHub in 2018 as part of a long-standing plan to ingratiate themselves with the open source community.
+   Microsoft purchased GitHub in 2018 as part of a long-standing plan to ingratiate itself with the open source community.
    As part of that plan, they offered unlimited use of GitHub Actions as a free service for any open source developer.
    That's why we're using GitHub Actions in this class instead of one of the other alternatives.
    Last year, however, we used Travis CI, and when GitHub Actions eventually becomes non-free,
