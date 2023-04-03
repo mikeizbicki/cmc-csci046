@@ -162,14 +162,14 @@ The lab is posted at: <https://github.com/mikeizbicki/lab-pipes-twitter>.
        > All your work must be done in the `avltree` branch,
        > and you must not merge your work into any other branch.
        > If any other branch is modified,
-       > you will receie a -8 point penalty on this assignment.
+       > you will receive a -8 point penalty on this assignment.
 
        > **NOTE:**
        > You `avltree` branch will no longer be passing the BST test cases,
-       > and so will have a read test case badge on the `avltree` branch.
+       > and so will have a red test case badge on the `avltree` branch.
        > The test case badges are not branch specific, however, but apply to any test cases on any branch.
        > This means that the test case badge on the `bst` branch will turn red.
-       > This is expacted behavior, and will not affect your grade on the BST assignment.
+       > This is expected behavior, and will not affect your grade on the BST assignment.
        > When you get the `avltree` branch passing the test case,
        > it will also fix the test case on the `bst` branch.
        > Later in the course we will see how to adjust the urls in the badges to make them branch specific.

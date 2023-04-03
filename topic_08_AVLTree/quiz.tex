@@ -1,0 +1,201 @@
+\documentclass[10pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage[shortlabels]{enumitem}
+\usepackage[normalem]{ulem}
+\usepackage{courier}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = black, %Colour for external hyperlinks
+  linkcolor    = blue, %Colour of internal links
+  citecolor    = blue  %Colour of citations
+}
+
+\usepackage[T1]{fontenc}
+\usepackage{upquote}
+\usepackage{listings}
+\lstset{
+    language=HTML
+    ,basicstyle=\linespread{1}\ttfamily
+    ,keywordstyle=
+    ,language=sh
+    ,showstringspaces=false
+    ,numbers=left
+    ,breaklines=true
+    }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\theoremstyle{definition}
+\newtheorem{problem}{Problem}
+\newtheorem{note}{Note}
+\newcommand{\E}{\mathbb E}
+\newcommand{\R}{\mathbb R}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+
+\newcommand{\trans}[1]{{#1}^{T}}
+\newcommand{\loss}{\ell}
+\newcommand{\w}{\mathbf w}
+\newcommand{\mle}[1]{\hat{#1}_{\textit{mle}}}
+\newcommand{\map}[1]{\hat{#1}_{\textit{map}}}
+\newcommand{\normal}{\mathcal{N}}
+\newcommand{\x}{\mathbf x}
+\newcommand{\y}{\mathbf y}
+\newcommand{\ltwo}[1]{\lVert {#1} \rVert}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\begin{center}
+    {
+\Large
+    Quiz: OOP (2)
+}
+
+    %\vspace{0.1in}
+    %CSCI046: Data Structures
+
+    \vspace{0.1in}
+\end{center}
+
+\vspace{0.15in}
+\noindent
+\textbf{Total Score:} ~~~~~~~~~~~~~~~/$2^2$
+
+\vspace{0.2in}
+\noindent
+\textbf{Printed Name:}
+
+\noindent
+\rule{\textwidth}{0.1pt}
+\vspace{0.15in}
+
+\noindent
+\textbf{Quiz rules:}
+\begin{enumerate}
+    \item You MAY use any printed or handwritten notes.
+    \item You MAY NOT use a computer or any other electronic device.
+\end{enumerate}
+
+\noindent
+
+\vspace{0.15in}
+
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    def __init__(self, message=None):
+        if message:
+            Foo.message = message
+foo = Foo('hello world')
+foo.child = Foo()
+foo.child.child = foo
+try:
+    print(' foo.child.child.child.message=', foo.child.child.child.message)
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\newpage
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    def __init__(self, message=''):
+        self.message = message
+    def foo(self):
+        return self.message
+class Bar(Foo):
+    def __init__(self, message=''):
+        super().__init__(message)
+    def bar(self):
+        return self.message
+a = Foo('hello world')
+b = Bar('hola mundo')
+try:
+    print('a.bar()=', a.bar())
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+
+\newpage
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo:
+    message = 'salve munde'
+    def __init__(self, message=None):
+        if message:
+            Foo.message = message
+    @staticmethod
+    def foo():
+        return Foo.message
+class Bar(Foo):
+    def __init__(self, message=None):
+        super().__init__(message)
+    @staticmethod
+    def bar():
+        return Bar.message
+a = Foo('hello world')
+b = Bar()
+try:
+    print('b.bar()=', b.bar())
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\newpage
+\begin{problem}
+    Write the output of the final command in the following terminal session.
+    If the command has no output, then leave the problem blank.
+\end{problem}
+\begin{lstlisting}
+$ cd; rm -rf quiz; mkdir quiz; cd quiz
+$ cat > foo.py <<EOF
+class Foo(list):
+    def __init__(self, xs=[]):
+        super().__init__(xs)
+        xs.append(len(xs))
+xs = Foo()
+xs.append(Foo())
+xs.append(Foo())
+ys = Foo()
+ys.append(Foo())
+ys.append(Foo())
+try:
+    print('len(ys[2])=', len(ys[2]))
+except AttributeError:
+    print('AttributeError') 
+EOF
+$ python3 foo.py
+\end{lstlisting}
+
+\end{document}
