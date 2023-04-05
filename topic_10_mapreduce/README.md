@@ -1,4 +1,4 @@
-# week 07: unix shell scripting
+# Shell scripting + MapReduce
 
 <center>
 <img src=Strip-Ou-sont-les-tests-unitaires-english650-final.jpg />
@@ -12,6 +12,8 @@ Once you understand them, you can automate data analysis pipelines and create ve
 1. File permissions
     
     1. `ls -l` will list the permissions
+
+        <img src=file_permissions.png width=400px />
 
     1. `chmod` will change the permissions.
        There are many valid syntaxes for this command.
@@ -92,6 +94,7 @@ Once you understand them, you can automate data analysis pipelines and create ve
             1. a relative path that contains a `/`
             1. have the script's directory be located within the `$PATH` environment variable
 
+<!--
 1. Script arguments
     1. Access the raw arguments in python with
        ```
@@ -123,18 +126,22 @@ Once you understand them, you can automate data analysis pipelines and create ve
        ```
 
        ```
-       $ time unzip -p /data-fast/twitter\ 2020/geoTwitter20-01-01.zip | wc -l
+       $ time unzip -p /data/Twitter\ dataset/geoTwitter20-01-01.zip | wc -l
        ```
 
        ```
-       $ unzip -p /data-fast/geoTwitter-20-01-01.zip | head -n1 | python3 -m json.tool | vim -
+       $ unzip -p /data/Twitter\ dataset/geoTwitter-20-01-01.zip | head -n1 | python3 -m json.tool | vim -
        ```
 
        ```
        $ nohup ./src/map.py --input_path=/data/twitter2020/geoTwitter20-02-16.zip > nohup.geoTwitter20-02-16.zip
        ```
     
+    -->
+
 1. Signals
+
+    <img src=kill.webp width=400px />
 
     1. `ps` lists running processes created by your current shell
     1. `ps -ef` lists all running processes
@@ -165,6 +172,10 @@ serialization / deseialization of unicode
 
 ## Lab
 
+TBA
+
+<!--
 Complete the tutorial in [processes.md](processes.md).
 
 Once you've completed the tutorial, submit the string `I've completed the tutorial` to sakai to receive credit.
+-->
