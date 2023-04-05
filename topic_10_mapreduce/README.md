@@ -32,9 +32,9 @@ Once you understand them, you can automate data analysis pipelines and create ve
        If you have special characters like spaces in a filename, you must escape them or put them in quotation marks.
        For example, the following are equivalent paths:
        ```
-       /fast-data/twitter\ 2020
-       '/fast-data/twitter 2020'
-       "/fast-data/twitter 2020"
+       /data/Twitter\ dataset
+       '/data/Twitter dataset'
+       "/data/Twitter dataset"
        ```
 
     1. Any path that does not start with a `/` is called a *relative path*.
@@ -94,7 +94,6 @@ Once you understand them, you can automate data analysis pipelines and create ve
             1. a relative path that contains a `/`
             1. have the script's directory be located within the `$PATH` environment variable
 
-<!--
 1. Script arguments
     1. Access the raw arguments in python with
        ```
@@ -137,8 +136,6 @@ Once you understand them, you can automate data analysis pipelines and create ve
        $ nohup ./src/map.py --input_path=/data/twitter2020/geoTwitter20-02-16.zip > nohup.geoTwitter20-02-16.zip
        ```
     
-    -->
-
 1. Signals
 
     <img src=kill.webp width=400px />
