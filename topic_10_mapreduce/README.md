@@ -169,7 +169,7 @@ serialization / deseialization of unicode
 
 ## Lab
 
-TBA
+See the [lab-processes.md file](lab-processes.md).
 
 <!--
 Complete the tutorial in [processes.md](processes.md).
@@ -179,4 +179,6 @@ Once you've completed the tutorial, submit the string `I've completed the tutori
 
 ## Homework
 
-TBA
+I seem to have scheduled things so you won't have homework this weekend :)
+
+We'll discuss your homework next week in class.
