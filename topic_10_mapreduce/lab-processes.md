@@ -506,6 +506,26 @@ and the line will contain the name of the file that was passed to `unzip`.
 The only way for you to know that your data analysis has finally finished is to keep running this `ps` command until you don't get any more output;
 at that point, all of the programs have terminated.
 
+> **ASIDE:**
+> Actually, you can monitor your progress with more fine-grained control using the `top` and `atop` commands.
+> Running
+> ```
+> $ top -u <username>
+> ```
+> will show you in real-time which of your processes are running and consuming the most CPU resources.
+> Running
+> ```
+> $ atop
+> ```
+> will show you what resources are being consumed on the lambda server.
+> In this case, our computation is very simple.
+> The lambda server has 80 CPUs, but only 16 hard drives (HDDs).
+> So the bottle-neck will be hard drive speed.
+> The output of `atop` will show that the HDDs are being maxed out with these commands.
+> Therefore, you are likely to not have your parallel program run 12x faster than your sequential program.
+> My parallel program ran "only" about 8x faster due to this bottleneck.
+> More CPU intensive code, however, can get up to an 80x speed up by running in parallel on the lambda server.
+
 Once your analysis is done, you can view the results that you save with output redirection:
 ```
 $ cat output
