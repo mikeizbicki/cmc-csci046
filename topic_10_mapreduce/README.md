@@ -171,16 +171,10 @@ serialization / deseialization of unicode
 
 See the [lab-processes.md file](lab-processes.md).
 
-<!--
-Complete the tutorial in [processes.md](processes.md).
-
-Once you've completed the tutorial, submit the string `I've completed the tutorial` to sakai to receive credit.
--->
-
 ## Homework
 
-TBA
+See the instructions in <https://github.com/mikeizbicki/twitter_coronavirus>.
 
-We'll discuss your homework next week in class.
-No homework over the weekend :)
+Recommended computation complete by: 25 April
 
+Due: 2 May
