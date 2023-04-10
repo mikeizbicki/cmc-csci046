@@ -84,3 +84,6 @@
 [submodule "topic_10_mapreduce/twitter_coronavirus"]
 	path = topic_10_mapreduce/twitter_coronavirus
 	url = https://github.com/mikeizbicki/twitter_coronavirus
+[submodule "topic_11_graphs/risk"]
+	path = topic_11_graphs/risk
+	url = https://github.com/mikeizbicki/risk
