@@ -1,6 +1,6 @@
 # Wrapup
 
-<img src=733evqt0w4y41.jpg width=500px />
+<img src=733evqt0w4y41.jpg width=400px />
 
 ## Big ideas
 
@@ -29,12 +29,12 @@
               https://accidentallyquadratic.tumblr.com/
 
 1. Binary Search/AVL tree is magical
-    1. O(n) => O(log n) = basically instant for all n
+    1. $O(n)$ => $O(\log n)$ = basically instant for all n
     1. Foundational data structure for all CS applications
 
 1. Big-O/Omega/Theta are general purpose mathematical functions, and not specific to runtimes
 
-   <img src=t32o3zhn1e461.jpg width=600px />
+   <img src=t32o3zhn1e461.jpg width=400px />
 
 1. We covered lots of material not "traditionally" taught in data structures
 
@@ -49,9 +49,9 @@
     1. unicode and non-English languages
 
 1. We didn't cover
-    1. memory management details
-    1. python is a "garbage collected" language, so these details are handled automatically
+    1. low level memory management details
     1. other classes taught in C/C++ need to manage these details
+    1. python is a "garbage collected" language, so these details are handled automatically
     1. data scientists don't need to care about these details
 
 1. Good tools make you more efficient
@@ -66,12 +66,12 @@
         1. version control (e.g. git)
         1. good test cases, continuous integration whenever possible (e.g. github actions)
 
-           <img src=Strips-Test-audimetre-600-finalenglish.jpg width=500px />
+           <img src=Strips-Test-audimetre-600-finalenglish.jpg width=400px />
 
 Where to go from here?
-1. CSCI143: Big Data (practice of data science)
-1. CSCI145/MATH166: Data Mining (theory of data science)
-1. CSCI148: Graph Algorithms (SWE interview questions)
+1. CSCI143: Big Data (more programming and practical tips)
+1. CSCI145/MATH166: Data Mining (math of data science)
+1. CSCI148: Graph Algorithms (math of SWE interview questions)
 
 **If there's ever anything I can do to help you in the future, please reach out.**
 
@@ -79,18 +79,3 @@ Where to go from here?
 1. advice on how to implement a project
 1. get involved with research
 1. etc.
-
-## Final
-
-1. 40 points
-
-   (currently about 200 points in the class => 20% of grade)
-
-1. I'll post it Monday, you'll have until Sunday
-
-1. Follow the same format as the practice exam
-
-## Course evals
-
-Please complete the course eval
-
