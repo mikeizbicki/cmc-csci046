@@ -1,5 +1,14 @@
 # Wrapup
 
+Timeline:
+1. Lab this week
+1. No more lectures/quizzes/labs
+1. I will have office hours; I'll post the times when I know them.
+1. Homeworks:
+    1. Graph HW (due 25 April)
+    1. MapReduce HW (due 2 May)
+    1. Async programming HW (non-graduating students only, due 12 May)
+
 <img src=733evqt0w4y41.jpg width=400px />
 
 ## Big ideas
