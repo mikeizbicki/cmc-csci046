@@ -151,6 +151,7 @@ then you can [follow github's official directions for migrating](https://github.
 If you are worried, however, that this might break something and don't want to perform the migration,
 then you are not required to.
 
+<!--
 **Task 4: Deploying to pypi**
 
 The [Python Package Index (PyPI)](https://pypi.org/) is a central repository for all python software.
@@ -175,3 +176,7 @@ and verifying that the containers library loaded correctly.
 Submit two links to sakai:
 1. the link to your project on pypi
 1. the link to your github repo
+-->
+## Submission
+
+Submit the link to your github repo
