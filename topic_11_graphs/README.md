@@ -50,7 +50,7 @@ Applications of Dijkstra's algorithm:
 
 ## Lab
 
-See instructions in [lab-deploying.md](lab-deploting.md)
+See instructions in [lab-deploying.md](lab-deploying.md)
 
 ### Homework
 
