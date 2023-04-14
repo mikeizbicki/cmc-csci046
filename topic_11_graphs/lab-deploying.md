@@ -98,6 +98,7 @@ Examples of open source licenses include
 1. And many more... big projects often create their own licenses
     1. Python uses the Python Software Foundation (PSF)
     1. Firefox uses the Mozilla Public License (MPL)
+
 There are many licenses, however, that are not open source.
 For example:
 1. Proprietary software: Windows can be used for any purpose (pass condition 1), but Microsoft does not distribute the source code (fail condition 2)
