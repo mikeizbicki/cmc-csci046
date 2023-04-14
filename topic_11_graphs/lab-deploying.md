@@ -162,6 +162,13 @@ your computer downloads the `XXX` package from pypi.
 
 Follow [this tutorial](https://realpython.com/pypi-publish-python-package/#preparing-your-package-for-publication) in order to create a `setup.py` file and upload your project to pypi.
 You must update the configuration settings correctly, and you must choose a project name that begins with `cmc_csci046_`.
+You should verify that your project uploaded correctly by running
+```
+$ pip3 install <your_project_name>
+$ python3
+>>> import containers
+```
+and verifying that the containers library loaded correctly.
 
 ## Submission
 
