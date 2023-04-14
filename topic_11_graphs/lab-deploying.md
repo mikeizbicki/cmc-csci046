@@ -138,8 +138,10 @@ GitHub's switch from `master` to `main` has been highly controversial.
 A very famous rant (by a black software developer) titled [Github f\*ck your name change](https://mooseyanon.medium.com/github-f-ck-your-name-change-de599033bbbe)
 argues that this name change trivializes the black lives matter movement
 and actively harms beginner developers by complicating the ecosystem.
-Even professional developers have been tripped up by the name change,
-and the [reddit website went down for several hours because of a confusion between `master` and `main` branches](https://old.reddit.com/r/RedditEng/comments/11xx5o0/you_broke_reddit_the_piday_outage/).
+(I recommend looking through the [corresponding hacker news post](https://news.ycombinator.com/item?id=26487854) to get an idea of how the community reacted.)
+One of the primary arguments against the name change is that this would break lots of software.
+And this did end up happening.
+For example, the [reddit website went down for several hours because of a confusion between `master` and `main` branches](https://old.reddit.com/r/RedditEng/comments/11xx5o0/you_broke_reddit_the_piday_outage/).
 
 For this class, I don't care about your opinion on the `master` vs `main` controversy.
 If you would prefer to have a `main` branch because you feel it is more inclusive,
