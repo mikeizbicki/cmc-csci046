@@ -83,6 +83,7 @@ If a repo does not have a `LICENSE` file, you cannot legally (in the US and most
 Technically, an "open source license" is a license that satisfies two criteria:
 1. Anyone can use the software for any purpose.
 1. The source code is provided with the software.
+
 Examples of open source licenses include
 1. BSD/MIT: no additional conditions (in particular, no condition that you must distribute any modifications)
 
