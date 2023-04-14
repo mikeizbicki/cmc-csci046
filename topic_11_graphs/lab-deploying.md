@@ -20,7 +20,7 @@ but it will learn about:
 
 **Task 0: Merging into the master branch**
 
-On the lambda server, checkout your `master` branch.
+In the containers repo, checkout your `master` branch.
 Then run
 ```
 $ git merge bst
