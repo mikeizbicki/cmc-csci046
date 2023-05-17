@@ -129,7 +129,7 @@ Once you understand them, you can automate data analysis pipelines and create ve
        ```
 
        ```
-       $ unzip -p /data/Twitter\ dataset/geoTwitter-20-01-01.zip | head -n1 | python3 -m json.tool | vim -
+       $ unzip -p /data/Twitter\ dataset/geoTwitter20-01-01.zip | head -n1 | python3 -m json.tool | vim -
        ```
 
        ```
