@@ -15,6 +15,11 @@ It will also help you pass the [culture fit test](https://triplebyte.com/blog/wh
 You must earn `2**2` points by watching/reading the shows/books below.
 Each point should take at most 2 hours to complete,
 so you should be able to finish this task in under `2**3` hours.
+> Note:
+> These points are distinct from the credit-bearing points you get for assignments,
+> so earning more than `2**2` points does not get you extra credit.
+> However, you can get `2**0` points of extra credit for completing `2**4` points
+> in this caveat task.
 
 **Watching (non-fiction):** (1 point each)
 
