@@ -18,7 +18,7 @@ Textbook Reference: [Chapters 7.8-7.10](https://runestone.academy/runestone/book
 | Fibonacci Heap  | ϴ(1)      | ϴ(n)          | ---       | ϴ(1)              | ---       | ϴ(log n)      |  
 
 Note:
-1. For sorted list, bulk insert is equivalent to sorting a list; find element uses binary search
+1. For a sorted list, bulk insert is equivalent to sorting a list; find element uses binary search
 1. You should be able to construct examples that generate the best/worst case runtimes
 1. We won't discuss the Fibonacci Heap implementation in class, but I want you to understand that the Heap we will discuss is not optimal
 
