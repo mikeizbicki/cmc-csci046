@@ -1,86 +1,23 @@
 # CSCI046: Data Structures and Algorithms
 
-<!-- created on github -->
-
 [![](smbc.png)](https://www.smbc-comics.com/comic/hansel-and-gretel)
 
 ## About the Instructor
 
-|||
-|---------------|-------------------------------|
-| Name          | Mike Izbicki (call me Mike)   |
-| Email         | mizbicki@cmc.edu              |
-| Office        | Adams 216                     |
-| Office Hours  | See [Issue #416](https://github.com/mikeizbicki/cmc-csci046/issues/416) |
-| Zoom          | See [Issue #325](https://github.com/mikeizbicki/cmc-csci046/issues/325) |
-| Webpage       | [izbicki.me](https://izbicki.me) |
-| Research      | Machine Learning (see [izbicki.me/research.html](https://izbicki.me/research.html) for some past projects) |
-
-Fun facts:
-1. grew up in San Clemente (~1hr south of Claremont, on the beach)
-1. 7 years in the navy
-    1. nuclear submarine officer, personally converted >10g of uranium into pure energy
-    1. worked at National Security Agency (NSA)
-    1. left Navy as a [conscientious objector](https://www.nytimes.com/2011/02/23/nyregion/23objector.html)
-1. phd/postdoc at UC Riverside
-1. taught in [DPRK (i.e. North Korea)](https://pust.co)
-1. my wife is pregnant and due to have a baby April 18th
-    1. I will take 2 weeks off for paternity leave when the baby comes
+See: <https://github.com/mikeizbicki/about-me>
 
 ## About the Course
 
-<center>
-<img width=100% src=map_of_cs.png />
-</center>
-
 Data structures is the most important course in computer science,
 and many of the "classic" CS interview questions come from this course.
-Mastering this material is the first step towards getting a high-paying CS job.
-See:
-1. Salaries: <https://www.levels.fyi>
-1. Benefits: <https://www.levels.fyi/benefits/Paternity-Leave/>
-1. [This is despite tech employers illegally colluding to reduce salaries](https://en.wikipedia.org/wiki/High-Tech_Employee_Antitrust_Litigation)
 
-**Who should take this course?**
+**Relation to other courses:**
 
-1. This is a second-semester course in computer science designed for students who have previously taken either CS40 (CMC), CS5 (Mudd), or CS51 (Pomona).
+<img src=https://raw.githubusercontent.com/mikeizbicki/cmc-advising/master/courses-map.png width=100% />
 
-1. You cannot take this course if:
-    1. you have already taken a data structures course
-       (e.g. Pomona: CS62; HMC: CS60, CS70), or
-    1. you are a CS major through Mudd or Pomona.
+<br/>
 
-1. This course is required for CMC's **data science major** and the computer science sequence.
-   It is optional for the data science sequence.
-
-**Learning Objectives:**
-
-1. Learn the basics of
-    1. linux terminal 
-    1. git
-    1. open source software
-
-1. Be able to answer the following three questions about an algorithm:
-    1. Is it correct?
-    1. How much resources does it consume? (time, memory, money, etc.)
-    1. Can we do better?
-
-<!--
-Secondary objectives:
-
-1. More experience with python programming
-1. Solve the questions asked in programming interviews and contests
-1. Introduction to the hacker culture
-
-Differences between this course and HMC's CSCI060HM/CSCI070HM:
-
-1. This course does not cover low-level memory management (C/C++ programming languages)
-1. This course is more practical
--->
-
-This course is NOT an algorithms course.
-Algorithms courses form the "other half" of classic CS interview questions,
-and you should consider taking [CS148 - Graph Algorithms](https://catalog.claremontmckenna.edu/preview_course_nopop.php?catoid=25&coid=31723) after this course.
+<img src=https://raw.githubusercontent.com/mikeizbicki/cmc-advising/master/iceberg/iceberg.png width=100% />
 
 **Textbook:**
 
@@ -99,7 +36,6 @@ Your grade will be composed of:
 1. Weekly projects (worth `2**3` or `2**4` or `2**5` points)
 1. No exams!!!
     1. Non-graduating students will complete a final project due during finals week.
-1. [Occasional extra credit assignments](extra_credit/README.md)
 
 Historically, the average student needs to spend about 10 hours per week (outside of class) to get an A.
    About 25% of students will either:

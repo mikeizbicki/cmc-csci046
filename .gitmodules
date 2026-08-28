@@ -1,13 +1,13 @@
 [submodule "continuous-integration"]
-	path = topic_00_unix/homework
+	path = future/topic_00_unix/homework
 	url = https://github.com/mikeizbicki/continuous-integration
 
 [submodule "functional-python"]
-	path = topic_01_functions/functional-python
+	path = future/topic_01_functions/functional-python
 	url = https://github.com/mikeizbicki/functional-python
 
 [submodule "html_validator"]
-	path = topic_02_stack/html_validator
+	path = future/topic_02_stack/html_validator
 	url = https://github.com/mikeizbicki/html_validator
 
 [submodule "pytest-lab"]
@@ -19,15 +19,15 @@
 	#url = https://github.com/mikeizbicki/example-homework
 
 [submodule "word_ladder"]
-	path = topic_03_queue/word_ladder
+	path = future/topic_03_queue/word_ladder
 	url = https://github.com/mikeizbicki/word_ladder
 
 [submodule "lab-timeit"]
-	path = topic_03_queue/lab-timeit
+	path = future/topic_03_queue/lab-timeit
 	url = https://github.com/mikeizbicki/lab-timeit
 
 [submodule "binary_search"]
-	path = topic_04_recursion/binary_search
+	path = future/topic_04_recursion/binary_search
 	url = https://github.com/mikeizbicki/binary_search
 
 [submodule "lab-timeit2"]
@@ -35,7 +35,7 @@
     url = https://github.com/mikeizbicki/lab-timeit2
 
 [submodule "sorting"]
-	path = topic_05_sorting/sorting
+	path = future/topic_05_sorting/sorting
 	url = https://github.com/mikeizbicki/sorting
 
 [submodule "gitlab"]
@@ -47,7 +47,7 @@
 	#url = https://github.com/mikeizbicki/twitter_coronavirus
 
 [submodule "containers_oop"]
-	path = topic_06_oop/containers
+	path = future/topic_06_oop/containers
 	url = https://github.com/mikeizbicki/containers
 
 #[submodule "containers_09"]
@@ -55,7 +55,7 @@
 	#url = https://github.com/mikeizbicki/containers
 
 [submodule "containers_10"]
-	path = topic_07_bst/containers
+	path = future/topic_07_bst/containers
 	url = https://github.com/mikeizbicki/containers
 
 #[submodule "containers_11"]
@@ -70,20 +70,20 @@
 	#path = week_14/risk
 	#url = https://github.com/mikeizbicki/risk
 [submodule "topic_04_recursion/lab-timeit2"]
-	path = topic_04_recursion/lab-timeit2
+	path = future/topic_04_recursion/lab-timeit2
 	url = https://github.com/mikeizbicki/lab-timeit2
 [submodule "topic_05_sorting/topic_05_sorting/runtimes-lab"]
-	path = topic_05_sorting/lab-master-theorem
+	path = future/topic_05_sorting/lab-master-theorem
 	url = https://gitlab.com/mikeizbicki/runtimes-lab
 [submodule "topic_06_oop/lab-sorting-runtimes"]
-	path = topic_06_oop/lab-sorting-runtimes
+	path = future/topic_06_oop/lab-sorting-runtimes
 	url = https://github.com/mikeizbicki/lab-sorting-runtimes
 [submodule "topic_08_AVLTree/lab-pipes-twitter"]
-	path = topic_08_AVLTree/lab-pipes-twitter
+	path = future/topic_08_AVLTree/lab-pipes-twitter
 	url = https://github.com/mikeizbicki/lab-pipes-twitter
 [submodule "topic_10_mapreduce/twitter_coronavirus"]
-	path = topic_10_mapreduce/twitter_coronavirus
+	path = future/topic_10_mapreduce/twitter_coronavirus
 	url = https://github.com/mikeizbicki/twitter_coronavirus
 [submodule "topic_11_graphs/risk"]
-	path = topic_11_graphs/risk
+	path = future/topic_11_graphs/risk
 	url = https://github.com/mikeizbicki/risk
