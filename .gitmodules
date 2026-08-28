@@ -90,3 +90,6 @@
 [submodule "topic_00_unix/lab-unix-git"]
 	path = topic_00_unix/lab-unix-git
 	url = https://github.com/mikeizbicki/lab-unix-git
+[submodule "topic_00_unix/messages"]
+	path = topic_00_unix/lab-messages
+	url = https://github.com/mikeizbicki/messages

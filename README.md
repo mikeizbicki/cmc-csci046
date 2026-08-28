@@ -89,6 +89,8 @@ You can find the details about the caveat tasks at:
 
 **Technology Policy:**
 
+The purpose of this policy is to *encourage* you to learn how to use AI and other technology effectively.
+
 1. You MAY ONLY use AI tools that we discuss in class.
 
     In particular, you MAY NOT use web interfaces to AI like <https://chatgpt.com> or Claude Code.
@@ -100,11 +102,11 @@ You can find the details about the caveat tasks at:
 
     In particular, you MAY NOT use the GitHub text editor, VSCode, or jupyter notebooks.
 
-1. You MAY NOT share your lambda server credentials with anyone else.
+1. You MAY NOT share any account credentials with anyone else.
 
 **Collaboration Policy**
 
-The purpose of this policy is to *encourage* you all to work together.
+The purpose of this policy is to *encourage* you all to work together like professional programmers work together.
 
 1. There are no restrictions on what you can post to GitHub Issues. In particular, you are highly encouraged to post detailed questions/answers/comments with lots of code. Particularly good posts will be awarded extra credit.
 

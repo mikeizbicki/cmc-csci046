@@ -2,7 +2,7 @@
 
 <center>
 <a href="https://www.reddit.com/r/linuxmasterrace/comments/3las1l/dilbert_had_it_right_back_in_1995/">
-<img width='80%' src='dilbert.gif' />
+<img width='80%' src='img/dilbert.gif' />
 </a>
 </center>
 
@@ -57,11 +57,11 @@ Labs are always due on midnight of the Sunday of the week that they are assigned
    Vim is famous for having a steep learning curve,
    and has inspired lots of memes/comics:
 
-   <img src=vim-productivity.jpg width=500px>
+   <img src=img/vim-productivity.jpg width=500px>
 
-   <img src=vim-comic2.webp width=500px>
+   <img src=img/vim-comic2.webp width=500px>
 
-   <img src=vim-comic.jpg width=500px>
+   <img src=img/vim-comic.jpg width=500px>
 
 **Instructions:**
 
