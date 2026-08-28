@@ -31,55 +31,43 @@ All of our textbooks are both [free as in beer](https://en.wiktionary.org/wiki/f
 
 Your grade will be composed of:
 
-1. Weekly labs (worth `2**1` points)
+1. Weekly labs (worth `2**1` or `2**2` or `2**3` points)
 1. Weekly quizzes (worth `2**2` or `2**3` or `2**4` points)
-1. Weekly projects (worth `2**3` or `2**4` or `2**5` points)
-1. No exams!!!
-    1. Non-graduating students will complete a final project due during finals week.
+1. Weekly homeworks (worth `2**3` or `2**4` or `2**5` points)
+1. 4 midterm exams (worth `2**6` points)
+1. Oral exam (worth `2**6` points)
 
+All assignments are designed to help you get a good job.  (See [/career/README.md](/career/README.md).)
+1. You will build your github portfolio.
+1. You will do cool stuff to talk about in interviews (analyze ALL tweets about covid).
+1. The assignments will help you with leetcode-style interview questions.
+
+See <https://github.com/mikeizbicki/cmc-csci143/issues/577> for extra credit opportunities.
 Historically, the average student needs to spend about 10 hours per week (outside of class) to get an A.
-   About 25% of students will either:
-   spend 15-20 hours per week and get an A,
-   or spend 10 hours per week and get a B/C.
+About half of students will either:
+- spend 15-20 hours per week and get an A, or
+- spend <10 hours per week and get a B/C.
 
 **Late Work Policy:**
 
-You lose `2**i` points on every assignment,
-where `i` is the number of days late minus 1.
+You lose `2**(i-1)` points on every assignment,
+where `i` is the number of days late.
 
 > **Example:**
-> Homeworks will be due on Tuesdays, so if you submit on Wednesday then `i=0` and you receive a `2**0` (i.e. `1`) point penalty.
-> If you submit on Friday, you receive a `2**2` (i.e. 4) point penalty.
+> Homeworks will be due on Tuesdays, so if you submit on Wednesday then `i=1` and you receive a `2**(1-1)` (i.e. `1`) point penalty.
+> If you submit on Friday, you receive a `2**(3-1)` (i.e. 4) point penalty.
 
-It is usually better to submit a correct assignment late than an incorrect one on time.
+Do not expect partial credit for incomplete assignments.
+
+It is much better to submit a correct assignment late than an incorrect one on time.
 
 I expect that most students will be submit late assignments at some point.
-
-**Grade Schedule:**
-
-Your final grade will be computed according to the following table,
-with one caveat.
-
-| If your grade satisfies          | then you earn |
-| -------------------------------- | ------------- |
-| 95 &le; grade                    | A             |
-| 90 &le; grade < 95               | A-            |
-| 87 &le; grade < 90               | B+            |
-| 83 &le; grade < 87               | B             |
-| 80 &le; grade < 83               | B-            |
-| 77 &le; grade < 80               | C+            |
-| 73 &le; grade < 77               | C             |
-| 70 &le; grade < 73               | C-            |
-| 67 &le; grade < 70               | D+            |
-| 63 &le; grade < 67               | D             |
-| 60 &le; grade < 63               | D-            |
-| 60 > grade                       | F             |
 
 **Caveats:**
 
 There are 2 "caveat tasks" in this course.
 These tasks should be easy, and everyone will get full credit on the task just for completing the task.
-If you don't complete one of the tasks, however, your grade (from the table above) will be docked 10%.
+If you don't complete one of the tasks, however, your grade will be docked a full letter grade.
 (For example, an A- grade would become a B- grade.) 
 You have the entire semester (until I submit grades) to complete these tasks.
 
@@ -91,48 +79,27 @@ You can find the details about the caveat tasks at:
 
 **Technology Policy:**
 
+1. You MAY ONLY use AI tools that we build in class.
+    (For example, <https://chatgpt.com> and Claude Code are not allowed.)
+
 1. You MUST complete all programming assignments on the lambda server.
 
-1. You MUST use either vim or emacs to complete all programming assignments.
-   In particular, you may not use the GitHub text editor, VSCode, IDLE, or PyCharm for any reason.
+1. You MUST use either Vim or Emacs for all text editing.
 
-   In particular: You MAY NOT use the GitHub interface to edit files for a pull request.
+   In particular, you MAY NOT use the GitHub text editor, VSCode, IDLE, or PyCharm for any reason.
 
 1. You MAY NOT share your lambda server credentials with anyone else.
 
-Violations of any of these policies will be treated as academic integrity violations.
-
 **Collaboration Policy**
 
-1. There are no restrictions on what you can post to GitHub Issues.
-    In particular, you are highly encouraged to post detailed questions/answers/comments with lots of code.
-
-1. You are highly encouraged to collaborate with students
-
-    1. in class/lab,
-
-    1. in the QCL,
-
-    1. and in office hours.
-
-1. You MAY NOT look at another student's code (or have another human look at your code) in any other context.
-
-1. You MAY NOT look at another student's code on github.
-
-    All projects are developed as open source projects,
-    and so the code is published openly online.
-    The benefits of this model include:
-    (1) you actually learn how to develop/contribute to open source projects;
-    (2) future employers see you have github activity.
-    Please do not abuse this privilege.
+See <https://github.com/mikeizbicki/cmc-csci143/issues/592>.
 
 ## Accommodations Policy
 
 I've tried to design the course to be as accessible as possible for people with disabilities.
 (We'll talk a bit about how to design accessible software in class too!)
-If you need any further accommodations, please ask.
 
-I want you to succeed, and I'll make every effort to ensure that you can.
+If you need any further accommodations, please ask.
 
 <!--
 
