@@ -1,6 +1,6 @@
 # CSCI046: Data Structures and Algorithms
 
-[![](smbc.png)](https://www.smbc-comics.com/comic/hansel-and-gretel)
+[![](img/smbc.png)](https://www.smbc-comics.com/comic/hansel-and-gretel)
 
 ## About the Instructor
 
@@ -17,6 +17,15 @@ and many of the "classic" CS interview questions come from this course.
 
 <br/>
 
+The lambda server has:
+1. 80 processors
+1. 8 GPU
+1. 256 GB RAM
+1. 2 TB NVME
+1. 50 TB RAID array of 16 HDDs
+
+<br/>
+
 <img src=https://raw.githubusercontent.com/mikeizbicki/cmc-advising/master/iceberg/iceberg.png width=100% />
 
 **Textbook:**
@@ -29,13 +38,13 @@ All of our textbooks are both [free as in beer](https://en.wiktionary.org/wiki/f
 
 **Grades:**
 
-Your grade will be composed of:
-
-1. Weekly labs (worth `2**1` or `2**2` or `2**3` points)
-1. Weekly quizzes (worth `2**2` or `2**3` or `2**4` points)
-1. Weekly homeworks (worth `2**3` or `2**4` or `2**5` points)
-1. 4 midterm exams (worth `2**6` points)
-1. Oral exam (worth `2**6` points)
+| Assignment Type | Points | Approximate Percentage |
+| --------------- | ------ | ---------------------- |
+| weekly labs     | `2**1` or `2**2` or `2**3` | 20% |
+| weekly projects | `2**2` or `2**3` or `2**4` | 30% |
+| weekly quizzes  | `2**2` or `2**3` or `2**4` | 30% |
+| 4 midterms      | `2**5` each                | 40% |
+| oral final exam | `2**6`                     | 20% |
 
 All assignments are designed to help you get a good job.  (See [/career/README.md](/career/README.md).)
 1. You will build your github portfolio.
@@ -84,7 +93,7 @@ You can find the details about the caveat tasks at:
 
 1. You MUST complete all programming assignments on the lambda server.
 
-1. You MUST use either Vim or Emacs for all text editing.
+1. You MUST edit all text in the command line (for example, using vim).
 
    In particular, you MAY NOT use the GitHub text editor, VSCode, IDLE, or PyCharm for any reason.
 

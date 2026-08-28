@@ -1,5 +1,5 @@
 [submodule "continuous-integration"]
-	path = future/topic_00_unix/homework
+	path = topic_00_unix/homework
 	url = https://github.com/mikeizbicki/continuous-integration
 
 [submodule "functional-python"]
@@ -87,3 +87,6 @@
 [submodule "topic_11_graphs/risk"]
 	path = future/topic_11_graphs/risk
 	url = https://github.com/mikeizbicki/risk
+[submodule "topic_00_unix/lab-unix-git"]
+	path = topic_00_unix/lab-unix-git
+	url = https://github.com/mikeizbicki/lab-unix-git
