@@ -46,12 +46,13 @@ All of our textbooks are both [free as in beer](https://en.wiktionary.org/wiki/f
 | 4 midterms      | `2**5` each                | 40% |
 | oral final exam | `2**6`                     | 20% |
 
-All assignments are designed to help you get a good job.  (See [/career/README.md](/career/README.md).)
+All assignments are designed to help you get a good job:
 1. You will build your github portfolio.
-1. You will do cool stuff to talk about in interviews (analyze ALL tweets about covid).
+1. You will do cool stuff to talk about in interviews (e.g. analyze ALL tweets about covid).
 1. The assignments will help you with leetcode-style interview questions.
 
-See <https://github.com/mikeizbicki/cmc-csci143/issues/577> for extra credit opportunities.
+See <https://github.com/mikeizbicki/cmc-csci046/issues/569> for extra credit opportunities.
+
 Historically, the average student needs to spend about 10 hours per week (outside of class) to get an A.
 About half of students will either:
 - spend 15-20 hours per week and get an A, or
@@ -88,14 +89,16 @@ You can find the details about the caveat tasks at:
 
 **Technology Policy:**
 
-1. You MAY ONLY use AI tools that we build in class.
-    (For example, <https://chatgpt.com> and Claude Code are not allowed.)
+1. You MAY ONLY use AI tools that we discuss in class.
+
+    In particular, you MAY NOT use web interfaces to AI like <https://chatgpt.com> or Claude Code.
+    (We will build similarly powerful tools in class from the ground up.)
 
 1. You MUST complete all programming assignments on the lambda server.
 
 1. You MUST edit all text in the command line (for example, using vim).
 
-   In particular, you MAY NOT use the GitHub text editor, VSCode, IDLE, or PyCharm for any reason.
+    In particular, you MAY NOT use the GitHub text editor, VSCode, or jupyter notebooks.
 
 1. You MAY NOT share your lambda server credentials with anyone else.
 
