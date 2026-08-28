@@ -104,7 +104,31 @@ You can find the details about the caveat tasks at:
 
 **Collaboration Policy**
 
-See <https://github.com/mikeizbicki/cmc-csci143/issues/592>.
+The purpose of this policy is to *encourage* you all to work together.
+
+1. There are no restrictions on what you can post to GitHub Issues. In particular, you are highly encouraged to post detailed questions/answers/comments with lots of code. Particularly good posts will be awarded extra credit.
+
+1. You MAY ONLY collaborate with other humans:
+
+    1. in class/lab,
+
+    1. in the QCL,
+
+    1. in office hours.
+
+    You MAY NOT collaborate with humans in any other context.
+
+1. When collaborating:
+
+    1. You MAY look at another student's code to help them or get high level guidance.
+
+    1. You MAY NOT copy another student's code.
+
+    1. You MUST be the only human to type in code for your assignments.
+
+1. You MAY NOT look at another student's code on github.
+
+    All projects are developed as open source projects, and so the code is published openly online.  The benefits of this model include: (1) you actually learn how to develop/contribute to open source projects; (2) future employers see you have github activity. Please do not abuse this privilege.
 
 ## Accommodations Policy
 
