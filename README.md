@@ -87,14 +87,17 @@ You can find the details about the caveat tasks at:
 
 ## Academic Integrity
 
-**Technology Policy:**
+**Technology Policy**
 
-The purpose of this policy is to *encourage* you to learn how to use AI and other technology effectively.
+The purpose of this policy is to encourage you to learn how to use AI and other technology effectively.
 
-1. You MAY ONLY use AI tools that we discuss in class.
+1. You MAY ONLY use AI tools that we discuss in class using APIs.
 
-    In particular, you MAY NOT use web interfaces to AI like <https://chatgpt.com> or Claude Code.
-    (We will build similarly powerful tools in class from the ground up.)
+    In particular, you MAY NOT use:
+    1. web interfaces (e.g. <https://chatgpt.com>, <https://claude.ai>)
+    2. subscription-based services (e.g. Claude Code, Codex, CoPilot)
+
+    We will build similarly powerful tools in class from the ground up.
 
 1. You MUST complete all programming assignments on the lambda server.
 
@@ -106,17 +109,17 @@ The purpose of this policy is to *encourage* you to learn how to use AI and othe
 
 **Collaboration Policy**
 
-The purpose of this policy is to *encourage* you all to work together like professional programmers work together.
+The purpose of this policy is to encourage you all to work together like professional programmers work together.
 
-1. There are no restrictions on what you can post to GitHub Issues. In particular, you are highly encouraged to post detailed questions/answers/comments with lots of code. Particularly good posts will be awarded extra credit.
+1. You MAY post anything at all to github issues without restriction.
+
+    In particular, you are encouraged to post detailed questions/answers/comments with lots of code. Particularly good posts will be awarded extra credit.
 
 1. You MAY ONLY collaborate with other humans:
 
-    1. in class/lab,
+    1. in class/lab/office hours,
 
-    1. in the QCL,
-
-    1. in office hours.
+    1. in the QCL.
 
     You MAY NOT collaborate with humans in any other context.
 
