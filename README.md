@@ -36,7 +36,7 @@ All of our textbooks are both [free as in beer](https://en.wiktionary.org/wiki/f
 
 1. [Official Python Documentation](https://docs.python.org/)
 
-**Grades:**
+## Grades
 
 | Assignment Type | Points | Approximate Percentage |
 | --------------- | ------ | ---------------------- |

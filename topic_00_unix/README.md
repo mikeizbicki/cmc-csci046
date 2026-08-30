@@ -8,11 +8,22 @@
 
 ## Lecture
 
-We will cover
+We will cover:
 
-1. working on a remote unix server
-1. using the git version control system
-1. using continuous integration to "prove" that your code works
+1. working on a remote unix server,
+1. using the git version control system,
+1. using continuous integration to "prove" that your code works.
+
+All text editing must be done in Vim.
+We will encounter many instances in this class where more familiar tools like VSCode and Jupyter Notebooks will not work.
+
+<img src=img/vim-productivity.jpg width=500px>
+
+<!--
+<img src=img/vim-comic2.webp width=500px>
+
+<img src=img/vim-comic.jpg width=500px>
+-->
 
 **Cheat sheets:**
 
@@ -26,7 +37,7 @@ We will cover
 1. There will be a quiz every Wednesday.
 1. Your first quiz is next week on Wednesday 9 Sep.
 1. The quiz will cover:
-    <https://github.com/mikeizbicki/quiz/blob/master/quiz_shell/topic00_intro_quiz.pdf>
+    <https://github.com/mikeizbicki/quiz/blob/master/quiz_shell/topic00_intro.pdf>
 1. All quizzes are open note.
     I strongly encourage you to complete all of the practice quiz problems and take notes on the practice sheets of paper.
 
@@ -41,8 +52,14 @@ Labs are always due on midnight of the Sunday of the week that they are assigned
 **Pre-lab work:**
 
 1. Create a GitHub account if you do not already have one.
-    Press the watch button on both this repo and <https://github.com/mikeizbicki/about-me>.
-    This will ensure you get email notifications whenever I post new issues to github.
+
+1. Press the watch button on both this repo and <https://github.com/mikeizbicki/about-me>.
+    This will ensure you get email notifications whenever a new issue is posted to github.
+    All class related communications will happen through github,
+    and not through email or canvas.
+
+1. Create a [personal access token (PAT)](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) for your github account, and save the PAT to a file for future use.
+    The default level of permissions is okay.
 
 1. Read and follow the instructions in [the meet and greet issue](https://github.com/mikeizbicki/cmc-csci046/issues/568).
 
@@ -54,15 +71,6 @@ Labs are always due on midnight of the Sunday of the week that they are assigned
    Complete all instructions in order to learn vim.
    This should take 30-60 minutes.
 
-   Vim is famous for having a steep learning curve,
-   and has inspired lots of memes/comics:
-
-   <img src=img/vim-productivity.jpg width=500px>
-
-   <img src=img/vim-comic2.webp width=500px>
-
-   <img src=img/vim-comic.jpg width=500px>
-
 **Instructions:**
 
 1. Visit the [messages](https://github.com/mikeizbicki/messages) repo and complete the instructions in the README.
@@ -73,16 +81,17 @@ Labs are always due on midnight of the Sunday of the week that they are assigned
 
 1. Complete the [github pull request tutorial](https://github.com/mikeizbicki/pullrequest-tutorial/).
 
-<!--
-**Lab Submission:**
-
-Submit a link to your pull request in sakai.
-(I need the link since your github usernames are pseudonymous, and I won't know who to give credit for the lab without the link.)
--->
-
 ## Homework
 
-Homeworks will generally be posted into the `homework` [git submodule](https://www.atlassian.com/git/tutorials/git-submodule) for each week.
-Homeworks are always due on Tuesday of the week after they are assigned (i.e. Sep 8 for this homework).
+**Due Date:**
 
-*For this hw only: There will be no late penalty if you miss the due date, but please be reasonable.*
+Homeworks are always due on the Tuesday of the week after they are assigned (i.e. 8 Sep for this homework).
+
+*For this hw only:*
+I will not apply a late penalty, but please be reasonable.
+
+**Instructions:**
+
+This week's homework will teach you how to use continuous integration,
+and prepare you to submit all future assignments.
+You can find the homework at <https://github.com/mikeizbicki/continuous-integration>.
