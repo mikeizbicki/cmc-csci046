@@ -27,7 +27,7 @@ To get these files, we will use the `curl` command.
 `curl` takes a url as an input parameter, downloads the url, and prints the result to `stdout`.
 For example, to download and view my `.vimrc` file, you can run the command
 ```
-$ curl https://raw.githubusercontent.com/mikeizbicki/dotfiles/master/.vimrc
+$ curl https://raw.githubusercontent.com/mikeizbicki/dotfiles/student/.vimrc
 ```
 
 Notice that the `curl` command does not save the file, it only prints it to `stdout`.
@@ -40,10 +40,10 @@ we will use output redirection with the `>` symbol.
 Run the following commands in your home folder to download and install the settings files.
 (Recall that you can get to your home folder by running `cd` with no arguments.)
 ```
-$ curl https://raw.githubusercontent.com/mikeizbicki/dotfiles/master/.git-prompt.sh > .git-prompt.sh
-$ curl https://raw.githubusercontent.com/mikeizbicki/dotfiles/master/.bashrc        > .bashrc
-$ curl https://raw.githubusercontent.com/mikeizbicki/dotfiles/master/.vimrc         > .vimrc
-$ curl https://raw.githubusercontent.com/mikeizbicki/dotfiles/master/.dircolors     > .dircolors
+$ curl https://raw.githubusercontent.com/mikeizbicki/dotfiles/student/.git-prompt.sh > .git-prompt.sh
+$ curl https://raw.githubusercontent.com/mikeizbicki/dotfiles/student/.bashrc        > .bashrc
+$ curl https://raw.githubusercontent.com/mikeizbicki/dotfiles/student/.vimrc         > .vimrc
+$ curl https://raw.githubusercontent.com/mikeizbicki/dotfiles/student/.dircolors     > .dircolors
 ```
 Then logout and login again for the changes to take effect.
 You know everything worked if your prompt on the lambda server is green.

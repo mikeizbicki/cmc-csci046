@@ -45,7 +45,7 @@ We will encounter many instances in this class where more familiar tools like VS
 
 **Due date:**
 
-Labs are always due on midnight of the Sunday of the week that they are assigned (i.e. Sep 6 for this lab).
+Labs are always due on midnight of the Sunday of the week that they are assigned (e.g. Sep 6 for this lab).
 
 *For this lab only: There will be no late penalty if you miss the due date, but please be reasonable.*
 
@@ -59,7 +59,6 @@ Labs are always due on midnight of the Sunday of the week that they are assigned
     and not through email or canvas.
 
 1. Create a [personal access token (PAT)](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) for your github account, and save the PAT to a file for future use.
-    The default level of permissions is okay.
 
 1. Read and follow the instructions in [the meet and greet issue](https://github.com/mikeizbicki/cmc-csci046/issues/568).
 
@@ -75,11 +74,9 @@ Labs are always due on midnight of the Sunday of the week that they are assigned
 
 1. Visit the [messages](https://github.com/mikeizbicki/messages) repo and complete the instructions in the README.
 
-1. Complete the [unix/git tutorial](github.com/mikeizbicki/lab-unix-git).
+1. Complete the [github pull request tutorial](https://github.com/mikeizbicki/pullrequest-tutorial/).
 
 1. Follow [these instructions](lambda-server.md) to update your lambda server account's settings.
-
-1. Complete the [github pull request tutorial](https://github.com/mikeizbicki/pullrequest-tutorial/).
 
 ## Homework
 
