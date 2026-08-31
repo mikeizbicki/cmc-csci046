@@ -84,8 +84,7 @@ Labs are always due on midnight of the Sunday of the week that they are assigned
 
 Homeworks are always due on the Tuesday of the week after they are assigned (i.e. 8 Sep for this homework).
 
-*For this hw only:*
-I will not apply a late penalty, but please be reasonable.
+*For this hw only: I will not apply a late penalty, but please be reasonable.*
 
 **Instructions:**
 
