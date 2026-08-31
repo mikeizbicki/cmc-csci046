@@ -11,11 +11,11 @@ See: <https://github.com/mikeizbicki/about-me>
 Data structures is the most important course in computer science,
 and many of the "classic" CS interview questions come from this course.
 
-**Relation to other courses:**
-
 <img src=https://raw.githubusercontent.com/mikeizbicki/cmc-advising/master/courses-map.png width=100% />
 
 <br/>
+
+<img src=img/big-data-map2.png width=400px />
 
 The lambda server has:
 1. 80 processors
