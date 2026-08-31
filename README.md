@@ -11,9 +11,7 @@ See: <https://github.com/mikeizbicki/about-me>
 Data structures is the most important course in computer science,
 and many of the "classic" CS interview questions come from this course.
 
-<img src=https://raw.githubusercontent.com/mikeizbicki/cmc-advising/master/courses-map.png width=100% />
-
-<br/>
+In this course, you will do all work on a remote Linux server.
 
 <img src=img/big-data-map2.png width=400px />
 
@@ -26,9 +24,15 @@ The lambda server has:
 
 <br/>
 
+<img src=https://raw.githubusercontent.com/mikeizbicki/cmc-advising/master/courses-map.png width=100% />
+
+<br/>
+
 <img src=https://raw.githubusercontent.com/mikeizbicki/cmc-advising/master/iceberg/iceberg.png width=100% />
 
 **Textbook:**
+
+<img src=img/free.jpg width=400px />
 
 All of our textbooks are both [free as in beer](https://en.wiktionary.org/wiki/free_as_in_beer) and [free as in speech](https://en.wiktionary.org/wiki/free_as_in_speech):
 
