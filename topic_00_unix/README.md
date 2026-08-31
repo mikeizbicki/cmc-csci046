@@ -72,11 +72,14 @@ Labs are always due on midnight of the Sunday of the week that they are assigned
 
 **Instructions:**
 
+TBA
+<!--
 1. Visit the [messages](https://github.com/mikeizbicki/messages) repo and complete the instructions in the README.
 
 1. Complete the [github pull request tutorial](https://github.com/mikeizbicki/pullrequest-tutorial/).
 
 1. Follow [these instructions](lambda-server.md) to update your lambda server account's settings.
+-->
 
 ## Homework
 
@@ -88,6 +91,9 @@ Homeworks are always due on the Tuesday of the week after they are assigned (i.e
 
 **Instructions:**
 
+TBA
+<!--
 This week's homework will teach you how to use continuous integration,
 and prepare you to submit all future assignments.
 You can find the homework at <https://github.com/mikeizbicki/continuous-integration>.
+-->
