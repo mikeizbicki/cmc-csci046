@@ -13,8 +13,15 @@ It will also help you pass the [culture fit test](https://web.archive.org/web/20
 ## Task
 
 You must read my [programmer-english essay](https://github.com/mikeizbicki/programmer-english).
+You must also select 4 videos/articles from the list below to watch/read.
 
-You also must select 4 videos articles below to watch/read.
+Reply to the class github issue with a 1-2 sentence summary of what you learned/liked/disliked about the viewing/reading.
+
+> **NOTE:**
+> You must do the viewing/reading during this semester in order for it to count.
+> So students who have previously taken courses with me cannot just skip this assignment.
+
+## Videos / Articles
 
 **Videos (non-fiction):**
 
@@ -112,13 +119,4 @@ https://antipolygraph.org/pubs.shtml)
 
 1. Any of the fiction books [listed here](https://portswigger.net/daily-swig/the-top-10-best-hacker-themed-books-of-all-time).
 -->
-
-## Submission
-
-Reply to [this github issue](https://github.com/mikeizbicki/cmc-csci143/issues/363) with a list of the tasks that you completed.
-For each task, you'll need to write a 1-2 sentence summary of what you learned/liked/disliked about the task.
-
-> **NOTE:**
-> You must do the reading/viewing during this semester in order for it to count.
-> Thus, for example, students who have previously taken courses with me cannot just skip this assignment.
 
