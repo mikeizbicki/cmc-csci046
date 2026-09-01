@@ -67,11 +67,8 @@ https://antipolygraph.org/pubs.shtml)
         This book describes why the lie detector tests used for granting security clearances are flawed, and strategies for beating the test if you have to take it.
 
 1. [SEC enforcement order against Knight Capital](https://www.sec.gov/litigation/admin/2013/34-70694.pdf), which explains how this hedge fund lost $440 million in 45 minutes due to a botched deployment of code.
-
 1. [GAO report on how a floating-point error caused the US Patriot missile system to fail.](https://www.gao.gov/assets/imtec-92-26.pdf)
     These failures directly led to the deaths of 28 soldiers in combat.
-
-<li><a href="https://en.wikipedia.org/wiki/Pentium_FDIV_bug">Pentium FDIV bug</a> — a tiny lookup-table error caused incorrect division results, leading to the first full recall of a computer chip, costing $475 million.</li>
 1. [Cloudflare had an outage in 2019 due to a bad regex](https://blog.cloudflare.com/details-of-the-cloudflare-outage-on-july-2-2019/).
 1. A [Gitlab developer accidentally deleted their production database in 2017](https://about.gitlab.com/blog/postmortem-of-database-outage-of-january-31/)
 1. [Netscape Navigator tries does a "complete rewrite" from scratch and this causes them to lose the "Browser Wars".](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
