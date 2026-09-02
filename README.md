@@ -44,7 +44,7 @@ All of our textbooks are both [free as in beer](https://en.wiktionary.org/wiki/f
 
 | Assignment Type | Points | Approximate Percentage |
 | --------------- | ------ | ---------------------- |
-| weekly labs     | `2**1` or `2**2` or `2**3` | 20% |
+| weekly lab     | `2**1` or `2**2` or `2**3` | 20% |
 | weekly projects | `2**2` or `2**3` or `2**4` | 30% |
 | weekly quizzes  | `2**2` or `2**3` or `2**4` | 30% |
 | oral final exam | `2**6`                     | 20% |
