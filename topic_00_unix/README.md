@@ -76,6 +76,9 @@ Labs are always due on midnight of the Sunday of the week that they are assigned
 
 1. Complete the [github pull request tutorial](https://github.com/mikeizbicki/pullrequest-tutorial/).
 
+    (This is a modified version of the CSCI040 assignment.
+    Those of you who took that class must repeat this assignmnet.)
+
 ## Homework
 
 **Due Date:**
@@ -96,3 +99,5 @@ Most homeworks in the future will be just one part that is pure programming and 
 1. This week's homework will teach you how to use continuous integration,
     and prepare you to submit all future assignments.
     You can find the homework at <https://github.com/mikeizbicki/continuous-integration>.
+
+    (If you already completed this assignment in CSCI040, you do not need to redo the steps; just submit the url.)
