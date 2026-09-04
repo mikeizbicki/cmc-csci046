@@ -6,6 +6,10 @@
 
 See: <https://github.com/mikeizbicki/about-me>
 
+You should contact me through [the class github issues](https://github.com/mikeizbicki/cmc-csci046/issues).
+
+You may send questions about grades to my email at <mizbicki@cmc.edu>.
+
 ## About the Course
 
 Data structures is the most important course in computer science,

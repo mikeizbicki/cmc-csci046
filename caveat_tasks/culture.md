@@ -13,12 +13,17 @@ It will also help you pass the [culture fit test](https://web.archive.org/web/20
 ## Task
 
 You must read my [programmer-english essay](https://github.com/mikeizbicki/programmer-english).
+You must also select 4 videos/articles from the list below to watch/read.
 
-You also must earn 4 points by watching/reading the shows/books below.
-Each point should take at most 2 hours to complete,
-so you should be able to finish this task in under 8 hours.
+Reply to the class github issue with a 1-2 sentence summary of what you learned/liked/disliked about the viewing/reading.
 
-**Watching (non-fiction):** (1 point each)
+> **NOTE:**
+> You must do the viewing/reading during this semester in order for it to count.
+> So students who have previously taken courses with me cannot just skip this assignment.
+
+## Videos / Articles
+
+**Videos (non-fiction):**
 
 1. *RevolutionOS* (2001), available on [youtube](https://www.youtube.com/watch?v=k0RYQVkQmWU).
    This documentary describes the evolution of Unix and open source software,
@@ -38,40 +43,25 @@ so you should be able to finish this task in under 8 hours.
 1. *Don't Talk to the Police*, available on [youtube](https://www.youtube.com/watch?v=d-7o9xYp7eE).
     This is a famous lecture by Law Professor James Duane about how talking to the police about anything, even if you're innocent, can come back to haunt you.
 
-**Watching (fiction):**
+**Videos (fiction):**
 
-1. (1 point) *War Games*, available on [youtube](https://www.youtube.com/watch?v=HNLQ-O-Qx3Y) or [Amazon Prime](https://www.amazon.com/Wargames-Matthew-Broderick/dp/B083FY4CDG/).
+1. *War Games*, available on [youtube](https://www.youtube.com/watch?v=HNLQ-O-Qx3Y) or [Amazon Prime](https://www.amazon.com/Wargames-Matthew-Broderick/dp/B083FY4CDG/).
    This is a classic hacker movie and was quite realistic for what hacking looked like when the movie was released (1983).
    The hacking technique [war dialing](https://en.wikipedia.org/wiki/Wardialing) was introduced by this movie.
 
-1. (1 point) *Terminator*.
+1. *Terminator*.
     This is a classic AI-doom movie and the origin of "skynet".
 
-1. (2 points) Season 1 of *Mr. Robot*, available on [Amazon Prime](https://www.amazon.com/gp/video/detail/B00YBX664Q)).
-   This is the most accurate portrayal of hacking in any modern movie, see for example [this article](https://www.pri.org/stories/how-realistic-are-hacks-mr-robot) and [this article](https://www.wired.com/2016/07/real-hackers-behind-mr-robot-get-right/).
-   Each additional season is worth 1 point.
+1. Season 1 of *Mr. Robot*, available on [Amazon Prime](https://www.amazon.com/gp/video/detail/B00YBX664Q)).
+    This is the most accurate portrayal of hacking in any modern movie, see for example [this article](https://www.pri.org/stories/how-realistic-are-hacks-mr-robot) and [this article](https://www.wired.com/2016/07/real-hackers-behind-mr-robot-get-right/).
+    (You must watch the whole season.)
 
-**Reading (Non-Fiction):** (1 point per chapter)
-
-1. Peter Norvig's [Teach Yourself Programming in Ten Years (not 21 days)](https://norvig.com/21-days.html).
-    Norvig is one of the founders of Artificial Intelligence and Director of Research at Google.
-
-1. Paul Graham's [what to study in college](http://www.paulgraham.com/college.html).
-    Graham is a founder of the investment company <https://www.ycombinator.com/>,
-    which started many famous companies like dropbox, airbnb, stripe, doordash, reddit, and twitch.
-
-1. Jeff Atwood's [How To Become a Better Programmer by Not Programming](https://blog.codinghorror.com/how-to-become-a-better-programmer-by-not-programming/).
-    Atwood is the founder of <https://stackoverflow.com>.
-    He's also a Microsoft fanboy (and so provides a bit of a different perspective than everyone else on this list).
+**Reading (Non-Fiction):**
 
 1. ESR's [How to become a hacker](http://www.catb.org/esr/faqs/hacker-howto.html).
     ESR is a famous hacker who started many open source projects.
 
-1. Any article on <https://phrack.org> counts as 1 point.
-   Phrack is a famous hacker-zine that discusses both the philosophy of hacking and the practical aspects of "cracking."
-   The most famous article is the [hacker's manifesto](http://phrack.org/issues/7/3.html).
-
-1. Each chapter of the following books counts as one point:
+1. Any chapters from the following books count as a single article.
 
     1. ESR's *The Art of Unix Programming*, available online at [his webpage](http://catb.org/~esr/writings/taoup/html/context.html).
        This is the classic exposition of the Unix philosophy that underlies the technical aspects of hacker culture.
@@ -86,6 +76,38 @@ so you should be able to finish this task in under 8 hours.
 https://antipolygraph.org/pubs.shtml)
         This book describes why the lie detector tests used for granting security clearances are flawed, and strategies for beating the test if you have to take it.
 
+    1. <https://phrack.org> is a famous hacker-zine that discusses both the philosophy of hacking and the practical aspects of cracking.
+        It was highly active in the 1990s/2000s, but less active now.
+        The most famous article is the [hacker's manifesto](http://phrack.org/issues/7/3.html).
+
+1. The following articles are all about major security breaches or other problems caused by bad code.
+    1. [SEC enforcement order against Knight Capital](https://www.sec.gov/litigation/admin/2013/34-70694.pdf), which explains how this hedge fund lost $440 million in 45 minutes due to a botched deployment of code.
+    1. [GAO report on how a floating-point error caused the US Patriot missile system to fail.](https://www.gao.gov/assets/imtec-92-26.pdf)
+        These failures directly led to the deaths of 28 soldiers in combat.
+    1. [Cloudflare had an outage in 2019 due to a bad regex](https://blog.cloudflare.com/details-of-the-cloudflare-outage-on-july-2-2019/).
+    1. A [Gitlab developer accidentally deleted their production database in 2017](https://about.gitlab.com/blog/postmortem-of-database-outage-of-january-31/)
+    1. [Netscape Navigator tries does a "complete rewrite" from scratch and this causes them to lose the "Browser Wars".](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
+        This is the canonical example of why rewriting software from scratch is always a bad idea from a business perspective, no matter how bad the original code was.
+    1. [How the software for the Space Shuttle was written to achieve exceptionally low defect rates](https://www.nationalacademies.org/read/5018/chapter/4#11)"
+    1. [How weird excel bugs have corrupted biological datasets, and many genes have had to be renamed as a result.](https://journals.plos.org/ploscompbiol/article?id=10.1371%2Fjournal.pcbi.1008984)
+
+1. The following articles are about examples of good/impressive code.
+    1. [sqlite3 is famous for having a very extensive testing suite.](https://sqlite.org/testing.html)
+    1. [How Linus Torvalds built git in a weekend because the previously used closed-source version control system locked him out.](https://git-scm.com/book/ms/v2/Getting-Started-A-Short-History-of-Git)
+    1. [How Google handles leap seconds to prevent outages.](https://cloud.google.com/blog/products/gcp/making-every-leap-second-count-with-our-new-public-ntp-servers)
+
+1. The following articles are general programming / college career advice.
+    1. Peter Norvig's [Teach Yourself Programming in Ten Years (not 21 days)](https://norvig.com/21-days.html).
+        Norvig is one of the founders of Artificial Intelligence and Director of Research at Google.
+
+    1. Paul Graham's [what to study in college](http://www.paulgraham.com/college.html).
+        Graham is a founder of the investment company <https://www.ycombinator.com/>,
+        which started many famous companies like dropbox, airbnb, stripe, doordash, reddit, and twitch.
+
+    1. Jeff Atwood's [How To Become a Better Programmer by Not Programming](https://blog.codinghorror.com/how-to-become-a-better-programmer-by-not-programming/).
+        Atwood is the founder of <https://stackoverflow.com>.
+        He's also a Microsoft fanboy (and so provides a bit of a different perspective than everyone else on this list).
+
 <!--
 **Reading (Fiction):** (5 points for reading the whole book, no partial credit)
 
@@ -97,13 +119,4 @@ https://antipolygraph.org/pubs.shtml)
 
 1. Any of the fiction books [listed here](https://portswigger.net/daily-swig/the-top-10-best-hacker-themed-books-of-all-time).
 -->
-
-## Submission
-
-Reply to [this github issue](https://github.com/mikeizbicki/cmc-csci143/issues/363) with a list of the tasks that you completed.
-For each task, you'll need to write a 1-2 sentence summary of what you learned/liked/disliked about the task.
-
-> **NOTE:**
-> You must do the reading/viewing during this semester in order for it to count.
-> Thus, for example, students who have previously taken courses with me cannot just skip this assignment.
 
