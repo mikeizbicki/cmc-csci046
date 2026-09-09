@@ -24,7 +24,7 @@
         1. Be careful with your branches
             1. <https://github.com/asriniketh29/lab-llm>
         1. Never take screenshots of text
-            1. <img>
+            1. <img src=img/bad-submission.png width=500px>
             1. we cannot copy/paste
             1. google cannot index
             1. llms cannot learn from it
