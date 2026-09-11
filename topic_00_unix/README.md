@@ -159,3 +159,7 @@ Most homeworks in the future will be just one part that is pure programming and 
     You can find the homework at <https://github.com/mikeizbicki/continuous-integration>.
 
     (If you already completed this assignment in CSCI040, you do not need to redo the steps; just submit the url.)
+
+## Homework (second week)
+
+See <https://github.com/mikeizbicki/doctest-pytest-practice>
