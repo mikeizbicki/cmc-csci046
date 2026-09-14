@@ -16,17 +16,25 @@
     1. <https://github.com/mikeizbicki/cmc-csci046/issues/580>
     1. Late penalty applies for tomorrow's homework
 
-1. Quiz this Wednesday
-    1. "review" quiz: <https://github.com/mikeizbicki/quiz/blob/master/quiz_python_with_exceptions/topic06_oop.pdf>
-    1. You are responsible for knowing the following exceptions
-        1. `AssertionError`
-        1. `AttributeError`
-        1. `IndexError`
-        1. `KeyError`
-        1. `NameError`
-        1. `UnboundLocalError`
-        1. `TypeError`
-        1. `ZeroDivisionError`
+1. "review" quiz this Wednesday
+    1. exceptions:
+        1. practice problems: <https://github.com/mikeizbicki/quiz/blob/master/quiz_python_with_exceptions/topic04_exceptions.pdf>
+        1. You are responsible for knowing the following exceptions
+            1. `AssertionError`
+            1. `AttributeError`
+            1. `IndexError`
+            1. `KeyError`
+            1. `NameError`
+            1. `UnboundLocalError`
+            1. `TypeError`
+            1. `ZeroDivisionError`
+        1. If you need to review these exceptions, you can use the CS40 lectures:
+            1. exceptions part 1: <https://www.youtube.com/watch?v=EQw8v2yT2Wg&list=PLSNWQVdrBwoaVBou5Yq_lSpk7Z4nCjzbX&index=17&pp=iAQBsAgC>
+            1. more exceptions: <https://www.youtube.com/watch?v=5idOdtQKO5Q&list=PLSNWQVdrBwoaVBou5Yq_lSpk7Z4nCjzbX&index=16&pp=iAQBsAgC>
+            1. the python code from those videos is available at: <https://github.com/mikeizbicki/cmc-csci040/blob/2026spring/topic_04_Python_Exceptions/exceptions_quizreview.py>
+    1. OOP + memory management:
+        1. practice problems: <https://github.com/mikeizbicki/quiz/blob/master/quiz_python_with_exceptions/topic06_oop.pdf>
+        1. CS40 review lecture at: <https://www.youtube.com/watch?v=zYvdnxWakRk&list=PLSNWQVdrBwoaVBou5Yq_lSpk7Z4nCjzbX&index=11&pp=iAQBsAgC>
 
 <!--
 <img src=merge-conflict.jpg width=400px />
