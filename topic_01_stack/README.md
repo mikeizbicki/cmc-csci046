@@ -1,7 +1,7 @@
 # stacks + intro to runtime analysis
 
 <center>
-<img width=60% src=tests2.jpg />
+<img width=60% src=img/tests2.jpg />
 </center>
 
 **Monday 14 Sep:**
@@ -75,7 +75,7 @@ Git notes:
 
 1. stack ADT
 
-    <img src=stack.webp width=800px />
+    <img src=img/stack.webp width=800px />
 
     1. interface:
         1. `push`: add something to the top
