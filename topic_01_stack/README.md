@@ -1,4 +1,4 @@
-# stacks + intro to runtime analysis
+# stacks
 
 <center>
 <img width=300px src=img/tests2.jpg />
