@@ -1,7 +1,7 @@
 # stacks + intro to runtime analysis
 
 <center>
-<img width=60% src=img/tests2.jpg />
+<img width=300px src=img/tests2.jpg />
 </center>
 
 **Monday 14 Sep:**
