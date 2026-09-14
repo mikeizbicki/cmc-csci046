@@ -14,7 +14,7 @@
 
 1. Error in homework test cases
     1. <https://github.com/mikeizbicki/cmc-csci046/issues/580>
-    1. Late penalty applies for tomorrow's homework
+    1. Because I made an error, I will adjust due date to +2 days (this Thursday at midnight)
 
 1. "review" quiz this Wednesday
     1. exceptions:
@@ -35,6 +35,7 @@
     1. OOP + memory management:
         1. practice problems: <https://github.com/mikeizbicki/quiz/blob/master/quiz_python_with_exceptions/topic06_oop.pdf>
         1. CS40 review lecture at: <https://www.youtube.com/watch?v=zYvdnxWakRk&list=PLSNWQVdrBwoaVBou5Yq_lSpk7Z4nCjzbX&index=11&pp=iAQBsAgC>
+        1. **most quiz questions will come from this topic**
 
 <!--
 <img src=merge-conflict.jpg width=400px />
