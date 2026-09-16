@@ -101,6 +101,20 @@ Git notes:
 
 ## Lab
 
+**Prelab work:**
+
+1. Your prelab work is designed to help you learn vim.
+
+    <img src=img/vim.jpg width=400px />
+
+    Using the [vim cheatsheet](https://github.com/mikeizbicki/ucr-cs100/blob/class-template/textbook/cheatsheets/vim-cheatsheet.pdf):
+
+    1. select 10 verbs and 10 motions
+    1. write by each of these commands and what they do
+    1. do your best to memorize these commands and incorporate them into your workflow
+
+**Instructions:**
+
 TBA
 <!--
 See the instructions in the [pytest-lab repo](https://github.com/mikeizbicki/pytest-lab).
@@ -148,4 +162,4 @@ See the instructions in the [pytest-lab repo](https://github.com/mikeizbicki/pyt
 
 ## Homework
 
-TBA
+See <https://github.com/mikeizbicki/html_validator>
