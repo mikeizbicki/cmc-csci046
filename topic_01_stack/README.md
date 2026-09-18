@@ -115,50 +115,7 @@ Git notes:
 
 **Instructions:**
 
-TBA
-<!--
 See the instructions in the [pytest-lab repo](https://github.com/mikeizbicki/pytest-lab).
-
-1. pytest library
-    1. Install with the command:
-       ```
-       $ pip3 install pytest
-       ```
-    1. Run all tests in the file `tests/test_main.py` with:
-       ```
-       $ python3 -m pytest tests/test_main.py
-       ```
-    1. If you don't include a filename, pytest will test all the files.
-       You should test your extra credit with the command
-       ```
-       $ python3 -m pytest
-       ```
-    1. If you use the `-x` flag, then pytest will stop after the first error.
-       This is useful for development.
-       If you want to skip a test case and stop after the second, use the argument `--maxfail 2`.
-       The `-x` flag is a shortcut for `--maxfail 1`.
-
-1. runtime analysis
-    1. big O/Omega/Theta notation
-
-**Pre-lecture work:**
-
-1. print the `big-o.pdf` file 
-
-1. There is no required lab for this week.
-   Instead, you just focus on completing the homework assignment (which is worth 12 points this week).
-
-1. (optional)
-   Some of my former students at UCR put together two games for testing your git skills.
-   The games have you executing git commands to advance to the next level.
-   The links are:
-
-   1. https://github.com/git-game/git-game
-   1. https://github.com/git-game/git-game-v2
-
-   You can earn +1 point of extra credit for each game that you complete.
-   To claim the extra credit, send me an email telling me how the game ends.
-   -->
 
 ## Homework
 
