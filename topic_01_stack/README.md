@@ -115,7 +115,7 @@ Git notes:
 
 **Instructions:**
 
-See the instructions in the [pytest-lab repo](https://github.com/mikeizbicki/pytest-lab).
+See <https://github.com/mikeizbicki/lab-open-source>.
 
 ## Homework
 
