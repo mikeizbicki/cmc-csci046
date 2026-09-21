@@ -4,6 +4,18 @@
 <img width=300px src=img/tests.png />
 </center>
 
+**Announcements: Monday 21 Sep:**
+
+1. Grades updated in canvas
+    1. Lots of errors in previous lab/hw
+    1. check if you have been asked to resubmit
+    1. I am being generous on these errors now,
+        but will not be generous in the future
+
+1. Quiz Wednesday on:
+    1. counting problems
+    1. expect 2+ review problems
+
 ## Lecture
 
 1. queue ADT
