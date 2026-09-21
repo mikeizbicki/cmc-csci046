@@ -1,18 +1,8 @@
-# topic 03: queues + more runtime analysis
+# Queues (and runtime analysis)
 
 <center>
 <img width=300px src=img/tests.png />
 </center>
-
-Announcements:
-
-1. Good job collaborating during lab time
-1. Grades up-to-date in sakai
-1. Lots of students still haven't submitted the first assignment 
-
-    there's no late penalty
-    
-    but you're officially behind
 
 ## Lecture
 
