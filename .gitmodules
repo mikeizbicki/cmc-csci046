@@ -19,11 +19,11 @@
 	#url = https://github.com/mikeizbicki/example-homework
 
 [submodule "word_ladder"]
-	path = future/topic_03_queue/word_ladder
+	path = topic_02_queue/notes/word_ladder
 	url = https://github.com/mikeizbicki/word_ladder
 
 [submodule "lab-timeit"]
-	path = future/topic_03_queue/lab-timeit
+	path = topic_02_queue/notes/lab-timeit
 	url = https://github.com/mikeizbicki/lab-timeit
 
 [submodule "binary_search"]
