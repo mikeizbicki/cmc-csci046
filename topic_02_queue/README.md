@@ -15,6 +15,7 @@
 1. Quiz Wednesday on:
     1. counting problems
     1. expect 2+ review problems
+    1. You can find the memory management problems written in the style of shell problems at <https://github.com/mikeizbicki/cmc-csci046/blob/2023spring/topic_03_queue/quiz_practice.pdf>
 
 ## Lecture
 
