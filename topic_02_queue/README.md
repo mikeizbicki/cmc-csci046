@@ -1,8 +1,7 @@
 # Queues (and runtime analysis)
 
-<center>
-<img width=300px src=img/tests.png />
-</center>
+<img height=300px src=img/tests.png />
+<img height=300px src=img/math.png />
 
 **Announcements: Monday 21 Sep:**
 
