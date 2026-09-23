@@ -36,6 +36,10 @@
         1. `dequeue`: take something off the **bottom**; in python, we use the `popleft` method; different from stacks/lists
     1. Reference: [textbook chapter 4](https://runestone.academy/runestone/books/published/pythonds/BasicDS/toctree.html)
 
+1. `deque` and `[]` have different runtime properties.
+
+    see: <https://wiki.python.org/moin/TimeComplexity>
+
 <!--
 1. more runtime analysis
     1. <https://wiki.python.org/moin/TimeComplexity>
