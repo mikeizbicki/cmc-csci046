@@ -48,7 +48,7 @@
 
 ## Lab
 
-TBA
+See <https://github.com/mikeizbicki/lab-timit>.
 
 <!--
 Posted at <https://github.com/mikeizbicki/lab-timit>.
