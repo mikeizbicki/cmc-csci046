@@ -32,10 +32,14 @@ It is a recursive acronym standing for "GNU's Not UNIX".
             <img src=img/bulb.png width=300px />
 
     1. About AI:
-        1. Ask questions to `llm` / `dic` / `qwen`; cannot use other AI tools like <https://chatgpt.com>
+        1. What you can use:
+            1. Ask questions to `llm` / `dic` / `qwen`
+            1. Use <https://pythontutor.com>
+            1. cannot use other AI tools like <https://chatgpt.com>
         1. SOTA AIs can "one shot" this problem
         1. I encourage you to solve the problem "manually" as practice
             1. We will see problems later in this class that SOTA AI cannot solve
+            1. We are building good habbits for both AI-based and manual programming
 
     1. Debugging tips
         1. Always verify helper functions first
@@ -65,12 +69,13 @@ It is a recursive acronym standing for "GNU's Not UNIX".
 
 1. Recursion
     1. Reference: [chapter 5](https://runestone.academy/runestone/books/published/pythonds/Recursion/TheThreeLawsofRecursion.html)
+    1. Wednesday quiz notes packer: <https://github.com/mikeizbicki/quiz/blob/master/quiz_python_in_shell/topic01_recursion.pdf>
     1. Every algorithm can be written either
         1. iteratively (using loops)
         1. recursively (by calling itself)
     1. Advantage of recursion:
-        1. Easy to prove that algorithms are correct (CSCI148: algorithms)
         1. Easy to prove the runtime of the algorithm using the [Master theorem](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms))
+        1. Easy to prove that algorithms are correct (CSCI148: algorithms)
         1. Many algorithms that require while loops are much simpler with recursion (e.g. binary search)
     1. Disadvantage of recursion:
         1. for loops are easier when they are applicable
