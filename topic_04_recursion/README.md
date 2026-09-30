@@ -69,7 +69,7 @@ It is a recursive acronym standing for "GNU's Not UNIX".
 
 1. Recursion
     1. Reference: [chapter 5](https://runestone.academy/runestone/books/published/pythonds/Recursion/TheThreeLawsofRecursion.html)
-    1. Wednesday quiz notes packer: <https://github.com/mikeizbicki/quiz/blob/master/quiz_python_in_shell/topic01_recursion.pdf>
+    1. Wednesday quiz notes packet: <https://github.com/mikeizbicki/quiz/blob/master/quiz_python_in_shell/topic01_recursion.pdf>
     1. Every algorithm can be written either
         1. iteratively (using loops)
         1. recursively (by calling itself)
