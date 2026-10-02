@@ -80,6 +80,8 @@ It is a recursive acronym standing for "GNU's Not UNIX".
     1. Disadvantage of recursion:
         1. for loops are easier when they are applicable
 
+1. Python debugger cheatseet: <https://kapeli.com/cheat_sheets/Python_Debugger.docset/Contents/Resources/Documents/index>
+
 1. Search
     1. Reference: [chapter 6.1-6.4](https://runestone.academy/runestone/books/published/pythonds/SortSearch/toctree.html)
     1. the most fundamental/important problem of computer science
@@ -98,3 +100,7 @@ There is no lecture component for the lab session.
 
 See the <https://github.com/mikeizbicki/lab-timeit2> repo for instructions.
 -->
+
+## Homework
+
+See <https://github.com/mikeizbicki/binary_search>.
