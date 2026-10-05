@@ -35,7 +35,7 @@
     url = https://github.com/mikeizbicki/lab-timeit2
 
 [submodule "sorting"]
-	path = future/topic_05_sorting/sorting
+	path = topic_05_sorting/sorting
 	url = https://github.com/mikeizbicki/sorting
 
 [submodule "gitlab"]
@@ -73,7 +73,7 @@
 	path = topic_04_recursion/lab-timeit2
 	url = https://github.com/mikeizbicki/lab-timeit2
 [submodule "topic_05_sorting/topic_05_sorting/runtimes-lab"]
-	path = future/topic_05_sorting/lab-master-theorem
+	path = topic_05_sorting/lab-master-theorem
 	url = https://gitlab.com/mikeizbicki/runtimes-lab
 [submodule "topic_06_oop/lab-sorting-runtimes"]
 	path = future/topic_06_oop/lab-sorting-runtimes

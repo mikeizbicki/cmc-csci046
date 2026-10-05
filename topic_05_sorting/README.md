@@ -1,5 +1,6 @@
-# week 05: more recursion + sorting
+# more recursion + sorting
 
+<!--
 ## Announcments
 
 1. The sorting homework will be relatively easy.
@@ -31,16 +32,13 @@
     1. you'll get review of it in the lab this week
 
 1. We're about 1 week ahead of schedule right now
+-->
 
-## Lecture
+## Lecture Notes
+
+1. Quiz review problems: <https://github.com/mikeizbicki/quiz/blob/master/quiz_python_in_shell/topic02_sorting.pdf>
 
 1. Recursion runtime analysis with the [Master theorem](https://en.wikipedia.org/wiki/Master_theorem_(analysis_of_algorithms))
-
-<!--
-1. best case vs worst case vs average case runtime
-
-    1. these are different that O/Omega/Theta, but often confused
--->
 
 1. Sorting
 
@@ -69,9 +67,9 @@
         1. the worst-case runtime is currently unknown
         1. researchers have bounded the runtime as
 
-           <img src='shell_omega.svg' /><br/>
+           <img src='img/shell_omega.svg' /><br/>
 
-           <img src='shell_o.svg' />
+           <img src='img/shell_o.svg' />
         1. for details, see: <https://en.wikipedia.org/wiki/Shellsort>
 
 
@@ -83,25 +81,31 @@ Since sorting is so fundamental to CS, it is one of the most popular source of c
 
 From SMBC:
 
-<img src=20121221.gif width=400px />
+<img src=img/20121221.gif width=400px />
 
 <br/>
 
-<img src=1612627667-20210206.png width=400px />
+<img src=img/1612627667-20210206.png width=400px />
 
 <br/>
 
-<img src=1611767129-20210127.png width=400px />
+<img src=img/1611767129-20210127.png width=400px />
 
 From XKCD:
 
-<img src=ineffective_sorts_2x.png width=400px />
+<img src=img/ineffective_sorts_2x.png width=400px />
 
 ## Lab
 
-See the instructions at <https://gitlab.com/mikeizbicki/master-theorem/>.
+TBA
+
+## Homework
+
+TBA
 
 <!--
+See the instructions at <https://gitlab.com/mikeizbicki/master-theorem/>.
+
 Use the master theorem to solve the following recurrence relations in Theta notation.
 
 | recurrence           | solution                       | practical application                     |
