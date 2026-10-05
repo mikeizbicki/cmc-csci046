@@ -2,7 +2,22 @@
 
 <img src=img/20121221.gif width=300px />
 
-<br/>
+**Announcements (5 Oct 2026):**
+
+1. Poor grades on recursion quiz.
+
+    | grade | # students |
+    | ----- | ---------- |
+    | 0     | 3 |
+    | 1     | 4 |
+    | 2     | 3 |
+    | 4     | 0 |
+
+    Quiz this week is more recursion (applied to sorting).
+
+    Expect recursion review problems in the future.
+
+1. Recall that extra credit is posted at [Issue #569](https://github.com/mikeizbicki/cmc-csci046/issues/569).
 
 <!--
 ## Announcments
