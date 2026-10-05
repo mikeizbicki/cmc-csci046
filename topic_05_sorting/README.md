@@ -1,5 +1,9 @@
 # more recursion + sorting
 
+<img src=img/20121221.gif width=300px />
+
+<br/>
+
 <!--
 ## Announcments
 
@@ -80,10 +84,6 @@
 Since sorting is so fundamental to CS, it is one of the most popular source of comics.
 
 From SMBC:
-
-<img src=img/20121221.gif width=400px />
-
-<br/>
 
 <img src=img/1612627667-20210206.png width=400px />
 
