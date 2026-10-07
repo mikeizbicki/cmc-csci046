@@ -116,7 +116,7 @@ TBA
 
 ## Homework
 
-TBA
+See <https://github.com/mikeizbicki/sorting/>
 
 <!--
 See the instructions at <https://gitlab.com/mikeizbicki/master-theorem/>.
