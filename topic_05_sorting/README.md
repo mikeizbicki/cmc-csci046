@@ -112,7 +112,7 @@ From XKCD:
 
 ## Lab
 
-TBA
+See <https://github.com/mikeizbicki/lab-master-theorem>
 
 ## Homework
 
