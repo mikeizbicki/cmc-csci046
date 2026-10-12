@@ -1,25 +1,5 @@
 # topic 6: Object Oriented Programming (OOP) / `class` / iterators / `yield` / generators
 
-## Announcements
-
-1. Grades:
-    1. I'm behind on grading (sorry!)
-    1. Grader has finally been hired
-
-1. The next 4 homework assignments all work together
-    1. You'll create your own data structures / containers
-    1. At the end, you'll publish them all as a library (that can be pip installed)
-    1. This week's assignment is "easy"
-        1. the hard part is getting the concept
-        1. there's no tricky edge cases to debug after that
-    1. The next three assignments are "hard"
-        1. hard concepts and hard tricky edge cases
-        1. expect them to take longer than you think
-        1. [a common rule of thumb is to multiply your ETA by pi](https://news.ycombinator.com/item?id=28667174)
-        1. If you do that, you'll still be way off:
-        
-            <img src=Strip-Souvenirs-650-finalenglish.jpg width=600px />
-
 ## Lecture Notes
 
 1. The `class` keyword lets you define your own data structures
@@ -71,43 +51,6 @@
 
         1. functions within a class are called "methods"
 
-        1. functions that begin/end with double underscores are called "double underscore"/"dunder" methods or "magic" methods
-
-            1. `__init__` is the "constructor" and is called when an instance is first created
-
-               <img src=m3vxtt66jsg61.jpg width=400px />
-
-            1. `__str__` / `__repr__` methods let us "pretty print" our objects;
-               `__str__` should be human readable, `__repr__` should be machine readable
-
-               Reference: <https://stackoverflow.com/questions/1436703/what-is-the-difference-between-str-and-repr>
-
-            1. `__iter__` / `__next__` are functions for creating "iterable" classes", or "generators"
-
-                The for loop
-                ```
-                for a in b:
-                    c
-                ```
-                is syntactic sugar for
-                ```
-                _iter = iter(b)
-                while True:
-                    try:
-                        a = next(_iter)
-                    except StopIteration:
-                        break
-                    c
-                ```
-                where
-                ```
-                iter = lambda x: x.__iter__()
-                next = lambda x: x.__next__()
-                ```
-                For a detailed technical explanation, see: <https://snarky.ca/unravelling-for-statements/>
-
-            1. we'll see more examples of these dunder methods throughout the rest of the semester
-
 1. PEP8: <https://www.python.org/dev/peps/pep-0008/>
 
     1. Naming:
@@ -120,47 +63,16 @@
 
     1. everything else is `snake_case`
 
-1. Three ways to "exit" a function in python
-
-    1. `return`:
-       the normal way to stop a function
-
-       immediately stops the current function,
-       and control flow never returns to the function
-
-    1. `raise`:
-       used to represent errors
-
-       immediately stops the current function and all functions in the call stack;
-       the only way to prevent your function from stopping is by using a `try`/`except` block
-
-    1. `yield`:
-       turns a function into a generator
-
-       immediately stops the current function,
-       and control flow will return to the function
-
-       this is "syntactic sugar" for the `__iter__` and `__next__` class methods used in iterators
-
-    <!--
-    1. `sys.exit(n)`: immediately stops the entire program
-
-       must `import sys` to get access to this method;
-       all functions in the `sys` module interact directly with the operating system, and may behave subtly different on different operating systems
-
-       on all OSes,
-       a value of `n=0` indicates the program was successful;
-       any nonzero value indicates the program failed
-
-       this should never be used by "library" code,
-       and only used by "application" code;
-    -->
-
 ## Lab
 
-Posted at <https://github.com/mikeizbicki/lab-sorting-runtimes>.
+TBA
+
+## Homework
+
+TBA
 
 <!--
+Posted at <https://github.com/mikeizbicki/lab-sorting-runtimes>.
 There is no separate graded lab for this week.
 We will still have lab, and it will be a chance for everyone to work/ask questions.
 
