@@ -1,5 +1,7 @@
 # Object Oriented Programming 1: Decorators and Dunder Methods
 
+<img width=300px src=img/object-oriented-programming-is-an-exceptionally-bad-idea-which-could-only-63887355.png />
+
 ## Lecture Notes
 
 1. Wednesday quiz notes:
@@ -23,8 +25,6 @@
            <img src=img/8jcj2z7h61741.png width=600px />
            <br/>
            <br/>
-
-           <img src=img/object-oriented-programming-is-an-exceptionally-bad-idea-which-could-only-63887355.png />
 
         1. References:
         
