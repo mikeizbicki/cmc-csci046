@@ -16,15 +16,15 @@
 
         1. IMNSHO, most OOP programming takes the "using classes" idea too far, and use classes where it's not appropriate
 
-           <img src=1*6rqSrrz_Q5m80KZM9XbqRg.jpeg />
+           <img src=img/1*6rqSrrz_Q5m80KZM9XbqRg.jpeg />
            <br/>
            <br/>
 
-           <img src=8jcj2z7h61741.png width=600px />
+           <img src=img/8jcj2z7h61741.png width=600px />
            <br/>
            <br/>
 
-           <img src=object-oriented-programming-is-an-exceptionally-bad-idea-which-could-only-63887355.png />
+           <img src=img/object-oriented-programming-is-an-exceptionally-bad-idea-which-could-only-63887355.png />
 
         1. References:
         
@@ -41,9 +41,9 @@
 
         1. Python uses [duck typing](https://en.wikipedia.org/wiki/Duck_typing)
 
-           <img src=duck.jpg width=400px />
+           <img src=img/duck.jpg width=400px />
 
-           <img src=dog-duck.jpeg width=400px />
+           <img src=img/dog-duck.jpeg width=400px />
 
         1. variables within a class are called "attributes" or "properties"
 
@@ -51,7 +51,7 @@
            in python, no such distinction exists;
            if an attribute "should" not be accessed outside of the class, in python, we prefix the name with an underscore
 
-           <img src=thinking-about-class-structure-object-oriented-programmers-marxists-also-strong-opinions-66225550.png />
+           <img src=img/thinking-about-class-structure-object-oriented-programmers-marxists-also-strong-opinions-66225550.png />
 
         1. functions within a class are called "methods"
 
