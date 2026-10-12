@@ -1,6 +1,10 @@
-# topic 6: Object Oriented Programming (OOP) / `class` / iterators / `yield` / generators
+# Object Oriented Programming 1: Decorators and Dunder Methods
 
 ## Lecture Notes
+
+1. Wednesday quiz notes:
+
+    <https://github.com/mikeizbicki/quiz/blob/master/quiz_python_in_shell/topic03_operators_decorators.pdf>
 
 1. The `class` keyword lets you define your own data structures
 
