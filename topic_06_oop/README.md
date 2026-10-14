@@ -73,7 +73,7 @@ TBA
 
 ## Homework
 
-TBA
+See <https://github.com/mikeizbicki/hw-numeric/>
 
 <!--
 Posted at <https://github.com/mikeizbicki/lab-sorting-runtimes>.
