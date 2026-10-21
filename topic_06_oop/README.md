@@ -2,6 +2,11 @@
 
 <img width=300px src=img/object-oriented-programming-is-an-exceptionally-bad-idea-which-could-only-63887355.png />
 
+**Announcements Web 21 Oct:**
+1. for next Wednesday's (28 Oct) quiz:
+    1. quiz material posted online at <https://github.com/mikeizbicki/quiz/blob/master/quiz_python_in_shell/topic04_containers.pdf>
+    1. raw quiz problems at <https://github.com/mikeizbicki/quiz/tree/master/quiz_python_in_shell/topic04_containers>
+
 ## Lecture Notes
 
 1. Wednesday quiz notes:
