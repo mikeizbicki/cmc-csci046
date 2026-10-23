@@ -74,11 +74,11 @@
 
 ## Lab
 
-TBA
+See <https://github.com/mikeizbicki/lab-sorcery>.
 
 ## Homework
 
-See <https://github.com/mikeizbicki/hw-numeric/>
+See <https://github.com/mikeizbicki/hw-numeric/>.
 
 <!--
 Posted at <https://github.com/mikeizbicki/lab-sorting-runtimes>.
