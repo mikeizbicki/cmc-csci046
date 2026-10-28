@@ -1,6 +1,6 @@
 # Binary Search Trees (BSTs)
 
-<img width=600px src=img/cgxof0jkru551.png />
+<img width=300px src=img/cgxof0jkru551.png />
 
 ## Lecture Notes
 
@@ -61,6 +61,8 @@ TBA
 
 ## Homework instructions
 
+<img src=img/l5nus3752l261.png width=300px />
+
 1. Get the starter code by running
     ```
     $ mkdir hw-bst
@@ -69,7 +71,14 @@ TBA
     $ git remote add upstream /home/usertest/proj/hw-bst
     $ git pull upstream bst
     ```
-    Notice that you will be working in the `bst` branch instead of the `master`/`main` branch.
+    Notice that:
+    1. You will be working in the `bst` branch instead of the `master`/`main` branch.
+        Names of branches are like variable names or file names---they mean nothing to the computer and are just human conventions.
+    1. The upstream here is not located on the internet but on the lambda server in my account.
+
+        All git commands that refer to "remote" locations (like `git remote` or `git clone`) take an arbitrary url as an argument.
+
+        url = *uniform* resource locator, and a path is just a particular example of a url
 
 1. Put your code on github by:
     1. Create a new github repo
@@ -81,6 +90,12 @@ TBA
 
 1. Fix the code so that the test cases pass,
     then submit your repo url to canvas.
+
+> **NOTE:**
+> Your next two homeworks will build off of this assignment.
+> You will not be able to complete them if you do not get full credit on this assignment.
+> Also, for those two assignments only, we will have a modified collaboration policy where you are not allowed to collaborate in any way with other humans (classmates and QCL mentors included).
+> You will still be able to see me in office hours with questions though if you'd like.
 
 <!--
 1. The <https://github.com/mikeizbicki/containers> repo has a new branch called `bst`.
