@@ -1,6 +1,6 @@
 # Binary Search Trees (BSTs)
 
-<img width=600px src=cgxof0jkru551.png />
+<img width=600px src=img/cgxof0jkru551.png />
 
 ## Lecture Notes
 
@@ -29,7 +29,7 @@
 
         OOP / class inheritence is a tool for "keeping your code DRY"
 
-        <img src=keep-my-diaper-and-my-code-dry.jpg width=300px />
+        <img src=img/keep-my-diaper-and-my-code-dry.jpg width=300px />
 
 1. 3 algorithms on binary trees:
     1. traversals
