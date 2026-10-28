@@ -6,14 +6,14 @@
 
 1. Motivation:
     1. Binary search:
-        1. check whether an element is in a sorted list in $O(log n)$ time
+        1. check whether an element is in a sorted list in $O(\log n)$ time
         1. adding/deleting elements to the sorted list takes $O(n)$ time
 
-    1. Binary search trees (BSTs) let us perform both insertion and deletion in $O(log n)$ time in the "average case".
+    1. Binary search trees (BSTs) let us perform both insertion and deletion in $O(\log n)$ time in the "average case".
 
         1. The "right" way to think of them is as a combination of sorting and binary search algorithms merged together in one.
 
-        1. Technically, the BST doesn't guarantee worst case runtimes of $O(log n)$ time.
+        1. Technically, the BST doesn't guarantee worst case runtimes of $O(\log n)$ time.
 
         1. It guarantees that the works case runtimes are $O(height)$, and the height is $O(n)$ in the worst case.
 
