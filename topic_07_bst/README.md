@@ -23,15 +23,8 @@
 
        Fortunately, they only need to be implemented once, then everyone else can use them.
 
-1. WET vs DRY programming
-    1. WET: wastes everyone's time / we enjoy typing
-    1. DRY: don't repeat yourself
-
-        OOP / class inheritence is a tool for "keeping your code DRY"
-
-        <img src=img/keep-my-diaper-and-my-code-dry.jpg width=300px />
-
 1. 3 algorithms on binary trees:
+
     1. traversals
         1. pre-order
         1. in-order
@@ -43,6 +36,14 @@
     1. find
     2. insert
     3. delete
+
+1. WET vs DRY programming
+    1. WET: wastes everyone's time / we enjoy typing
+    1. DRY: don't repeat yourself
+
+        OOP / class inheritence is a tool for "keeping your code DRY"
+
+        <img src=img/keep-my-diaper-and-my-code-dry.jpg width=300px />
 
 1. Reference:
     1. [Textbook](https://runestone.academy/runestone/books/published/pythonds/index.html) Sections 7.1-7.7, 7.11-1.14
@@ -64,6 +65,7 @@ TBA
     ```
     $ mkdir hw-bst
     $ cd hw-bst
+    $ git init
     $ git remote add upstream /home/usertest/proj/hw-bst
     $ git pull upstream bst
     ```
