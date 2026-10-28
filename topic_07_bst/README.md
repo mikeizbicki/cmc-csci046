@@ -2,9 +2,13 @@
 
 <img width=300px src=img/cgxof0jkru551.png />
 
+**Announcements Wednesday 28 Oct:**
+1. Math Teach today, 3:15-4:30pm at the red benches outside Adams
+1. Ath dinner with Zachary Horvitz, who will be talking about “The Age of a Billion Answers: Promise and Peril in AI’s Rare Outputs” on Thursday October 29 at 6:30pm.  <https://www.cmc.edu/athenaeum/events/20261029>
+
 ## Lecture Notes
 
-1. Motivation:
+1. Motivation for BST:
     1. Binary search:
         1. check whether an element is in a sorted list in $O(\log n)$ time
         1. adding/deleting elements to the sorted list takes $O(n)$ time
@@ -67,7 +71,6 @@ TBA
     ```
     $ mkdir hw-bst
     $ cd hw-bst
-    $ git init
     $ git remote add upstream /home/usertest/proj/hw-bst
     $ git pull upstream bst
     ```
