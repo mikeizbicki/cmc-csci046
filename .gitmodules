@@ -55,7 +55,7 @@
 	#url = https://github.com/mikeizbicki/containers
 
 [submodule "containers_10"]
-	path = topic_07_bst/containers
+	path = topic_07_bst/img/containers
 	url = https://github.com/mikeizbicki/containers
 
 #[submodule "containers_11"]
