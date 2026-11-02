@@ -6,6 +6,9 @@
 1. Math Teach today, 3:15-4:30pm at the red benches outside Adams
 1. Ath dinner with Zachary Horvitz, who will be talking about “The Age of a Billion Answers: Promise and Peril in AI’s Rare Outputs” on Thursday October 29 at 6:30pm.  <https://www.cmc.edu/athenaeum/events/20261029>
 
+**Announcements Monday 2 Nov:**
+1. Quiz material for Wednesday: <https://github.com/mikeizbicki/quiz/blob/master/quiz_python_in_shell/topic05_generators.pdf>
+
 ## Lecture Notes
 
 1. Motivation for BST:
