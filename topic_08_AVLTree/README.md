@@ -93,7 +93,7 @@ The runtime of find/insert/delete on any BST is $O(n)$.
     1. **Theorem:**
        Every tree satisfying the AVL invariant has height $\Theta(\log n)$.
 
-       Proof in textbook chapter 17.16.
+       Proof in textbook reference: [Chapters 7.16](https://runestone.academy/runestone/books/published/pythonds/Trees/BalancedBinarySearchTrees.html)
 
     1. **Corollary:**
        The find/insert/delete operations take time $O(\log n)$.
@@ -121,22 +121,19 @@ The lab is posted at: <https://github.com/mikeizbicki/lab-pipes-twitter>.
 
 ## Homework instructions
 
-<!--
-1. The <https://github.com/mikeizbicki/containers> repo has a new branch called `avltree`.
+1. The <https://github.com/mikeizbicki/hw-containers> repo has a new branch called `avltree`.
    This branch contains the homework for this week.
 
 1. You should:
 
     1. Create and checkout a branch in your homework repo called `avltree`.
-       `avltree` should be based off of the `bst` branch and not the `master` branch.
+       If you forget how to create a new branch,
+       consult the git cheatsheet from the first day of class.
 
        > **IMPORTANT:**
-       > The code in your `avltree` branch will require that you have access to your `BinaryTree` and `BST` classes.
-       > If you don't have those classes because you didn't base your `avltree` branch off of `bst`, the code won't work.
-       > All your work must be done in the `avltree` branch,
-       > and you must not merge your work into any other branch.
-       > If any other branch is modified,
-       > you will receive a -8 point penalty on this assignment.
+       > Your next homework assignment will be required to not have the AVL tree code.
+       > If you do not create a new branch,
+       > then you will not be able to complete the next hw correctly.
 
        > **NOTE:**
        > You `avltree` branch will no longer be passing the BST test cases,
@@ -146,9 +143,8 @@ The lab is posted at: <https://github.com/mikeizbicki/lab-pipes-twitter>.
        > This is expected behavior, and will not affect your grade on the BST assignment.
        > When you get the `avltree` branch passing the test case,
        > it will also fix the test case on the `bst` branch.
-       > Later in the course we will see how to adjust the urls in the badges to make them branch specific.
 
-    1. Pull the contents of my `avltree` branch into your branch.
+    1. Pull the contents of my `avltree` branch into your `avltree` branch.
 
        > **IMPORTANT:**
        > My `avltree` branch contains modifications to both the `containers/BST.py` file and the `tests/test_BST.py` file.
@@ -158,13 +154,12 @@ The lab is posted at: <https://github.com/mikeizbicki/lab-pipes-twitter>.
        > but that the test cases for your `BST` are now failing (red badge).
        > This is because I've added a new method `__eq__` to the `BST` class that you must implement, and it has corresponding test cases.
 
-    1. Fix the file `containers/BST.py` and `containers/AVLTree.py` so that all the test cases pass.
+    1. Fix all the files so that all the test cases pass.
 
-    1. Update your `README.md` file to include build status icons for the AVLTree.
-
-1. Submit the link to your `avltree` branch on github to sakai.
+1. Submit the link to your `avltree` branch on github to canvas.
 
    > **IMPORTANT:**
    > If you submit a link to any other branch instead,
-   > you will receive a -8 point penalty on the assignment.
--->
+   > you will receive a -4 point penalty on the assignment.
+
+   The assignment is worth 16 points: 8 for the AVL tree code, and 8 for everything else.
