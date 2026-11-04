@@ -121,6 +121,11 @@ The lab is posted at: <https://github.com/mikeizbicki/lab-pipes-twitter>.
 
 ## Homework instructions
 
+> **IMPORTANT:**
+> This assignment has a modified collaboration policy.
+> You are not allowed to discuss the assignment with other people besides the instructor.
+> This includes students in the class and QCL mentors.
+
 1. The <https://github.com/mikeizbicki/hw-containers> repo has a new branch called `avltree`.
    This branch contains the homework for this week.
 
