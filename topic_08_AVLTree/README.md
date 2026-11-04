@@ -46,7 +46,7 @@ Textbook Reference: [Chapters 7.15-7.17](https://runestone.academy/runestone/boo
 The BST is "usually" good, but it can become "unbalanced", resulting in poor performance.
 
 **Theorem:**
-The runtime of find/insert/delete on any BST is O(height).
+The runtime of find/insert/delete on any BST is $O(height)$.
 (More specifically, the best-case runtime is $\Theta(1)$ and the worst-case runtime is $\Theta$(height).)
 
 **Property:**
@@ -60,7 +60,7 @@ The runtime of find/insert/delete on any BST is $O(n)$.
 
 [Self-Balancing BSTs](https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree) are a class of data structures that fix these problems
 
-1. We will study the AVL Tree 
+1. We will study the AVL Tree
 
     1. invented in 1962 by Soviet scientists Adelson-Velsky and Landis
     1. one of the first and particularly simple
@@ -114,10 +114,14 @@ The runtime of find/insert/delete on any BST is $O(n)$.
 
 ## Lab
 
+TBA
+<!--
 The lab is posted at: <https://github.com/mikeizbicki/lab-pipes-twitter>.
+-->
 
 ## Homework instructions
 
+<!--
 1. The <https://github.com/mikeizbicki/containers> repo has a new branch called `avltree`.
    This branch contains the homework for this week.
 
@@ -163,3 +167,4 @@ The lab is posted at: <https://github.com/mikeizbicki/lab-pipes-twitter>.
    > **IMPORTANT:**
    > If you submit a link to any other branch instead,
    > you will receive a -8 point penalty on the assignment.
+-->
