@@ -1,37 +1,6 @@
 # AVL Trees
 
-**Announcements:**
-
-Recall:
-1. Quiz this Wednesday on OOP II
-1. BST assignment due Thursday instead of Tuesday
-1. My baby is due Apr 18
-    1. 2 week paternity leave => no class rest of the end of semester
-
-        (if baby comes on the due date)
-    1. Tentative Homework Schedule:
-
-        > **My guarantee:**
-        > Nothing will be due before the dates listed below.
-        > Some things may be due later.
-
-        Mar 23: BST Tree
-
-        Mar 28: AVL Tree
-
-        Apr 04: Heap
-
-        Apr 11: Graphs (Risk board game AI)
-
-        Apr 18: ---
-
-        Apr 25: ---
-
-        May 2: MapReduce project (parallel processing of 3 terabytes of tweets)
-
-        May 12: (non-graduating students only) Async programming (Fast Wardialing)
-
-
+<!--
 There are 2 videos about AVL trees below to use for your assignment.
 
 1. <https://www.youtube.com/watch?v=U3_ipnPYmXg&list=PLSNWQVdrBwobmS9cowxAldNTEtx0ndsF5&index=23&t=851s>
@@ -52,22 +21,23 @@ This week in class, we will focus on quiz material:
     1. One of the most popular programming languages: <https://survey.stackoverflow.co/2022/#most-popular-technologies-language>
 
     
-    <img src='bash-meme.jpg' width=300px />
+    <img src=img/'bash-meme.jpg' width=300px />
 
     (Sometimes called "bash" scripting instead of "POSIX" or "shell" scripting.)
 
 1. Disadvantage: it's very weird
 
-    <img src='bash-meme.webp' width=300px />
+    <img src=img/'bash-meme.webp' width=300px />
 
 ---
 
-<img src=x9vlbv8frut01.jpg />
+-->
+<img src=img/x9vlbv8frut01.jpg />
 
 <br>
 <br>
 
-<img src=96irozk7ae761.jpg />
+<img src=img/96irozk7ae761.jpg />
 
 Textbook Reference: [Chapters 7.15-7.17](https://runestone.academy/runestone/books/published/pythonds/Trees/BalancedBinarySearchTrees.html)
 

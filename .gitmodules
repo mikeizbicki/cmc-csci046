@@ -79,7 +79,7 @@
 	path = topic_06_oop/lab-sorting-runtimes
 	url = https://github.com/mikeizbicki/lab-sorting-runtimes
 [submodule "topic_08_AVLTree/lab-pipes-twitter"]
-	path = future/topic_08_AVLTree/lab-pipes-twitter
+	path = topic_08_AVLTree/img/lab-pipes-twitter
 	url = https://github.com/mikeizbicki/lab-pipes-twitter
 [submodule "topic_10_mapreduce/twitter_coronavirus"]
 	path = future/topic_10_mapreduce/twitter_coronavirus
