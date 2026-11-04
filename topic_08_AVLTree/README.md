@@ -32,12 +32,12 @@ This week in class, we will focus on quiz material:
 ---
 
 -->
-<img src=img/x9vlbv8frut01.jpg />
+<img width=300px src=img/x9vlbv8frut01.jpg />
 
 <br>
 <br>
 
-<img src=img/96irozk7ae761.jpg />
+<img width=300px src=img/96irozk7ae761.jpg />
 
 Textbook Reference: [Chapters 7.15-7.17](https://runestone.academy/runestone/books/published/pythonds/Trees/BalancedBinarySearchTrees.html)
 
