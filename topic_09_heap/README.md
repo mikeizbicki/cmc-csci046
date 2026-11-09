@@ -1,11 +1,17 @@
 # Heaps
 
-<img src=tree.png />
+<img width=300px src=tree.png />
 
-Textbook Reference: [Chapters 7.8-7.10](https://runestone.academy/runestone/books/published/pythonds/Trees/PriorityQueueswithBinaryHeaps.html)
+**Announcements 9 Nov 2026:**
+1. Wednesday quiz material: 
+    1. <https://github.com/mikeizbicki/quiz/blob/master/quiz_shell/topic01_glob_regex.pdf>
+        1. Review material from CS40
+        1. 1 print per problem, each print worth 2 points
+    1. <https://github.com/mikeizbicki/quiz/tree/master/quiz_shell/topic01b_more_globs>
+        1. Combines review material with generators/recursion
+        1. 2 prints per problem, each print worth 1 point
 
 ## Summary of Worst Case data structure runtimes
-
 
 | data structure  | `insert`  | `insert_list` | `find`    | `find_smallest`   | `remove`  | `remove_min`  | 
 | --------------- |  -------- | ------------- | --------- | ----------------- | --------- | ------------- |
@@ -23,6 +29,9 @@ Note:
 1. We won't discuss the Fibonacci Heap implementation in class, but I want you to understand that the Heap we will discuss is not optimal
 
 ## Heap
+
+Textbook Reference: [Chapters 7.8-7.10](https://runestone.academy/runestone/books/published/pythonds/Trees/PriorityQueueswithBinaryHeaps.html)
+
 
 1. A heap is a binary tree that is:
 
@@ -91,8 +100,15 @@ Advanced runtime analysis:
         1. insert/lookup/delete, worst case comparisons, total runtime: O(k log n)
 -->
 
+## Lab
+
+TBA
+
 ## Homework
 
+TBA
+
+<!--
 > **IMPORTANT:**
 > You should think of this homework like a "take home test" with no time limit.
 > Therefore, this homework has a modified collaboration policy:
@@ -159,7 +175,6 @@ Advanced runtime analysis:
 
     1. Fix the file `containers/Heap.py` so that all the test cases pass.
 
-    <!--
     1. Create a new file `.github/workflows/heap.yml` that runs the test cases for the `Heap` class.
        You should use the existing files in `.github/workflows` as an example,
        and modify them for the `Heap` class.
@@ -168,7 +183,6 @@ Advanced runtime analysis:
        If you do not create your `heap.yml` file correctly,
        github actions will not run your test cases for you.
        You will therefore get a 0 on the assignment since we will not be able to grade it.
-    -->
 
     1. Update your `README.md` file to include a build status icon for the Heap.
 
@@ -179,3 +193,4 @@ Advanced runtime analysis:
 1. Submit the link to your `heap` branch on github to sakai.
    If you submit a link to any other branch instead,
    you will receive a -8 point penalty on the assignment.
+    -->
