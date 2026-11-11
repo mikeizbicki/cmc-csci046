@@ -15,8 +15,8 @@
 
 | data structure  | `insert`  | `insert_list` | `find`    | `find_smallest`   | `remove`  | `remove_min`  |
 | --------------- |  -------- | ------------- | --------- | ----------------- | --------- | ------------- |
-| list (unsorted) | back: ϴ(1) front: ϴ(n) | ϴ(n)          | ϴ(n)      | ϴ(n)      | back: ϴ(1) front: ϴ(n) | ϴ(n)          |
-| deque           | back: ϴ(1) front: ϴ(1) | ϴ(n)          | ϴ(n)      | ϴ(n)      | back: ϴ(1) front: ϴ(1) | ϴ(n)          |
+| list (unsorted) | back: ϴ(1) <br>front: ϴ(n) | ϴ(n)          | ϴ(n)      | ϴ(n)      | back: ϴ(1) <br>front: ϴ(n) | ϴ(n)          |
+| deque           | back: ϴ(1) <br>front: ϴ(1) | ϴ(n)          | ϴ(n)      | ϴ(n)      | back: ϴ(1) <br>front: ϴ(1) | ϴ(n)          |
 | list (sorted)   | ϴ(n)      | ϴ(n log n)    | ϴ(log n)  | ϴ(log n)          | ϴ(n)      | ϴ(n)          |
 | BST (ave)       | ϴ(log n)  | ϴ(n log n)    | ϴ(log n)  | ϴ(log n)          | ϴ(log n)  | ϴ(log n)      |
 | BST (worst)     | ϴ(n)      | ϴ(n^2)        | ϴ(n)      | ϴ(n)              | ϴ(n)      | ϴ(n)          |
