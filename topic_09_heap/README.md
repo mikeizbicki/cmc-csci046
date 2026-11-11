@@ -32,8 +32,6 @@ Note:
 
 ## Heap
 
-Textbook Reference: [Chapters 7.8-7.10](https://runestone.academy/runestone/books/published/pythonds/Trees/PriorityQueueswithBinaryHeaps.html)
-
 1. A **priority queue** is an ADT that supports
    1. `insert`
    1. `remove_min`
@@ -50,6 +48,12 @@ Textbook Reference: [Chapters 7.8-7.10](https://runestone.academy/runestone/book
     1. Satisfies one of the heap properties below:
         1. Min-heap: The value of any node is smaller than the value of its children
         1. Max-heap: The value of any node is larger than the value of its children
+
+Textbook Reference: [Chapters 7.8-7.10](https://runestone.academy/runestone/books/published/pythonds/Trees/PriorityQueueswithBinaryHeaps.html)
+
+1. Textbook discusses array-based heaps.
+
+    Ideas are the same, code will not carry over.
 
 <!--
 ## Hash-based data structures
