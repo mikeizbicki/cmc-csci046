@@ -1,6 +1,6 @@
 # Heaps
 
-<img width=300px src=tree.png />
+<img width=300px src=img/tree.png />
 
 **Announcements 9 Nov 2026:**
 1. Wednesday quiz material: 
