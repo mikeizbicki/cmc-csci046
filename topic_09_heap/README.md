@@ -102,7 +102,7 @@ Advanced runtime analysis:
 
 ## Lab
 
-TBA
+See <https://github.com/mikeizbicki/lab-processes>
 
 ## Homework
 
