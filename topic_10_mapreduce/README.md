@@ -6,10 +6,25 @@
 
 **Announcements: Mon 16 Nov**
 
+1. Useful followup classes:
+
+    <img src=https://raw.githubusercontent.com/mikeizbicki/cmc-advising/master/courses-map.png width=100%>
+
+
+    Programming courses:
+    1. CS36 Foundations of Data Science
+    1. CS143 Big Data: <https://github.com/mikeizbicki/cmc-csci143>
+
+    <img src=img/math.jpg width=400px />
+    1. CS145 Deep Learning: <https://csci145.rtealwitter.com/>
+    1. MATH126 Randomized Algorithms: <https://www.rtealwitter.com/rads2026/>
+
 1. Tim Peters died:
     1. HN discussion: <https://news.ycombinator.com/item?id=50450488>
     1. 2024 writeup about Tim being cancelled from python: <https://chrismcdonough.substack.com/p/the-shameful-defenestration-of-tim>
         1. related-ish: master vs main naming <https://github.com/mikeizbicki/cmc-csci143/issues/750>
+
+1. Electronic quiz material: <https://github.com/mikeizbicki/quiz/blob/master/quiz_shell/topic02_variables_loops.pdf>
 
 1. This week's lab will be posted by end of business today.
 
