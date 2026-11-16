@@ -11,13 +11,17 @@
     <img src=https://raw.githubusercontent.com/mikeizbicki/cmc-advising/master/courses-map.png width=100%>
 
 
-    Programming courses:
+    "Coding" courses:
+
     1. CS36 Foundations of Data Science
     1. CS143 Big Data: <https://github.com/mikeizbicki/cmc-csci143>
 
-    <img src=img/math.jpg width=400px />
+    "Mathy" courses:
+
     1. CS145 Deep Learning: <https://csci145.rtealwitter.com/>
     1. MATH126 Randomized Algorithms: <https://www.rtealwitter.com/rads2026/>
+
+    <img src=img/math.jpg width=400px />
 
 1. Tim Peters died:
     1. HN discussion: <https://news.ycombinator.com/item?id=50450488>
