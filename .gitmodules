@@ -82,7 +82,7 @@
 	path = topic_08_AVLTree/img/lab-pipes-twitter
 	url = https://github.com/mikeizbicki/lab-pipes-twitter
 [submodule "topic_10_mapreduce/twitter_coronavirus"]
-	path = future/topic_10_mapreduce/twitter_coronavirus
+	path = topic_10_mapreduce/twitter_coronavirus
 	url = https://github.com/mikeizbicki/twitter_coronavirus
 [submodule "topic_11_graphs/risk"]
 	path = future/topic_11_graphs/risk

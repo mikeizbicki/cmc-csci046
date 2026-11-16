@@ -1,10 +1,19 @@
 # Shell scripting + MapReduce
 
 <center>
-<img src=Strip-Ou-sont-les-tests-unitaires-english650-final.jpg />
+<img width=300px src=img/Strip-Ou-sont-les-tests-unitaires-english650-final.jpg />
 </center>
 
-## Lecture
+**Announcements: Mon 16 Nov**
+
+1. Tim Peters died:
+    1. HN discussion: <https://news.ycombinator.com/item?id=50450488>
+    1. 2024 writeup about Tim being cancelled from python: <https://chrismcdonough.substack.com/p/the-shameful-defenestration-of-tim>
+        1. related-ish: master vs main naming <https://github.com/mikeizbicki/cmc-csci143/issues/750>
+
+1. This week's lab will be posted by end of business today.
+
+## Notes
 
 Shell scripting involves lots of seemingly unrelated concepts.
 Once you understand them, you can automate data analysis pipelines and create very complex programs very easily.
@@ -13,7 +22,7 @@ Once you understand them, you can automate data analysis pipelines and create ve
     
     1. `ls -l` will list the permissions
 
-        <img src=file_permissions.png width=400px />
+        <img src=img/file_permissions.png width=400px />
 
     1. `chmod` will change the permissions.
        There are many valid syntaxes for this command.
@@ -138,7 +147,7 @@ Once you understand them, you can automate data analysis pipelines and create ve
     
 1. Signals
 
-    <img src=kill.webp width=400px />
+    <img src=img/kill.webp width=400px />
 
     1. `ps` lists running processes created by your current shell
     1. `ps -ef` lists all running processes
@@ -169,12 +178,15 @@ serialization / deseialization of unicode
 
 ## Lab
 
-See the [lab-processes.md file](lab-processes.md).
+TBA
 
 ## Homework
 
+TBA
+<!--
 See the instructions in <https://github.com/mikeizbicki/twitter_coronavirus>.
 
 Recommended computation complete by: 25 April
 
 Due: 2 May
+-->
