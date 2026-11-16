@@ -21,6 +21,8 @@
     1. CS145 Deep Learning: <https://csci145.rtealwitter.com/>
     1. MATH126 Randomized Algorithms: <https://www.rtealwitter.com/rads2026/>
 
+    <br/>
+
     <img src=img/math.jpg width=400px />
 
 1. Tim Peters died:
