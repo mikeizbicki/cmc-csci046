@@ -199,7 +199,7 @@ serialization / deseialization of unicode
 
 ## Lab
 
-TBA
+See <https://github.com/mikeizbicki/lab-coding-agent>.
 
 ## Homework
 
