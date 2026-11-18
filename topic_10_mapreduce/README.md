@@ -203,11 +203,11 @@ See <https://github.com/mikeizbicki/lab-coding-agent>.
 
 ## Homework
 
-TBA
-<!--
 See the instructions in <https://github.com/mikeizbicki/twitter_coronavirus>.
 
-Recommended computation complete by: 25 April
+Due: 1 Dec
 
-Due: 2 May
--->
+> **WARNING:**
+> The computation can take a long time (potentially many days).
+> You will not get an extension for the program not completing in time.
+> So I recommend having at least the expensive computations completed before Thanksgiving break.
